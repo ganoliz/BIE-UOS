@@ -1,0 +1,112 @@
+~~SLIDESHOW~~
+
+====== Tutorial 7 — TEST + awk and sed ======
+
+===== ??? ✔ =====
+
+  * What is the difference between
+    * ''cat /etc/passwd''
+    * ''ypcat passwd''
+  * How do you find student names from the output ''ypcat passwd'' ?
+    * How do you determine frequency of student names?
+    * Which one is the most frequent?
+ 
+===== awk – patterns I =====
+
+  * Listing of the first 10 lines (head)
+    * <code>cat -n /etc/passwd | awk 'NR<=10'</code>
+    * <code>cat -n /etc/passwd | awk 'NR==1,NR==10'</code>
+  * Listing of the last 10 lines (tail) 
+    * ''awk NR\>=$(''''(`wc -l </etc/passwd`-10)'''') /etc/passwd''
+  * Listing of lines containing RE(grep)
+    * ''awk /root/ /etc/group''
+  * Listing of all lines except those that  contain  the RE (grep -v)
+    * ''awk '!/root/' /etc/group''
+
+
+
+===== awk – patterns II =====
+
+  * Select of lines from ypcat passwd by names
+    * <code>ypcat passwd \
+| awk '/Adela/ /Barbora/ /Celeste/ /Dana/ /Eliska/'
+ypcat passwd \
+| awk -f /home/courses/BIUOS/public/biuos-c07-names.awk
+ypcat passwd \
+| /home/courses/BIUOS/public/biuos-c07-names.awk</code>
+  * Select of lines with UID 1000-9999 from ypcat passwd 
+    * <code>ypcat passwd | awk -F: '$3>=1000 && $3<=9999'</code>
+  * Determination of number of users from output of ypcat passwd
+    * <code>ypcat passwd \
+| awk 'END { print "Total users: " NR }'</code>
+
+
+===== awk – action I =====
+
+  * Exchange of column order from /etc/passwd
+    * <code>awk 'BEGIN { FS=":"; OFS=":" } 
+           { print $3,$1,$5 }' /etc/passwd</code>
+  * Finding user with the longest name
+    * <code>ypcat passwd | awk -F: '
+{ 
+	if (length($5) > max) {
+		max=length($5); user=$1; name=$5
+	}
+}
+END {
+	print user ":" name " (" max ")" 
+}'</code>
+
+
+===== awk – action II =====
+
+  * Listing of users that has login shell ksh (Korn shell)
+    * <code>ypcat passwd | awk -F: '
+BEGIN {
+	print "Uzivatele Korn shellu:"
+	for (d=0; d<=60; d++) printf "-"; printf "\n"
+}
+$7 ~ /ksh/ {
+	if (length($1)<=7) tab="\t\t"; else tab="\t"
+	print $1 tab $5
+	ksh++
+}
+END {
+	for (d=0; d<=60; d++) printf "-"; printf "\n"
+	print "Celkem " ksh " z " NR " uzivatelu"
+}'</code>
+
+
+===== awk – functions =====
+
+  * ''length(str)''
+    * length of string ''str''
+  * ''substr(str, from, len)''
+    * returns ''len''number of chars from string ''str'' starting at position ''from''
+  * ''sub(ere,repl[,in])''
+    * replace substring containing ''ERE'' by substring ''repl'' in string ''in'' (otherwise $0)
+  * ''gsub(ere,repl[,in])''
+    * replace all substrings containing ''ERE'' by substring ''repl'' in string ''in''
+  * ''split (str,arr[,fs])''
+    * split string ''str'' into array ''arr'' using the delimiter ''fs'' (otherwise ''FS'')
+
+===== nawk – array I =====
+
+  * Listing users of group ''biuos''
+    * <code>ypcat group | nawk -F: '
+/^biuos:/ {
+	items=split($4,a,",")
+	for (i=1; i<=items; i++) print a[i]
+}'</code>
+
+
+===== Homework =====
+
+  * Find files containing scheduling from directory ''/home/courses/BIUOS/public/schedule''.
+    * HTML files rename to file ''ID-Dd-HHMM'' (e.g..: ''113-Ut-1630.html'').
+    * From these files create file ''seznam.csv'' containing only surname and name of students, tutorial day in format ''Dd'' and time of tutorial in format ''HHMM''.
+    * Use field separator '':''.
+    * Add user name of student to every line of file ''seznam.csv''. 
+    * Create HTML page containing table with all information from file ''seznam.csv''.
+
+

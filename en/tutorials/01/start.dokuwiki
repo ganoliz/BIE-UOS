@@ -1,0 +1,226 @@
+~~SLIDESHOW~~
+
+====== Tutorial 1 — Introduction ======
+
+\\
+\\
+//UNIX is user friendly. It's just selective about who its friends are.//
+
+===== Classification =====
+
+Module web page \\ http://edux.fit.cvut.cz/courses/BIE-UOS/
+
+
+  * During semestr - 4 tests
+    * 15 minutes [à 15 points]: (4th week)
+    * 20 minutes [à 20 points]: (7th and 10th week)
+    * 70 minutes [à 45 points]: (12th week) - **assessment test**
+    * **Necessary condition for the assessment test at least 20 points from all small tests.**
+
+===== Seminars organization =====
+
+Module consists of lectures, seminars and homework (5 ECTS credits ~ 150 hours per semester).
+
+  * On the module web page 
+    * examples
+    * homework
+  * During seminars
+    * discussion about described examples
+    * tasks and possible solutions
+
+===== UNIX Servers =====
+
+  * Operating system: SunOS 5.10 (Solaris 10)
+  * Servers: fray1, fray3 [.fit.cvut.cz]
+  * Local login to CDE or JDE(GNOME)
+    * usage of USB flash disk 
+  * Remote connection by SSH protocol
+  * Shared home directory
+
+
+===== How to conect to Unix server? =====
+
+{{:tutorials:01:sunray.png?600|}}
+  * Local connection \\ (graphic card, monitor, keyboard, mouse)
+  * CLI
+  * GUI
+  * Remote connection \\ (telnet/ssh)
+
+===== Login and Logout =====
+
+  * Login to GUI \\ {{:tutorials:01:login.png|}}
+    * Enter login name (e.g. novakx9)
+    * Enter login password (e.g. bF1mps.z)
+
+  * Logout from GUI (CDE) \\ {{:tutorials:01:bar.png|}}
+
+===== How to set enviroment =====
+
+{{:tutorials:01:locale.png|}}
+  * ''Options'' → ''Quick login'' → ''OFF''
+  * Entering login name and password
+  * ''Options'' → ''Language'' → ''C to en_US...'' → ''cs_CZ.ISO8859-2...''
+  * Keyboard layout setting  \\ {{:tutorials:01:bar2.png|}}
+
+===== Workin with GUI =====
+
+{{:tutorials:01:ss1.png?700|}}
+  * Desktop environment 
+    * CDE
+    * JDS (GNOME)
+    * KDE
+  * Window manager
+    * AfterStep
+    * Blackbox
+    * Enlightenment
+    * Motif
+    * Window Maker
+    * XFCE
+
+===== Working with CLI =====
+
+{{:tutorials:01:terminal.png?800|}}
+
+===== Shell =====
+
+SHELL = command line interpreter
+
+  * Different shells (programs)
+    * Bourne Shell – sh
+    * C Shell – csh
+    * Korn Shell – ksh
+    * Bourne Again Shell – bash
+  * Parts of command are separated by space or by TAB
+  * Commands are separated by semicolon or by new line
+  * **Unix is case sensitive !**
+
+===== Shell syntax =====
+
+  * command name
+    * define which comand will be executed (what)
+  * options
+    * modify behavior of command (how)
+  * arguments
+    * specify data (with)
+
+<note tip>
+  * Example: ''ls -lR /usr/bin /tmp''
+    * list
+    * long, recursively 
+    * directory ''/usr/bin'' and ''/tmp''
+</note>
+
+
+
+===== Shell syntax - command name =====
+
+  * first word in command line
+    * without path<code>date</code>
+    * with path <code>/usr/bin/date
+../script.sh
+./program</code>
+  * if shell can not find command, shell returns ''Command not found'' 
+  * if user has not permission, shell returns  ''Permission denied'' 
+
+
+===== Shell syntax - options and arguments =====
+
+  * there can be no, one or more options or arguments
+    * <code>-o output file</code>
+  * short options
+    * start with character „-”, contain just one character
+    * ''ls -a -l /'' or ''ls -l -a /''or ''ls -al /''
+  * long options
+    * stat with characters „-- --”, contain the whole words (or more words)
+    *  <code>--long --output soubor.txt --exclude-file=file.ex</code>
+
+===== Simple commands =====
+
+<code>
+date
+hostname
+who
+who am i
+whoami
+w
+id
+su username
+su – username
+passwd
+sleep 5
+</code>
+
+===== Remote access =====
+
+  * Open connection
+    * ''ssh username@hostname''
+    * ''ssh fray2.fit.cvut.cz''
+    * putty (in MS Windows)
+  * Close connection
+    * shell exit
+    * long network failure
+  * How exit shell (shell depending)
+    * ''logout'', ''exit'', ''bye''
+    * ''^D'' (Ctrl+D)
+
+===== Documentation =====
+
+  * Unix manual pages
+    * consists of several sections
+    * select by name, keywords,...
+    * uniform manual page structure
+  * Web documentation (system dependent!)
+  * Command ''man''
+    * <code>man man
+man ls
+man printf
+man -s 3c printf
+man -k printf
+</code>
+
+===== Homework =====
+
+  * Connect to the server ''fray1.fit.cvut.cz''
+  * Study structure of manual pages of the following commands
+    * man(1)
+    * date(1)
+    * ssh(1)
+
+
+====== + Bonus ======
+
+===== SSH + =====
+==== Remote connection by protocol ssh (secure shell) ====
+
+=== Remote system - SSH „daemon” (sshd) ===
+    * usually listens on TCP port 22
+    * can be identifaying by finger print
+    * [do not remove file ''~/.ssh/known_hosts''!]
+=== Local system - SSH client (ssh) ===
+    * opens crypted connection to server
+    * authentification by name and password, or key
+    
+==== Command execution on the remote system ====
+
+  * ''ssh username@hostname command''
+  * ''ssh fray2.fit.cvut.cz who''
+
+=== How to generate authentication key  ===
+
+  * ''ssh-keygen''
+  * save to file ''~/.ssh/authorized_keys2''
+
+===== SCP + =====
+
+==== Data transfare to remote system ====
+  * ''scp local_file_name.txt username@hostname:remote_path/remote_file_name.txt''
+
+  * ''scp file.txt novakj1@fray1.fit.cvut.cz:/home/student/novakj1/remote_file_name.txt''
+
+==== Data transfare from remote system ====
+  * ''scp username@hostname:remote_path/remote_file_name.txt local_file_name.txt''
+
+The same file name (local and remote):
+  * ''scp username@hostname:remote_file_name.txt .'' 
+
+<note tip>What does mean "dot" at the end of the command???</note>

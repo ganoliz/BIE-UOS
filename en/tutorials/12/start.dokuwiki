@@ -1,0 +1,60 @@
+====== Tutorial 12 — Assesment Test ======
+
+===== Rules =====
+
+[[pravidla_testu|Rules of assesment test.]]
+
+===== Evaluation =====
+
+Test consists of several tasks and subtasks.
+
+Classification on points :
+  * 100% = correct functional solution
+  * 20% =  correct design but not functional 
+
+===== Example of assesment test =====
+
+**Explain possible problems!**
+
+  - **Variables and deafult permission mask**
+    - Save current value of permission mask to variable ''OLD_MASK''.
+    - Setup new mask such that new created files have permission ''rw-'' ''r-''''-'' ''-''''-''''-'' and directory ''rwx'' ''r-x'' ''-''''-''''-'' .
+  - **File system commands**
+    - Create directory structure (''YMMDD'' represents current date in format yearmonthday -- use command ''date'')<code>
+backup-YYMMDD
++-- sources
+|   `-- include
+`-- users
+</code>
+    - Copy files ''/etc/passwd'', ''/etc/group'' to directory ''users''.
+    - In directory ''users'' create file ''passwd.yp'' that contains output of ypcat passwd.
+    - Create hard link of file ''/etc/shadow'' in directory ''users''.
+    - Setup permissions of file ''passwd'', ''passwd.yp'' and ''group'' such that only owner of these file can read them.
+    - Change owner of file ''passwd.yp'' to user ''barinkl''.
+    - Change group of file ''shadow'' to group ''zam''.
+  - **Filters**
+    - The file ''/home/courses/BIUOS/public/biuos-c12-script.sh'' has the following content <code>.
+.
+# BEGIN
+cat <<EOF
+text
+that is interesting
+for us
+EOF
+sleep 100
+# END
+.
+.
+</code> Without using of text editor select from this file only lines that are between lines with text ''# BEGIN'' and ''# END'' (around these string can be spaces) and save selected lines to file ''my_script'' in your home directory.
+    - Add the line ''#!/bin/bash'' to the begin of the file ''my_script''.
+  - **Processes and jobs**
+    - Change permissions of file ''my_script'' such that this script is executable only for owner (don't change permission for group and other).
+    - Execute the script on background with arguments  ''c:\'', ''c:\Program␣Files'' .
+    - Determine ''PID'' and ''PPID'' of the process.
+    - After 5 minutes send signal ''SIGINT'' to the process.
+  - **Find, archiving, compression**
+    - Copy files from directory  ''project'' (and its subdirectories) in your home directory that are not empty and their names have suffix ''.c'' -- to subdirectory  ''sources'' -- or ''.h'' -- to subdirectory include --, throw aside all errors.
+    - Archive directory structure backup-YYMMDD. After successuful archiving copy the archive  under user identity saved in variable ''REMOTE_USER'' to remote host saved in variable ''REMOTE_HOST'' to file ''/tmp/USERNAME.tgz'' (where ''USERNAME'' is name of current user).After successful copying remove the local copy of archive.
+
+<note warning>[[solution|Solution]] is only for verification.</note>
+

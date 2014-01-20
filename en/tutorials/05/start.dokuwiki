@@ -1,0 +1,245 @@
+~~SLIDESHOW~~
+
+====== Tutorial 5 — Input/Output, basic filters ======
+
+===== Standard Input/Output I =====
+
+  * All I/O are redirected to terminal by default
+
+{{:tutorials:05:io.png|}}
+
+===== Standard Input/Output II =====
+
+  * I/O can be redirected by symbols ''<'', ''>'', ''|''
+  * Number //fd// (file descriptor) before symbol ''<'' or ''>'', means redirection of the given //fd//
+    * 0 = stdin (standard input)   
+    * 1 = stdout (standard output) 
+    * 2 = stderr (standard error output) <code>
+wc -l < /etc/passwd    ≡    wc -l 0< /etc/passwd
+date > file            ≡    date 1> file
+</code>
+  * After symbol''<'' or ''>'' follows name of file or ''&fd'' (reference to //fd//)
+  * Symbol ''|'' redirects //stdout// of the first command to //stdin// of second command
+
+
+===== Standard Input/Output II =====
+
+  * The order is important!!!
+    * <code>
+ls ~ foo 2>&1 >s1
+ls ~ foo >s1 2>&1
+</code>
+
+  * Redirection is valid only for one line
+    * <code>
+ls ~ foo >s2.out 2>s2.err
+ls ~ foo
+</code>
+
+  * Persistent redirection can be made by command ''exec''
+    * <code>
+exec >std.out 2>std.err
+ls ~ foo
+date
+</code>
+
+
+===== Standard Input/Output III =====
+
+  * Use file /dev/null to discard the command output
+    * ''ls . foo 1>/dev/null''
+  * Outputs and inputs can be concatenated
+    * ''man ls | cat -n | less''
+  * Output redirection by symbol ''>'' creates/overwrites file
+  * Output redirection by symbols ''>''''>'' creates/appends to the end of file
+
+===== Unix filters – overview =====
+
+{{:tutorials:05:filters.png?700|}}
+  * tee
+  * cat, split
+  * head, tail
+  * cut, paste
+  * sort, uniq
+  * diff, patch
+  * cmp, comm
+
+
+===== tee =====
+
+  * Replicate  //stdout// to files
+    * Option: ''-a'' ... appends to the end of file 
+    * <code>
+ls -l | tee file.tee | wc -l
+date | tee -a file.tee | wc
+cat file.tee
+</code>
+
+{{:tutorials:05:tee.png|}}
+
+===== split =====
+
+  * Splitting and joining of binary file  //(use TAB to save your time!)//
+    * <code>
+cp /usr/share/gdm/themes/Sun-glass/screenshot.jpg .
+split -b 1k screenshot.jpg
+cat xa? > ~/screenshot.new
+display screenshot.new
+</code>
+  * Splitting and joining of text file 
+    * Option: ''-a'' ... defines the length of suffix
+    * the 2. //optional// argument defines prefix
+    * If the file name is ''-'', //stdin// is read
+    * <code>
+man bash | cat -n > man.file
+split -l 100 man.file
+cat xae
+man bash | cat -n | split -l 10
+man bash | cat -n | split -l 10 -a 3 - man.file.
+</code>
+
+===== head, tail =====
+
+{{:tutorials:05:head.png|}}
+
+  * Printing of the n-th line (15)
+    * <code>
+head -15 man.file | tail -1
+tail +15 man.file | head -1
+</code>
+
+  * Printing of m lines starting from the n-th line (15,3)
+    * <code>
+head -17 man.file | tail -3
+tail +15 man.file | head -3
+</code>
+
+  * Follow as the file grows  //(before start the generator from your home directory)//
+    * <code>
+/home/courses/BIUOS/public/biuos-cv05-generator.sh > logfile
+tail -f logfile
+</code>
+
+===== cut, paste =====
+
+  * Exctract the //username//, //UID// and //realname(comment)// from the first 20 lines of command ''ypcat passwd''
+    * <code>
+pass=`ypcat passwd | head -20 | cut -d: -f1,3,5`
+echo "$pass" | cut -d: -f1 > pass.user
+echo "$pass" | cut -d: -f2 > pass.uid
+echo "$pass" | cut -d: -f3 > pass.name
+</code>
+
+  * Merge  //realname(comment)//, //username// and //UID//
+    * <code>
+paste -d ":" pass.{name,user,uid}
+paste -d ":|" pass.{name,user,uid}
+</code>
+
+
+===== sort, uniq =====
+
+  * Print the maximal //UID// from ''ypcat passwd''
+    * <code>
+ypcat passwd | cut -d: -f3 | sort | tail -1
+ypcat passwd | cut -d: -f3 | sort -n | tail -1
+</code>
+
+  * Sort the output of ''ypcat passwd'' by //UID//
+    * <code>
+ypcat passwd | head -20 | sort -n -t: -k3,3
+</code>
+
+  * Sort alphabetically words from the output of ''man man'' 
+    * <code>
+man man | tr '[A-Z]' '[a-z]' | \
+tr -cs '[a-z]' '[\n*]' | sort | uniq
+</code>
+
+
+===== diff =====
+
+  * Print deferences of two files
+    * Standard format: c = change, a = append, d = delete
+    * <code>
+diff /etc/init.d/nscd /etc/init.d/ldap.client
+</code>
+
+{{:tutorials:05:diff.png|}}
+
+
+===== patch =====
+
+  * Save differences in the format of command patch
+    * <code>
+diff -u /etc/init.d/{nscd,ldap.client} > nscd.patch
+</code>
+
+  * Copy original file
+    * <code>
+cp /etc/init.d/nscd .
+</code>
+
+  * Apply deferences to the original file
+    * <code>
+patch nscd < nscd.patch
+diff /etc/init.d/ldap.client nscd
+</code>
+
+  * Rollback to the original file
+    * <code>
+patch -R nscd < nscd.patch
+</code>
+
+
+===== cmp, comm =====
+
+  * Compare two binary file
+    * <code>
+f1=/usr/share/gdm/themes/Sun-glass/screenshot.jpg
+f2=/home/courses/BIUOS/public/biuos-c05-screenshot.jpg
+cmp $f1 $f2
+cmp -l $f1 $f2
+</code>
+
+  * Find different and common lines
+    * <code>
+cd /home/courses/BIUOS/public
+comm biuos-c05-c1 biuos-c05-c2
+comm -23 biuos-c05-c1 biuos-c05-c2
+comm -12 biuos-c05-c1 biuos-c05-c2 | comm -12 - biuos-c05-c3
+</code>
+
+
+
+===== Homework =====
+
+  * Create alias lss, which prints names of files in the working directory sorted by file size.
+  * Create shell script that prints names of the 10 largest files (including their sizes) which are in your home  directory and all subdirectories.
+  * Patching of source code:
+    * Create directory with at least 5 files. (E.g. C project: files *.c, *.h, Makefile, ...)
+    * Fill the files with some text (e.g. output of command ls, date, man, ...).
+    * Create copy of this directory.
+    * Modify some files in new directory. Remove/create some old/new one.
+    * Use command ''diff'' to compare both directories.
+    * Save the output of command ''diff'' to the file.
+    * This file use in program ''patch'' to create from old directory structure new directory structure. 
+
+
+====== + BONUS ======
+
+===== Filter concatenation   + =====
+
+  * Compare words from the first 300 lines of the output of command man man, which are not in file /usr/dict/words
+
+    * <code>
+man man \
+| head -300 \
+| tr '[A-Z]' '[a-z]' \
+| tr -cs '[a-z]' '[\n*]' \
+| sort \
+| uniq \
+| comm -23 - /usr/dict/words \
+| tee unknown.words \
+| wc -l
+</code>

@@ -1,0 +1,127 @@
+~~SLIDESHOW~~
+
+====== Tutorial 4 — TEST + File system (FS) ======
+
+===== FS information – df =====
+
+  * Where is located your home directory?
+  * How many disk space is used/free?
+  * In which directories you can find user commands?
+  * What is in directory /dev?
+  
+
+===== File information – ls =====
+
+  * Who is the owner of file /etc/passwd?
+  * What is the size of file /etc/shadow?
+  * What is the owner group of your home directory?
+  * Which access permitions are set to root directory?
+  * What i-node are assigned to files /etc/group, /, /opt/sfw, /home/stud, /usr/local?
+  * How to stop command: ls -Rl /
+
+===== Directory information – du =====
+
+  * How many bytes does your home directory occupy?
+  * How many space does every subdirectory ocuppy in the root directory?
+
+===== Directory information – du =====
+  * What is the difference in following commands?
+  * <code>
+cp /home/courses/BIUOS/public/biuos-c04.tgz .
+gtar xf biuos-c04.tgz
+cd cviceni04
+du -k *
+du -k
+du -kL
+ls -lsi
+</code>
+
+
+===== File information – file =====
+
+  * Determine file type of the following files:
+    * /usr/bin/at
+    * /usr/sbin/shutdown
+    * /etc/nsswitch.conf
+    * /dev/zero
+
+===== File information – cat,less,more,od,strings =====
+
+  * How to display content of files
+    * /usr/bin/at
+    * /usr/sbin/shutdown
+    * /etc/nsswitch.conf
+    * /dev/zero
+
+===== File creation – touch =====
+
+  * Create all possible empty files with prefixes a,b,c,d and suffixes c,tar,jar.
+
+===== Directory creation – mkdir =====
+
+  * In your home directory create subdirectory UOS with subdirectories 01,02,...,10
+
+
+===== Copy of files/directories – cp =====
+
+  * What doing the folowing commands?
+  * <code>
+cp .bashrc my_bashrc
+cp my_bashrc cviceni03
+cp -r cviceni04{,.bak}
+cp -r cviceni04 cviceni04.bak
+</code>
+
+===== File moving/renaming – mv =====
+
+  * What doing the folowing commands?
+  * <code>
+mv my_bashrc my_bashrc.old
+mv my_bashrc.old cviceni04
+mv cviceni04{,.old}
+mv cviceni04.old/my_bashrc.old /tmp/$USER-bashrc
+</code>
+
+
+===== Removing – rm =====
+
+  * What doing the folowing commands?
+  * <code>
+rm /tmp/$USER-bashrc
+rm -r cviceni04.bak
+\rm -r cviceni04.bak
+rm -r *
+rm -r / tmp/nejaky_adresar
+</code>
+
+
+===== Removing – rmdir =====
+
+  * What doing the folowing commands?
+  * <code>
+cp -r cviceni04.old cviceni04
+cd cviceni04
+rm *
+cd ..
+rmdir cviceni04
+</code>
+===== Directory creation – ln =====
+
+  * Copy file /etc/passwd to your home directory
+  * In your home directory create hard link HL-passwd to file ~/passwd.
+  * In your home directory create hard link HL-group to file /etc/group.
+  * In your home directory create soft link SL-passwd to file ~/passwd.
+  * In your home directory create soft link SL-group to file /etc/group.
+
+
+===== Homework =====
+
+  * Using editor (e.g. ''joe'', ''gedit'') create script which: \\ \\ {{:private:tutorials:03:adr.png|}}
+    - Creates directory (temp-RRMMDD).
+    - Copies to this directory any two files s1—s3.
+    - Lists files in directories and dtermines their type.
+    - Removes this directories
+  * Hint:
+    * the first line of script: ''#!/bin/bash''
+    * set sript permissions by command: ''chmod +x script''
+

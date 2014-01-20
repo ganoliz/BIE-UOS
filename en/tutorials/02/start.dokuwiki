@@ -1,0 +1,130 @@
+~~SLIDESHOW~~
+
+====== Tutorial 2 — Command line interface ======
+
+===== Task =====
+
+  * Write the **current** date and time by the command date in the following format: <code>Today is Sunday, 03.10.2010 (week 40)
+The time is 17:13:57 [MEST].</code>
+
+  * Hint:
+    * ''man date''
+    * ''export LC_TIME=C''
+
+===== CLI Parsing Order =====
+
+  - Quoting
+  - Comments
+  - Lists, Pipelines
+  - Special characters
+  - Word splitting
+  - Pathname expansion
+  - I/O Redirection
+  - Command Execution
+
+===== CLI Parsing Order I =====
+
+  * Quoting \\  ' ', ''“ “'', ''\''
+  * Comments \\ ''#''
+    * ''date # ls''
+  * Lists and Pipelines \\ '';'', ''&'', ''&&'', ''|''
+    * ''date | wc -wc'' 
+
+===== CLI Parsing Order II =====
+
+  * Special character expansion \\ ''{ }'', ''~'', ''$'', ''` `'', ''$( )'', ''$(''''('' ''))''
+    * Brace expansion
+      * ''touch s{1,2,3}{.txt,}'' \\ Create (set modify time) files: ''s1.txt s1 s2.txt s2 s3.txt s3''
+    * Tilde expansion
+      * ''ls ~ ~barinkl/..'' \\ List the home directory and the parent directory of home directory of user barinkl (if you have access permission)
+    * Parameter/variable expansion
+      * ''echo $PATH $0 ${USER}2'' \\ Display content of variables ''PATH'', ''0'' and ''USER2''
+      * ''PATH=$PATH:$HOME/scripts'' \\ Add name of directory scripts in your home directory to the content of variable ''PATH'' 
+
+===== CLI Parsing Order III =====
+
+  * Special character expansion \\ ''{ }'', ''~'', ''$'', ''` `'', ''$( )'', ''$(''''('' ''))''
+    * Command substitution
+      * ''OS=`uname -sr`'' \\ Output of command ''uname -sr'' is saved to variable OS.
+    * Arithmetic expansion
+      * ''sleep $(''''(5*60*60)) ; echo “5 hours elepsed.“'' \\ After 5 hours the message will be writen to the standard output.
+  * Word splitting \\ ''IFS'': //space tab newline//
+      * ''echo `ls -l`'' \\ List the current directory (without formating). 
+
+===== CLI Parsing Order IV =====
+
+  * Pathname expansion \\ ''*'', ''?'', ''[ ]''
+    * <code>cd /usr/bin
+ls *q
+ls q*
+ls *q*
+ls */*
+ls ?
+ls ??
+ls [a-j]?
+ls [!a-j]?
+ls ?[^a-j]</code>
+
+===== CLI Parsing Order V =====
+
+  * I/O Redirection \\ ''>'', ''<'', ''>''''>'', ''<''''<END''
+    * <code>ls -l > s1 ; cat s1
+date > s1 ; cat s1
+date >> s1 ; cat s1
+
+cat <<KONEC > s1
+Today: `date` in directory $PWD.
+END</code>
+
+===== CLI Parsing Order VI =====
+
+  * Command execution
+    * ''PATH''
+    * In bash you can use ''TAB''
+    * <code>type ls
+type -p ls
+/usr/ucb/whereis ls
+/usr/bin/which ls
+echo $PATH</code>
+
+
+
+===== Usage of characters $ \ “ ' ` =====
+
+  * Try the following commands
+    * ''echo PWD is    $PWD''
+    * ''echo PWD\ is\ \ \ $PWD''
+    * ''echo "''''PWD is   $PWD"''
+    * ''echo "''''\$PWD is        $PWD"''
+    * ''echo '\$PWD is         $PWD' ''
+
+===== Usage of characters $ \ “ ' ` =====
+
+  * What happens if you execute the following commands?
+    * ''cmd=who''
+    * ''echo cmd''
+    * ''echo $cmd''
+    * ''echo "''''$cmd"''
+    * ''echo '$cmd' ''
+    * ''echo `$cmd`''
+
+  * How protect output format of command who?
+    * ''echo "''''`$cmd`"''
+
+====== + Bonus ======
+
+
+===== Command less + =====
+
+|  q|…|quit|
+|  f,SPACE|…|forward|
+|  b|…|backward|
+|  g|…|begin (n-th row)|
+|  G|…|end (n-th row)|
+|  /str|…|Search forward for (N-th) matching line|
+|  ?str|…|Search backward for (N-th) matching line|
+|  n|…|Repeat previous search|
+|  N|…| Repeat previous search in reverse direction|
+|  =|…|Print info about current file|
+|  v|…|Edit the current file|
+

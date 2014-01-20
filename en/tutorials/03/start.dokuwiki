@@ -1,0 +1,57 @@
+~~SLIDESHOW~~
+
+====== Tutorial 3 — Shell variables, text editors ======
+
+===== Variables =====
+
+  * Shell uses two types of variables 
+    * Local - variables that are not exported to subprocesses
+    * Global - variables that are exported to subprocesses
+
+===== Variables - action =====
+
+  * Set a variable 
+    * ''PAGER=less ; man man ; PAGER=less man man''
+  * Display value stored in variable
+    * ''echo $PAGER''
+  * Display local / global variables
+    * ''set ; env ; export -p''
+  * Unset variable
+    * ''unset PAGER''
+  * Export variable
+    * <code>export PAGER       
+export PAGER=less  (except of sh)</code>
+
+===== Aliasing =====
+
+  * An alias is a shorthand notation to enable you to customize and abbreviate commands.
+  * Aliases are not exported to subshells.
+  * Setup an alias: ''alias ll='ls -l' ; alias la='ll -a' ''
+  * Display all aliases: ''alias ; alias ll; type ll''
+  * Unset alias: ''unalias ll''
+
+
+===== Text editors =====
+
+  * ''joe'' \\ ASCII text screen editor, help ''^KH''
+  * ''vi'' \\ ASCII text screen editor
+  * ''gedit'' \\ graphical text screen editor
+  * ''emacs'' \\ graphical/ASCII text screen editor
+
+===== Prompt + =====
+
+  * Variables PS1 and PS4
+    * ''PS1''	primary prompt string
+    * ''PS2''	secondary prompt (used in multi-linecommands)
+    * ''PS3''	prompt string in ''select'' loop
+    * ''PS4''	prompt string for execution trace (''set -x'')
+  * Backslash-escaped  special  characters 
+
+|  ''\d'' |…| the date  |
+|  ''\t'' |…| the time (HH:MM:SS)  |
+|  ''\A'' |…| the time (HH:MM)  |
+|  ''\h'' |…| hostname |
+|  ''\u'' |…| username  |
+|  ''\w'' |…| working directory |
+
+
