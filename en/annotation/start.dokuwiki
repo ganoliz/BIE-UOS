@@ -2,7 +2,6 @@
 
 This module is introduction to the Unix Operating Systems on the user level.
 
-The lectures describe the basic information about CLI, processes/threads management, memory management, file system management,
-network management, user account management. 
+The lectures describe the basic information about command line interface (CLI), processes/threads management, memory management, file system management. 
 
 During the labs the student gains basic experience from Unix OS (command lines, editors, regular expressions,...).
