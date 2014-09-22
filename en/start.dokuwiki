@@ -1,17 +1,16 @@
 ~~NOTOC~~
 
-====== BIE-UOS - Introduction to Operating Systems ======
+====== BIE-PS1 - Programming in Shell 1 ======
 
 //**Official web page**//
 
   * teachers: [[en:teacher:start]]
 
-  * **Timetable**:  https://timetable.fit.cvut.cz/public/cz/predmety/14/49/p1449006.html
+  * **Timetable**:  https://timetable.fit.cvut.cz/public/en/predmety/31/61/p3161206.html
 
 ====== News ======
 
-  * The 3rd test takes place on the 9th December, 16:15-17:45 in T9:351.
-  * Assessment test takes place on the 16th December, 14:30-16:00 in T9:348.
+
 
  
  
@@ -22,21 +21,19 @@
 
   * **This module is finished by the graded assessment.**
 
-  * During the semestr there will be four tests
-    * 15 minut [15 points]: (4th week)
-    * 20 minut [20 points]: (7th, 10th week)
-    * **assessment test**: 70 minutes [45 points]: (12th weeks )
+  * During the winter term there will be four tests
+    * 15 minutes [15 points]: (5th week)
+    * 20 minutes [20 points]: (8th, 11th week)
+    * **assessment test**: 70 minutes [45 points]: (13th weeks )
 
-  * **Necessary condition for the assessment test**
-    *  at least 20 points from all small tests.
+  * **Necessary condition for the assessment test** is
+    *  at least 20 points from all tests.
 
-  * Absence from the test means 0 points from the test (exception is only serious reason).  
+  * Absence from the test means 0 points from the test (exception is the only serious reason).  
 
 
 ===== Evaluation scale =====
-Evaluation scale is according to [[http://www.cvut.cz/pracoviste/pravni-odbor/documents/studyandexaminationcode.pdf|The Study and Examination Code for Students of CTU in Prague]].
-([[http://intranet.cvut.cz/current-students/resolveuid/e4fe33a0e9634469ef709f3803d784dd|An alternate link]])
-
+Evaluation scale is according to [[http://intranet.cvut.cz/current-students/resolveuid/e4fe33a0e9634469ef709f3803d784dd|The Study and Examination Code for Students of CTU in Prague]].
 
 ^ Grade \\ ECTS ^ Points  ^ Evaluation in words ^
 | A      | more than 89  | excellent    |
