@@ -32,8 +32,6 @@ Module consists of lectures, seminars and homework (5 ECTS credits ~ 150 hours p
 
   * Operating system: SunOS 5.10 (Solaris 10)
   * Servers: fray1, fray3 [.fit.cvut.cz]
-  * Local login to CDE or JDE(GNOME)
-    * usage of USB flash disk 
   * Remote connection by SSH protocol
   * Shared home directory
 
@@ -81,7 +79,7 @@ SHELL = command line interpreter
   * Example: ''ls -lR /usr/bin /tmp''
     * list
     * long, recursively 
-    * directory ''/usr/bin'' and ''/tmp''
+    * directories ''/usr/bin'' and ''/tmp''
 </note>
 
 
