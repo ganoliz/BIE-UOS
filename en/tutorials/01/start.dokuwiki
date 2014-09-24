@@ -46,36 +46,10 @@ Module consists of lectures, seminars and homework (5 ECTS credits ~ 150 hours p
   * GUI
   * Remote connection \\ (telnet/ssh)
 
-===== Login and Logout =====
 
-  * Login to GUI \\ {{:tutorials:01:login.png|}}
-    * Enter login name (e.g. novakx9)
-    * Enter login password (e.g. bF1mps.z)
 
-  * Logout from GUI (CDE) \\ {{:tutorials:01:bar.png|}}
 
-===== How to set enviroment =====
 
-{{:tutorials:01:locale.png|}}
-  * ''Options'' → ''Quick login'' → ''OFF''
-  * Entering login name and password
-  * ''Options'' → ''Language'' → ''C to en_US...'' → ''cs_CZ.ISO8859-2...''
-  * Keyboard layout setting  \\ {{:tutorials:01:bar2.png|}}
-
-===== Workin with GUI =====
-
-{{:tutorials:01:ss1.png?700|}}
-  * Desktop environment 
-    * CDE
-    * JDS (GNOME)
-    * KDE
-  * Window manager
-    * AfterStep
-    * Blackbox
-    * Enlightenment
-    * Motif
-    * Window Maker
-    * XFCE
 
 ===== Working with CLI =====
 
