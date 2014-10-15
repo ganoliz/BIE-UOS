@@ -2,7 +2,7 @@
 
 ~~SLIDESHOW~~
 
-====== Tutorial 2: Command line interface ======
+====== Tutorial 2 — Command line interface ======
 
 ===== Task =====
 
@@ -129,4 +129,3 @@ echo $PATH</code>
 |  N|…| Repeat previous search in reverse direction|
 |  =|…|Print info about current file|
 |  v|…|Edit the current file|
-
