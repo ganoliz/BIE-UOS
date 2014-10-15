@@ -1,6 +1,10 @@
+{{indexmenu_n>18000}}
+
 ~~SLIDESHOW~~
 
-====== Tutorial 7 — TEST + awk and sed ======
+
+====== Tutorial 8 — TEST + awk and sed ======
+
 
 ===== ??? ✔ =====
 
@@ -108,5 +112,4 @@ END {
     * Use field separator '':''.
     * Add user name of student to every line of file ''seznam.csv''. 
     * Create HTML page containing table with all information from file ''seznam.csv''.
-
 
