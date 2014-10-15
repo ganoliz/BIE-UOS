@@ -1,1 +1,169 @@
-====== Tutorial 13 — Assesment  ======
+{{indexmenu_n>14000}}
+
+~~SLIDESHOW~~
+
+====== Tutorial 4 — Exit status, command test, flow control ======
+
+===== Exit status =====
+
+<code bash>
+PASS=/etc/passwd
+
+• Pattern is found          grep ^root: "$PASS"
+                            echo $?
+• Pattern is not found      grep ^roooot: "$PASS"
+                            echo $?
+• Wrong argument            grep ^root: /etc/foo
+                            echo $?
+• Wrong permissions         ~/.bash_history
+                            echo $?
+• Command not found         winzip
+                            echo $?
+• Exit by signal            ls -lR /     ^C
+                            echo $?
+</code>
+
+
+===== Command test – numbers =====
+
+  * SYNTAXE:
+    * <code bash>test expression
+[ expression ]</code>
+    * <code bash>
+x=5
+test "$x" -eq 5 ; echo $?
+test "$x" -gt 5 ; echo $?
+[ "$x" -ge 5 ] ; echo $?
+</code>
+    *<code bash>
+grep ^root: /etc/passwd >/dev/null
+[ $? -eq 0 ] ; echo $?
+</code>
+  * **!!!**
+    * ''[$x -ge 5] ; [ $x -ne a ] ; [ $x -lt $y ]''
+
+
+===== test – strings, logical operators =====
+
+  * <code bash>
+[ -z "$PATH" ] ; echo $?
+[ -n "$PATH" ] ; echo $?
+
+[ ! \( $PWD == $HOME -o $PWD == /tmp \) ] ; echo $?
+</code>
+
+===== test – files =====
+
+  * Try on servers ''fray1/fray3'' (in Solaris OS) <code bash>
+[ -e /usr/bin/acroread.ORIG ] ; echo $?
+
+[ -f /usr/bin/acroread.ORIG ] ; echo $?
+
+[ -L /usr/bin/acroread.ORIG ] ; echo $?
+
+[ -x /usr/bin/acroread.ORIG ] ; echo $?
+
+[ -s /usr/bin/acroread.ORIG ] ; echo $?
+
+[ /usr/xpg4/bin/grep -ef /usr/xpg4/bin/egrep ] ; echo $?
+</code>
+
+===== Command if =====
+
+  * Command if let you decide whether to perform an action or not, this decision is taken by exit status of expression (list of commands).
+    * <code bash>
+if tar xvf archiv.tar
+then
+  if rm archiv.tar; then
+    echo ”Archive has been extracted and removed” >> log
+  fi
+else
+  echo ”Archive cannot be extracted!” >&2
+fi
+</code>
+
+  * Example of logical  negation  
+    * <code bash>
+if ! [ -d ~/adr ]; then
+  cd ~
+  mkdir adr && cd adr
+fi
+</code>
+
+===== Loop for I =====
+
+  * Listing of names of regular files (or links)
+<code bash>
+for i in *
+do
+  [ -f "$i" ] && echo "$i"
+done
+</code>
+  * List of names of regular files (without links)
+<code bash>
+for i in *
+do
+  [ -f "$i" -a \! -L "$i" ] && echo "$i"
+done
+</code>
+
+===== Loop for II =====
+
+<code bash>
+oldIFS=$IFS
+IFS=:
+cmd="ls"
+type "$cmd"
+for dir in $PATH
+do
+  if [ -f "$dir/$cmd" -a -x "$dir/$cmd" ]
+  then ls -l "$dir/$cmd"
+  fi
+done
+IFS=$oldIFS
+</code>
+
+
+
+===== Homework =====
+  * Create script that reads file name (including path) from the file ~/.filename. For this file name verify the following properties:
+    * existence and accessibility of the path (directories)
+    * existence of file,
+    * the file is a regular file,
+    * you can read and execute this file,
+    * file is not empty.
+
+
+====== + BONUS ======
+
+===== Extended test – ''[[''  '']]'' + =====
+
+  * <code bash>
+[ ! \( $PWD == $HOME -o $PWD == /tmp \) ]
+[[ ! ( $PWD == $HOME || $PWD == /tmp ) ]]
+
+[ text_x \> text_a ]
+[[ text_x > text_a ]]
+
+[[ $SHELL == *bash ]]
+
+line=`head -n 1 /etc/passwd`
+[[ "$line" =~ ^root: ]]
+</code>
+
+
+===== Block of commands + =====
+
+  * Block of commands is executed in the current shell
+    * <code bash>
+ls ; date ; who > s1
+{ ls ; date ; who; } > s1
+{ sleep 60 ; w > users; } &
+</code>
+  * Block of commands is executed in the subshell
+    * <code bash>
+cd /tmp ; pwd
+cd
+( cd /tmp; pwd ) ; pwd
+x=5; ( x=7; echo $x ) ; echo $x
+</code>
