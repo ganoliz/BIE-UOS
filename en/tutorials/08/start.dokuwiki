@@ -1,5 +1,8 @@
+{{indexmenu_n>19000}}
+
 ~~SLIDESHOW~~
-====== Tutorial 8 — Access permissions and command find ======
+
+====== Tutorial 9 — Access permissions and command find ======
 
 ===== awk - task 1 =====
   * Print the number of processes running under the efective identity root and number of memory (RSS) allocated by these processes.
