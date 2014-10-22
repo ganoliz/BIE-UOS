@@ -12,7 +12,7 @@
   * What is in directory /dev?
   
 
-===== File information – ls =====
+===== File information – ls or stat=====
 
   * Who is the owner of file /etc/passwd?
   * What is the size of file /etc/shadow?
@@ -29,15 +29,20 @@
 ===== Directory information – du =====
   * What is the difference in following commands?
   * <code>
-cp /home/courses/BIUOS/public/biuos-c04.tgz .
-gtar xf biuos-c04.tgz
-cd cviceni04
+du
+du -s ~
+du -sh ~
+du -s ~/*
+
+mkdir ~/cviceni05
+cd ~/cviceni05
+cp /home/courses/BIPS1/public/cviceni05.tgz ..
+gtar xf ../cviceni05.tgz
 du -k *
 du -k
 du -kL
 ls -lsi
 </code>
-
 
 ===== File information – file =====
 
@@ -61,7 +66,7 @@ ls -lsi
 
 ===== Directory creation – mkdir =====
 
-  * In your home directory create subdirectory UOS with subdirectories 01,02,...,10
+  * In your home directory create subdirectory PS1 with subdirectories 01,02,...,10
 
 
 ===== Copy of files/directories – cp =====
