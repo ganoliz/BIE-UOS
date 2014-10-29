@@ -118,7 +118,7 @@ tail +15 man.file | head -3
 
   * Follow as the file grows  //(before start the generator from your home directory)//
     * <code>
-/home/courses/BIUOS/public/biuos-cv05-generator.sh > logfile
+/home/courses/BIPS1/public/06/generator.sh > logfile
 tail -f logfile
 </code>
 
@@ -199,17 +199,17 @@ patch -R nscd < nscd.patch
   * Compare two binary file
     * <code>
 f1=/usr/share/gdm/themes/Sun-glass/screenshot.jpg
-f2=/home/courses/BIUOS/public/biuos-c05-screenshot.jpg
+f2=/home/courses/BIPS1/public/06/screenshot.jpg
 cmp $f1 $f2
 cmp -l $f1 $f2
 </code>
 
   * Find different and common lines
     * <code>
-cd /home/courses/BIUOS/public
-comm biuos-c05-c1 biuos-c05-c2
-comm -23 biuos-c05-c1 biuos-c05-c2
-comm -12 biuos-c05-c1 biuos-c05-c2 | comm -12 - biuos-c05-c3
+cd /home/courses/BIPS1/public/06/
+comm c1.txt c2.txt
+comm -23 c1.txt c2.txt
+comm -12 c1.txt c2.txt | comm -12 - c3.txt
 </code>
 
 
