@@ -1,36 +1,5 @@
-{{indexmenu_n>20000}}
+{{indexmenu_n>20001}}
 
-~~SLIDESHOW~~
+====== Tasks 10 ======
 
-====== Tutorial 10 — Data archivation and data compression ======
-
-===== tar - task 1 =====
-  * First create directory ~/uos/cv09.
-  * Then create tar archive ~/uos/cv09/rc2_d.tar of direcory /etc/rc2.d.
-
-===== tar - task 2 =====
-  * List the content of the archive ~/uos/cv09/rc2_d.tar.
-
-===== tar - task 3 =====
-  * Compress the archive ~/uos/cv09/rc2_d.tar by utility gzip.
-  * What size have the compresses archive?
-  * It is possible to get the better compress ration?
-
-===== tar - task 4 =====
-  * Extract the content of archive ~/uos/cv09/rc2_d.tar into directory ~/uos/cv09.
-
-
-===== tar - task 5 =====
-  * In file /tmp/List-all.txt there is a list of files from /etc/rcS.d that should be move to the tar arhive ~/uos/cv09/arch1.tar.
-  * Create this arhive and compress it too.
-  * File /tmp/List.txt can have the following content:
-<code>  
-        ./rcS.d/K15imq
-        ./rcS.d/K27boot.server
-           ...
-</code>
-===== tar - task 6 =====
-  * Extract from archive ~/uos/cv09/arch1.tar.gz only files listed in /tmp/List-subset.txt (one file name per one line) into directory ~/uos/cv09/rcS.d.
-
-===== tar - task 7 =====
-  * Move all not empty header files (with suffix .h) modified during last 365 days from /usr (recursively) to archive ~/usr/cv09/header.tar.
+{{:en:tutorials:09:bie-ps1-c10-task.pdf|}}
