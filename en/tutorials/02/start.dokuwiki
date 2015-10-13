@@ -4,14 +4,23 @@
 
 ====== Tutorial 2 — Command line interface ======
 
-===== Task =====
+===== Task 1 - date and time =====
 
   * Write the **current** date and time by the command date in the following format: <code>Today is Sunday, 03.10.2010 (week 40)
 The time is 17:13:57 [MEST].</code>
 
   * Hint:
     * ''man date''
-    * ''export LC_TIME=C''
+    * ''export LC_ALL=C''
+
+===== Task 2 - remote access =====
+
+  * Execute the command from the previous task on server fray1.fit.cvut.cz.
+  * Copy the local file /etc/group to your home directory on server fray1.fit.cvut.cz.
+  * Remotely determine the size of the transferred file. \\ \\ Hint:
+    * ''man ssh''
+    * ''man scp''
+
 
 ===== CLI Parsing Order =====
 
