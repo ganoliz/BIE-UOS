@@ -62,6 +62,25 @@ The time is 17:13:57 [MEST].</code>
   * Word splitting \\ ''IFS'': //space tab newline//
       * ''echo `ls -l`'' \\ List the current directory (without formating). 
 
+===== ??? ✔ =====
+
+  * What is the difference among these commands?
+<code>
+$PATH
+</code>
+<code>
+echo $PATH
+</code>
+<code>
+echo "$PATH"
+</code>
+<code>
+echo -n '$PATH'
+</code>
+<code>
+printf "%s" "$PATH"
+</code>
+
 ===== CLI Parsing Order IV =====
 
   * Pathname expansion \\ ''*'', ''?'', ''[ ]''
