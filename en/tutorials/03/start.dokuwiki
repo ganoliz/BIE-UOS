@@ -7,8 +7,8 @@
 ===== Variables =====
 
   * Shell uses two types of variables 
-    * Local - variables that are not exported to subprocesses
-    * Global - variables that are exported to subprocesses
+    * **Local variables** - variables that are not exported to subprocesses
+    * **Environment variables** - variables that are exported to subprocesses
 
 ===== Variables =====
 
@@ -26,6 +26,21 @@ export PAGER=less  (except of sh)</code>
 
   * Permanent variable settings
     * Add the setting to the shell configuration file (e.g. ~/.profile or ~/.bash_profile).
+
+===== Important Bourne Shell variables =====
+
+''PATH''
+
+''IFS''
+
+''PS1''
+
+===== ??? ✔ =====
+
+  * Where we find the description (documentation) of variable PAGER?
+  * Does it make sense to export it?
+  * Where can we find the description (documentation) of variable PS1?
+  * Does it make sense to export it?
 
 ===== Aliasing =====
 
@@ -59,5 +74,4 @@ export PAGER=less  (except of sh)</code>
 |  ''\h'' |…| hostname |
 |  ''\u'' |…| username  |
 |  ''\w'' |…| working directory |
-
 
