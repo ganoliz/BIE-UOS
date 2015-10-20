@@ -10,7 +10,7 @@
     * Local - variables that are not exported to subprocesses
     * Global - variables that are exported to subprocesses
 
-===== Variables - action =====
+===== Variables =====
 
   * Set a variable 
     * ''PAGER=less ; man man ; PAGER=less man man''
@@ -24,6 +24,9 @@
     * <code>export PAGER       
 export PAGER=less  (except of sh)</code>
 
+  * Permanent variable settings
+    * Add the setting to the shell configuration file (e.g. ~/.profile or ~/.bash_profile).
+
 ===== Aliasing =====
 
   * An alias is a shorthand notation to enable you to customize and abbreviate commands.
@@ -31,7 +34,8 @@ export PAGER=less  (except of sh)</code>
   * Setup an alias: ''alias ll='ls -l' ; alias la='ll -a' ''
   * Display all aliases: ''alias ; alias ll; type ll''
   * Unset alias: ''unalias ll''
-
+  * Permanent alias settings
+    *Add the setting to the shell configuration file (e.g. ~/.bashrc).
 
 ===== Text editors =====
 
