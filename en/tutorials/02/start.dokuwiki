@@ -38,7 +38,7 @@ The time is 17:13:57 [MEST].</code>
   * Quoting \\  ' ', ''“ “'', ''\''
   * Comments \\ ''#''
     * ''date # ls''
-  * Lists and Pipelines \\ '';'', ''&'', ''&&'', ''|''
+  * Lists and Pipelines \\ '';'', ''&'', ''|''
     * ''date | wc -wc'' 
 
 ===== CLI Parsing Order II =====
