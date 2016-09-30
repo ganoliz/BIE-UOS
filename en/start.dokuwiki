@@ -9,18 +9,18 @@
   * **Timetable**:  https://timetable.fit.cvut.cz/public/en/predmety/31/61/p3161206.html
 
 ====== News ======
-
+/*
   * **Alternative Test** will take place 18.2.2016, from 14:00, in T9:348. subscribe to this term via https://kos.is.cvut.cz. This test is designed for students who didn't write some of the tests during the winter term. That is not the repair test (retake test)!!!
 
   * Consultation and the write of module results into study reports 19.1.2016 from 16:45-18:00 in T9:348/T9:349 (Not necessary, your results are in KOS).
 
-/*   * **Test 4** will take place 6.1.2016, from 12:45, in T9:349. */
+   * **Test 4** will take place 6.1.2016, from 12:45, in T9:349. */
 
 /*
    * **Test 3** will take place 16.12.2015, from 12:45, in T9:349. Repeat 1) regular expressions,  grep, sed, awk, 2) access permissions, chmod, umask and 3) find.
 */
 
-   * Module BI-ULI (Introduction to Linux, 2 credits)  - auxiliary module especially for beginners. Students can subscribe to this e-learning module until 16.10.2015. Ask the Study Department by email.
+   * Module BI-ULI (Introduction to Linux, 2 credits)  - auxiliary module especially for beginners. Students can subscribe to this e-learning module (by email to the Study Department).
 
 
 
@@ -36,16 +36,15 @@
 
   * **This module is finished by the graded assessment.**
 
-  * During the winter term there will be four tests
-    * 15 minutes [15 points]: (5th week)
-    * 20 minutes [20 points]: (8th, 11th week)
-    * **assessment test**: 70 minutes [45 points]: (13th weeks )
+  * During the winter term there will be four tests (30 minutes, 25 points)
+    * 1st test: 26.10.2016 (the 5th week),
+    * 2nd test: 23.11.2016 (the 8th week),
+    * 3rd test: 14.12.2016 (the 11th week),
+    * 4th test: 4.1.2017(the 13th week).
 
-  * **Necessary condition for the assessment test** is
-    *  at least 20 points from the first three small tests.
+  * **Absence from the test means 0 points from the test (exception is the only serious reason).**
 
-  * Absence from the test means 0 points from the test (exception is the only serious reason).  
-
+  * The correction / replacement test will be announced during the exam period.
 
 ===== Evaluation scale =====
 Evaluation scale is according to [[http://intranet.cvut.cz/current-students/resolveuid/e4fe33a0e9634469ef709f3803d784dd|The Study and Examination Code for Students of CTU in Prague]].
