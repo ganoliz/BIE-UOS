@@ -1,9 +1,9 @@
-{{indexmenu_n>16000}}
+{{indexmenu_n>15000}}
 
 
-====== Tutorial 6 — Standard Input/Output, UNIX filters ======
+====== Tutorial 5 — File system ======
 
-{{:en:tutorials:05:bie-ps1-c06-filters-questions.pdf|}}
+{{:en:tutorials:05:bie-ps1-c05-fs-questions.pdf|}}
 
-{{:en:tutorials:05:bie-ps1-c06-filters-solutions.pdf|}}
+{{:en:tutorials:05:bie-ps1-c05-fs-solutions.pdf|}}
 
