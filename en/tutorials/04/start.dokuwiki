@@ -1,7 +1,9 @@
-{{indexmenu_n>15000}}
+{{indexmenu_n>14000}}
 
-====== Tutorial 5 — File system (FS) ======
+====== Tutorial 4 — Exit status, command test, flow control ======
 
-{{:en:tutorials:04:bie-ps1-c05-fs-questions.pdf|}}
+{{:en:tutorials:13:bie-ps1-c04-flowcontrol-questions.pdf|}}
 
-{{:en:tutorials:04:bie-ps1-c05-fs-solutions.pdf|}}
+{{:en:tutorials:13:bie-ps1-c04-flowcontrol-solutions.pdf|}}
+
+{{:en:tutorials:13:bie-ps1-c04-examples.tar.gz|}}
