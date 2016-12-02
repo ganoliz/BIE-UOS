@@ -1,8 +1,6 @@
 {{indexmenu_n>22000}}
 
-~~SLIDESHOW~~
-
-====== Tutorial 13 — Assesment Test ======
+====== Tutorial 12 — Arithmetic calculations ======
 
 ===== Rules =====
 
@@ -61,4 +59,3 @@ sleep 100
     - Archive directory structure backup-YYMMDD. After successuful archiving copy the archive  under user identity saved in variable ''REMOTE_USER'' to remote host saved in variable ''REMOTE_HOST'' to file ''/tmp/USERNAME.tgz'' (where ''USERNAME'' is name of current user).After successful copying remove the local copy of archive.
 
 <note warning>[[solution|Solution]] is only for verification.</note>
-
