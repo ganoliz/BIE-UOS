@@ -9,12 +9,16 @@
   * **Timetable**:  https://timetable.fit.cvut.cz/public/en/predmety/31/61/p3161206.html
 
 ====== News ======
-/*
-  * **Alternative Test** will take place 18.2.2016, from 14:00, in T9:348. subscribe to this term via https://kos.is.cvut.cz. This test is designed for students who didn't write some of the tests during the winter term. That is not the repair test (retake test)!!!
 
-  * Consultation and the write of module results into study reports 19.1.2016 from 16:45-18:00 in T9:348/T9:349 (Not necessary, your results are in KOS).
+   * **Substitute test** will take place 12.1.2017 and 19.2.2017, 13:00-14:00 in T9:349. **For this test is necessary to book the place in https://kos.cvut.cz !!!**. Repeat all topics. 
+     * Every student, who did not participate in any test 1-4, can write the substitute test.
+     * Every student can retake one test. (This means that the evaluation of the worst test will be replaced with the evaluation of the substitute test.)
 
-   * **Test 4** will take place 6.1.2016, from 12:45, in T9:349. */
+   * **Test 4** will take place 4.1.2017, 14:30-16:00 or 16:15-17:45, in T9:351. Repeat the following topics
+     * processes and threads,
+     * archiving and data compression.
+     * numeric calculations.
+
 
    * **Test 3** will take place 14.12.2016, 14:30-16:00 or 16:15-17:45, in T9:351. Repeat the following topics
      * regular expressions (grep, sed and awk),
