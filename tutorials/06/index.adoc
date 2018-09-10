@@ -1,7 +1,7 @@
-{{indexmenu_n>16000}}
+= Tutorial 6 — Standard Input/Output, UNIX filters 
+:imagesdir: ../../media/tutorials/06
 
-====== Tutorial 6 — Standard Input/Output, UNIX filters ======
 
-{{:en:tutorials:06:bie-ps1-c06-filters-questions.pdf|}}
+link:{imagesdir}/bie-ps1-c06-filters-questions.pdf[bie-ps1-c06-filters-questions.pdf]
 
-{{:en:tutorials:06:bie-ps1-c06-filters-solutions.pdf|}}
+link:{imagesdir}/bie-ps1-c06-filters-solutions.pdf[bie-ps1-c06-filters-solutions.pdf]

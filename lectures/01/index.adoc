@@ -1,8 +1,7 @@
-====== Module structure. Introduction in UNIX. ======
-
-{{:en:lectures:01:bie-ps1-module_structure-01.pdf|}}
-
-{{:en:lectures:01:bie-ps1-p01-introduction-01.pdf|}}
+= Module structure. Introduction in UNIX. 
+:imagesdir: ../../media/lectures/01
 
 
+link:{imagesdir}/bie-ps1-module-structure-01.pdf[bie-ps1-module-structure-01.pdf]
 
+link:{imagesdir}/bie-ps1-p01-introduction-01.pdf[bie-ps1-p01-introduction-01.pdf]

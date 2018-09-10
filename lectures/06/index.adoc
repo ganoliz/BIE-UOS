@@ -1,3 +1,5 @@
-====== Filters  ======
+= Filters  
+:imagesdir: ../../media/lectures/06
 
-{{:en:lectures:06:bie-ps1-p05-filters-01.pdf|}}
+
+link:{imagesdir}/bie-ps1-p05-filters-01.pdf[bie-ps1-p05-filters-01.pdf]

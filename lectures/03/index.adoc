@@ -1,7 +1,7 @@
-====== Exit code. Command test. Flow Control. Loops. ======
-
-{{:en:lectures:03:bie-ps1-p03-flow_control-01.pdf|}}
-
-{{:en:lectures:03:bi-ps1-p03-examples.tar.gz|}}
+= Exit code. Command test. Flow Control. Loops. 
+:imagesdir: ../../media/lectures/03
 
 
+link:{imagesdir}/bie-ps1-p03-flow-control-01.pdf[bie-ps1-p03-flow-control-01.pdf]
+
+link:{imagesdir}/bi-ps1-p03-examples.tar.gz[bi-ps1-p03-examples.tar.gz]

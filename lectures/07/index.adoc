@@ -1,4 +1,5 @@
-====== Regular expressions, grep, awk, sed  ======
+= Regular expressions, grep, awk, sed  
+:imagesdir: ../../media/lectures/07
 
 
-{{:en:lectures:07:bie-ps1-p06-regexpr-01.pdf|}}
+link:{imagesdir}/bie-ps1-p06-regexpr-01.pdf[bie-ps1-p06-regexpr-01.pdf]

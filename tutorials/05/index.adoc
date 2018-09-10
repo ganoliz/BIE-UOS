@@ -1,10 +1,8 @@
-{{indexmenu_n>15000}}
+= Tutorial 5 — File system 
+:imagesdir: ../../media/tutorials/05
 
 
-====== Tutorial 5 — File system ======
-
-{{:en:tutorials:05:bie-ps1-c05-fs-questions.pdf|}}
+link:{imagesdir}/bie-ps1-c05-fs-questions.pdf[bie-ps1-c05-fs-questions.pdf]
 
 
-{{:en:tutorials:05:bie-ps1-c05-fs-solutions.pdf|}}
-
+link:{imagesdir}/bie-ps1-c05-fs-solutions.pdf[bie-ps1-c05-fs-solutions.pdf]

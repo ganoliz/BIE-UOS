@@ -1,29 +1,33 @@
-~~NOTOC~~
-
-{{indexmenu_n>2000}}
-
-====== Classification ======
-
-  * **This module is finished by the graded assessment.**
-
-  * During the semestr there will be four tests (30 minutes, 25 points):
-    * 1st test: 26.10.2016 (the 4th week),
-    * 2nd test: 23.11.2016 (the 8th week),
-    * 3rd test: 14.12.2016 (the 11th week),
-    * 4th test:   4.1.2016 (the 13th week).
-
-  * **Absence from the test means 0 points from the test (exception is only serious reason).**
-
-  * Correction/replacement test will be announced during the exam period.
-
-===== Evaluation scale =====
-Evaluation scale is according to [[http://www.cvut.cz/pracoviste/pravni-odbor/documents/studyandexaminationcode.pdf|The Study and Examination Code for Students of CTU in Prague]].
+= Classification 
+:imagesdir: ../media/classification
 
 
-^ Grade \\ ECTS ^ Points  ^ Evaluation in words ^
-| A      | more than 89  | excellent    |
-| B      | 80 -- 89      | very good    |
-| C      | 70 -- 79      | good         |
-| D      | 60 -- 69      | satisfactory |
-| E      | 50 -- 59      | sufficient   |
-| F      | less than  50 | failed       |
+* *This module is finished by the graded assessment.*
+
+* During the semestr there will be four tests (30 minutes, 25 points):
+** 1st test: 26.10.2016 (the 4th week),
+** 2nd test: 23.11.2016 (the 8th week),
+** 3rd test: 14.12.2016 (the 11th week),
+** 4th test:   4.1.2016 (the 13th week).
+
+* *Absence from the test means 0 points from the test (exception is only serious reason).*
+
+* Correction/replacement test will be announced during the exam period.
+
+
+== Evaluation scale
+
+Evaluation scale is according to http://www.cvut.cz/pracoviste/pravni-odbor/documents/studyandexaminationcode.pdf[The Study and Examination Code for Students of CTU in Prague].
+
+
+[options="autowidth"]
+|====
+<h| Grade +
+ECTS  <h| Points   <h| Evaluation in words
+| A       | more than 89   | excellent
+| B       | 80 – 89       | very good
+| C       | 70 – 79       | good
+| D       | 60 – 69       | satisfactory
+| E       | 50 – 59       | sufficient
+| F       | less than  50  | failed
+|====

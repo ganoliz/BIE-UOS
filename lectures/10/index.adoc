@@ -1,3 +1,5 @@
-====== Command find  ======
+= Command find  
+:imagesdir: ../../media/lectures/10
 
-{{:en:lectures:10:bie-ps1-p08-find.pdf|}}
+
+link:{imagesdir}/bie-ps1-p08-find.pdf[bie-ps1-p08-find.pdf]

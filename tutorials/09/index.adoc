@@ -1,9 +1,8 @@
-{{indexmenu_n>19000}}
-
-====== Tutorial 9 — Access permissions and command find ======
-
-{{:en:tutorials:09:bie-ps1-c09-perm_find-questions.pdf|}}
+= Tutorial 9 — Access permissions and command find 
+:imagesdir: ../../media/tutorials/09
 
 
-{{:en:tutorials:09:bie-ps1-c09-perm_find-solutions.pdf|}}
+link:{imagesdir}/bie-ps1-c09-perm-find-questions.pdf[bie-ps1-c09-perm-find-questions.pdf]
 
+
+link:{imagesdir}/bie-ps1-c09-perm-find-solutions.pdf[bie-ps1-c09-perm-find-solutions.pdf]

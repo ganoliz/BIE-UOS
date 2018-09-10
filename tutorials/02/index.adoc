@@ -1,8 +1,8 @@
-{{indexmenu_n>12000}}
-
-====== Tutorial 2 — Command line interface ======
-
-{{:en:tutorials:02:bie-ps1-c02-cli-questions.pdf|}}
+= Tutorial 2 — Command line interface 
+:imagesdir: ../../media/tutorials/02
 
 
-{{:en:tutorials:02:bie-ps1-c02-cli-solutions.pdf|}}
+link:{imagesdir}/bie-ps1-c02-cli-questions.pdf[bie-ps1-c02-cli-questions.pdf]
+
+
+link:{imagesdir}/bie-ps1-c02-cli-solutions.pdf[bie-ps1-c02-cli-solutions.pdf]

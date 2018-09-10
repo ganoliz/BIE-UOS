@@ -1,10 +1,8 @@
-{{indexmenu_n>17000}}
+= Tutorial 7 — Regular expressions, command grep 
+:imagesdir: ../../media/tutorials/07
 
 
-====== Tutorial 7 — Regular expressions, command grep ======
-
-{{:en:tutorials:07:bie-ps1-c07-regexp-questions.pdf|}}
+link:{imagesdir}/bie-ps1-c07-regexp-questions.pdf[bie-ps1-c07-regexp-questions.pdf]
 
 
-{{:en:tutorials:07:bie-ps1-c07-regexp-solutions.pdf|}}
-
+link:{imagesdir}/bie-ps1-c07-regexp-solutions.pdf[bie-ps1-c07-regexp-solutions.pdf]

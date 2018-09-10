@@ -1,3 +1,5 @@
-====== User identity and access permissions  ======
+= User identity and access permissions  
+:imagesdir: ../../media/lectures/09
 
-{{:en:lectures:09:bie-ps1-p07-perm-01.pdf|}}
+
+link:{imagesdir}/bie-ps1-p07-perm-01.pdf[bie-ps1-p07-perm-01.pdf]

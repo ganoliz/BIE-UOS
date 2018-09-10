@@ -1,4 +1,5 @@
-====== Examples ======
+= Examples 
+:imagesdir: ../../media/lectures/14
 
 
-{{:en:lectures:14:bie-ps1-examples-2017-solutions.pdf|}}
+link:{imagesdir}/bie-ps1-examples-2017-solutions.pdf[bie-ps1-examples-2017-solutions.pdf]

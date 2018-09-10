@@ -1,7 +1,7 @@
-{{indexmenu_n>20000}}
+= Tutorial 10 — Processes and jobs  
+:imagesdir: ../../media/tutorials/10
 
-====== Tutorial 10 — Processes and jobs  ======
 
-{{:en:tutorials:10:bie-ps1-c10-proc-questions.pdf|}}
+link:{imagesdir}/bie-ps1-c10-proc-questions.pdf[bie-ps1-c10-proc-questions.pdf]
 
-{{:en:tutorials:10:bie-ps1-c10-proc-solutions.pdf|}}
+link:{imagesdir}/bie-ps1-c10-proc-solutions.pdf[bie-ps1-c10-proc-solutions.pdf]
