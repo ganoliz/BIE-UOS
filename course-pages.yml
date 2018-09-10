@@ -1,0 +1,11 @@
+course:
+  code: BIE-PS1
+  name: Programming in Shell 1
+semester: B172
+language: en
+navigation:
+  hiddenFiles:
+    - media/*
+    - README.*
+repository:
+  gitlabPath: /edux-export/BIE-PS1
