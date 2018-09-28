@@ -8,5 +8,7 @@ navigation:
     - media/*
     - README.*
     - Bibliography
+    - 0*
+    - 1*
 repository:
   gitlabPath: /BI-PS1/bie-ps1
