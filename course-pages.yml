@@ -7,5 +7,6 @@ navigation:
   hiddenFiles:
     - media/*
     - README.*
+    - Bibliography
 repository:
   gitlabPath: /BI-PS1/bie-ps1
