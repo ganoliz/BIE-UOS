@@ -1,6 +1,7 @@
 = 6. Tutorials 
 
   . Introduction.
+    * link:BIE-PS1-c01-Introduction-solutions.pdf[]
   . Command line interface.
   . Shell variables, text editors.
   . Exit status, command test, flow control.
