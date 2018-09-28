@@ -1,11 +1,10 @@
-= BIE-PS1
+= News
 :imagesdir: media
 
 
-* *Timetable*:  https://timetable.fit.cvut.cz/public/en/predmety/31/61/p3161206.html
+//* *Timetable*:  https://timetable.fit.cvut.cz/public/en/predmety/31/61/p3161206.html
 
-= News
-
+////
 * *Replacement test* will take place 15.2.2018, 10:00-11:00 in T9:348. *For this test is necessary to book the place in https://kos.cvut.cz !!!*
 ** If a student could not take part in a test 1-4 during the semester for serious reasons, he may write a „replacement test“ instead of this test.
 ** In the test, there can any question from any topic explained in this module.
@@ -42,9 +41,11 @@
 ** basic commands,
 ** CLI parsing order (metacharacters and their meaning),
 ** shell variables.
+////
 
-* Module BI-ULI (Introduction to Linux, 2 credits)  - auxiliary module especially for beginners. Students can subscribe to this e-learning module (by email to the Study Department).
+* Module https://moodle.fit.cvut.cz/courses/BI-ULI[BI-ULI] (Introduction to Linux, 2 credits)  - auxiliary module especially for beginners. Students can subscribe to this e-learning module (by email to the Study Department).
 
+////
 = Classification
 
 * *This module is finished by the graded assessment.*
@@ -77,3 +78,4 @@ ECTS  <h| Points   <h| Evaluation in words
 
 = Access to Slides
 
+////
