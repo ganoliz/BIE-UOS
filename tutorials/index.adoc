@@ -1,4 +1,15 @@
-= Tutorials 
-:imagesdir: ../media/tutorials
-	
-		
+= 6. Tutorials 
+
+  . Introduction.
+  . Command line interface.
+  . Shell variables, text editors.
+  . Exit status, command test, flow control.
+  . File system.
+  . Standard Input/Output, UNIX filters and useful commands.
+  . Regular expressions, command grep.
+  . Regular expressions, commands sed and awk.
+  . Access permissions and command find.
+  . Processes and jobs.
+  . Archiving and compression tools.
+  . Arithmetic calculations.
+  		
