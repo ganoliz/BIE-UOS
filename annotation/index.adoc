@@ -1,8 +1,8 @@
 = Annotation 
 :imagesdir: ../media/annotation
 
-This module is introduction to the Unix Operating Systems on the user level.
+This module is introduction to the UNIX operating systems on the user level.
 
-The lectures describe the basic information about command line interface (CLI), processes/threads management, memory management, file system management.
+The lectures describe the basic information about command line interface (shell and basic commands), processes/threads management, memory management, file system management.
 
-During the tutorials the student gains basic experience from Unix OS (command lines, editors, regular expressions,...).
+During the tutorials the student gains basic experience from UNIX OS (shell, basic commands, regular expressions,...).
