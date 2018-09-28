@@ -1,0 +1,13 @@
+= Přednášky
+
+  . **Introduction in UNIX operating system.**
+    //* link:bi-ps1-p01-introduction-01.pdf[]
+  . Command-line parsing order, special characters, command execution, shell variables.
+  . Exit code. Command test. Flow Control. Loops. 
+  . File System. Basic file/directory commands. 
+  . Filters and useful commands.
+  . Regular expressions, grep, awk, sed. 
+  . User identity and access permissions.
+  . Command find.
+  . Arithmetics, compress utilities.
+  . Processes and threads, IPC. 
