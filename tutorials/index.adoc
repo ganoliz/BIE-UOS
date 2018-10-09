@@ -3,6 +3,7 @@
   . Introduction.
     * link:BIE-PS1-c01-Introduction-solutions.pdf[]
   . Command line interface.
+    * link:bie-ps1-c02-cli-questions.pdf[]
   . Shell variables, text editors.
   . Exit status, command test, flow control.
   . File system.
