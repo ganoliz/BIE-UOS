@@ -3,6 +3,7 @@
   . Introduction in UNIX operating system.
   * link:BIE-PS1-p01-Introduction-01.pdf[]
   . Command-line parsing order, special characters, command execution, shell variables.
+  * link:bie-ps1-p02-cli-01.pdf[]
   . Exit code. Command test. Flow Control. Loops. 
   . File System. Basic file/directory commands. 
   . Filters and useful commands.
