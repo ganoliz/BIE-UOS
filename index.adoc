@@ -34,14 +34,15 @@
 ** command test and flow control,
 ** filesystem,
 ** I/O redirection and UNIX filters.
-
-* *Test 1* will take place 26.10.2016, 14:30-16:00 or 16:15-17:45, in T9:348 (come to the lab you're signed in to). Repeat the following topics
-** UNIX manual (commands man/help),
-** secure shell (commands ssh/scp),
-** basic commands,
-** CLI parsing order (metacharacters and their meaning),
-** shell variables.
 ////
+
+* *Test 1* will take place 23.10.2018 14:30-16:00 or 16:15-17:45, in T9:349 (come to the lab you're signed in to). Repeat the following topics
+** UNIX manual (commands man/help),
+** Secure shell (commands ssh/scp),
+** Basic commands,
+** CLI parsing order (metacharacters and their meaning),
+** Shell variables.
+
 
 * Module https://moodle.fit.cvut.cz/courses/BI-ULI[BI-ULI] (Introduction to Linux, 2 credits)  - auxiliary module especially for beginners. Students can subscribe to this e-learning module (by email to the Study Department).
 
