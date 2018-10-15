@@ -6,6 +6,7 @@
     * link:bie-ps1-c02-cli-questions.pdf[]
     * link:bie-ps1-c02-cli-solutions.pdf[]
   . Shell variables, text editors.
+    * link:bie-ps1-c03-variables-questions.pdf[]
   . Exit status, command test, flow control.
   . File system.
   . Standard Input/Output, UNIX filters and useful commands.
