@@ -6,7 +6,8 @@
   * link:bie-ps1-p02-cli-01.pdf[]
   . Exit code. Command test. Flow Control. Loops.
   * link:bie-ps1-p03-flow_control-01.pdf[]
-  . File System. Basic file/directory commands. 
+  . Filesystem. Basic file/directory commands.
+  * link:bie-ps1-p04-fs-01.pdf[]
   . Filters and useful commands.
   . Regular expressions, grep. 
   . Regular expressions, awk, sed. 
