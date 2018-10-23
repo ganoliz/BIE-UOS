@@ -9,6 +9,8 @@
     * link:bie-ps1-c03-variables-questions.pdf[]
     * link:bie-ps1-c03-variables-solutions.pdf[]
   . Exit status, command test, flow control.
+    * link:bie-ps1-c04-flowcontrol-questions.pdf[]
+    ////* link:bie-ps1-c04-flowcontrol-solutions.pdf[]
   . File system.
   . Standard Input/Output, UNIX filters and useful commands.
   . Regular expressions, command grep.
