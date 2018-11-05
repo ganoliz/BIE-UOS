@@ -15,6 +15,8 @@
     * link:bie-ps1-c05-fs-questions.pdf[]
     * link:bie-ps1-c05-fs-solutions.pdf[]
   . Standard Input/Output, UNIX filters and useful commands.
+    * link:bie-ps1-c06-filters-questions.pdf[]
+//  * link:bie-ps1-c06-filters-solutions.pdf[]
   . Regular expressions, command grep.
   . Regular expressions, commands sed and awk.
   . Access permissions and command find.
