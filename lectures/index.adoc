@@ -11,6 +11,7 @@
   . Filters and useful commands.
   * link:bie-ps1-p05-filters-01.pdf[]
   . Regular expressions, grep. 
+  * link:ie-ps1-p06-regexpr-01.pdf[]
   . Regular expressions, awk, sed. 
   . User identity and access permissions.
   . Command find.
