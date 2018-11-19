@@ -12,7 +12,8 @@
   * link:bie-ps1-p05-filters-01.pdf[]
   . Regular expressions, grep. 
   * link:bie-ps1-p06-regexpr-01.pdf[]
-  . Regular expressions, awk, sed. 
+  . Regular expressions, awk, sed.
+  * link:bie-ps1-p07-sedawk-01.pdf[]
   . User identity and access permissions.
   . Command find.
   . Arithmetics, compress utilities.
