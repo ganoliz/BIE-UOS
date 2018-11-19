@@ -19,7 +19,7 @@
     * link:bie-ps1-c06-filters-solutions.pdf[]
   . Regular expressions, command grep.
     * link:bie-ps1-c07-regexp-questions.pdf[]
-//  * link:bie-ps1-c07-regexp-solutions.pdf[]  
+    * link:bie-ps1-c07-regexp-solutions.pdf[]  
   . Regular expressions, commands sed and awk.
   . Access permissions and command find.
   . Processes and jobs.
