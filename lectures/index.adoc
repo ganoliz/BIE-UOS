@@ -15,6 +15,7 @@
   . Regular expressions, awk, sed.
   * link:bie-ps1-p07-sedawk-01.pdf[]
   . User identity and access permissions.
+  * link:bie-ps1-p08-perm.pdf[]
   . Command find.
   . Arithmetics, compress utilities.
   . Processes and threads, IPC.
