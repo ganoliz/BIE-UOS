@@ -17,6 +17,8 @@
   . User identity and access permissions.
   * link:bie-ps1-p08-perm.pdf[]
   . Command find.
-  . Arithmetics, compress utilities.
+  * link:bie-ps1-p09-find.pdf[]
+  . Archiving and compression utilities. Arithmetics. 
+  * link:bie-ps1-p10-archivation.pdf[]
   . Processes and threads, IPC.
   . Summary.
