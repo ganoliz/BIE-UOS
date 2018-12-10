@@ -20,6 +20,6 @@
   * link:bie-ps1-p09-find.pdf[]
   . Archiving and compression utilities. Arithmetics. 
   * link:bie-ps1-p10-archivation.pdf[]
-  . bie-ps1-p11-processes.pdf[]
-  * link:bie-ps1-p10-archivation.pdf[]
+  . Processes and threads. Signals.
+  * link:bie-ps1-p11-processes.pdf[]
   . Summary.
