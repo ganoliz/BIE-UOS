@@ -25,8 +25,14 @@
     * link:bie-ps1-c08-sed_awk-solutions.pdf[]   
   . Access permissions and command find.
     * link:bie-ps1-c09-perm_find-questions.pdf[]
-//    * link:bie-ps1-c09-perm_find-solutions.pdf[]  
+    * link:bie-ps1-c09-perm_find-solutions.pdf[]  
   . Processes and jobs.
+    * link:bie-ps1-c10-proc-questions.pdf[]
+//    * link:bie-ps1-c10-proc-solutions.pdf[]  
   . Archiving and compression tools.
+    * link:bie-ps1-c11-archiving-questions.pdf[]
+//    * link:bie-ps1-c11-archiving-solutions.pdf[]  
   . Arithmetic calculations.
+    * link:bie-ps1-c12-calculations-questions.pdf[]
+//    * link:bie-ps1-c12-calculations-solutions.pdf[]  
   		
