@@ -36,6 +36,12 @@
 ** I/O redirection and UNIX filters.
 ////
 
+* *Retake test* will take place 8.1.2019, 15:00-17:00 in T9:349. *For this test is necessary to book the place in https://kos.cvut.cz !!!*.
+** The „Retake Test“ is a bonus by which a student can repair a test from which he earned the least points.
+** Example: Student earned the following points from all tests 5+10+3+20=38. If the student earn 17 points from „retake test“, then he/she has 5+10+17+20=52. If the student earn 1 points from „retake test“, then he/she has 5+10+1+20=36.
+** In the test, there can any question from any topic explained in this module.
+** The test answers will be evaluated either by a full number of points (correct solution) or by zero (bad / partial solution).
+
 * *Test 3* will take place 18.12.2018, 14:30-16:00 or 16:15-17:45, in T9:350 (come to the lab you're signed in to). Repeat the following topics
 
 ** regular expressions (grep, sed and awk),
