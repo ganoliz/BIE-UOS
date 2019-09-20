@@ -35,4 +35,4 @@
 ** Shell variables.
 ////
 
-* Module https://moodle.fit.cvut.cz/courses/BI-ULI[BI-ULI] (Introduction to Linux, 2 credits)  - auxiliary module especially for beginners. Students can subscribe to this e-learning module (by email to the Study Department).
+* Module https://moodle.fit.cvut.cz/enrol/index.php?id=64&lang=en[BI-ULI] (Introduction to Linux, 2 credits)  - auxiliary module especially for beginners. Students can subscribe to this e-learning module (by email to the Study Department).
