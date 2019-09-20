@@ -2,16 +2,24 @@
 :imagesdir: ../media/classification
 
 
-* *This module is finished by the graded assessment.*
+* *This module is finished by the graded assessment*, therefore the continuous work in the semester is evaluated.
+* During the semester, *the student will write several tests to earn points*.
+* The tests will be held continuously during the semester so that *the student is motivated to prepare continuously*.
+* *Therefore, there will be no repair tests!*
+* There will be two types of tests during the semester:
+** *Small tests*
+*** They will take place *at the beginning of each exercise* (from the 3rd week of semester).
+*** The test duration will be around *10 minutes*.
+*** They will usually verify knowledge of topics discussed in the previous week.
+*** Student can obtain up to *40 points* from all these tests.
 
-* During the semestr there will be three tests:
-** 1st test: 23.10.2018 (the 4th week) 30 points,
-** 2nd test: 20.11.2018 (the 8th week) 35 points,
-** 3rd test: 18.12.2018 (the 12th week) 35 points.
+** *Big tests*
+*** They will take place *in the middle* and *at the end* of the semester.
+*** The test duration will be around *60 minutes*.
+*** They will verify knowledge of all discussed topics.
+*** Student can obtain up to *60 points* from all these tests.
 
 * *Absence from the test means 0 points from the test (exception is only serious reason).*
-
-* Correction/replacement test will be announced during the exam period.
 
 == Evaluation scale
 
