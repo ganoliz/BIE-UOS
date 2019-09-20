@@ -2,7 +2,7 @@
 :imagesdir: media
 
 
-//* *Timetable*:  https://timetable.fit.cvut.cz/public/en/predmety/31/61/p3161206.html
+* *Timetable*:  https://timetable.fit.cvut.cz/old/public/en/predmety/31/61/p3161206.html
 
 ////
 
