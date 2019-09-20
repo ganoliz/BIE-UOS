@@ -4,35 +4,35 @@
     * link:BIE-PS1-c01-Introduction-solutions.pdf[]
   . Command line interface.
     * link:bie-ps1-c02-cli-questions.pdf[]
-    * link:bie-ps1-c02-cli-solutions.pdf[]
+//    * link:bie-ps1-c02-cli-solutions.pdf[]
   . Shell variables, text editors.
     * link:bie-ps1-c03-variables-questions.pdf[]
-    * link:bie-ps1-c03-variables-solutions.pdf[]
+//    * link:bie-ps1-c03-variables-solutions.pdf[]
   . Exit status, command test, flow control.
     * link:bie-ps1-c04-flowcontrol-questions.pdf[]
-    * link:bie-ps1-c04-flowcontrol-solutions.pdf[]
+//    * link:bie-ps1-c04-flowcontrol-solutions.pdf[]
   . File system.
     * link:bie-ps1-c05-fs-questions.pdf[]
-    * link:bie-ps1-c05-fs-solutions.pdf[]
+//    * link:bie-ps1-c05-fs-solutions.pdf[]
   . Standard Input/Output, UNIX filters and useful commands.
     * link:bie-ps1-c06-filters-questions.pdf[]
-    * link:bie-ps1-c06-filters-solutions.pdf[]
+//    * link:bie-ps1-c06-filters-solutions.pdf[]
   . Regular expressions, command grep.
     * link:bie-ps1-c07-regexp-questions.pdf[]
-    * link:bie-ps1-c07-regexp-solutions.pdf[]  
+//    * link:bie-ps1-c07-regexp-solutions.pdf[]  
   . Regular expressions, commands sed and awk.
     * link:bie-ps1-c08-sed_awk-questions.pdf[]
-    * link:bie-ps1-c08-sed_awk-solutions.pdf[]   
+//    * link:bie-ps1-c08-sed_awk-solutions.pdf[]   
   . Access permissions and command find.
     * link:bie-ps1-c09-perm_find-questions.pdf[]
-    * link:bie-ps1-c09-perm_find-solutions.pdf[]  
+//    * link:bie-ps1-c09-perm_find-solutions.pdf[]  
   . Processes and jobs.
     * link:bie-ps1-c10-proc-questions.pdf[]
-    * link:bie-ps1-c10-proc-solutions.pdf[]  
+//    * link:bie-ps1-c10-proc-solutions.pdf[]  
   . Archiving and compression tools.
     * link:bie-ps1-c11-archiving-questions.pdf[]
-    * link:bie-ps1-c11-archiving-solutions.pdf[]  
+//    * link:bie-ps1-c11-archiving-solutions.pdf[]  
   . Arithmetic calculations.
     * link:bie-ps1-c12-calculations-questions.pdf[]
-    * link:bie-ps1-c12-calculations-solutions.pdf[]  
+//    * link:bie-ps1-c12-calculations-solutions.pdf[]  
   		
