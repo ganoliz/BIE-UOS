@@ -5,36 +5,6 @@
 //* *Timetable*:  https://timetable.fit.cvut.cz/public/en/predmety/31/61/p3161206.html
 
 ////
-* *Replacement test* will take place 15.2.2018, 10:00-11:00 in T9:348. *For this test is necessary to book the place in https://kos.cvut.cz !!!*
-** If a student could not take part in a test 1-4 during the semester for serious reasons, he may write a „replacement test“ instead of this test.
-** In the test, there can any question from any topic explained in this module.
-
-* *Retake test* will take place 9.1.2018, 13:30-14:30 in T9:349. *For this test is necessary to book the place in https://kos.cvut.cz !!!*.
-** The „Retake Test“ is a bonus by which a student can repair a test from which he earned the least points.
-** Example: Student earned the following points from all tests 5+10+3+20=38. If the student earn 17 points from „retake test“, then he/she has 5+10+17+20=52. If the student earn 1 points from „retake test“, then he/she has 5+10+1+20=36.
-** In the test, there can any question from any topic explained in this module.
-** The test answers will be evaluated either by a full number of points (correct solution) or by zero (bad / partial solution).
-
-* *Replacement test* will take place 9.1.2018, 14:30-16:00 in T9:349. *For this test is necessary to book the place in https://kos.cvut.cz !!!*
-** If a student could not take part in a test 1-4 during the semester for serious reasons, he may write a „replacement test“ instead of this test.
-** In the test, there can any question from any topic explained in this module.
-
-* *Test 4* will take place 4.1.2018, 14:30-16:00 or 16:15-17:45, in T9:348 (come to the lab you're signed in to). Repeat the following topics
-** processes and threads,
-** archiving and data compression.
-** numeric calculations,
-** any previous topics.
-
-* *Test 3* will take place 14.12.2017, 14:30-16:00 or 16:15-17:45, in T9:348 (come to the lab you're signed in to). Repeat the following topics
-** regular expressions (grep, sed and awk),
-** access permissions (chmod and umask),
-** find.
-
-* *Test 2* will take place 23.11.2017, 14:30-16:00 or 16:15-17:45, in T9:348 (come to the lab you're signed in to). Repeat the following topics
-** command test and flow control,
-** filesystem,
-** I/O redirection and UNIX filters.
-////
 
 * *Retake test* will take place 8.1.2019, 15:00-17:00 in T9:349. *For this test is necessary to book the place in https://kos.cvut.cz !!!*.
 ** The „Retake Test“ is a bonus by which a student can repair a test from which he earned the least points.
@@ -63,40 +33,6 @@
 ** Basic commands,
 ** CLI parsing order (metacharacters and their meaning),
 ** Shell variables.
+////
 
 * Module https://moodle.fit.cvut.cz/courses/BI-ULI[BI-ULI] (Introduction to Linux, 2 credits)  - auxiliary module especially for beginners. Students can subscribe to this e-learning module (by email to the Study Department).
-
-////
-= Classification
-
-* *This module is finished by the graded assessment.*
-
-* During the winter term there will be four tests (30 minutes, 25 points)
-** 1st test: 26.10.2017 (the 4th week),
-** 2nd test: 23.11.2017 (the 8th week),
-** 3rd test: 14.12.2017 (the 11th week),
-** 4th test: 4.1.2018 (the 13th week).
-
-* *Absence from the test means 0 points from the test (exception is the only serious reason).*
-
-* The correction / replacement test will be announced during the exam period.
-
-== Evaluation scale
-
-Evaluation scale is according to http://intranet.cvut.cz/current-students/resolveuid/e4fe33a0e9634469ef709f3803d784dd[The Study and Examination Code for Students of CTU in Prague].
-
-[options="autowidth"]
-|====
-<h| Grade +
-ECTS  <h| Points   <h| Evaluation in words
-| A       | more than 89   | excellent
-| B       | 80 – 89       | very good
-| C       | 70 – 79       | good
-| D       | 60 – 69       | satisfactory
-| E       | 50 – 59       | sufficient
-| F       | less than  50  | failed
-|====
-
-= Access to Slides
-
-////
