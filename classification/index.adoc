@@ -9,7 +9,7 @@
 * There will be two types of tests during the semester:
 ** *Small tests*
 *** They will take place *at the beginning of each exercise* (from the 3rd week of semester).
-*** The test duration will be around *10 minutes*.
+*** The test duration will be around *5-10 minutes*.
 *** They will usually verify knowledge of topics discussed in the previous week.
 *** Student can obtain up to *40 points* from all these tests.
 
