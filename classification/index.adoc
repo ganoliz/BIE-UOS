@@ -3,6 +3,9 @@
 
 
 * *This module is finished by the graded assessment*, therefore the continuous work in the semester is evaluated.
+
+== Tests
+
 * During the semester, *the student will write several tests to earn points*.
 * The tests will be held continuously during the semester so that *the student is motivated to prepare continuously*.
 * *Therefore, there will be no repair tests!*
@@ -20,6 +23,12 @@
 *** Student can obtain up to *60 points* from all these tests.
 
 * *Absence from the test means 0 points from the test (exception is only serious reason).*
+
+== Home tasks
+
+* In addition, it is possible to earn an extra *3 points*, which are assigned at the end of the semester. 
+* They are awarded for the successful solution of home tasks. 
+* These tasks will be continuously assigned at seminars or lectures.
 
 == Evaluation scale
 
