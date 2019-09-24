@@ -1,7 +1,7 @@
 = 6. Tutorials 
 
   . Introduction.
-    * link:BIE-PS1-c01-Introduction-solutions.pdf[]
+    * link:bie-ps1-c01-introduction-solutions.pdf[]
   . Command line interface.
     * link:bie-ps1-c02-cli-questions.pdf[]
 //    * link:bie-ps1-c02-cli-solutions.pdf[]
