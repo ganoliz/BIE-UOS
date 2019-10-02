@@ -1,7 +1,14 @@
 = 7. Tasks 
 :imagesdir: ../media/annotation
 
-
+== Notes
+  
+* Several tasks will be assigned during the semester.
+* Tasks serve as preparation for the tests.
+* Tasks will be published continuously on this page.
+* Students will always be notified of a new task during the lecture/practice.
+  
+  
 == Task 1
 Create the following directory structure in your home directory on server fray1.fit.cvut.cz or fray3.fit.cvut.cz:
 ----
@@ -14,4 +21,4 @@ Create the following directory structure in your home directory on server fray1.
 
 Create a file *Hotovo.txt* in the directory **  ~/ulohy/tyden1 **. The content of this file should be your login name.
 
-The task deadline is *Sunday 6.10.2019*  *24:00*.
+The task deadline is *Sunday 6.10.2019* at *23:59*.
