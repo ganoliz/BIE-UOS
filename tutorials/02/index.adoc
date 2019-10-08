@@ -1,8 +1,0 @@
-= Tutorial 2 — Command line interface 
-:imagesdir: ../../media/tutorials/02
-
-
-link:{imagesdir}/bie-ps1-c02-cli-questions.pdf[bie-ps1-c02-cli-questions.pdf]
-
-
-link:{imagesdir}/bie-ps1-c02-cli-solutions.pdf[bie-ps1-c02-cli-solutions.pdf]
