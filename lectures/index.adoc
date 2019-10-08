@@ -4,8 +4,6 @@
   * link:bie-ps1-p01-introduction-01.pdf[]
   . Command-line parsing order, special characters, command execution, shell variables.
   * link:bie-ps1-p02-cli-01.pdf[]
-  . Exit code. Command test. Flow Control. Loops.
-  * link:bie-ps1-p03-flow_control-01.pdf[]
   . Filesystem. Basic file/directory commands.
   * link:bie-ps1-p04-fs-01.pdf[]
   . Filters and useful commands.
@@ -14,6 +12,8 @@
   * link:bie-ps1-p06-regexpr-01.pdf[]
   . Regular expressions, awk, sed.
   * link:bie-ps1-p07-sedawk-01.pdf[]
+  . Exit code. Command test. Flow Control. Loops.
+  * link:bie-ps1-p03-flow_control-01.pdf[]
   . User identity and access permissions.
   * link:bie-ps1-p08-perm.pdf[]
   . Command find.
