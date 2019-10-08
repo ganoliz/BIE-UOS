@@ -1,7 +1,0 @@
-= Tutorial 6 — Standard Input/Output, UNIX filters 
-:imagesdir: ../../media/tutorials/06
-
-
-link:{imagesdir}/bie-ps1-c06-filters-questions.pdf[bie-ps1-c06-filters-questions.pdf]
-
-link:{imagesdir}/bie-ps1-c06-filters-solutions.pdf[bie-ps1-c06-filters-solutions.pdf]
