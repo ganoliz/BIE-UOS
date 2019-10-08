@@ -1,8 +1,0 @@
-= Tutorial 7 — Regular expressions, command grep 
-:imagesdir: ../../media/tutorials/07
-
-
-link:{imagesdir}/bie-ps1-c07-regexp-questions.pdf[bie-ps1-c07-regexp-questions.pdf]
-
-
-link:{imagesdir}/bie-ps1-c07-regexp-solutions.pdf[bie-ps1-c07-regexp-solutions.pdf]
