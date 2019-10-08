@@ -1,8 +1,0 @@
-= Tutorial 12 — Arithmetic calculations 
-:imagesdir: ../../media/tutorials/12
-
-
-link:{imagesdir}/bie-ps1-c12-calculations-questions.pdf[bie-ps1-c12-calculations-questions.pdf]
-
-
-link:{imagesdir}/bie-ps1-c12-calculations-solutions.pdf[bie-ps1-c12-calculations-solutions.pdf]
