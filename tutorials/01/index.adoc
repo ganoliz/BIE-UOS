@@ -1,5 +1,0 @@
-= Tutorial 1 — Introduction 
-:imagesdir: ../../media/tutorials/01
-
-
-link:{imagesdir}/bie-ps1-c01-introduction-solutions.pdf[bie-ps1-c01-introduction-solutions.pdf]
