@@ -1,8 +1,0 @@
-= Tutorial 3 — Shell variables, text editors 
-:imagesdir: ../../media/tutorials/03
-
-
-link:{imagesdir}/bie-ps1-c03-variables-questions.pdf[bie-ps1-c03-variables-questions.pdf]
-
-
-link:{imagesdir}/bie-ps1-c03-variables-solutions.pdf[bie-ps1-c03-variables-solutions.pdf]
