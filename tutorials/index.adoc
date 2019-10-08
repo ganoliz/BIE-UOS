@@ -5,16 +5,13 @@
   . Command line interface.
     * link:https://bips1.fit.cvut.cz[LearnShell]
     * link:bie-ps1-c02-cli-questions.pdf[]
-//    * link:bie-ps1-c02-cli-solutions.pdf[]
+    * link:bie-ps1-c02-cli-solutions.pdf[]
 
 
   . Shell variables, text editors.
     * link:https://bips1.fit.cvut.cz[LearnShell]
     * link:bie-ps1-c03-variables-questions.pdf[]
 //    * link:bie-ps1-c03-variables-solutions.pdf[]
-  . Exit status, command test, flow control.
-    * link:https://bips1.fit.cvut.cz[LearnShell]
-    * link:bie-ps1-c04-flowcontrol-questions.pdf[]
 //    * link:bie-ps1-c04-flowcontrol-solutions.pdf[]
   . File system.
     * link:https://bips1.fit.cvut.cz[LearnShell]
@@ -32,6 +29,9 @@
     * link:https://bips1.fit.cvut.cz[LearnShell]
     * link:bie-ps1-c08-sed_awk-questions.pdf[]
 //    * link:bie-ps1-c08-sed_awk-solutions.pdf[]   
+  . Exit status, command test, flow control.
+    * link:https://bips1.fit.cvut.cz[LearnShell]
+    * link:bie-ps1-c04-flowcontrol-questions.pdf[]
   . Access permissions and command find.
     * link:https://bips1.fit.cvut.cz[LearnShell]
     * link:bie-ps1-c09-perm_find-questions.pdf[]
