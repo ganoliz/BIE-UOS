@@ -1,8 +1,0 @@
-= Tutorial 11 — Archiving and compression tools 
-:imagesdir: ../../media/tutorials/11
-
-
-link:{imagesdir}/bie-ps1-c11-archiving-questions.pdf[bie-ps1-c11-archiving-questions.pdf]
-
-
-link:{imagesdir}/bie-ps1-c11-archiving-solutions.pdf[bie-ps1-c11-archiving-solutions.pdf]
