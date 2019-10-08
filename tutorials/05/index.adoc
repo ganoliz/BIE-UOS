@@ -1,8 +1,0 @@
-= Tutorial 5 — File system 
-:imagesdir: ../../media/tutorials/05
-
-
-link:{imagesdir}/bie-ps1-c05-fs-questions.pdf[bie-ps1-c05-fs-questions.pdf]
-
-
-link:{imagesdir}/bie-ps1-c05-fs-solutions.pdf[bie-ps1-c05-fs-solutions.pdf]
