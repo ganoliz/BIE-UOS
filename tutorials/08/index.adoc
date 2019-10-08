@@ -1,8 +1,0 @@
-= Tutorial 8 — Commands awk and sed 
-:imagesdir: ../../media/tutorials/08
-
-
-link:{imagesdir}/bie-ps1-c08-sed-awk-questions.pdf[bie-ps1-c08-sed-awk-questions.pdf]
-
-
-link:{imagesdir}/bie-ps1-c08-sed-awk-solutions.pdf[bie-ps1-c08-sed-awk-solutions.pdf]
