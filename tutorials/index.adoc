@@ -11,7 +11,7 @@
   . Shell variables, text editors.
     * link:https://bips1.fit.cvut.cz[LearnShell]
     * link:bie-ps1-c03-variables-questions.pdf[]
-//    * link:bie-ps1-c03-variables-solutions.pdf[]
+    * link:bie-ps1-c03-variables-solutions.pdf[]
 //    * link:bie-ps1-c04-flowcontrol-solutions.pdf[]
   . File system.
     * link:https://bips1.fit.cvut.cz[LearnShell]
