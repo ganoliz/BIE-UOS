@@ -1,5 +1,0 @@
-= Processes and threads, IPC 
-:imagesdir: ../../media/lectures/13
-
-
-link:{imagesdir}/bie-ps1-p10-processes-01.pdf[bie-ps1-p10-processes-01.pdf]
