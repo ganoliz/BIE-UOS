@@ -1,7 +1,0 @@
-= Exit code. Command test. Flow Control. Loops. 
-:imagesdir: ../../media/lectures/03
-
-
-link:{imagesdir}/bie-ps1-p03-flow-control-01.pdf[bie-ps1-p03-flow-control-01.pdf]
-
-link:{imagesdir}/bi-ps1-p03-examples.tar.gz[bi-ps1-p03-examples.tar.gz]
