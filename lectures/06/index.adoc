@@ -1,5 +1,0 @@
-= Filters  
-:imagesdir: ../../media/lectures/06
-
-
-link:{imagesdir}/bie-ps1-p05-filters-01.pdf[bie-ps1-p05-filters-01.pdf]
