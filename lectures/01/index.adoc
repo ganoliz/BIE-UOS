@@ -1,7 +1,0 @@
-= Module structure. Introduction in UNIX. 
-:imagesdir: ../../media/lectures/01
-
-
-link:{imagesdir}/bie-ps1-module-structure-01.pdf[bie-ps1-module-structure-01.pdf]
-
-link:{imagesdir}/bie-ps1-p01-introduction-01.pdf[bie-ps1-p01-introduction-01.pdf]
