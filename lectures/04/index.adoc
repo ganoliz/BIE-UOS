@@ -1,5 +1,0 @@
-= File System. Basic file/directory commands. 
-:imagesdir: ../../media/lectures/04
-
-
-link:{imagesdir}/bie-ps1-p04-fs-01.pdf[bie-ps1-p04-fs-01.pdf]
