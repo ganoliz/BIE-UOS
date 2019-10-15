@@ -1,5 +1,0 @@
-= Arithmetics, compress utilities 
-:imagesdir: ../../media/lectures/11
-
-
-link:{imagesdir}/bie-ps1-p09-archiving-01.pdf[bie-ps1-p09-archiving-01.pdf]
