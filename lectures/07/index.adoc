@@ -1,5 +1,0 @@
-= Regular expressions, grep, awk, sed  
-:imagesdir: ../../media/lectures/07
-
-
-link:{imagesdir}/bie-ps1-p06-regexpr-01.pdf[bie-ps1-p06-regexpr-01.pdf]
