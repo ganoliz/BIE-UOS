@@ -5,7 +5,7 @@
   . Command-line parsing order, special characters, command execution, shell variables.
   * link:bie-ps1-p02-cli-01.pdf[]
   . Filesystem. Basic file/directory commands.
-  * link:bie-ps1-p04-fs-01.pdf[]
+  * link:bie-ps1-p03-fs-01.pdf[]
   . Filters and useful commands.
   * link:bie-ps1-p05-filters-01.pdf[]
   . Regular expressions, grep. 
