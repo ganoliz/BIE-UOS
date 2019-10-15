@@ -1,5 +1,0 @@
-= Command-line parsing order, special characters, command execution, shell variables 
-:imagesdir: ../../media/lectures/02
-
-
-link:{imagesdir}/bie-ps1-p02-cli-01.pdf[bie-ps1-p02-cli-01.pdf]
