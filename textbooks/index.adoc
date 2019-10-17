@@ -1,5 +1,5 @@
 = 4. Bibliography 
-:imagesdir: ../media/homeworks
+//:imagesdir: ../media/homeworks
 
 
 * If you have problem, then search help in slides from lectures and tutorials or your notes.
