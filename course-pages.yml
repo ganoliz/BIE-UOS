@@ -7,12 +7,12 @@ navigation:
   hiddenFiles:
     - media/*
     - README.*
-    - Bibliography
     - lectures/0*
     - lectures/1*
     - lectures/*.pdf
     - tutorials/0*
     - tutorials/1*
     - tutorials/*.pdf
+    - textbooks
 repository:
   gitlabPath: /BI-PS1/bie-ps1
