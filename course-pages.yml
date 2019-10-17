@@ -13,6 +13,5 @@ navigation:
     - tutorials/0*
     - tutorials/1*
     - tutorials/*.pdf
-    - textbooks
 repository:
   gitlabPath: /BI-PS1/bie-ps1
