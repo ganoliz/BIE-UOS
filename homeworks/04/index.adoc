@@ -6,14 +6,14 @@
 <style>li details { margin-bottom: 0.5em; }</style>
 <div class='olist arabic'>
 <ol class='arabic'>
-<li><details><summary>Log on remotely to the computer <code>fray1.fit.cvut.cz</code> .</summary>
+<li><details><summary>Log on to the computer <code>fray1.fit.cvut.cz</code> .</summary>
 ++++
 ....
 ssh username@fray1.fit.cvut.cz
 ....
 ++++
 </details></li>
-<li><details><summary>Set the working directory to (go to the directory)<code>/bin</code> .</summary>
+<li><details><summary> Go to the directory <code>/bin</code> (set the working directory to the directory <code>/bin</code>).</summary>
 ++++
 ....
 cd /bin
@@ -54,7 +54,7 @@ stat -c %i .
 ....
 ++++
 </details></li>
-<li><details><summary>Return to the previous directory and repeat the previous two examples, but this time save the i-node numbers as variables <code>p1</code> and <code>p2</code>. If the i-node numbers differ, type in the following text: <code>i-nodes are different</code> to standard output.</summary>
+<li><details><summary>Return to the previous directory and repeat the previous two examples, but this time save the i-node numbers in variables <code>p1</code> and <code>p2</code>. If the i-node numbers differ, type in the following text: <code>i-nodes are different</code> to standard output.</summary>
 ++++
 ....
 cd -
@@ -190,7 +190,7 @@ i2=$(stat -Lc %i today)
 ++++ 
 
 
-== New topic
+== Preparation for the next practice
 
 ++++
 <div class='olist arabic'>
