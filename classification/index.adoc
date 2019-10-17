@@ -1,5 +1,5 @@
 = 3. Classification 
-:imagesdir: ../media/classification
+//:imagesdir: ../media/classification
 
 
 * *This module is finished by the graded assessment*, therefore the continuous work in the semester is evaluated.
