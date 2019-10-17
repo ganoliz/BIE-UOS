@@ -1,5 +1,5 @@
 = 4. Textbooks
-//:imagesdir: ../media/homeworks
+:imagesdir: ../media/textbooks
 
 
 * If you have problem, then search help in slides from lectures and tutorials or your notes.
