@@ -13,6 +13,7 @@ navigation:
     - tutorials/0*
     - tutorials/1*
     - tutorials/*.pdf
-    - homeworks/bie-ps1*
+    - homeworks/0*
+    - homeworks/1*
 repository:
   gitlabPath: /BI-PS1/bie-ps1
