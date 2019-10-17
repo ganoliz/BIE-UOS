@@ -9,7 +9,7 @@
 //  1. link:./03/[Zpracování příkazové řádky II]
 
 // link:bie-ps1-p01-introduction-01.pdf[]
-  1. link:bie-ps1-h04-FS.adoc[File system 2]
+  1. link:./04[File system]
 //  1. link:./05/[Jednoduché textové filtry]
 //  1. link:./06/[Jednoduché textové filtry a grep]
 //  1. link:./07/[Regulární výrazy]
