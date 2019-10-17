@@ -1,5 +1,5 @@
 = 8. Tasks 
-:imagesdir: ../media/annotation
+//:imagesdir: ../media/annotation
 
 == Notes
   
