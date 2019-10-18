@@ -1,4 +1,4 @@
-= Homework for the 5th practice
+= Homework for the 4th practice
 
 == Topics of the current practice
 
@@ -6,21 +6,21 @@
 <style>li details { margin-bottom: 0.5em; }</style>
 <div class='olist arabic'>
 <ol class='arabic'>
-<li><details><summary>Vytvořte soubor <code>s1</code>, který bude obsahovat 10 řádek s čísly od 1 do 10.</pre></summary>
+<li><details><summary>Create a file named <code>s1</code>, which will contain 10 lines with numbers from 1 to 10.</pre></summary>
 ++++
 ....
 printf '%d\n' {1..10} >s1
 ....
 ++++
 </details></li>
-<li><details><summary>Vytvořte soubor <code>s2</code>, který bude obsahovat 26 řádek s písmeny od a do z.</pre></summary>
+<li><details><summary>Create a file named <code>s2</code>, which will contain 26 lines of letters from a to z.</pre></summary>
 ++++
 ....
 printf '%s\n' {a..z} >s2
 ....
 ++++
 </details></li>
-<li><details><summary>Do proměnné <code>l1</code> uložte počet řádek souboru <code>s1</code> a do proměnné <code>l2</code> uložte počet řádek souboru <code>s2</code>.</summary>
+<li><details><summary>Store the number of lines of the file <code>s1</code> to the shell variable <code>l1</code> and  the number of lines of the file <code>s2</code> to the shell variable <code>l2</code>.</summary>
 ++++
 ....
 l1=$( wc -l <s1 )
@@ -28,35 +28,35 @@ l2=$( wc -l <s2 )
 ....
 ++++
 </details></li>
-<li><details><summary>Do proměnné <code>sum</code> uložte součet počtu řádků souborů <code>s1</code> a <code>s2</code>.</summary>
+<li><details><summary>Store the sum of the number of lines of files <code>s1</code> and <code>s2</code>  to the shell variable <code>sum</code>.</summary>
 ++++
 ....
 (( sum = l1 + l2 ))
 ....
 ++++
 </details></li>
-<li><details><summary>Pokud je v proměnné <code>sum</code> hodnota <code>36</code>, vypište text: <code>OK</code>.</summary>
+<li><details><summary>If there is a value <code>36</code> in the variable <code>sum</code>, then print the text: <code>OK</code> to the standard output.</summary>
 ++++
 ....
 (( sum == 36 )) && echo OK
 ....
 ++++
 </details></li>
-<li><details><summary>Existuje proměnná <code>RANDOM</code>, která obsahuje náhodné číslo. Pokud je toto číslo sudé, vypište řetězec <code>SUDA</code>, pokud je liché, vypište řetězec <code>LICHA</code>.</summary>
+<li><details><summary>There is a variable <code>RANDOM</code> in the bash, that contains a random number. If this number is even, type the string <code>EVEN</code>, if it is odd, write the string <code>ODD</code>.</summary>
 ++++
 ....
-sl=SUDA; (( RANDOM % 2 )) && sl=LICHA; echo "$sl"
+sl=EVEN; (( RANDOM % 2 )) && sl=ODD; echo "$sl"
 ....
 ++++
 </details></li>
-<li><details><summary>V předchozím příkladu vypište před řetězec i porovnávanou hodnotu.</summary>
+<li><details><summary>In the previous example, include the value to be compared before the string.</summary>
 ++++
 ....
 sl=SUDA; (( R = RANDOM, R % 2 )) && sl=LICHA; echo "$R $sl"
 ....
 ++++
 </details></li>
-<li><details><summary>Vytvořte alias <code>dice</code>, který vypíše náhodně číslo od 1 do 6. Alias zavolejte a vypište.</summary>
+<li><details><summary>Create an alias <code>dice</code>, which randomly writes a number from 1 to 6 to standard output. Call and write the alias.</summary>
 ++++
 ....
 alias dice='echo $(( RANDOM % 6 + 1 ))'
@@ -65,14 +65,14 @@ alias dice
 ....
 ++++
 </details></li>
-<li><details><summary>Vytvořte alias <code>roll</code>, který hodí 3x kostkou a vypíše součet hodů.</summary>
+<li><details><summary>Create an alias <code>roll</code>,  that "rolls" 3 times dice and displays the total of the roll.</summary>
 ++++
 ....
 alias roll='echo $(( $(dice) + $(dice) + $(dice) ))'
 ....
 ++++
 </details></li>
-<li><details><summary>Upravte předchozí alias <code>roll</code> tak, aby zobrazil také mezivýsledky, např.:<pre>
+<li><details><summary>Modify the previous alias <code>roll</code> to also show intermediate results, such as:<pre>
 2 + 6 + 1 = 9
 </pre></summary>
 ++++
@@ -81,21 +81,21 @@ alias roll='(( a=$(dice), b=$(dice), c=$(dice), s=a+b+c )); echo $a + $b + $c = 
 ....
 ++++
 </details></li>
-<li><details><summary>Vypište znak s Unicode U+2665.</summary>
+<li><details><summary>Write the character with Unicode U+2665 to the standard output.</summary>
 ++++
 ....
 echo $'\u2665'
 ....
 ++++
 </details></li>
-<li><details><summary>Vypište znaky s Unicode U+2660, U+2665, U+2666, U+2663, U+2664, U+2661, U+2662, U+2667.</summary>
+<li><details><summary>Write the characters with Unicode U+2660, U+2665, U+2666, U+2663, U+2664, U+2661, U+2662, U+2667.</summary>
 ++++
 ....
 echo $'\u2660' $'\u2665' $'\u2666' $'\u2663' $'\u2664' $'\u2661' $'\u2662' $'\u2667'
 ....
 ++++
 </details></li>
-<li><details><summary>Vypište všechny karty, tedy hodnoty od 2 do 10, J, Q, K a A.</summary>
+<li><details><summary>Write a list of all cards to the standard output (that means the values from 2 to 10, J, Q, K and A).</summary>
 ++++
 ....
 echo {{2..10},J,Q,K,A}\
@@ -103,7 +103,7 @@ echo {{2..10},J,Q,K,A}\
 ....
 ++++
 </details></li>
-<li><details><summary>Spočítejte počet karet.</summary>
+<li><details><summary>Calculate the number of cards.</summary>
 ++++
 ....
 printf '%s\n' {{2..10},J,Q,K,A}\
@@ -111,7 +111,7 @@ printf '%s\n' {{2..10},J,Q,K,A}\
 ....
 ++++
 </details></li>
-<li><details><summary>Vypište karty všechny karty tak, aby každá karta zabírala stejný požet znaků. Pozor, některé znaky mohou být na více bajtů.</summary>
+<li><details><summary>Write down the card all the cards so that each card occupy the same number of characters. Note that some characters may be on multiple bytes..</summary>
 ++++
 ....
 printf '%5s' {{2..10},J,Q,K,A}\
@@ -119,34 +119,34 @@ printf '%5s' {{2..10},J,Q,K,A}\
 ....
 ++++
 </details></li>
-<li><details><summary>Řádky z předchozího příkladu uložte do proměnné <code>cards</code>.</summary>
+<li><details><summary>Save the rows from the previous example to a variable <code>cards</code>.</summary>
 ++++
 ....
 cards=$( printf '%5s' {{2..10},J,Q,K,A}\
 {$'\u2660',$'\u2665',$'\u2666',$'\u2663',$'\u2664',$'\u2661',$'\u2662',$'\u2667'} )
 
-#nebo lépe
+#or better
 
 printf -v cards '%5s' {{2..10},J,Q,K,A}\
 {$'\u2660',$'\u2665',$'\u2666',$'\u2663',$'\u2664',$'\u2661',$'\u2662',$'\u2667'}
 ....
 ++++
 </details></li>
-<li><details><summary>Z proměnné je možné vypsat podřetězec pomocí syntaxe <code>${prom:start:len}</code>, kde <code>prom</code> je jméno proměnné, <code>start</code> je výchozí pozice číslovaná od 0 a <code>len</code> je délka podřetězce. Vypište náhodnou kartu.</summary>
+<li><details><summary>You can get a substring from a variable <code>var</code> using syntax <code>${var:start:len}</code>, where <code>var</code> is the variable name, <code>start</code> is the default position numbered from 0, and <code>len</code>  is the length of the substring. Write a random card.</summary>
 ++++
 ....
 echo "${cards:$(( RANDOM % 104 * 3)):3}"
 ....
 ++++
 </details></li>
-<li><details><summary>Vytvořte alias <code>card</code>, který výpíše náhodnou kartu</summary>
+<li><details><summary>Create an alias <code>card</code>, that lists a random card</summary>
 ++++
 ....
 alias card='echo "${cards:$((RANDOM % 104 * 3)):3}"'
 ....
 ++++
 </details></li>
-<li><details><summary>Vytvořte alias <code>gcard</code>, který zobrazí grafickou podobu náhodné karty ve tvaru:<pre>
+<li><details><summary>Create an alias <code>gcard</code>, that displays a graphic form of a random card in the form:<pre>
 ,----,
 |    |
 |    |
@@ -159,14 +159,14 @@ alias gcard="printf ',----,\n|    |\n|    |\n| %s|\n'\''----'\''\n' \"\$(card)\"
 ....
 ++++
 </details></li>
-<li><details><summary>Příkaz <code>column</code> dokáže vytvořit sloupce textu o zadané šířce. Uložte do souboru <code>hand</code> pět karet zasebou. Pomocí příkazu <code>column</code> vypište karty vedle sebe.</summary>
+<li><details><summary>Command <code>column</code> can create columns of text of specified width. Add five random cards to the file <code>hand</code> one by one.      Use the command <code> column </code> to list cards side by side.</summary>
 ++++
 ....
 gcard >hand; gcard >>hand; gcard >>hand; gcard >>hand; gcard >>hand; column -c 40 hand
 ....
 ++++
 </details></li>
-<li><details><summary>Z předchozího příkladu vytvořte alias <code>give</code>, který rozdá 5 náhodných karet.<pre>
+<li><details><summary>Create an alias <code>give</code> from the previous example, that lists 5 random cards.<pre>
 ,----,	,----,	,----,	,----,	,----,
 |    |	|    |	|    |	|    |	|    |
 |    |	|    |	|    |	|    |	|    |
@@ -189,7 +189,7 @@ alias give='gcard >hand; gcard >>hand; gcard >>hand; gcard >>hand; gcard >>hand;
 ++++
 <div class='olist arabic'>
 <ol class='arabic'>
-<li><details><summary>Prostudujte manuálové stránky příkazů <code>mkdir</code> a <code>touch</code>, především jejich syntaxi (pořadí a možnosti argumentů).</summary>
+<li><details><summary>Study the manual pages of the commands <code>mkdir</code> a <code>touch</code>, especially their syntax (order and options of arguments).</summary>
 ++++
 ....
 man mkdir
@@ -197,28 +197,28 @@ man touch
 ....
 ++++
 </details></li>
-<li><details><summary>V domovském adresáři vytvořte adresář <code>files</code>, v něm podadresáře <code>2016</code>, <code>2017</code>, <code>2018</code> a <code>2019</code>. Při tom neměňte aktuální adresář (nepoužívejte příkaz <code>cd</code>).</summary>
+<li><details><summary>In the home directory, create a directory <code>files</code> with subdirectories <code>2016</code>, <code>2017</code>, <code>2018</code> and <code>2019</code>. Do not change the working directory while creating directories (do not use the command <code>cd</code>).</summary>
 ++++
 ....
 mkdir -p ~/files/{2016..2019}
 ....
 ++++
 </details></li>
-<li><details><summary>Vypište podrobnosti o <strong>všech</strong> vytvořených adresářích (opět bez použití příkazu <code>cd</code>).</summary>
+<li><details><summary>List the details of <strong>all</strong> directories you created (again without using the command <code>cd</code>).</summary>
 ++++
 ....
 ls -ld ~/files/{{2016..2019},}
 ....
 ++++
 </details></li>
-<li><details><summary>Pomocí cyklu <code>for</code> a proměnné RANDOM vypište 5 náhodných čísel. Cyklus má zápis <code>for var in _seznam-adresaru_; do ...; done</code>, kde <code>var</code> je jméno proměnné, která se bude plnit ze _seznam_polozek_. Místo ... napište příkaz, nebo seznam příkazů.</summary>
+<li><details><summary>Use the loop <code>for</code> and the variable RANDOM to write 5 random numbers to the standard output. The syntax of the loop is <code>for var in list_of_items; do ...; done</code>, where <code>var</code> is the name of a variable that will gradually take values from the list list_of_items. Instead of ... fill in the command or list of commands.</summary>
 ++++
 ....
 for i in {1..5}; do echo $RANDOM; done
 ....
 ++++
 </details></li>
-<li><details><summary>Ve vytvořených podadresářích vytvořte soubory <code>01</code> až <code>12</code> ve kterých budou řádky s čísly <code>01</code> až <code>31</code>. Použijte cyklus <code>for</code> z minulého příkladu, kde seznam položek vygenerujete pomocí globbingu.</summary>
+<li><details><summary>In  the previously created subdirectories, create files  <code>01</code> through <code>12</code>, in which there will be rows with numbers <code>01</code> through <code>31</code>. Use loop <code>for</code> from the previous example, where you generate a list of items using globbing (pathname  expansion).</summary>
 ++++
 ....
 touch ~/files/{2016..2019}/{01..12}
@@ -226,7 +226,7 @@ for i in ~/files/*/*; do printf '%s\n' {01..31} >"$i"; done
 ....
 ++++
 </details></li>
-<li><details><summary>Spočítejte počet souborů a celkový počet řádků ve vytvořených souborech. Pomocí aritmetické substituce spočítejte, zda jsou to správné výsledeky.</summary>
+<li><details><summary>Calculate the number of files and the total number of rows in the created files. Use arithmetic substitution to calculate whether these are the correct results.</summary>
 ++++
 ....
 wc -l ~/files/*/*
@@ -237,7 +237,7 @@ echo $((31*12*4)) $((12*4))
 ....
 ++++
 </details></li>
-<li><details><summary>Prostudujte manuálové stránky příkazů <code>cp</code>, <code>mv</code>, <code>rm</code>, především jejich syntaxi (pořadí a možnosti argumentů).</summary>
+<li><details><summary>Study the manual pages of the commands <code>cp</code>, <code>mv</code>, <code>rm</code>, especially their syntax (order and options of arguments).</summary>
 ++++
 ....
 man cp
@@ -246,7 +246,7 @@ man rm
 ....
 ++++
 </details></li>
-<li><details><summary>Smažte adresáře 2016 až 2018 a všechno uvnitř nich. Poté zkopírujte adresář 2019 včetně jeho obsahu na adresář 2020.</summary>
+<li><details><summary>Delete directories 2016 to 2018 and everything inside them. Then copy the directory 2019 and its contents to the directory 2020.</summary>
 ++++
 ....
 rm -rf ~/files/{2016..2018}
@@ -254,14 +254,14 @@ cp -r ~/files/{2019,2020}
 ....
 ++++
 </details></li>
-<li><details><summary>Přejmenujte adresář <code>files</code> na <code>logs</code>.</summary>
+<li><details><summary>Rename the directory <code>files</code> to <code>logs</code>.</summary>
 ++++
 ....
 mv ~/{files,logs}
 ....
 ++++
 </details></li>
-<li><details><summary>Přejmenujte všechny soubory <code>01</code> až <code>12</code> na <code>01.log</code> až <code>12.log</code>.</summary>
+<li><details><summary>Rename all files <code>01</code>  through  <code>12</code> to <code>01.log</code>  through  <code>12.log</code>.</summary>
 ++++
 ....
 for i in ~/logs/*/*; do mv "$i" "$i.log"; done
