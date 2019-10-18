@@ -1,0 +1,248 @@
+= Homework for the 3th practice
+
+== Topics of the current practice
+
+++++
+<style>li details { margin-bottom: 0.5em; }</style>
+<div class='olist arabic'>
+<ol class='arabic'>
+<li><details><summary>Na standardní výstup vypište přesně, jak je zadáno:
+<pre>Tento retezec obsahuje    7 mezer.
+BI-PS1 # FIT
+$PS1$
+`PS1'
+"$PATH"
+"PS1"
+'PS1'
+`\$/'</pre></summary>
+++++
+....
+printf '%s\n' 'Tento retezec obsahuje    7 mezer.' 'BI-PS1 # FIT' \$PS1$ \`PS1\' \
+'"$PATH"' '"PS1"' "'PS1'" '`\$/'\'
+....
+++++
+</details></li>
+<li><details><summary>Vypište počet aktuálně přihlášených uživatelů, zarovnaný mezerami zleva na 79 znaků.</summary>
+++++
+....
+printf '%79d\n' $( who | wc -l )
+....
+++++
+</details></li>
+<li><details><summary>Vypište počet aktuálně přihlášených uživatelů tak, aby číslo bylo zleva doplněno nulami na 10 číslic.</summary>
+++++
+....
+printf '%010d\n' $( who | wc -l )
+....
+++++
+</details></li>
+<li><details><summary>Vypište text <code>Casova znacka: YYYYMMDD-hhmm</code>, podle aktuálního data a času.</summary>
+++++
+....
+printf 'Casova znacka: %s\n' "$( date +%Y%m%d-%H%M )"
+....
+++++
+</details></li>
+<li><details><summary>Vypište text <code>Casova znacka: YYYYMMDD hhmm</code>, podle aktuálního data a času.</summary>
+++++
+....
+printf 'Casova znacka: %s\n' "$( date '+%Y%m%d %H%M' )"
+....
+++++
+</details></li>
+<li><details><summary>Do proměnné <code>D</code> uložte aktuální datum ve formátu <code>YYMMDD</code>. Vytvořte adresář <code>backup_YYMMDD</code>, kde YYMMDD je z proměnné <code>D</code>. Zobrazte podrobnosti vytvořeného adresáře a poté jej smažte.</summary>
+++++
+....
+D=$( date +%y%m%d )
+mkdir "backup_$D"
+ls -ld "backup_$D"
+rmdir "backup_$D"
+....
+++++
+</details></li>
+<li><details><summary>V předchozím příkladu uložte řetězec <code>backup</code> do proměnné <code>B</code> a použijte ji.</summary>
+++++
+....
+B=backup
+D=$( date +%y%m%d )
+DIR=${B}_$D
+mkdir "$DIR"
+ls -ld "$DIR"
+rmdir "$DIR"
+....
+++++
+</details></li>
+<li><details><summary>Podle aktuálního data vytvořte adresář <code>YYYY</code> a v něm adresář <code>MM</code>. V tomto adresáři vytvořte soubor <code>DD.txt</code>, který bude obsahovat aktuální čas.</summary>
+++++
+....
+YM=$( date +%Y/%m )
+D=$( date +%d )
+mkdir -p "$YM"
+date +%T > "$YM/$D.txt"
+....
+++++
+</details></li>
+<li><details><summary>V adresáři podle předchozího příkazu vytvořte další, prázdné, soubory od <code>01.txt</code> až po <code>31.txt</code>.</summary>
+++++
+....
+touch "$YM"/{01..31}.txt
+....
+++++
+</details></li>
+<li><details><summary>Zobrazte všechna jména souborů v aktuálním adresáři, která obsahují řetězec uložený v proměnné <code>FRAGMENT</code>. (Před i za tedy může být libovolný počet znaků.</summary>
+++++
+....
+ls *"$FRAGMENT"*
+printf '%s\n' *"$FRAGMENT"*
+....
+++++
+</details></li>
+<li><details><summary>Na počítači <code>fray1</code> vypište všechny jména souborů v adresáři /bin, které: <ol>
+	<li>mají právě 3 znaky</li>
+	<li>mají alespoň 3 znaky</li>
+	<li>mají maximálně 3 znaky</li>
+	<li>mají právě 2 znaky a začínají na malé písmeno</li>
+	<li>mají právě 2 znaky a nezačínají na malé písmeno</li>
+	<li>obsahují číslici</li>
+	<li>mají právě 2 znaky a obsahují číslici</li>
+	<li>obsahující ne-alfanumerický znak</li>
+	<li>jsou adresáře</li>
+</ol></summary>
+++++
+....
+cd /bin
+#1
+ls -d ???
+#2
+ls -d ???*
+#3
+ls -d ? ?? ???
+#4
+ls -d [a-z]?
+ls -d [[:lower:]]?
+#5
+ls -d [^a-z]?
+ls -d [^[:lower:]]?
+#6
+ls -d *[0-9]*
+ls -d *[[:digit:]]*
+#7
+ls -d [0-9]? ?[0-9]
+ls -d [[:digit:]]? ?[[:digit:]]
+#8
+ls -d *[^a-zA-Z0-9]*
+ls -d *[^[:alnum:]]*
+#9
+ls -d */
+....
+++++
+</details></li>
+<li><details><summary>Vypište podrobný seznam všech adresářů (jako položky) uvedených v proměnné <code>PATH</code>.</summary>
+++++
+....
+oldIFS=$IFS; IFS=:; ls -ld $PATH; IFS=$oldIFS
+....
+++++
+</details></li>
+<li><details><summary>Vypište podrobný seznam všech položek adresářů uvedených v proměnné <code>PATH</code>.</summary>
+++++
+....
+oldIFS=$IFS; IFS=:; ls -l $PATH; IFS=$oldIFS
+....
+++++
+</details></li>
+<li><details><summary>V proměnné <code>SERVER</code> je uložen řetězec (např. <code>fray1.fit.cvut.cz</code>) a v proměnné <code>USER</code> jiný řetězec (např. <code>barinkl</code>). Zkopírujte všechny soubory z aktuálního adresáře, včetně případných podadresářů, na vzdálený počítač daný hodnotou proměnné <code>SERVER</code> do domovského adresáře uživatele jako uživatel podle hodnotoy proměnné <code>USER</code>.</summary>
+++++
+....
+scp -r * "$USER@$SERVER:"
+....
+++++
+</details></li>
+<li><details><summary>Zkopírujte všechny soubory, jejichž jméno končí na .pdf v aktuálním adresáři na vzdálený počítač fray1.fit.cvut.cz do stejného adresáře, jako je současný aktuální adresář (předpokládejte, že existuje).</summary>
+++++
+....
+scp *.pdf fray1.fit.cvut.cz:"$PWD"
+....
+++++
+</details></li>
+</ol>
+</div>
+++++ 
+
+== Topics of the next practice
+
+++++
+<div class='olist arabic'>
+<ol class='arabic'>
+<li><details><summary>Vypište aktuální čas a počet sekund do následující celé hodiny. Tedy například <code>10:50:20 580</code>.</summary>
+++++
+....
+printf '%s ' "$( date +%T )"
+expr=$( date +'60*(59 - 10#%M) + (60 - 10#%S)' )
+printf '%s\n' $(( $expr ))
+....
+++++
+</details></li>
+<li><details><summary>Proč musí být v aritmetickém výrazu <code>10#</code>? Kdy by to bez toho byl problém?</summary>
+++++
+....
+Hodnotu začínající 0 představují zápis v osmičkové soustavě. Proto 08 nebo 09 je chybné číslo. Zápis 10# říká, ze se jedná o číslo v desítkové soustavě.
+....
+++++
+</details></li>
+<li><details><summary>Mohlo by se stát, že výsledek bude pro vypsaný čas špatně? Pokud ano, proč?</summary>
+++++
+....
+V řešení je volán příkaz date 2x. Mezi každým spuštěním mohlo dojít ke změně času a tedy výsledek pro druhé volání nebude odpovídat vypsanému času z prvního volání.
+....
+++++
+</details></li>
+<li><details><summary>Prostudujte manuálovou/info stránku příkazu date. Zaměřte se na formátování zadaného času místo aktuálního. Uložte do proměnné aktuální čas ve vhodném formátu. Vypište aktuální čas ve zvoleném formátu, počkejte 5 sekund a vypište uložený čas ve stejném formátu. (Pozor! Na Solarisu použijte příkaz <code>/usr/gnu/bin/date</code> a dokumentaci <code>info date</code>.)</summary>
+++++
+....
+cas=$( date +%s )
+date +%T 
+sleep 5
+date +%T -d "@$cas"
+....
+++++
+</details></li>
+<li><details><summary>Řešení původní úlohy opravte tak, že aktuální čas zjistíte pouze jednou, uložíte si jej do proměnné a dále budete již pracovat s uloženým časem. (Pozor! Na Solarisu použijte příkaz <code>/usr/gnu/bin/date</code> a dokumentaci <code>info date</code>.)</summary>
+++++
+....
+cas=$( date +%s )
+t=$( date +%T -d "@$cas" )
+m=$( date +%M -d "@$cas" )
+s=$( date +%S -d "@$cas" )
+(( sekund = 60*( 59 - 10#$m ) + ( 60 - 10#$s ) ))
+printf '%s %s\n' "$t" "$sekund"
+....
+++++
+</details></li>
+<li><details><summary>Pomocí libovolného textového editoru vytvořte skript jménem <code>do_cele</code> s řešením předchozí úlohy a pomocí příkazu <code>bash</code> jej spusťte.</summary>
+++++
+....
+bash do_cele
+....
+++++
+</details></li>
+<li><details><summary>Pomocí příkazu <code>printf</code> nebo <code>echo</code> a příkazu <code>less</code> a přesměrování přidejte na začátek souboru <code>do_cele</code> řádku<br><code>#!/bin/bash</code></summary>
+++++
+....
+printf '%s\n%s\n' '#!/bin/bash' "$( less do_cele )" > do_cele
+....
+++++
+</details></li>
+<li><details><summary>Pomocí příkazu <code>chmod +x do_cele</code> přidejte souboru právo spustitelnosti. Soubor spusťte z aktuálního adresáře bez volání příkazu <code>bash</code>.</summary>
+++++
+....
+chmod +x do_cele
+./do_cele
+....
+++++
+</details></li>
+++++
+++++
+</ol>
+</div>
+++++ 
