@@ -2,7 +2,7 @@
 //:imagesdir: ../media/homeworks
 
 
-* Examples with solutions that serve as preparation for the following practice/test.
+* In this section you will find examples with solutions to simplify preparation for individual practices (tests).
 
 //  1. link:./01/[Úvod do práce na příkazové řádce]
 //  1. link:./02/[Command line processing I]
