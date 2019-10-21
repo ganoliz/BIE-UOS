@@ -1,0 +1,408 @@
+= Homework for the 5th practice
+
+== Topics of the current practice
+
+++++
+<style>li details { margin-bottom: 0.5em; }</style>
+<div class='olist arabic'>
+<ol class='arabic'>
+<li><details><summary>Vytvořte proměnnou <code>DELIMITER</code> a nastavte do ní hodnotu dvojtečka (<code>:</code>)</summary>
+++++
+....
+DELIMITER=:
+....
+++++
+</details></li>
+<li><details><summary>Vypište proměnnou <code>DELIMITER</code> pomocí příkazu <code>declare</code></summary>
+++++
+....
+declare -p DELIMITER
+....
+++++
+</details></li>
+<li><details><summary>Vypište hodnotu proměnné <code>DELIMITER</code> pomocí příkazu <code>printf</code> (hodnota bude ukončená novým řádkem)</summary>
+++++
+....
+printf '%s\n' "$DELIMITER"
+....
+++++
+</details></li>
+<li><details><summary>Vypište hodnotu proměnné <code>USER</code></summary>
+++++
+....
+declare -p USER
+....
+++++
+</details></li>
+<li><details><summary>Příkazem <code>getent passwd username</code> vypište informace o svém uživatelském účtu, <code>username</code> nahraďte ručně za své uživatelské jméno</summary>
+++++
+....
+getent passwd barinkl
+....
+++++
+</details></li>
+<li><details><summary>Použijte předchozí příkaz, ale místo ručně napsaného uživatelského jména použijte proměnnou <code>USER</code></summary>
+++++
+....
+getent passwd "$USER"
+....
+++++
+<p>Pro vyvolání předchozího příkazu použijte <code>šipku_nahoru</code>, pro skok o slovo doleva <code>CTRL+šípku_doleva</code>, pro smazání do konce řádku <code>CTRL+K</code></p>
+</details></li>
+<li><details><summary>Pomocí příkazu <code>tr</code> nahraďte všechny výskyty znaku <code>:</code> za nový řádek (<code>\n</code>) ve výstupu předchozího příkazu. První argument <code>tr</code> bude <code>:</code> a druhý argument <code>\n</code>. Pozor na to, že znak <code>\</code> má v shellu speciální význam a je proto potřeba použít <code>'</code> <code>'</code></summary>
+++++
+....
+getent passwd "$USER" | tr : '\n'
+....
+++++
+</details></li>
+<li><details><summary>V předchozím příkazu nahraďte <code>:</code> za hodnotu proměnné <code>DELIMITER</code></summary>
+++++
+....
+getent passwd "$USER" | tr "$DELIMITER" '\n'
+....
+++++
+</details></li>
+<li><details><summary>Výstup předchozího příkazu uložte do souboru <code>username-info</code>, kde <code>username</code> nahraďte za hodnotu proměnné <code>USER</code></summary>
+++++
+....
+getent passwd "$USER" | tr "$DELIMITER" '\n' > "$USER-info"
+....
+++++
+</details></li>
+<li><details><summary>Pomocí příkazu <code>ls</code> zjistěte, že se souboru skutečně vytvořil a jako má velikost</summary>
+++++
+....
+ls -l "$USER-info"
+....
+++++
+</details></li>
+<li><details><summary>Pomocí příkazu <code>wc</code> a předcházejícího příkazu spočítejte počet položek výstupu příkazu <code>getent</code> (tedy počet řádek po nahrazení <code>:</code> za nový řádek)</summary>
+++++
+....
+getent passwd "$USER" | tr "$DELIMITER" '\n' | wc -l
+....
+++++
+</details></li>
+<li><details><summary>Pomocí příkazu <code>less</code> přečtěte obsah vytvořeného souboru (poté příkaz ukončete), pro dokončení jména souboru použijte tabulátor</summary>
+++++
+....
+less bar<TAB>
+less barinkl-info
+<q>
+
+# <TAB> znamená stisk klávesy TAB
+# <q> znamená stisk klávesy q
+....
+++++
+</details></li>
+<li><details><summary>Spočítejte počet řádků vytvořeného souboru a porovnejte (ručně) s výsledkem z počítání položek (použijte <code>šipku nahoru</code> pro procházení historie</summary>
+++++
+....
+getent passwd "$USER" | tr "$DELIMITER" '\n' | wc -l; wc -l "$USER-info"
+....
+++++
+</details></li>
+<li><details><summary>Vytvořte soubor <code>man.nl</code> do kterého uložíte počet řádků manuálu příkazu <code>man</code></summary>
+++++
+....
+man man | wc -l >man.nl
+....
+++++
+</details></li>
+<li><details><summary>Spočítejte počet řádků z výstupu předchozího příkladu (měl by být 0, neboť všechen text je uložen do soboru nebo směřuje na chybový výstup)</summary>
+++++
+....
+man man | wc -l >man.nl | wc -l
+....
+++++
+</details></li>
+<li><details><summary>Pomocí příkazu <code>rm soubor</code> smažte vytvořené soubory, místo <code>soubor</code> zadejte jméno souboru, jmen může být více</summary>
+++++
+....
+rm "$USER-info" man.nl
+....
+++++
+</details></li>
+<li><details><summary>Spočítejte počet položek v adresáři</summary>
+++++
+....
+ls | wc -l
+# Pozor na ls -l, je tam navic radek s total
+ls -l | wc -l
+....
+++++
+</details></li>
+<li><details><summary>Pomocí příkazu <code>ls</code> ověřte, že soubory byly smazány</summary>
+++++
+....
+ls "$USER-info" man.nl
+....
+++++
+</details></li>
+<li><details><summary>Opět spočítejte počet položek v adresáři</summary>
+++++
+....
+ls | wc -l
+....
+++++
+</details></li>
+<li><details><summary>Vytvořte proměnnou <code>A</code> s hodnotou <code>abc</code> a proměnnou <code>B</code> s hodnotou <code>def</code></summary>
+++++
+....
+A=abc
+B=def
+....
+++++
+</details></li>
+<li><details><summary>Vytvořte proměnnou <code>C</code> vzniklou zřetězením hodnot proměnných <code>A</code> a <code>B</code></summary>
+++++
+....
+C="$A$B"
+....
+++++
+</details></li>
+<li><details><summary>Vypište proměnné <code>A</code>, <code>B</code> a <code>C</code></summary>
+++++
+....
+declare -p A B C
+....
+++++
+</details></li>
+<li><details><summary>Přidejte na konec proměnné <code>C</code> řetězec <code>ghi</code></summary>
+++++
+....
+C="$C"ghi
+# pripadne pro pokrocilejsi
+C+=ghi
+....
+++++
+</details></li>
+<li><details><summary>Zkontrolujte, že proměnná <code>C</code> má skutečně hodnotu <code>abcdefghi</code></summary>
+++++
+....
+declare -p C
+....
+++++
+</details></li>
+<li><details><summary>Spočítejte délku proměnné <code>C</code> (počet znaků) pomocí příkazů <code>printf</code> a <code>wc</code></summary>
+++++
+....
+printf '%s' "$C" | wc -c
+# vyzkousejte, ze pri pouziti echo, ktere pridava znak novy radek je vysledek spatne
+echo "$C" | wc -c
+....
+++++
+</details></li>
+<li><details><summary>Vytvořte proměnnou <code>text</code>, do které uložíte několik řádků textu (použijte přitom <code>'</code> <code>'</code> nebo <code>"</code> <code>"</code>)</summary>
+++++
+....
+text='nekolik
+radku
+textu'
+....
+++++
+</details></li>
+<li><details><summary>Vytvořte proměnnou <code>kitty</code> s následujícím obsahem:
+++++
+....
+ /\__/\                                                                         
+(='><'=)
+ (")(")_/`
+....
+++++
+</summary>
+++++
+....
+kitty=' /\__/\
+ (='"'><'"'=)
+  (")(")_/`'
+....
+++++
+</details></li>
+<li><details><summary>Vypište obsah proměnné <code>kitty</code>, aby vypadal jako v zadání</summary>
+++++
+....
+printf '%s\n' "$kitty"
+....
+++++
+</details></li>
+<li><details><summary>Prostudujte si manuálovou stránku příkazu <code>man</code></summary>
+++++
+....
+man man
+....
+++++
+</details></li>
+<li><details><summary>Najděte v textu řetězec <code>ENVIRONMENT</code>, jaká proměnná slouží k nastavení použitého stránkovače?</summary>
+++++
+....
+/ENVIRONMENT
+
+#K nastavení stránkovače slouží proměnná PAGER.
+....
+++++
+</details></li>
+<li><details><summary>Pokud před název příkazu napíšete přiřazení do proměnné, provede se pro zadaný příkaz, např: <code>COLUMNS=200 ls /</code>. Nastavte stránkovač tak aby místo zobrazení manuálové stránky zobrazil pouze počet slov a řádků v manuálové stránce a vyvolejte manuál příkazu <code>man</code></summary>
+++++
+....
+PAGER='wc -wl' man man
+....
+++++
+</details></li>
+<li><details><summary>Spusťte příkaz <code>sleep 1000</code> a po chvíli jej ukončete</summary>
+++++
+....
+sleep 1000
+<CTRL+C>
+....
+++++
+</details></li>
+<li><details><summary>Uložte hodnotu proměnné <code>PS1</code> do proměnné <code>oldPS1</code></summary>
+++++
+....
+oldPS1="$PS1"
+....
+++++
+</details></li>
+<li><details><summary>Nastavte proměnnou <code>PS1</code> tak, aby prompt zobrazoval aktuální čas, uživatelské jméno a aktuální adresář a končil znakem <code>></code></summary>
+++++
+....
+PS1='\t \u \w> '
+....
+++++
+</details></li>
+<li><details><summary>Nastavte proměnnou <code>PS1</code> na původní hodnotu pomocí <code>oldPS1</code></summary>
+++++
+....
+PS1="$oldPS1"
+....
+++++
+</details></li>
+</ol>
+</div>
+++++ 
+
+
+== Topics of the next practice
+
+++++
+<div class='olist arabic'>
+<ol class='arabic'>
+<li><details><summary>Prostudujte si manuálovou stránku příkazu <code>date</code> (a případně souvisejících [SEE ALSO]), především formátovací řetězce (%_)</summary>
+++++
+....
+man date
+
+# na pocitaci fray
+man date
+/SEE ALSO
+man -s 3 strftime
+....
+++++
+</details></li>
+<li><details><summary>Pomocí jednoho volání příkazu <code>date</code> vypište následující text (2 řádky) s aktuálmi hodnotami (jazyk textu neřešte):
+++++
+....
+Dnes je pondělí,  1.10.2018 (40. tyden).
+Prave je 12:34:56 [CEST]
+....
+++++
+</summary>
+++++
+....
+date '+Dnes je %A, %e.%m.%Y (%W. tyden)%nPrave je %T [%Z]'
+....
+++++
+</details></li>
+<li><details><summary>Prostudujte si dokumentaci příkazu <code>printf</code></summary>
+++++
+....
+type printf
+help printf
+man printf
+man 3 printf
+....
+++++
+</details></li>
+<li><details><summary>Pomocí příkazu <code>printf</code> a speciálního znaku <code>*</code> vypište jména všech položek v aktuálním adresáři, každá položka bude oddělena tabelátorem</summary>
+++++
+....
+printf '%s\t' *
+....
+++++
+</details></li>
+<li><details><summary>Vypište položky aktuálního adresáře do 3 sloupečků po 25 znacích</summary>
+++++
+....
+printf '%25s%25s%25s\n' *
+printf '%-25s%-25s%-25s\n' *
+....
+++++
+</details></li>
+<li><details><summary>V minutových intervalech se 3x přihlaste na <code>fray1.fit.cvut.cz</code> a spusťte příkaz <code>date</code></summary>
+++++
+....
+ssh fray1.fit.cvut.cz date; sleep 60; ssh fray1.fit.cvut.cz date; sleep 60; ssh fray1.fit.cvut.cz
+# případně
+SSH='ssh fray1.fit.cvut.cz date'
+S='sleep 60'
+$SSH; $S; $SSH; $S; $SSH
+....
+++++
+</details></li>
+<li><details><summary>Přihlaste se na <code>fray1.fit.cvut.cz</code> a 3x v minutových intervalech spusťte příkaz <code>date</code></summary>
+++++
+....
+ssh fray1.fit.cvut.cz 'date; sleep 60; date; sleep 60; date'
+....
+++++
+</details></li>
+<li><details><summary>Vypište podrobnosti o <code>/bin</code> na lokálním počítači a na počítači <code>fray1.fit.cvut.cz</code>, výstupy porovnejte</summary>
+++++
+....
+ls -l /bin
+ssh fray1.fit.cvut.cz 'ls -l /bin'
+....
+++++
+</details></li>
+<li><details><summary>Prostudujte manuálovou stránku příkazu <code>ls</code>, především přepínače pro výpis a řazení (<code>-a</code>, <code>-l</code>, <code>-d</code>, <code>-S</code>, <code>-t</code>, <code>-r</code>)</summary>
+++++
+....
+man ls
+....
+++++
+</details></li>
+<li><details><summary>Seřaďte výpis aktuálního adresáře včetně detailů podle abecedy, velikosti a podle času modifikace souboru, případně v opačném pořadí</summary>
+++++
+....
+ls -l
+ls -lt
+ls -lS
+ls -ltr
+ls -lSr
+....
+++++
+</details></li>
+<li><details><summary>Vypište obsah adresáře <code>/bin</code></summary>
+++++
+....
+ls /bin
+....
+++++
+</details></li>
+<li><details><summary>Na počítači <code>fray1.fit.cvut.cz</code> vypište pomocí příkazu <code>fgrep text</code>, řádky ze souboru <code>/etc/profile</code>, kde <code>text</code> nahradíte za hledaný řetězec, obsahující a) <code>=</code>, b) <code>-</code>, c) <code>.</code>, d) <code>"</code>, e) <code>'</code>, f) <code>#</code></summary>
+++++
+....
+ssh fray1.fit.cvut.cz 'fgrep = /etc/profile'
+ssh fray1.fit.cvut.cz 'fgrep - /etc/profile'
+ssh fray1.fit.cvut.cz 'fgrep . /etc/profile'
+ssh fray1.fit.cvut.cz 'fgrep \" /etc/profile'
+ssh fray1.fit.cvut.cz "fgrep \' /etc/profile"
+ssh fray1.fit.cvut.cz 'fgrep \# /etc/profile'
+....
+++++
+</details></li>
+</ol>
+</div>
+++++ 
