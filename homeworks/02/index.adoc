@@ -6,8 +6,8 @@
 <style>li details { margin-bottom: 0.5em; }</style>
 <div class='olist arabic'>
 <ol class='arabic'>
-<li><details><summary>Na standardní výstup vypište přesně, jak je zadáno:
-<pre>Tento retezec obsahuje    7 mezer.
+<li><details><summary>On the standard output, print the following text exactly as shown:
+<pre>This string contains    7 spaces.
 BI-PS1 # FIT
 $PS1$
 `PS1'
@@ -17,40 +17,40 @@ $PS1$
 `\$/'</pre></summary>
 ++++
 ....
-printf '%s\n' 'Tento retezec obsahuje    7 mezer.' 'BI-PS1 # FIT' \$PS1$ \`PS1\' \
+printf '%s\n' 'This string contains    7 spaces.' 'BI-PS1 # FIT' \$PS1$ \`PS1\' \
 '"$PATH"' '"PS1"' "'PS1'" '`\$/'\'
 ....
 ++++
 </details></li>
-<li><details><summary>Vypište počet aktuálně přihlášených uživatelů, zarovnaný mezerami zleva na 79 znaků.</summary>
+<li><details><summary>List the number of users currently logged in, output should be left-aligned to 79 characters.</summary>
 ++++
 ....
 printf '%79d\n' $( who | wc -l )
 ....
 ++++
 </details></li>
-<li><details><summary>Vypište počet aktuálně přihlášených uživatelů tak, aby číslo bylo zleva doplněno nulami na 10 číslic.</summary>
+<li><details><summary>List the number of users currently logged in so that the number is filled with zeros from left to 10 digits </summary>
 ++++
 ....
 printf '%010d\n' $( who | wc -l )
 ....
 ++++
 </details></li>
-<li><details><summary>Vypište text <code>Casova znacka: YYYYMMDD-hhmm</code>, podle aktuálního data a času.</summary>
+<li><details><summary>Write the text <code>Time stamp: YYYYMMDD-hhmm</code> to standard output, by the current date and time.</summary>
 ++++
 ....
-printf 'Casova znacka: %s\n' "$( date +%Y%m%d-%H%M )"
-....
-++++
-</details></li>
-<li><details><summary>Vypište text <code>Casova znacka: YYYYMMDD hhmm</code>, podle aktuálního data a času.</summary>
-++++
-....
-printf 'Casova znacka: %s\n' "$( date '+%Y%m%d %H%M' )"
+printf 'Time stamp: %s\n' "$( date +%Y%m%d-%H%M )"
 ....
 ++++
 </details></li>
-<li><details><summary>Do proměnné <code>D</code> uložte aktuální datum ve formátu <code>YYMMDD</code>. Vytvořte adresář <code>backup_YYMMDD</code>, kde YYMMDD je z proměnné <code>D</code>. Zobrazte podrobnosti vytvořeného adresáře a poté jej smažte.</summary>
+<li><details><summary>Write the text <code>Time stamp: YYYYMMDD hhmm</code>, to standard output, by the current date and time.</summary>
+++++
+....
+printf 'Time stamp: %s\n' "$( date '+%Y%m%d %H%M' )"
+....
+++++
+</details></li>
+<li><details><summary>Save the current date in the following format <code>YYMMDD</code> to the shell variable <code>D</code>. Create a directory <code>backup_YYMMDD</code>, where YYMMDD is the contents of variable <code>D</code>. List the details of the directory you created, and then delete it.</summary>
 ++++
 ....
 D=$( date +%y%m%d )
@@ -60,7 +60,7 @@ rmdir "backup_$D"
 ....
 ++++
 </details></li>
-<li><details><summary>V předchozím příkladu uložte řetězec <code>backup</code> do proměnné <code>B</code> a použijte ji.</summary>
+<li><details><summary>In the previous example, save the string <code>backup</code> to a variable <code>B</code> and use it.</summary>
 ++++
 ....
 B=backup
@@ -72,7 +72,7 @@ rmdir "$DIR"
 ....
 ++++
 </details></li>
-<li><details><summary>Podle aktuálního data vytvořte adresář <code>YYYY</code> a v něm adresář <code>MM</code>. V tomto adresáři vytvořte soubor <code>DD.txt</code>, který bude obsahovat aktuální čas.</summary>
+<li><details><summary>Create directory <code>YYYY</code> according to the current date, then create a subdirectory <code>MM</code> in that directory. Create a file <code>DD.txt</code> containing the current time in this directory.</summary>
 ++++
 ....
 YM=$( date +%Y/%m )
@@ -82,14 +82,14 @@ date +%T > "$YM/$D.txt"
 ....
 ++++
 </details></li>
-<li><details><summary>V adresáři podle předchozího příkazu vytvořte další, prázdné, soubory od <code>01.txt</code> až po <code>31.txt</code>.</summary>
+<li><details><summary>In the directory according to the previous command, create additional empty files from <code>01.txt</code> to <code>31.txt</code>.</summary>
 ++++
 ....
 touch "$YM"/{01..31}.txt
 ....
 ++++
 </details></li>
-<li><details><summary>Zobrazte všechna jména souborů v aktuálním adresáři, která obsahují řetězec uložený v proměnné <code>FRAGMENT</code>. (Před i za tedy může být libovolný počet znaků.</summary>
+<li><details><summary>List all file names in the current directory that contain the string stored in the variable <code>FRAGMENT</code>. (Any number of characters can be before oar after the string).</summary>
 ++++
 ....
 ls *"$FRAGMENT"*
@@ -97,16 +97,16 @@ printf '%s\n' *"$FRAGMENT"*
 ....
 ++++
 </details></li>
-<li><details><summary>Na počítači <code>fray1</code> vypište všechny jména souborů v adresáři /bin, které: <ol>
-	<li>mají právě 3 znaky</li>
-	<li>mají alespoň 3 znaky</li>
-	<li>mají maximálně 3 znaky</li>
-	<li>mají právě 2 znaky a začínají na malé písmeno</li>
-	<li>mají právě 2 znaky a nezačínají na malé písmeno</li>
-	<li>obsahují číslici</li>
-	<li>mají právě 2 znaky a obsahují číslici</li>
-	<li>obsahující ne-alfanumerický znak</li>
-	<li>jsou adresáře</li>
+<li><details><summary>On computer  <code>fray1</code> list all the file names in the directory /bin that: <ol>
+	<li>have just 3 characters</li>
+	<li>have at least 3 characters</li>
+	<li>have a maximum of 3 characters</li>
+	<li>have just 2 characters and begin with a lowercase letter</li>
+	<li>have just 2 characters and do not start with a lowercase letter</li>
+	<li>contain a digit</li>
+	<li>they have exactly 2 characters and contain a number</li>
+	<li>containing a non-alphanumeric character</li>
+	<li>are directories</li>
 </ol></summary>
 ++++
 ....
@@ -137,28 +137,55 @@ ls -d */
 ....
 ++++
 </details></li>
-<li><details><summary>Vypište podrobný seznam všech adresářů (jako položky) uvedených v proměnné <code>PATH</code>.</summary>
+<li><details><summary>List a detailed list of all directories (as entries) listed in the variable <code>PATH</code>.
+<pre>
+Examle:
+For PATH with the content:  /opt/local/bin:/opt/java/jdk/bin:/usr/bin
+List:
+drwxr-xr-x   2 root     other         45 Sep  6  2011 /opt/java/jdk/bin
+drwxr-xr-x   2 root     bin          106 Oct 22  2012 /opt/local/bin
+drwxr-xr-x   4 root     bin         1276 Mar 27  2017 /usr/bin
+</pre></summary>
 ++++
 ....
 oldIFS=$IFS; IFS=:; ls -ld $PATH; IFS=$oldIFS
 ....
 ++++
 </details></li>
-<li><details><summary>Vypište podrobný seznam všech položek adresářů uvedených v proměnné <code>PATH</code>.</summary>
+<li><details><summary>List a detailed list of all directory entries listed in the variable <code>PATH</code>.
+<pre>
+Examle:
+For PATH with the content:  /opt/local/bin:/opt/java/jdk/bin:/usr/bin
+List:
+/opt/java/jdk/bin:
+total 1689
+lrwxrwxrwx   1 root     other          8 Sep 15  2011 ControlPanel -> jcontrol
+...
+
+/opt/local/bin:
+total 261
+lrwxrwxrwx   1 root     other         32 Sep 11  2009 2ps -> /usr/lib/lp/postscript/postprint
+...
+
+/usr/bin:
+total 328786
+lrwxrwxrwx   1 root     root           8 Jan  2  2016 2to3 -> 2to3-2.7
+...
+</pre></summary>
 ++++
 ....
 oldIFS=$IFS; IFS=:; ls -l $PATH; IFS=$oldIFS
 ....
 ++++
 </details></li>
-<li><details><summary>V proměnné <code>SERVER</code> je uložen řetězec (např. <code>fray1.fit.cvut.cz</code>) a v proměnné <code>USER</code> jiný řetězec (např. <code>barinkl</code>). Zkopírujte všechny soubory z aktuálního adresáře, včetně případných podadresářů, na vzdálený počítač daný hodnotou proměnné <code>SERVER</code> do domovského adresáře uživatele jako uživatel podle hodnotoy proměnné <code>USER</code>.</summary>
+<li><details><summary>Variabe  <code>SERVER</code> contains a string (e.g. <code>fray1.fit.cvut.cz</code>) and variable <code>USER</code> contains another string (e.g. <code>barinkl</code>). Copy all files from the working directory, including any subdirectories, to the remote computer defined by the variable value <code>SERVER</code> into the home directory of user defined by the variable value <code>USER</code>.</summary>
 ++++
 ....
 scp -r * "$USER@$SERVER:"
 ....
 ++++
 </details></li>
-<li><details><summary>Zkopírujte všechny soubory, jejichž jméno končí na .pdf v aktuálním adresáři na vzdálený počítač fray1.fit.cvut.cz do stejného adresáře, jako je současný aktuální adresář (předpokládejte, že existuje).</summary>
+<li><details><summary>Copy all files, whose name ends with extension .pdf and are in the working directory to the remote computer fray1.fit.cvut.cz in the same working directory  (assume it exists).</summary>
 ++++
 ....
 scp *.pdf fray1.fit.cvut.cz:"$PWD"
@@ -174,7 +201,7 @@ scp *.pdf fray1.fit.cvut.cz:"$PWD"
 ++++
 <div class='olist arabic'>
 <ol class='arabic'>
-<li><details><summary>Vypište aktuální čas a počet sekund do následující celé hodiny. Tedy například <code>10:50:20 580</code>.</summary>
+<li><details><summary>Write the current time and number of seconds to the next full hour. For example <code>10:50:20 580</code>.</summary>
 ++++
 ....
 printf '%s ' "$( date +%T )"
@@ -183,21 +210,21 @@ printf '%s\n' $(( $expr ))
 ....
 ++++
 </details></li>
-<li><details><summary>Proč musí být v aritmetickém výrazu <code>10#</code>? Kdy by to bez toho byl problém?</summary>
+<li><details><summary>Why does it have to be <code> 10# </code> in the arithmetic expression? When would that be a problem without it?</summary>
 ++++
 ....
-Hodnotu začínající 0 představují zápis v osmičkové soustavě. Proto 08 nebo 09 je chybné číslo. Zápis 10# říká, ze se jedná o číslo v desítkové soustavě.
-....
-++++
-</details></li>
-<li><details><summary>Mohlo by se stát, že výsledek bude pro vypsaný čas špatně? Pokud ano, proč?</summary>
-++++
-....
-V řešení je volán příkaz date 2x. Mezi každým spuštěním mohlo dojít ke změně času a tedy výsledek pro druhé volání nebude odpovídat vypsanému času z prvního volání.
+A value beginning with 0 is an octal notation. Therefore, 08 or 09 is an incorrect number. 10# says it is a decimal number.
 ....
 ++++
 </details></li>
-<li><details><summary>Prostudujte manuálovou/info stránku příkazu date. Zaměřte se na formátování zadaného času místo aktuálního. Uložte do proměnné aktuální čas ve vhodném formátu. Vypište aktuální čas ve zvoleném formátu, počkejte 5 sekund a vypište uložený čas ve stejném formátu. (Pozor! Na Solarisu použijte příkaz <code>/usr/gnu/bin/date</code> a dokumentaci <code>info date</code>.)</summary>
+<li><details><summary>Could the result be wrong for some time? If so, why?</summary>
+++++
+....
+In the solution the  command date is called 2x. There could be a change of time between every start and so the result for the second call will not match the displayed time from the first call.
+....
+++++
+</details></li>
+<li><details><summary>See the manual/info page of the date command. Focus on formatting the specified time instead of the current one. Save the current time in a suitable format in the variable. Write the current time in the selected format, wait 5 seconds and write the saved time in the same format. (Attention! On Solaris, use the command <code>/usr/gnu/bin/date</code>  and documentation <code>info date</code>.)</summary>
 ++++
 ....
 cas=$( date +%s )
@@ -207,7 +234,7 @@ date +%T -d "@$cas"
 ....
 ++++
 </details></li>
-<li><details><summary>Řešení původní úlohy opravte tak, že aktuální čas zjistíte pouze jednou, uložíte si jej do proměnné a dále budete již pracovat s uloženým časem. (Pozor! Na Solarisu použijte příkaz <code>/usr/gnu/bin/date</code> a dokumentaci <code>info date</code>.)</summary>
+<li><details><summary>Correct the solution of the original task by finding the current time only once, saving it in a variable, and then working with the saved time. (Attention! On Solaris, use the command <code>/usr/gnu/bin/date</code> and documentation <code>info date</code>.)</summary>
 ++++
 ....
 cas=$( date +%s )
@@ -219,25 +246,25 @@ printf '%s %s\n' "$t" "$sekund"
 ....
 ++++
 </details></li>
-<li><details><summary>Pomocí libovolného textového editoru vytvořte skript jménem <code>do_cele</code> s řešením předchozí úlohy a pomocí příkazu <code>bash</code> jej spusťte.</summary>
+<li><details><summary>Use any text editor to create a script (text file) by name<code>do_all</code> containing a solution of the previous task and using the command <code>bash</code> to run it.</summary>
 ++++
 ....
-bash do_cele
-....
-++++
-</details></li>
-<li><details><summary>Pomocí příkazu <code>printf</code> nebo <code>echo</code> a příkazu <code>less</code> a přesměrování přidejte na začátek souboru <code>do_cele</code> řádku<br><code>#!/bin/bash</code></summary>
-++++
-....
-printf '%s\n%s\n' '#!/bin/bash' "$( less do_cele )" > do_cele
+bash do_all
 ....
 ++++
 </details></li>
-<li><details><summary>Pomocí příkazu <code>chmod +x do_cele</code> přidejte souboru právo spustitelnosti. Soubor spusťte z aktuálního adresáře bez volání příkazu <code>bash</code>.</summary>
+<li><details><summary>Use the command <code>printf</code> or <code>echo</code>, command <code>less</code>, and redirection of output to add the following line<br><code>#!/bin/bash</code> at the beginning of the file <code>do_all</code></summary>
 ++++
 ....
-chmod +x do_cele
-./do_cele
+printf '%s\n%s\n' '#!/bin/bash' "$( less do_all )" > do_all
+....
+++++
+</details></li>
+<li><details><summary>Use the command <code>chmod +x do_all</code> to add the executable right to the file. Run the file from the current directory without calling the command <code>bash</code>.</summary>
+++++
+....
+chmod +x do_all
+./do_all
 ....
 ++++
 </details></li>
