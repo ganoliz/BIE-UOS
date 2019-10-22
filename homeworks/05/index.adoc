@@ -6,11 +6,11 @@
 <style>li details { margin-bottom: 0.5em; }</style>
 <div class='olist arabic'>
 <ol class='arabic'>
-<li><details><summary>V domovském adresáři vytvořte adresář <code>scripts</code> a v něm vytvořte skript jménem <code>output</code>, který vypíše 5 řádek (čísla od 1 do 5) na standardní výstup a 3 řádky (písmena a, b, c) na chybový výstup.</summary>
+<li><details><summary>In the home directory, create a subdirectory <code>scripts</code> and then create a script named <code>output</code> in that subdirectory. The script should print 5 lines (numbers from 1 to 5) to standard output and 3 lines (letters a, b, c) to standard error output.</summary>
 ++++
 ....
 mkdir ~/scripts
-vim ~/scripts/output
+gedit ~/scripts/output   # instead of gedit you can use another editor (vim, nano, ...)
 
 #!/bin/bash
 printf '%s\n' {1..5}
@@ -18,7 +18,7 @@ printf '%s\n' {a..c} >&2
 ....
 ++++
 </details></li>
-<li><details><summary>Pomocí příkazu: <code>chmod +x <em>jméno_souboru</em></code>, přidejte právo spustitelnosti souboru a skript spusťte.</summary>
+<li><details><summary>Use the command: <code>chmod +x <em>file</em></code>to add executable rights to the file and run the script.</summary>
 ++++
 ....
 chmod +x ~/scripts/output
@@ -26,7 +26,7 @@ chmod +x ~/scripts/output
 ....
 ++++
 </details></li>
-<li><details><summary>Zařiďte, aby bylo možné spouštět skript pouze jménem bez cesty a spusťte ho.</summary>
+<li><details><summary>Make the necessary settings so that the script can only be run by name without a path and run it.</summary>
 ++++
 ....
 #1
@@ -39,28 +39,28 @@ output
 ....
 ++++
 </details></li>
-<li><details><summary>Spojte standardní a chybový výstup skriptu <code>output</code> a uložte jej do souboru <code>all</code> v domovském adresáři a zároveň do terminálu vypište počet řádek výstupu skriptu.</summary>
+<li><details><summary>Join and save the standard output and standard error output of the script <code>output</code> to a file <code>all</code> in the home directory, and write the number of lines of the script output to the terminal.</summary>
 ++++
 ....
 output 2>&1 | tee ~/all | wc -l
 ....
 ++++
 </details></li>
-<li><details><summary>Přidejte standardní výstup skriptu <code>output</code> do souboru <code>all</code> a chybový výstup zahoďte, zároveň do terminálu vypište počet přidaných řádků do souboru.</summary>
+<li><details><summary>Add the standard output of the script <code>output</code> to the file <code>all</code>, discard the standard error output, and write the number of lines added to the file to the terminal.</summary>
 ++++
 ....
 output 2>/dev/null | tee -a ~/all | wc -l
 ....
 ++++
 </details></li>
-<li><details><summary>Přidejte chybový výstup skriptu <code>output</code> do souboru <code>all</code> a standardní výstup zahoďte, zároveň do terminálu vypište počet přidaných řádků do souboru.</summary>
+<li><details><summary>Add the standard error output of the script<code>output</code> to the file <code>all</code>, discard the standard output, and write the number of lines added to the file to the terminal.</summary>
 ++++
 ....
 output 2>&1 >/dev/null | tee -a ~/all | wc -l
 ....
 ++++
 </details></li>
-<li><details><summary>Rozdělte soubor <code>all</code> na poloviny a uložte je do souborů <code>s1</code> a <code>s2</code>. <em>Na Solarisu používejte raději GNU verze příkazů z adresáře <code>/usr/gnu/bin</code></em></summary>
+<li><details><summary>Divide the file <code>all</code> into halves and save those halves to files  <code>s1</code> and <code>s2</code>. <em>On Solaris, use the GNU commands form the directory <code>/usr/gnu/bin</code>.</em></summary>
 ++++
 ....
 lines=$(wc -l <~/all)
@@ -71,33 +71,33 @@ head -n "$lines" all > s1
 tail -n "$lines" all > s2
 
 #2
-gsplit -a 1 --numeric-suffixes=1 -l "$lines" all s
+split -a 1 --numeric-suffixes=1 -l "$lines" all s
 
 ....
 ++++
 </details></li>
-<li><details><summary>Porovnejte, zda jsou soubory <code>s1</code> a <code>s2</code> stejné a pokud ano, vypište text: <code>files are the same</code> .</summary>
+<li><details><summary>Compare whether the files  <code>s1</code> and <code>s2</code> are the same and, if so, write: <code>files are the same</code> .</summary>
 ++++
 ....
 cmp s1 s2 && echo "files are the same"
 ....
 ++++
 </details></li>
-<li><details><summary>Z výpisu příkazu <code>getent passwd</code> na počítači <code>fray1</code> Vypište pouze 5. sloupec (se jménem uživatele) a výsledek uložte do souboru <code>jmena</code> .</summary>
+<li><details><summary>Use the standard output of the command <code>getent passwd</code> on the computer <code>fray1</code> Write out only the 5th column (the user name) and save the result in a file <code>jmena</code> .</summary>
 ++++
 ....
 getent passwd | cut -d: -f5 >jmena
 ....
 ++++
 </details></li>
-<li><details><summary>Pokud má soubor <code>jmena</code> alespon 10000 řádků, vypište text: <code>File 'jmena' OK</code> .</summary>
+<li><details><summary>If the file <code>jmena</code> has at least 10000 lines, write: <code>File 'jmena' OK</code> .</summary>
 ++++
 ....
 (( $(wc -l <jmena) >= 10000 )) && echo "File 'jmena' OK"
 ....
 ++++
 </details></li>
-<li><details><summary>V souboru <code>jmena</code> jsou prázdné řádky, odstraňte je pomocí příkazů <code>sort</code> a <code>tail</code> (případně jinak).</summary>
+<li><details><summary>File <code>jmena</code> contains blank (empty) lines, use commands <code>sort</code> and <code>tail</code> to delete them.</summary>
 ++++
 ....
 sort jmena | cat -n | head
@@ -110,7 +110,7 @@ grep '^$' jmena >jmena2; mv jmena{2,}
 ....
 ++++
 </details></li>
-<li><details><summary>Pomocí příkazu <code>grep ' student$' <em>soubor</em></code> a <code>grep ' zam$' <em>soubor</em></code> vytvořte soubory <code>jmena.stu</code> a <code>jmena.zam</code> obsahující pouze studenty, resp. zaměstnance.</summary>
+<li><details><summary>Use commands <code>grep ' student$' <em>file</em></code> and <code>grep ' zam$' <em>file</em></code> to create files <code>jmena.stu</code> and <code>jmena.zam</code> containing only names of students or names of employees respectively.</summary>
 ++++
 ....
 grep ' student$' jmena >jmena.stu
@@ -118,7 +118,7 @@ grep ' zam$' jmena >jmena.zam
 ....
 ++++
 </details></li>
-<li><details><summary>Pomocí (GNU verze) příkazu wc zjistěte, který soubor obsahuje nejdelší řádek. Jméno takového souboru uložte do proměnné LONG. V případě shody vyberte libovolný soubor.</summary>
+<li><details><summary>Use the (GNU version) of command wc to determine which file has the longest line. Save the name of such a file in the LONG variable. If there is a match, select any file.</summary>
 ++++
 ....
 S=$(/usr/gnu/bin/wc -L <jmena.stu)
@@ -128,15 +128,15 @@ LONG=jmena.zam
 ....
 ++++
 </details></li>
-<li><details><summary>Vypište nejdelší řádku ze souboru z proměnné <code>LONG</code>. (Řešení pomocí jednoduchých filtrů je komplikované, pokročilejší filtry (probírané později) řešení výrazně zjednoduší.<ol>
-<li>Nahraďte v souboru všechny znaky kromě nového řádku za libovoný znak (třeba tečku).</li>
-<li>Ošíslujte řádky výstupu.</li>
-<li>Seřaďte výstup podle abecedy tak, aby nejdelší řádek byl první (pozor na číslo řádky).</li>
-<li>Vypište pouze první řádek.</li>
-<li>Z tohoto řádku vypište pouze první sloupec, tj. číslo řádky. Číslo řádky je od zbytku odděleno tabulátorem.</li>
-<li>Toto číslo uložte do proměnné <code>L</code> .</li>
-<li>Ze souboru v proměnné <code>LONG</code> vypsat řádku číslo <code>L</code> .</li>
-<li>Na této řádce spočítat počet slov jména (pozor na student/zam).</li>
+<li><details><summary>Write the longest line of the file from the variable <code>LONG</code>. The solution using simple filters is complicated, more advanced filters (discussed later) will simplify the solution considerably.<ol>
+<li>Replace all characters except the new line with any character (such as a period) in the file.</li>
+<li>Number the output lines.</li>
+<li>Sort the output alphabetically so that the longest line is the first (be aware of the line number).</li>
+<li>List only the first line.</li>
+<li>List only the first column, ie the line number, from this line. The line number is separated from the rest by a tab.</li>
+<li>Save this number in a variable <code>L</code> .</li>
+<li>From a file in a variable <code>LONG</code> list a line numbe <code>L</code> .</li>
+<li>Calculate the number of name words on this line (watch out for the student/zam).</li>
 </ol></summary>
 ++++
 ....
@@ -167,16 +167,16 @@ echo $(( $(head -n "$L" "$LONG" | tail -1 | wc -w) - 1 ))
 ....
 ++++
 </details></li>
-<li><details><summary>Znamená konec předchozího příkladu, že jsme našli jméno složené z nejvíce slov?</summary>
+<li><details><summary>Does the end of the previous example mean that we found the name consisting of the most words?</summary>
 ++++
 ....
-# Ne, nejdelší řadek nemusí nutně obsahovat nejvíce slov.
-# Pro netrpělivé, představa o délkách řádků a počtu slov ve jméně:
+# No, the longest line does not necessarily contain the most words.
+# For impatient, the concept of line lengths and the number of words in a name:
 awk 'NF>=max { max=NF; print NF-1,length,$0 }' jmena.zam jmena.stu
 ....
 ++++
 </details></li>
-<li><details><summary>Pomocí příkazu <code>awk 'NF==3' <em>soubor</em></code> ponechte v souborech <code>jmena.stu</code> a <code>jmena.zam</code> pouze ty, které obsahují pouze jedno jméno a příjmení.</summary>
+<li><details><summary>Use the command <code>awk 'NF==3' <em>file</em></code> to leave only lines in files <code>jmena.stu</code> and <code>jmena.zam</code> that contain only one first and one last name.</summary>
 ++++
 ....
 awk 'NF==3' jmena.stu >jmena.stu2; mv jmena.stu{2,}
@@ -184,21 +184,21 @@ awk 'NF==3' jmena.zam >jmena.zam2; mv jmena.zam{2,}
 ....
 ++++
 </details></li>
-<li><details><summary>Spojte soubory <code>jmena.zam</code> a <code>jmena.stu</code> opět do jednoho souboru <code>jmena</code> .</summary>
+<li><details><summary>Join files <code>jmena.zam</code> and <code>jmena.stu</code> back into one file <code>jmena</code> .</summary>
 ++++
 ....
 cat jmena.{zam,stu} >jmena
 ....
 ++++
 </details></li>
-<li><details><summary>Pomocí příkazu <code>grep -v 'docasne konto' <em>soubor</em></code> odstraňte ze souboru <code>jmena</code> řádky dočasných studentských kont.</summary>
+<li><details><summary>Use the command  <code>grep -v 'docasne konto' <em>soubor</em></code> to remove the rows of temporary student accounts from the file <code>jmena</code> .</summary>
 ++++
 ....
 grep -v 'docasne konto' jmena >jmena2; mv jmena{2,}
 ....
 ++++
 </details></li>
-<li><details><summary>Ověřte, že velikost souboru <code>jmena</code> je přesným součtem velikostí souborů <code>jmena.zam</code> a <code>jmena.stu</code> . Pokud ne, vypište text: <code>Join failed!</code> </summary>
+<li><details><summary>Verify that size of the file  <code>jmena</code> is the exact sum of sizes of files <code>jmena.zam</code> and <code>jmena.stu</code> . If not, write the following text to the standard output: <code>Join failed!</code> </summary>
 ++++
 ....
 J=$(wc -c <jmena)
@@ -208,7 +208,7 @@ Z=$(wc -c <jmena.zam)
 ....
 ++++
 </details></li>
-<li><details><summary>Do souboru <code>jmena2</code> uložte pouze příjmení a jména v tomto pořadí ze souboru <code>jmena</code> .</summary>
+<li><details><summary>Save only last names and names from file  <code>jmena</code> in file <code>jmena2</code>.</summary>
 ++++
 ....
 cut -d' ' -f1 jmena > j
@@ -217,7 +217,7 @@ paste -d' ' p j > jmena2
 ....
 ++++
 </details></li>
-<li><details><summary>Vypište a zároveň spočítejte jména, která jsou zároveň jako příjmení v souboru <code>jmena2</code> . Pro výpis na chybový výstup můžete použít speciální soubor <code>/dev/stderr</code> .</summary>
+<li><details><summary>Write names, that represent both first and last names, from the file <code>jmena2</code> to the standard error output,  and  at the same time the number of these names write to the standard output. You can use a special file <code>/dev/stderr</code> to print out the error output.</summary>
 ++++
 ....
 cut -d' ' -f1 jmena2 | sort -u > p
@@ -226,7 +226,7 @@ comm -12 j p | tee /dev/stderr | wc -l
 ....
 ++++
 </details></li>
-<li><details><summary>Ze souboru <code>jmena2</code> vypište seznam nejčastějších křestních jmen a příjmení oddělených dvojtečkou. Seznamy budou vnitřně oddělené čárkou. Tedy výstup bude <code>jm1,jm2,jm3,jm4,jm5:př1,př2,př3,př4,př5</code> .</summary>
+<li><details><summary>List the most common first and last names separated by a colon from the file<code>jmena2</code>  The lists will be internally separated by a comma. So the output will be <code>fn1,fn2,fn3,fn4,fn:ln1,ln2,ln3,ln4,ln5</code> .</summary>
 ++++
 ....
 P=$(cut -d' ' -f1 jmena2 | sort | uniq -c | sort -n -k1,1r | head -n 5 | tr -s ' ' | cut -d' ' -f3 | paste -d, -s -)
@@ -245,10 +245,10 @@ printf '%s:%s\n' "$J" "$P"
 ++++
 <div class='olist arabic'>
 <ol class='arabic'>
-<li><details><summary>Vytvořte soubor <code>morse</code> obsahující Morseovu abecedu - použijte řešení.</summary>
+<li><details><summary>Create a file <code>morse</code> containing Morse code - use the following solution.</summary>
 ++++
 ....
-cat <<KONEC >morse
+cat <<END >morse
 a . −
 i . .
 r . − .
@@ -275,18 +275,18 @@ y − . − −
 h . . . .
 q − − . −
 z − − . .
-KONEC
+END
 ....
 ++++
 </details></li>
-<li><details><summary>Seřaďte soubor <code>morse</code> podle abecedy.</summary>
+<li><details><summary>Sort the file <code>morse</code> alphabetically.</summary>
 ++++
 ....
 sort morse
 ....
 ++++
 </details></li>
-<li><details><summary>Pomocí <code>for</code> cyklu napište na začátek každé řádky její délku ze/do souboru <code>morse</code>.</summary>
+<li><details><summary>Use a loop <code>for</code> to add a row length to the beginning of each row in file <code>morse</code>.</summary>
 ++++
 ....
 IFS=$'\n'
@@ -298,34 +298,34 @@ mv morse{.new,}
 ....
 ++++
 </details></li>
-<li><details><summary>Seřaďte Morseovu abecedu ze souboru <code>morse</code> podle délky kódu každého znaku, kde v případě stejné délky je tečka kratší než pomlčka. Délku znaků z výstupu odstraňte.</summary>
+<li><details><summary> Sort the Morse code from the file <code>morse</code> according to the length of the code of each character, where for the same length the dot is shorter than the dash. Remove the character length from the output.</summary>
 ++++
 ....
 sort -k1,1n -k3 morse | cut -d' ' -f2-
 ....
 ++++
 </details></li>
-<li><details><summary>Ze seřazené Morseovy abecedy z předchozího příkladu vypište pouze jednotlivá písmena na jeden řádek těsně za sebe.</summary>
+<li><details><summary>From the ordered Morse code from the previous example, write only individual letters on one line immediately after each other.</summary>
 ++++
 ....
 sort -k1,1n -k3 morse | cut -d' ' -f2 | paste -s -d ''
 
-# nebo
+# or
 
 sort -k1,1n -k3 morse | cut -d' ' -f2 | tr -d '\n'; echo
 ....
 ++++
 </details></li>
-<li><details><summary>V manuálové stránce příkazu <code>bash</code> převeďte velká písmena na malá a vypište jejich seznam seřazený podle četnosti výskytu jednotlivých písmen v textu. Výstup proveďte ve stejném formátu jako u předchozího příkladu.<ol>
-	<li>Vypište manuálovou stránku příkazu bash,</li>
-	<li>odstraňte všechny znaky kromě písmen,</li>
-	<li>převeďte velká písmena na malá,</li>
-	<li>zalomte text na šířku jednoho znaku,</li>
-	<li>seřaďte znaky podle abecedy,</li>
-	<li>spočítejte četnosti jednotlivých znaků,</li>
-	<li>seřaďte znaky podle četnosti,</li>
-	<li>odstraňte z výstupu všechny znaky kromě malých písmen,</li>
-	<li>výsledek ukončete novou řádkou.</li>
+<li><details><summary>In the manual page of command <code> bash </code>, convert uppercase letters to lowercase and list them by frequency of occurrence of each letter in the text. Perform the output in the same format as the previous example.<ol>
+	<li>List the  command page of command bash,</li>
+	<li>delete all characters except the letters,</li>
+	<li>convert capital letters to lowercase,</li>
+	<li>wrap the text to the width of one character,</li>
+	<li>sort the characters alphabetically,</li>
+	<li>calculate the frequency of each character,</li>
+	<li>sort by frequency,</li>
+	<li>remove all characters except lowercase characters from the output,</li>
+	<li>add a new line to the end of the listing.</li>
 </ol></summary>
 ++++
 ....
