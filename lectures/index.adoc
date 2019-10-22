@@ -7,7 +7,7 @@
   . Filesystem. Basic file/directory commands.
   * link:bie-ps1-p03-fs-01.pdf[]
   . Filters and useful commands.
-  * link:bie-ps1-p05-filters-01.pdf[]
+  * link:bie-ps1-p04-filters-01.pdf[]
   . Regular expressions, grep. 
   * link:bie-ps1-p06-regexpr-01.pdf[]
   . Regular expressions, awk, sed.
