@@ -1,0 +1,365 @@
+= Homework for the 6th practice
+
+== Topics of the current practice
+
+++++
+<style>li details { margin-bottom: 0.5em; }</style>
+<div class='olist arabic'>
+<ol class='arabic'>
+<li><details><summary>V domovském adresáři vytvořte adresář <code>scripts</code> a v něm vytvořte skript jménem <code>output</code>, který vypíše 5 řádek (čísla od 1 do 5) na standardní výstup a 3 řádky (písmena a, b, c) na chybový výstup.</summary>
+++++
+....
+mkdir ~/scripts
+vim ~/scripts/output
+
+#!/bin/bash
+printf '%s\n' {1..5}
+printf '%s\n' {a..c} >&2
+....
+++++
+</details></li>
+<li><details><summary>Pomocí příkazu: <code>chmod +x <em>jméno_souboru</em></code>, přidejte právo spustitelnosti souboru a skript spusťte.</summary>
+++++
+....
+chmod +x ~/scripts/output
+~/scripts/output
+....
+++++
+</details></li>
+<li><details><summary>Zařiďte, aby bylo možné spouštět skript pouze jménem bez cesty a spusťte ho.</summary>
+++++
+....
+#1
+alias output=~/scripts/output
+output
+
+#2
+PATH=$PATH:~/scripts
+output
+....
+++++
+</details></li>
+<li><details><summary>Spojte standardní a chybový výstup skriptu <code>output</code> a uložte jej do souboru <code>all</code> v domovském adresáři a zároveň do terminálu vypište počet řádek výstupu skriptu.</summary>
+++++
+....
+output 2>&1 | tee ~/all | wc -l
+....
+++++
+</details></li>
+<li><details><summary>Přidejte standardní výstup skriptu <code>output</code> do souboru <code>all</code> a chybový výstup zahoďte, zároveň do terminálu vypište počet přidaných řádků do souboru.</summary>
+++++
+....
+output 2>/dev/null | tee -a ~/all | wc -l
+....
+++++
+</details></li>
+<li><details><summary>Přidejte chybový výstup skriptu <code>output</code> do souboru <code>all</code> a standardní výstup zahoďte, zároveň do terminálu vypište počet přidaných řádků do souboru.</summary>
+++++
+....
+output 2>&1 >/dev/null | tee -a ~/all | wc -l
+....
+++++
+</details></li>
+<li><details><summary>Rozdělte soubor <code>all</code> na poloviny a uložte je do souborů <code>s1</code> a <code>s2</code>. <em>Na Solarisu používejte raději GNU verze příkazů z adresáře <code>/usr/gnu/bin</code></em></summary>
+++++
+....
+lines=$(wc -l <~/all)
+((lines=lines/2))
+
+#1
+head -n "$lines" all > s1
+tail -n "$lines" all > s2
+
+#2
+gsplit -a 1 --numeric-suffixes=1 -l "$lines" all s
+
+....
+++++
+</details></li>
+<li><details><summary>Porovnejte, zda jsou soubory <code>s1</code> a <code>s2</code> stejné a pokud ano, vypište text: <code>files are the same</code> .</summary>
+++++
+....
+cmp s1 s2 && echo "files are the same"
+....
+++++
+</details></li>
+<li><details><summary>Z výpisu příkazu <code>getent passwd</code> na počítači <code>fray1</code> Vypište pouze 5. sloupec (se jménem uživatele) a výsledek uložte do souboru <code>jmena</code> .</summary>
+++++
+....
+getent passwd | cut -d: -f5 >jmena
+....
+++++
+</details></li>
+<li><details><summary>Pokud má soubor <code>jmena</code> alespon 10000 řádků, vypište text: <code>File 'jmena' OK</code> .</summary>
+++++
+....
+(( $(wc -l <jmena) >= 10000 )) && echo "File 'jmena' OK"
+....
+++++
+</details></li>
+<li><details><summary>V souboru <code>jmena</code> jsou prázdné řádky, odstraňte je pomocí příkazů <code>sort</code> a <code>tail</code> (případně jinak).</summary>
+++++
+....
+sort jmena | cat -n | head
+
+#1
+sort jmena | tail -n +7 >jmena2; mv jmena{2,}
+
+#2
+grep '^$' jmena >jmena2; mv jmena{2,}
+....
+++++
+</details></li>
+<li><details><summary>Pomocí příkazu <code>grep ' student$' <em>soubor</em></code> a <code>grep ' zam$' <em>soubor</em></code> vytvořte soubory <code>jmena.stu</code> a <code>jmena.zam</code> obsahující pouze studenty, resp. zaměstnance.</summary>
+++++
+....
+grep ' student$' jmena >jmena.stu
+grep ' zam$' jmena >jmena.zam
+....
+++++
+</details></li>
+<li><details><summary>Pomocí (GNU verze) příkazu wc zjistěte, který soubor obsahuje nejdelší řádek. Jméno takového souboru uložte do proměnné LONG. V případě shody vyberte libovolný soubor.</summary>
+++++
+....
+S=$(/usr/gnu/bin/wc -L <jmena.stu)
+Z=$(/usr/gnu/bin/wc -L <jmena.zam)
+LONG=jmena.zam
+((S>Z)) && LONG=jmena.stu
+....
+++++
+</details></li>
+<li><details><summary>Vypište nejdelší řádku ze souboru z proměnné <code>LONG</code>. (Řešení pomocí jednoduchých filtrů je komplikované, pokročilejší filtry (probírané později) řešení výrazně zjednoduší.<ol>
+<li>Nahraďte v souboru všechny znaky kromě nového řádku za libovoný znak (třeba tečku).</li>
+<li>Ošíslujte řádky výstupu.</li>
+<li>Seřaďte výstup podle abecedy tak, aby nejdelší řádek byl první (pozor na číslo řádky).</li>
+<li>Vypište pouze první řádek.</li>
+<li>Z tohoto řádku vypište pouze první sloupec, tj. číslo řádky. Číslo řádky je od zbytku odděleno tabulátorem.</li>
+<li>Toto číslo uložte do proměnné <code>L</code> .</li>
+<li>Ze souboru v proměnné <code>LONG</code> vypsat řádku číslo <code>L</code> .</li>
+<li>Na této řádce spočítat počet slov jména (pozor na student/zam).</li>
+</ol></summary>
+++++
+....
+#1
+tr -c '\n' '[.*]' <"$LONG"
+/usr/gnu/bin/tr -c '\n' . <"$LONG"
+
+#2
+tr -c '\n' '[.*]' <"$LONG" | cat -n
+
+#3
+tr -c '\n' '[.*]' <"$LONG" | cat -n | sort -k 2,2r
+
+#4
+tr -c '\n' '[.*]' <"$LONG" | cat -n | sort -k 2,2r | head -n 1
+
+#5
+tr -c '\n' '[.*]' <"$LONG" | cat -n | sort -k 2,2r | head -n 1 | cut -f1
+
+#6
+L=$(tr -c '\n' '[.*]' <"$LONG" | cat -n | sort -k 2,2r | head -n 1 | cut -f1)
+
+#7
+head -n "$L" "$LONG" | tail -1
+
+#8
+echo $(( $(head -n "$L" "$LONG" | tail -1 | wc -w) - 1 ))
+....
+++++
+</details></li>
+<li><details><summary>Znamená konec předchozího příkladu, že jsme našli jméno složené z nejvíce slov?</summary>
+++++
+....
+# Ne, nejdelší řadek nemusí nutně obsahovat nejvíce slov.
+# Pro netrpělivé, představa o délkách řádků a počtu slov ve jméně:
+awk 'NF>=max { max=NF; print NF-1,length,$0 }' jmena.zam jmena.stu
+....
+++++
+</details></li>
+<li><details><summary>Pomocí příkazu <code>awk 'NF==3' <em>soubor</em></code> ponechte v souborech <code>jmena.stu</code> a <code>jmena.zam</code> pouze ty, které obsahují pouze jedno jméno a příjmení.</summary>
+++++
+....
+awk 'NF==3' jmena.stu >jmena.stu2; mv jmena.stu{2,}
+awk 'NF==3' jmena.zam >jmena.zam2; mv jmena.zam{2,}
+....
+++++
+</details></li>
+<li><details><summary>Spojte soubory <code>jmena.zam</code> a <code>jmena.stu</code> opět do jednoho souboru <code>jmena</code> .</summary>
+++++
+....
+cat jmena.{zam,stu} >jmena
+....
+++++
+</details></li>
+<li><details><summary>Pomocí příkazu <code>grep -v 'docasne konto' <em>soubor</em></code> odstraňte ze souboru <code>jmena</code> řádky dočasných studentských kont.</summary>
+++++
+....
+grep -v 'docasne konto' jmena >jmena2; mv jmena{2,}
+....
+++++
+</details></li>
+<li><details><summary>Ověřte, že velikost souboru <code>jmena</code> je přesným součtem velikostí souborů <code>jmena.zam</code> a <code>jmena.stu</code> . Pokud ne, vypište text: <code>Join failed!</code> </summary>
+++++
+....
+J=$(wc -c <jmena)
+S=$(wc -c <jmena.stu)
+Z=$(wc -c <jmena.zam)
+((J==S+Z)) || echo 'Join failed!'
+....
+++++
+</details></li>
+<li><details><summary>Do souboru <code>jmena2</code> uložte pouze příjmení a jména v tomto pořadí ze souboru <code>jmena</code> .</summary>
+++++
+....
+cut -d' ' -f1 jmena > j
+cut -d' ' -f2 jmena > p
+paste -d' ' p j > jmena2
+....
+++++
+</details></li>
+<li><details><summary>Vypište a zároveň spočítejte jména, která jsou zároveň jako příjmení v souboru <code>jmena2</code> . Pro výpis na chybový výstup můžete použít speciální soubor <code>/dev/stderr</code> .</summary>
+++++
+....
+cut -d' ' -f1 jmena2 | sort -u > p
+cut -d' ' -f2 jmena2 | sort -u > j
+comm -12 j p | tee /dev/stderr | wc -l
+....
+++++
+</details></li>
+<li><details><summary>Ze souboru <code>jmena2</code> vypište seznam nejčastějších křestních jmen a příjmení oddělených dvojtečkou. Seznamy budou vnitřně oddělené čárkou. Tedy výstup bude <code>jm1,jm2,jm3,jm4,jm5:př1,př2,př3,př4,př5</code> .</summary>
+++++
+....
+P=$(cut -d' ' -f1 jmena2 | sort | uniq -c | sort -n -k1,1r | head -n 5 | tr -s ' ' | cut -d' ' -f3 | paste -d, -s -)
+J=$(cut -d' ' -f2 jmena2 | sort | uniq -c | sort -n -k1,1r | head -n 5 | tr -s ' ' | cut -d' ' -f3 | paste -d, -s -)
+printf '%s:%s\n' "$J" "$P"
+....
+++++
+</details></li>
+</ol>
+</div>
+++++ 
+
+
+== Topics of the next practice
+
+++++
+<div class='olist arabic'>
+<ol class='arabic'>
+<li><details><summary>Vytvořte soubor <code>morse</code> obsahující Morseovu abecedu - použijte řešení.</summary>
+++++
+....
+cat <<KONEC >morse
+a . −
+i . .
+r . − .
+b − . . .
+j . − − −
+s . . .
+c − . − .
+k − . −
+t −
+d − . .
+l . − . .
+u . . −
+e .
+m − −
+v . . . −
+n − .
+w . − −
+f . . − .
+o − − −
+x − . . −
+g − − .
+p . − − .
+y − . − −
+h . . . .
+q − − . −
+z − − . .
+KONEC
+....
+++++
+</details></li>
+<li><details><summary>Seřaďte soubor <code>morse</code> podle abecedy.</summary>
+++++
+....
+sort morse
+....
+++++
+</details></li>
+<li><details><summary>Pomocí <code>for</code> cyklu napište na začátek každé řádky její délku ze/do souboru <code>morse</code>.</summary>
+++++
+....
+IFS=$'\n'
+for line in $(< morse)
+do
+	printf '%d %s\n' ${#line} "$line"
+done >morse.new
+mv morse{.new,}
+....
+++++
+</details></li>
+<li><details><summary>Seřaďte Morseovu abecedu ze souboru <code>morse</code> podle délky kódu každého znaku, kde v případě stejné délky je tečka kratší než pomlčka. Délku znaků z výstupu odstraňte.</summary>
+++++
+....
+sort -k1,1n -k3 morse | cut -d' ' -f2-
+....
+++++
+</details></li>
+<li><details><summary>Ze seřazené Morseovy abecedy z předchozího příkladu vypište pouze jednotlivá písmena na jeden řádek těsně za sebe.</summary>
+++++
+....
+sort -k1,1n -k3 morse | cut -d' ' -f2 | paste -s -d ''
+
+# nebo
+
+sort -k1,1n -k3 morse | cut -d' ' -f2 | tr -d '\n'; echo
+....
+++++
+</details></li>
+<li><details><summary>V manuálové stránce příkazu <code>bash</code> převeďte velká písmena na malá a vypište jejich seznam seřazený podle četnosti výskytu jednotlivých písmen v textu. Výstup proveďte ve stejném formátu jako u předchozího příkladu.<ol>
+	<li>Vypište manuálovou stránku příkazu bash,</li>
+	<li>odstraňte všechny znaky kromě písmen,</li>
+	<li>převeďte velká písmena na malá,</li>
+	<li>zalomte text na šířku jednoho znaku,</li>
+	<li>seřaďte znaky podle abecedy,</li>
+	<li>spočítejte četnosti jednotlivých znaků,</li>
+	<li>seřaďte znaky podle četnosti,</li>
+	<li>odstraňte z výstupu všechny znaky kromě malých písmen,</li>
+	<li>výsledek ukončete novou řádkou.</li>
+</ol></summary>
+++++
+....
+#1
+man bash
+
+#2
+man bash | tr -dc a-zA-Z
+
+#3
+man bash | tr -dc a-zA-Z | tr A-Z a-z
+
+#4
+man bash | tr -dc a-zA-Z | tr A-Z a-z | fold -w1
+
+#5
+man bash | tr -dc a-zA-Z | tr A-Z a-z | fold -w1 | sort
+
+#6
+man bash | tr -dc a-zA-Z | tr A-Z a-z | fold -w1 | sort | uniq -c
+
+#7
+man bash | tr -dc a-zA-Z | tr A-Z a-z | fold -w1 | sort | uniq -c | sort -nr
+
+#8
+man bash | tr -dc a-zA-Z | tr A-Z a-z | fold -w1 | sort | uniq -c | sort -nr | tr -dc a-z
+
+#9
+man bash | tr -dc a-zA-Z | tr A-Z a-z | fold -w1 | sort | uniq -c | sort -nr | tr -dc a-z; echo
+....
+++++
+</details></li>
+++++
+++++
+</ol>
+</div>
+++++ 
