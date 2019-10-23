@@ -18,10 +18,11 @@
     * link:https://bips1.fit.cvut.cz[LearnShell]
     * link:bie-ps1-c04-fs-questions.pdf[]
     * link:bie-ps1-c04-fs-solutions.pdf[]
+    
   . Standard Input/Output, UNIX filters and useful commands.
     * link:https://bips1.fit.cvut.cz[LearnShell]
-    * link:bie-ps1-c06-filters-questions.pdf[]
-//    * link:bie-ps1-c06-filters-solutions.pdf[]
+    * link:bie-ps1-c05-filters-questions.pdf[]
+//    * link:bie-ps1-c05-filters-solutions.pdf[]
   . Regular expressions, command grep.
     * link:https://bips1.fit.cvut.cz[LearnShell]
     * link:bie-ps1-c07-regexp-questions.pdf[]
