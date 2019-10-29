@@ -1,0 +1,170 @@
+= Domácí příprava na 7. cvičení
+
+Příprava na 7. cvičení opakuje témata pátého a šestého cvičení: link:../../tutorials/presentation/filters.html[Jednoduché textové filtry] a link:../../tutorials/presentation/re.html[Regulární výrazy - příkaz grep]. Dále obsahuje jednoduché příklady na vyzkoušení, které budou tématem sedmého cvičení na práci s regulárními výrazy.
+
+== Opakování
+
+++++
+<style>li details { margin-bottom: 0.5em; }</style>
+<div class='olist arabic'>
+<ol class='arabic'>
+<li><details><summary>Stáhněte si <a href="./logs.tgz">archiv s log soubory</a> a rozbalte jej pomocí příkazu <code>tar xzf logs.tgz</code> .</summary>
+++++
+....
+tar xzf logs.tgz
+....
+++++
+</details></li>
+<li><details><summary>(Na Solarisu - fray1/fray3): Nastavte proměnnou <code>PATH</code> tak, aby se primárně spouštěly GNU verze příkazů z adresáře <code>/usr/gnu/bin</code> .</summary>
+++++
+....
+PATH=/usr/gnu/bin:$PATH
+....
+++++
+</details></li>
+<li><details><summary>Vstupte do adresáře <code>logs</code>, který vznikl rozbalením archivu v prvním příkladu.</summary>
+++++
+....
+cd logs
+....
+++++
+</details></li>
+<li><details><summary>Zjistěte adresářovou strukturu v adresáři <code>logs</code> příkazem <code>find</code>. Spočítejte počty řádků všech souborů s příponou <code>log</code> v podadresářích.</summary>
+++++
+....
+find
+wc -l */*/*.log
+....
+++++
+</details></li>
+<li><details><summary>Vypište jméno log souboru s největším počtem řádků (pozor na celkový počet řádků výpisu příkazu <code>wc</code>).</summary>
+++++
+....
+wc -l */*/*.log | head -n -1 | sort -n | tail -n 1 | cut -c 11-
+....
+++++
+</details></li>
+<li><details><summary>Jméno souboru z předchozího příkladu uložte do proměnné <code>FILE</code> .</summary>
+++++
+....
+FILE=$(wc -l */*/*.log | head -n -1 | sort -n | tail -n 1 | cut -c 11-)
+....
+++++
+</details></li>
+<li><details><summary>V soboru podle proměnné <code>FILE</code> spočítejte počet řádků.</summary>
+++++
+....
+wc -l <"$FILE"
+....
+++++
+</details></li>
+<li><details><summary>Log soubor má strukturu: <code>Měsíc Den Čas Server Služba: Timestamp IP Data1 Data2 "Požadavek"</code> . Pozor na dvouznakové číslo dne. Uvnitř uvozovek jsou vždy právě tři slova. Odstraňte z něj začátek každé řádky tak, aby začínal položkou <code>Timestamp</code> . Výsledek uložte do proměnné <code>LOG</code> .</summary>
+++++
+....
+LOG=$(tr -s ' ' <"$FILE"| cut -d' ' -f6-)
+....
+++++
+</details></li>
+<li><details><summary>Z proměnné <code>LOG</code> vypiště IP adresy seřazené podle počtu požadavků z dané IP adresy (počtu řádků, na které je daná IP adresa).</summary>
+++++
+....
+cut -d' ' -f2 <<<"$LOG" | sort | uniq -c | sort -n | tr -s ' ' | cut -d' ' -f3
+....
+++++
+</details></li>
+<li><details><summary>Nejčastější adresu z předchozího příkladu uložte do proměnné <code>IP</code>. Pomocí příkazu <code>fgrep</code> spočítejte, kolik řádek v proměnné <code>LOG</code> obsahuje tuto IP adresu.</summary>
+++++
+....
+IP=$(cut -d' ' -f2 <<<"$LOG" | sort | uniq -c | sort -n | tr -s ' ' | cut -d' ' -f3 | tail -n 1)
+fgrep -c " $IP " <<<"$LOG"
+....
+++++
+</details></li>
+<li><details><summary>Vypište přípony souborů o které a kolikrát se žádalo z této IP adresy, seřazené podle počtu požadavků. Předpokládejte, že v cestě k souboru je maximálně 1 tečka. Přípony vypište za sebou oddělené čárkami.</summary>
+++++
+....
+fgrep " $IP " <<<"$LOG" | cut -d\" -f2 | cut -d' ' -f2 | cut -d. -f2 | sort | uniq -c | sort -n | cut -c9- | paste -d, -s
+....
+++++
+</details></li>
+<li><details><summary>Vypište jména všech log souborů, ve kterých se vyskytuje IP adresa z proměnné <code>IP</code> .</summary>
+++++
+....
+fgrep -l " $IP " */*/*.log
+....
+++++
+</details></li>
+<li><details><summary>Pro každý soubor, který tuto IP adresu obsahuje (pouze pro ně) vypište počet řádků s touto IP adresou.</summary>
+++++
+....
+fgrep -c " $IP " $(fgrep -l " $IP " */*/*.log)
+....
+++++
+</details></li>
+<li><details><summary>Ze všech log souborů vypište pouze řádky, které obsahují řetězec <code>[access_per_ip]</code> .</summary>
+++++
+....
+fgrep '[access_per_ip]' */*/*.log
+....
+++++
+</details></li>
+<li><details><summary>Z řádků podle předchozího příkladu vypište pouze první slovo z řetězce v uvozovkách. Každé slovo nechť je ve výstupu maximálně jednou. Pomocí příkazu <code>grep .</code> odstraňte prázdné řádky.</summary>
+++++
+....
+fgrep '[access_per_ip]' */*/*.log | cut -d\" -f2 | cut -d' ' -f1 | grep . | sort -u
+....
+++++
+</details></li>
+<li><details><summary>Do výstupu předchozího příkladu přidejte na začátek každé řádky uvozovky a uložte jej do souboru <code>re</code> . (Nápověda: Použijte příkaz <code>paste</code>. Jako prázdný soubor můžete použít <code>/dev/null</code> a standardní vstup se označuje jako <code>-</code> .</summary>
+++++
+....
+fgrep '[access_per_ip]' */*/*.log | cut -d\" -f2 | cut -d' ' -f1 | grep . | sort -u | paste -d\" /dev/null - >re
+....
+++++
+</details></li>
+<li><details><summary>Ze souboru <code>re</code> odstraňte řádky obsahující řetězce <code>"GET</code> nebo <code>"POST</code> .</summary>
+++++
+....
+grep -v -e '"GET' -e '"POST' re >re2
+mv re2 re
+....
+++++
+</details></li>
+<li><details><summary>Vypište řádky všech log souborů, které odpovídají vzorům v souboru <code>re</code> . Odpovídající řetězec, nechť je ve výstupu obarvený.</summary>
+++++
+....
+grep --color -f re */*/*.log
+....
+++++
+</details></li>
+<li><details><summary>Z předcházejícího příkladu vypište časový rozsah, kdy k takovým požadavkům docházelo ve formátu <code>YYYY.MM.DD-YYYY.MM.DD</code> .</summary>
+++++
+....
+FILES=$(grep -f re */*/*.log | cut -d: -f1 | tr -dc '0-9/\n' | sort)
+SINCE=$(head -n 1 <<<"$FILES")
+TO=$(tail -n 1 <<<"$FILES")
+printf '%s-%s\n' "$SINCE" "$TO" | tr / .
+....
+++++
+</details></li>
+</ol>
+</div>
+++++ 
+
+
+== Nová látka
+
+++++
+<div class='olist arabic'>
+<ol class='arabic'>
+<li><details><summary></summary>
+++++
+....
+....
+++++
+</details></li>
+++++
+++++
+</ol>
+</div>
+++++ 
