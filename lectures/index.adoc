@@ -9,7 +9,7 @@
   . Filters and useful commands.
   * link:bie-ps1-p04-filters-01.pdf[]
   . Regular expressions, grep. 
-  * link:bie-ps1-p06-regexpr-01.pdf[]
+  * link:bie-ps1-p05-regexpr-01.pdf[]
   . Regular expressions, awk, sed.
   * link:bie-ps1-p07-sedawk-01.pdf[]
   . Exit code. Command test. Flow Control. Loops.
