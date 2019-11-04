@@ -23,10 +23,13 @@
     * link:https://bips1.fit.cvut.cz[LearnShell]
     * link:bie-ps1-c05-filters-questions.pdf[]
     * link:bie-ps1-c05-filters-solutions.pdf[]
+    * Data files: link:sp500-1.csv[], link:sp500-2.csv[]
+//link:accounts.txt[]
   . Regular expressions, command grep.
     * link:https://bips1.fit.cvut.cz[LearnShell]
     * link:bie-ps1-c07-regexp-questions.pdf[]
 //    * link:bie-ps1-c07-regexp-solutions.pdf[]  
+    * Data file: link:words.txt[]
   . Regular expressions, commands sed and awk.
     * link:https://bips1.fit.cvut.cz[LearnShell]
     * link:bie-ps1-c08-sed_awk-questions.pdf[]
