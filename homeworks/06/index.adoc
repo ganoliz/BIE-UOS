@@ -1,35 +1,33 @@
-= Domácí příprava na 7. cvičení
+= Homework for the 7th practice
 
-Příprava na 7. cvičení opakuje témata pátého a šestého cvičení: link:../../tutorials/presentation/filters.html[Jednoduché textové filtry] a link:../../tutorials/presentation/re.html[Regulární výrazy - příkaz grep]. Dále obsahuje jednoduché příklady na vyzkoušení, které budou tématem sedmého cvičení na práci s regulárními výrazy.
-
-== Opakování
+== Topics of the current practice
 
 ++++
 <style>li details { margin-bottom: 0.5em; }</style>
 <div class='olist arabic'>
 <ol class='arabic'>
-<li><details><summary>Stáhněte si <a href="./logs.tgz">archiv s log soubory</a> a rozbalte jej pomocí příkazu <code>tar xzf logs.tgz</code> .</summary>
+<li><details><summary>Download <a href="./logs.tgz">archive with log files</a> and extract it using the command <code>tar xzf logs.tgz</code> .</summary>
 ++++
 ....
 tar xzf logs.tgz
 ....
 ++++
 </details></li>
-<li><details><summary>(Na Solarisu - fray1/fray3): Nastavte proměnnou <code>PATH</code> tak, aby se primárně spouštěly GNU verze příkazů z adresáře <code>/usr/gnu/bin</code> .</summary>
+<li><details><summary>(In Solaris - fray1/fray3): Set the variable <code>PATH</code> so that GNU versions of the commands from the directory <code>/usr/gnu/bin</code> are primarily started.</summary>
 ++++
 ....
 PATH=/usr/gnu/bin:$PATH
 ....
 ++++
 </details></li>
-<li><details><summary>Vstupte do adresáře <code>logs</code>, který vznikl rozbalením archivu v prvním příkladu.</summary>
+<li><details><summary>Enter the directory <code>logs</code>, which was created by unpacking the archive in the first example.</summary>
 ++++
 ....
 cd logs
 ....
 ++++
 </details></li>
-<li><details><summary>Zjistěte adresářovou strukturu v adresáři <code>logs</code> příkazem <code>find</code>. Spočítejte počty řádků všech souborů s příponou <code>log</code> v podadresářích.</summary>
+<li><details><summary>Determine the directory structure in directory <code>logs</code> with the command <code>find</code>. Calculate the rows of all files with the extension <code>log</code> in subdirectories.</summary>
 ++++
 ....
 find
@@ -37,42 +35,42 @@ wc -l */*/*.log
 ....
 ++++
 </details></li>
-<li><details><summary>Vypište jméno log souboru s největším počtem řádků (pozor na celkový počet řádků výpisu příkazu <code>wc</code>).</summary>
+<li><details><summary>Write the name of the log file with the largest number of lines (be aware of the total number of lines of the command dump <code>wc</code>).</summary>
 ++++
 ....
 wc -l */*/*.log | head -n -1 | sort -n | tail -n 1 | cut -c 11-
 ....
 ++++
 </details></li>
-<li><details><summary>Jméno souboru z předchozího příkladu uložte do proměnné <code>FILE</code> .</summary>
+<li><details><summary>Save the file name from the previous example to a variable <code>FILE</code> .</summary>
 ++++
 ....
 FILE=$(wc -l */*/*.log | head -n -1 | sort -n | tail -n 1 | cut -c 11-)
 ....
 ++++
 </details></li>
-<li><details><summary>V soboru podle proměnné <code>FILE</code> spočítejte počet řádků.</summary>
+<li><details><summary>Count the number of rows in the file defined by the variable <code>FILE</code>.</summary>
 ++++
 ....
 wc -l <"$FILE"
 ....
 ++++
 </details></li>
-<li><details><summary>Log soubor má strukturu: <code>Měsíc Den Čas Server Služba: Timestamp IP Data1 Data2 "Požadavek"</code> . Pozor na dvouznakové číslo dne. Uvnitř uvozovek jsou vždy právě tři slova. Odstraňte z něj začátek každé řádky tak, aby začínal položkou <code>Timestamp</code> . Výsledek uložte do proměnné <code>LOG</code> .</summary>
+<li><details><summary>The log file has the structure: <code>Month Day Time Server Service: Timestamp IP Data1 Data2 "Request"</code> . Be aware of the two-character day number. There are always three words inside quotes. Remove the beginning of each line from it so that it begins with an item <code>Timestamp</code> . Save the result in a variable <code>LOG</code> .</summary>
 ++++
 ....
 LOG=$(tr -s ' ' <"$FILE"| cut -d' ' -f6-)
 ....
 ++++
 </details></li>
-<li><details><summary>Z proměnné <code>LOG</code> vypiště IP adresy seřazené podle počtu požadavků z dané IP adresy (počtu řádků, na které je daná IP adresa).</summary>
+<li><details><summary>List IP addresses from the variable <code>LOG</code> sorted by the number of requests from the given IP address (the number of lines with the given IP address).</summary>
 ++++
 ....
 cut -d' ' -f2 <<<"$LOG" | sort | uniq -c | sort -n | tr -s ' ' | cut -d' ' -f3
 ....
 ++++
 </details></li>
-<li><details><summary>Nejčastější adresu z předchozího příkladu uložte do proměnné <code>IP</code>. Pomocí příkazu <code>fgrep</code> spočítejte, kolik řádek v proměnné <code>LOG</code> obsahuje tuto IP adresu.</summary>
+<li><details><summary>Save the most common address from the previous example to a variable <code>IP</code>. Use the command <code>fgrep</code> to calculate how many lines in the variable <code>LOG</code> contain this IP address.</summary>
 ++++
 ....
 IP=$(cut -d' ' -f2 <<<"$LOG" | sort | uniq -c | sort -n | tr -s ' ' | cut -d' ' -f3 | tail -n 1)
@@ -80,49 +78,49 @@ fgrep -c " $IP " <<<"$LOG"
 ....
 ++++
 </details></li>
-<li><details><summary>Vypište přípony souborů o které a kolikrát se žádalo z této IP adresy, seřazené podle počtu požadavků. Předpokládejte, že v cestě k souboru je maximálně 1 tečka. Přípony vypište za sebou oddělené čárkami.</summary>
+<li><details><summary>List the file extensions which and how many times were requested from this IP address, sorted by the number of requests. Assume that there is a maximum of 1 dot in the file path. List suffixes separated by commas.</summary>
 ++++
 ....
 fgrep " $IP " <<<"$LOG" | cut -d\" -f2 | cut -d' ' -f2 | cut -d. -f2 | sort | uniq -c | sort -n | cut -c9- | paste -d, -s
 ....
 ++++
 </details></li>
-<li><details><summary>Vypište jména všech log souborů, ve kterých se vyskytuje IP adresa z proměnné <code>IP</code> .</summary>
+<li><details><summary>List the names of all log files in which the IP address of the variable <code>IP</code> is present.</summary>
 ++++
 ....
 fgrep -l " $IP " */*/*.log
 ....
 ++++
 </details></li>
-<li><details><summary>Pro každý soubor, který tuto IP adresu obsahuje (pouze pro ně) vypište počet řádků s touto IP adresou.</summary>
+<li><details><summary>For each file that contains this IP address (for them only) write the number of lines with this IP address.</summary>
 ++++
 ....
 fgrep -c " $IP " $(fgrep -l " $IP " */*/*.log)
 ....
 ++++
 </details></li>
-<li><details><summary>Ze všech log souborů vypište pouze řádky, které obsahují řetězec <code>[access_per_ip]</code> .</summary>
+<li><details><summary>From all log files write only the lines that contain the string <code>[access_per_ip]</code> .</summary>
 ++++
 ....
 fgrep '[access_per_ip]' */*/*.log
 ....
 ++++
 </details></li>
-<li><details><summary>Z řádků podle předchozího příkladu vypište pouze první slovo z řetězce v uvozovkách. Každé slovo nechť je ve výstupu maximálně jednou. Pomocí příkazu <code>grep .</code> odstraňte prázdné řádky.</summary>
+<li><details><summary>From the lines in the previous example, type only the first word of the string in quotation marks. Let each word be output at most once. Use the command <code>grep .</code> to delete the blank lines.</summary>
 ++++
 ....
 fgrep '[access_per_ip]' */*/*.log | cut -d\" -f2 | cut -d' ' -f1 | grep . | sort -u
 ....
 ++++
 </details></li>
-<li><details><summary>Do výstupu předchozího příkladu přidejte na začátek každé řádky uvozovky a uložte jej do souboru <code>re</code> . (Nápověda: Použijte příkaz <code>paste</code>. Jako prázdný soubor můžete použít <code>/dev/null</code> a standardní vstup se označuje jako <code>-</code> .</summary>
+<li><details><summary>To the output of the previous example, add quotation marks to the beginning of each line and save it to a file <code>re</code> . (Help: Use the command <code>paste</code>. You can use <code>/dev/null</code> as an empty file, and the standard input can be represented by <code>-</code> .</summary>
 ++++
 ....
 fgrep '[access_per_ip]' */*/*.log | cut -d\" -f2 | cut -d' ' -f1 | grep . | sort -u | paste -d\" /dev/null - >re
 ....
 ++++
 </details></li>
-<li><details><summary>Ze souboru <code>re</code> odstraňte řádky obsahující řetězce <code>"GET</code> nebo <code>"POST</code> .</summary>
+<li><details><summary>Remove rows containing strings <code>"GET</code> or <code>"POST</code> from file <code>re</code>.</summary>
 ++++
 ....
 grep -v -e '"GET' -e '"POST' re >re2
@@ -130,14 +128,14 @@ mv re2 re
 ....
 ++++
 </details></li>
-<li><details><summary>Vypište řádky všech log souborů, které odpovídají vzorům v souboru <code>re</code> . Odpovídající řetězec, nechť je ve výstupu obarvený.</summary>
+<li><details><summary>List the rows of all log files that match the patterns in the file <code>re</code> . Match the string to be colored in the output.summary>
 ++++
 ....
 grep --color -f re */*/*.log
 ....
 ++++
 </details></li>
-<li><details><summary>Z předcházejícího příkladu vypište časový rozsah, kdy k takovým požadavkům docházelo ve formátu <code>YYYY.MM.DD-YYYY.MM.DD</code> .</summary>
+<li><details><summary>In the previous example, list the time range in the following format <code>YYYY.MM.DD-YYYY.MM.DD</code> .</summary>
 ++++
 ....
 FILES=$(grep -f re */*/*.log | cut -d: -f1 | tr -dc '0-9/\n' | sort)
@@ -152,19 +150,3 @@ printf '%s-%s\n' "$SINCE" "$TO" | tr / .
 ++++ 
 
 
-== Nová látka
-
-++++
-<div class='olist arabic'>
-<ol class='arabic'>
-<li><details><summary></summary>
-++++
-....
-....
-++++
-</details></li>
-++++
-++++
-</ol>
-</div>
-++++ 
