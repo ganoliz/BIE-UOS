@@ -11,7 +11,7 @@
   1. link:./04[File system]
   1. link:./05/[Simple filters I]
   1. link:./06/[Simple filters II and command "grep"]
-//  1. link:./07/[Regulární výrazy]
+  1. link:./07/[Regular expressions]
 //  1. link:./09/[Textové transformace příkazem sed a složené příkazy]
 //  1. link:./10/[Textové transformace příkazem awk]
 //  1. link:./11/[Přístupová práva a příkaz find]
