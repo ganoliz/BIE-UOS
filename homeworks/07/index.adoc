@@ -6,21 +6,21 @@
 <style>li details { margin-bottom: 0.5em; }</style>
 <div class='olist arabic'>
 <ol class='arabic'>
-<li><details><summary>(Na Solarisu - fray1/fray3): Nastavte proměnnou <code>PATH</code> tak, aby se primárně spouštěly GNU verze příkazů z adresáře <code>/usr/gnu/bin</code> .</summary>
+<li><details><summary>(In Solaris - fray1/fray3): Set the variable <code>PATH</code> so that GNU versions of the commands from the directory <code>/usr/gnu/bin</code> are primarily started.</summary>
 ++++
 ....
 PATH=/usr/gnu/bin:$PATH
 ....
 ++++
 </details></li>
-<li><details><summary>Vstupte do adresáře <code>/home/courses/BIPS1/public/re</code>.</summary>
+<li><details><summary>Enter the directory <code>/home/courses/BIPS1/public/re</code>.</summary>
 ++++
 ....
 cd /home/courses/BIPS1/public/re
 ....
 ++++
 </details></li>
-<li><details><summary>Poslední položkou v souboru <code>apache.log</code> je velikost odeslaných dat nebo znak <code>-</code> , pokud data nebyla odeslána. Spočítejte, kolik požadavků (záznamů v logu) neodesílalo data (poslední položka je <code>-</code> ).</summary>
+<li><details><summary>The last item in file <code>apache.log</code> is the size of the data sent or the character <code>-</code>,  if the data was not sen. Calculate how many requests (log entries) did not send data (the last entry is <code>-</code> ).</summary>
 ++++
 ....
 grep -c -- '-$' apache.log
@@ -29,14 +29,14 @@ grep -c ' -$' apache.log
 ....
 ++++
 </details></li>
-<li><details><summary>Předposlední položkou v souboru <code>apache.log</code> je trojciferný stavový kód. Vypište stavové kódy (předposlední položku), při kterých došlo ne neodeslání dat (poslední položka je <code>-</code> ).</summary>
+<li><details><summary>The penultimate entry in file <code>apache.log</code>  is a three-digit status code. List the status codes (penultimate entry) that did not send data (the last entry is <code>-</code> ).</summary>
 ++++
 ....
 grep -o '... -$' apache.log | cut -c1-3 | sort -u
 ....
 ++++
 </details></li>
-<li><details><summary>Z předchozího příkladu vypište, který stavovoý kód byl nejčastější. Tento stavový kód uložte do proměnné <code>CODE</code> .</summary>
+<li><details><summary>In the previous example, list which status code was most common. Save this status code in a variable <code>CODE</code> .</summary>
 ++++
 ....
 grep -o '... -$' apache.log | cut -c1-3 | sort | uniq -c | sort -n | tail -n 1 | grep -o '...$'
@@ -44,21 +44,21 @@ CODE=$(grep -o '... -$' apache.log | cut -c1-3 | sort | uniq -c | sort -n | tail
 ....
 ++++
 </details></li>
-<li><details><summary>První řádka HTTP požadavku je v logu zapsána do uvozovek a obsahuje <code>"metoda URL HTTPverze"</code>. Vypište jaké různé metody byly u požadavků, které končily stavovým kódev v proměnné CODE a neodeslaly žádná data.</summary>
+<li><details><summary>The first line of the HTTP request is enclosed in quotation marks in the log and contains <code>"method URL HTTPversion"</code>. List what the different methods were for requests that ended with a status code in the CODE variable and did not send any data.</summary>
 ++++
 ....
 grep " $CODE -$" apache.log | egrep -o '"[^ ]+' | sort -u | cut -c2-
 ....
 ++++
 </details></li>
-<li><details><summary>Vypište která URL byla nejčastější u požadavků, které končily stavovým kódev v proměnné CODE a neodeslaly žádná data.</summary>
+<li><details><summary>List which URLs were most common for requests that ended with a status code in the CODE variable and did not send any data.</summary>
 ++++
 ....
 grep " $CODE -$" apache.log | egrep -o '"[^"]+"' | sort | uniq -c | sort -n| tail -n 1 | cut -d\" -f2 | cut -d' ' -f2
 ....
 ++++
 </details></li>
-<li><details><summary>Spočítejte, kolik požadavků skončilo stavovým kódem 200. Vypište kolik jich bylo a kolik to bylo procent ze všech požadavků.</summary>
+<li><details><summary>Calculate how many requests ended with a status code of 200. List the number of requests and the percentage of all requests.</summary>
 ++++
 ....
 c=$(egrep -c " 200 [^ ]+$" apache.log)
@@ -67,34 +67,34 @@ printf '%d %d%%\n' $c $((100*c/n))
 ....
 ++++
 </details></li>
-<li><details><summary>Při použití jednoduššího RE <code>" 200 "</code> v předchozím příkladu by byl výsledech chybný o jeden řádek. Vypište který by to byl.</summary>
+<li><details><summary>When using a simpler RE (regular expression) <code>" 200 "</code> in the previous example, the results would be incorrect by one row. List which it would be.</summary>
 ++++
 ....
-egrep " 200 [^ ]+$" apache.log >~/spravne
-grep " 200 " apache.log >~/spatne
-diff ~/spravne ~/spatne
-rm ~/spravne ~/spatne
+egrep " 200 [^ ]+$" apache.log >~/good
+grep " 200 " apache.log >~/bad
+diff ~/good ~/bad
+rm ~/good ~/bad
 ....
 ++++
 </details></li>
-<li><details><summary>Součástí URL může být tzv. query string, který začíná znakem <code>?</code> . U požadavků se stavovým kódem 200 vypište, které různé přípony požadovaných souborů obsují query string.</summary>
+<li><details><summary>The URL can include a query string that begins with a character <code>?</code> . For requests with status code 200, list which different extensions of the requested files contain the query string.</summary>
 ++++
 ....
 egrep " 200 [^ ]+$" apache.log | cut -d\" -f2 -s | grep -o '/[^/]*\.[^.?]*?' | grep -o '\.[^.?]*' | sort -u
 ....
 ++++
 </details></li> 
-<li><details><summary>Sečtěte všechny velikosti odeslaných dat při stavovém kódu 200. (Nápověda, použijte příkaz <code>paste</code> a aritmetický výraz v shellu.)</summary>
+<li><details><summary>Add all sizes of sent data with status code 200. (Help, use the <code>paste</code> command and the shell arithmetic expression.)</summary>
 ++++
 ....
 echo $(( $(egrep " 200 [^ ]+$" apache.log | egrep -o ' [0-9]+$' | paste -d+ -s) + 0))
 
-# Půjde to i snadněji
+# It will be easier
 awk '$(NF-1)==200 {sum+=$NF} END {print sum}' apache.log
 ....
 ++++
 </details></li>
-<li><details><summary>Vypiště řádky, které požadavky mají nejdelší cestu (počet adresářů) - řádky obsahují nejvíce lomítek.</summary>
+<li><details><summary>List rows that have the longest path (number of directories) - rows contain the most slashes.</summary>
 ++++
 ....
 C=$(tr -dc '/\n' <apache.log | sort -u | tail -n 1 | wc -c)
@@ -103,7 +103,7 @@ egrep "(/.*){$C}" apache.log
 ....
 ++++
 </details></li>
-<li><details><summary>Vypište počet požadavků na soubory s příponami <code>jpg</code> nebo <code>png</code> .</summary>
+<li><details><summary>List the number of requests for  files with extensions <code>jpg</code> or <code>png</code> .</summary>
 ++++
 ....
 egrep -c '\.(jpg|png)[ ?]' apache.log
@@ -115,19 +115,4 @@ egrep -c '\.(jpg|png)[ ?]' apache.log
 ++++ 
 
 
-==Topics of the next practice
 
-++++
-<div class='olist arabic'>
-<ol class='arabic'>
-<li><details><summary></summary>
-++++
-....
-....
-++++
-</details></li>
-++++
-++++
-</ol>
-</div>
-++++ 
