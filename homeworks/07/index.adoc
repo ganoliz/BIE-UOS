@@ -1,0 +1,133 @@
+= Homework for the 7th practice
+
+== Topics of the current practice
+
+++++
+<style>li details { margin-bottom: 0.5em; }</style>
+<div class='olist arabic'>
+<ol class='arabic'>
+<li><details><summary>(Na Solarisu - fray1/fray3): Nastavte proměnnou <code>PATH</code> tak, aby se primárně spouštěly GNU verze příkazů z adresáře <code>/usr/gnu/bin</code> .</summary>
+++++
+....
+PATH=/usr/gnu/bin:$PATH
+....
+++++
+</details></li>
+<li><details><summary>Vstupte do adresáře <code>/home/courses/BIPS1/public/re</code>.</summary>
+++++
+....
+cd /home/courses/BIPS1/public/re
+....
+++++
+</details></li>
+<li><details><summary>Poslední položkou v souboru <code>apache.log</code> je velikost odeslaných dat nebo znak <code>-</code> , pokud data nebyla odeslána. Spočítejte, kolik požadavků (záznamů v logu) neodesílalo data (poslední položka je <code>-</code> ).</summary>
+++++
+....
+grep -c -- '-$' apache.log
+grep -c -e '-$' apache.log
+grep -c ' -$' apache.log 
+....
+++++
+</details></li>
+<li><details><summary>Předposlední položkou v souboru <code>apache.log</code> je trojciferný stavový kód. Vypište stavové kódy (předposlední položku), při kterých došlo ne neodeslání dat (poslední položka je <code>-</code> ).</summary>
+++++
+....
+grep -o '... -$' apache.log | cut -c1-3 | sort -u
+....
+++++
+</details></li>
+<li><details><summary>Z předchozího příkladu vypište, který stavovoý kód byl nejčastější. Tento stavový kód uložte do proměnné <code>CODE</code> .</summary>
+++++
+....
+grep -o '... -$' apache.log | cut -c1-3 | sort | uniq -c | sort -n | tail -n 1 | grep -o '...$'
+CODE=$(grep -o '... -$' apache.log | cut -c1-3 | sort | uniq -c | sort -n | tail -n 1 | grep -o '...$')
+....
+++++
+</details></li>
+<li><details><summary>První řádka HTTP požadavku je v logu zapsána do uvozovek a obsahuje <code>"metoda URL HTTPverze"</code>. Vypište jaké různé metody byly u požadavků, které končily stavovým kódev v proměnné CODE a neodeslaly žádná data.</summary>
+++++
+....
+grep " $CODE -$" apache.log | egrep -o '"[^ ]+' | sort -u | cut -c2-
+....
+++++
+</details></li>
+<li><details><summary>Vypište která URL byla nejčastější u požadavků, které končily stavovým kódev v proměnné CODE a neodeslaly žádná data.</summary>
+++++
+....
+grep " $CODE -$" apache.log | egrep -o '"[^"]+"' | sort | uniq -c | sort -n| tail -n 1 | cut -d\" -f2 | cut -d' ' -f2
+....
+++++
+</details></li>
+<li><details><summary>Spočítejte, kolik požadavků skončilo stavovým kódem 200. Vypište kolik jich bylo a kolik to bylo procent ze všech požadavků.</summary>
+++++
+....
+c=$(egrep -c " 200 [^ ]+$" apache.log)
+n=$(wc -l <apache.log)
+printf '%d %d%%\n' $c $((100*c/n))
+....
+++++
+</details></li>
+<li><details><summary>Při použití jednoduššího RE <code>" 200 "</code> v předchozím příkladu by byl výsledech chybný o jeden řádek. Vypište který by to byl.</summary>
+++++
+....
+egrep " 200 [^ ]+$" apache.log >~/spravne
+grep " 200 " apache.log >~/spatne
+diff ~/spravne ~/spatne
+rm ~/spravne ~/spatne
+....
+++++
+</details></li>
+<li><details><summary>Součástí URL může být tzv. query string, který začíná znakem <code>?</code> . U požadavků se stavovým kódem 200 vypište, které různé přípony požadovaných souborů obsují query string.</summary>
+++++
+....
+egrep " 200 [^ ]+$" apache.log | cut -d\" -f2 -s | grep -o '/[^/]*\.[^.?]*?' | grep -o '\.[^.?]*' | sort -u
+....
+++++
+</details></li> 
+<li><details><summary>Sečtěte všechny velikosti odeslaných dat při stavovém kódu 200. (Nápověda, použijte příkaz <code>paste</code> a aritmetický výraz v shellu.)</summary>
+++++
+....
+echo $(( $(egrep " 200 [^ ]+$" apache.log | egrep -o ' [0-9]+$' | paste -d+ -s) + 0))
+
+# Půjde to i snadněji
+awk '$(NF-1)==200 {sum+=$NF} END {print sum}' apache.log
+....
+++++
+</details></li>
+<li><details><summary>Vypiště řádky, které požadavky mají nejdelší cestu (počet adresářů) - řádky obsahují nejvíce lomítek.</summary>
+++++
+....
+C=$(tr -dc '/\n' <apache.log | sort -u | tail -n 1 | wc -c)
+((C--))
+egrep "(/.*){$C}" apache.log
+....
+++++
+</details></li>
+<li><details><summary>Vypište počet požadavků na soubory s příponami <code>jpg</code> nebo <code>png</code> .</summary>
+++++
+....
+egrep -c '\.(jpg|png)[ ?]' apache.log
+....
+++++
+</details></li>
+</ol>
+</div>
+++++ 
+
+
+== Nová látka
+
+++++
+<div class='olist arabic'>
+<ol class='arabic'>
+<li><details><summary></summary>
+++++
+....
+....
+++++
+</details></li>
+++++
+++++
+</ol>
+</div>
+++++ 
