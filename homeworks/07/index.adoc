@@ -1,4 +1,4 @@
-= Homework for the 7th practice
+= Homework for the 8th practice
 
 == Topics of the current practice
 
@@ -115,7 +115,7 @@ egrep -c '\.(jpg|png)[ ?]' apache.log
 ++++ 
 
 
-== Nová látka
+==Topics of the next practice
 
 ++++
 <div class='olist arabic'>
