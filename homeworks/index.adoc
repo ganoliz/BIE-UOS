@@ -5,7 +5,7 @@
 * In this section you will find examples with solutions to simplify preparation for individual practices (tests).
 * Topics will be gradually added during the semester.
 
-//  1. link:./01/[Úvod do práce na příkazové řádce]
+  1. link:./01/[Introduction to work on the command line]
   1. link:./02/[Command line processing I]
   1. link:./03/[Command line processing II]
   1. link:./04[File system]
