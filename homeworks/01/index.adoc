@@ -6,97 +6,97 @@
 <style>li details { margin-bottom: 0.5em; }</style>
 <div class='olist arabic'>
 <ol class='arabic'>
-<li><details><summary>Vytvořte proměnnou <code>DELIMITER</code> a nastavte do ní hodnotu dvojtečka (<code>:</code>)</summary>
+<li><details><summary>Create a variable <code>DELIMITER</code> and set a colon value (<code>:</code>)</summary>
 ++++
 ....
 DELIMITER=:
 ....
 ++++
 </details></li>
-<li><details><summary>Vypište proměnnou <code>DELIMITER</code> pomocí příkazu <code>declare</code></summary>
+<li><details><summary>List the value of the variable <code>DELIMITER</code>  using the command <code>declare</code></summary>
 ++++
 ....
 declare -p DELIMITER
 ....
 ++++
 </details></li>
-<li><details><summary>Vypište hodnotu proměnné <code>DELIMITER</code> pomocí příkazu <code>printf</code> (hodnota bude ukončená novým řádkem)</summary>
+<li><details><summary>List the value of the variable <code>DELIMITER</code> using the command <code>printf</code> (value will end with a new line).</summary>
 ++++
 ....
 printf '%s\n' "$DELIMITER"
 ....
 ++++
 </details></li>
-<li><details><summary>Vypište hodnotu proměnné <code>USER</code></summary>
+<li><details><summary>List the value of the variable <code>USER</code></summary>
 ++++
 ....
 declare -p USER
 ....
 ++++
 </details></li>
-<li><details><summary>Příkazem <code>getent passwd username</code> vypište informace o svém uživatelském účtu, <code>username</code> nahraďte ručně za své uživatelské jméno</summary>
+<li><details><summary>Use the command <code>getent passwd username</code> to list your user account information, replace <code>username</code> manually with your user name.</summary>
 ++++
 ....
 getent passwd barinkl
 ....
 ++++
 </details></li>
-<li><details><summary>Použijte předchozí příkaz, ale místo ručně napsaného uživatelského jména použijte proměnnou <code>USER</code></summary>
+<li><details><summary>Use the previous command, but use a variable <code>USER</code> instead of the handwritten user name.</summary>
 ++++
 ....
 getent passwd "$USER"
 ....
 ++++
-<p>Pro vyvolání předchozího příkazu použijte <code>šipku_nahoru</code>, pro skok o slovo doleva <code>CTRL+šípku_doleva</code>, pro smazání do konce řádku <code>CTRL+K</code></p>
+<p>Use the key <code>arrow_up</code> to invoke the previous command, key <code>CTRL+arrow_left</code> to jump a word to the left, key <code>CTRL+K</code></p> to delete to the end of the line.
 </details></li>
-<li><details><summary>Pomocí příkazu <code>tr</code> nahraďte všechny výskyty znaku <code>:</code> za nový řádek (<code>\n</code>) ve výstupu předchozího příkazu. První argument <code>tr</code> bude <code>:</code> a druhý argument <code>\n</code>. Pozor na to, že znak <code>\</code> má v shellu speciální význam a je proto potřeba použít <code>'</code> <code>'</code></summary>
+<li><details><summary>Use the command <code>tr</code>  to replace  all instances of the character <code>:</code> with a new line (<code>\n</code>) e in the output of the previous command. The first argument of <code>tr</code> will be <code>:</code> and the second argument will be <code>\n</code>. Be aware that the character <code>\</code> has a special meaning in the shell and should be used <code>'</code> <code>'</code></summary>
 ++++
 ....
 getent passwd "$USER" | tr : '\n'
 ....
 ++++
 </details></li>
-<li><details><summary>V předchozím příkazu nahraďte <code>:</code> za hodnotu proměnné <code>DELIMITER</code></summary>
+<li><details><summary>In the previous command, replace <code>:</code> with the value of the variable <code>DELIMITER</code>.</summary>
 ++++
 ....
 getent passwd "$USER" | tr "$DELIMITER" '\n'
 ....
 ++++
 </details></li>
-<li><details><summary>Výstup předchozího příkazu uložte do souboru <code>username-info</code>, kde <code>username</code> nahraďte za hodnotu proměnné <code>USER</code></summary>
+<li><details><summary>Save the output of the previous command to a file <code>username-info</code>, where <code>username</code> is replaced by the variable value <code>USER</code>.</summary>
 ++++
 ....
 getent passwd "$USER" | tr "$DELIMITER" '\n' > "$USER-info"
 ....
 ++++
 </details></li>
-<li><details><summary>Pomocí příkazu <code>ls</code> zjistěte, že se souboru skutečně vytvořil a jako má velikost</summary>
+<li><details><summary>Use the command <code>ls</code> to determine that the file is actually created and what is its size.</summary>
 ++++
 ....
 ls -l "$USER-info"
 ....
 ++++
 </details></li>
-<li><details><summary>Pomocí příkazu <code>wc</code> a předcházejícího příkazu spočítejte počet položek výstupu příkazu <code>getent</code> (tedy počet řádek po nahrazení <code>:</code> za nový řádek)</summary>
+<li><details><summary>Use the command <code>wc</code> and the previous command to calculate the number output lines of command <code>getent</code> (that is, the number of rows after replacing <code>:</code> with a new line).</summary>
 ++++
 ....
 getent passwd "$USER" | tr "$DELIMITER" '\n' | wc -l
 ....
 ++++
 </details></li>
-<li><details><summary>Pomocí příkazu <code>less</code> přečtěte obsah vytvořeného souboru (poté příkaz ukončete), pro dokončení jména souboru použijte tabulátor</summary>
+<li><details><summary>Use the command <code>less</code>  to read the contents of the created file (then end the command), use a tab to complete the file name.</summary>
 ++++
 ....
 less bar<TAB>
 less barinkl-info
 <q>
 
-# <TAB> znamená stisk klávesy TAB
-# <q> znamená stisk klávesy q
+# <TAB> means pressing key TAB
+# <q> means pressing key q
 ....
 ++++
 </details></li>
-<li><details><summary>Spočítejte počet řádků vytvořeného souboru a porovnejte (ručně) s výsledkem z počítání položek (použijte <code>šipku nahoru</code> pro procházení historie</summary>
+<li><details><summary>Count the number of lines of the created file and compare (manually) with the result of counting items (use the key <code>arrow_up</code> to browse the history.</summary>
 ++++
 ....
 getent passwd "$USER" | tr "$DELIMITER" '\n' | wc -l; wc -l "$USER-info"
