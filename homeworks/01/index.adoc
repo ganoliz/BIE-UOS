@@ -103,44 +103,44 @@ getent passwd "$USER" | tr "$DELIMITER" '\n' | wc -l; wc -l "$USER-info"
 ....
 ++++
 </details></li>
-<li><details><summary>Vytvořte soubor <code>man.nl</code> do kterého uložíte počet řádků manuálu příkazu <code>man</code></summary>
+<li><details><summary>Create an file <code>man.nl</code> to store the number of lines of manual page of  the command <code>man</code>.</summary>
 ++++
 ....
 man man | wc -l >man.nl
 ....
 ++++
 </details></li>
-<li><details><summary>Spočítejte počet řádků z výstupu předchozího příkladu (měl by být 0, neboť všechen text je uložen do soboru nebo směřuje na chybový výstup)</summary>
+<li><details><summary>Calculate the number of lines from the output of the previous example (should be 0 because all text is saved to file or is pointing to error output).</summary>
 ++++
 ....
 man man | wc -l >man.nl | wc -l
 ....
 ++++
 </details></li>
-<li><details><summary>Pomocí příkazu <code>rm soubor</code> smažte vytvořené soubory, místo <code>soubor</code> zadejte jméno souboru, jmen může být více</summary>
+<li><details><summary>Use the command <code>rm file</code>  to delete the created files, instead of <code>file</code> enter the name/names of the file/files.</summary>
 ++++
 ....
 rm "$USER-info" man.nl
 ....
 ++++
 </details></li>
-<li><details><summary>Spočítejte počet položek v adresáři</summary>
+<li><details><summary>Calculate the number of entries in the working directory</summary>
 ++++
 ....
 ls | wc -l
-# Pozor na ls -l, je tam navic radek s total
+# Beware ls -l, there is a line with total
 ls -l | wc -l
 ....
 ++++
 </details></li>
-<li><details><summary>Pomocí příkazu <code>ls</code> ověřte, že soubory byly smazány</summary>
+<li><details><summary>Use the command <code>ls</code> to verify that the files have been deleted.</summary>
 ++++
 ....
 ls "$USER-info" man.nl
 ....
 ++++
 </details></li>
-<li><details><summary>Opět spočítejte počet položek v adresáři</summary>
+<li><details><summary>Count the number of entries in the working directory again.</summary>
 ++++
 ....
 ls | wc -l
@@ -155,55 +155,55 @@ B=def
 ....
 ++++
 </details></li>
-<li><details><summary>Vytvořte proměnnou <code>C</code> vzniklou zřetězením hodnot proměnných <code>A</code> a <code>B</code></summary>
+<li><details><summary>Create a variable <code>C</code> by concatenating the variable values <code>A</code> and <code>B</code>.</summary>
 ++++
 ....
 C="$A$B"
 ....
 ++++
 </details></li>
-<li><details><summary>Vypište proměnné <code>A</code>, <code>B</code> a <code>C</code></summary>
+<li><details><summary>List the values of variables <code>A</code>, <code>B</code>, and <code>C</code></summary>
 ++++
 ....
 declare -p A B C
 ....
 ++++
 </details></li>
-<li><details><summary>Přidejte na konec proměnné <code>C</code> řetězec <code>ghi</code></summary>
+<li><details><summary>Add the string <code>ghi</code> to the end of the variable <code>C</code>. </summary>
 ++++
 ....
 C="$C"ghi
-# pripadne pro pokrocilejsi
+# eventually for more advanced
 C+=ghi
 ....
 ++++
 </details></li>
-<li><details><summary>Zkontrolujte, že proměnná <code>C</code> má skutečně hodnotu <code>abcdefghi</code></summary>
+<li><details><summary>Make sure the variable <code>C</code> has a value <code>abcdefghi</code>.</summary>
 ++++
 ....
 declare -p C
 ....
 ++++
 </details></li>
-<li><details><summary>Spočítejte délku proměnné <code>C</code> (počet znaků) pomocí příkazů <code>printf</code> a <code>wc</code></summary>
+<li><details><summary>Calculate the length (number of characters) of the variable <code>C</code> using commands <code>printf</code> and <code>wc</code>.</summary>
 ++++
 ....
 printf '%s' "$C" | wc -c
-# vyzkousejte, ze pri pouziti echo, ktere pridava znak novy radek je vysledek spatne
+# try that when you use an echo that adds a new line character, the result is wrong
 echo "$C" | wc -c
 ....
 ++++
 </details></li>
-<li><details><summary>Vytvořte proměnnou <code>text</code>, do které uložíte několik řádků textu (použijte přitom <code>'</code> <code>'</code> nebo <code>"</code> <code>"</code>)</summary>
+<li><details><summary>Create a variable <code>text</code> in which to store several lines of text (use <code>'</code> <code>'</code> or <code>"</code> <code>"</code>)</summary>
 ++++
 ....
-text='nekolik
-radku
-textu'
+text='several
+text
+lines'
 ....
 ++++
 </details></li>
-<li><details><summary>Vytvořte proměnnou <code>kitty</code> s následujícím obsahem:
+<li><details><summary>Create a variable <code>kitty</code> with the following content:
 ++++
 ....
  /\__/\                                                                         
@@ -220,37 +220,37 @@ kitty=' /\__/\
 ....
 ++++
 </details></li>
-<li><details><summary>Vypište obsah proměnné <code>kitty</code>, aby vypadal jako v zadání</summary>
+<li><details><summary>List the contents of the variable <code>kitty</code>,  to look like in the assignment.</summary>
 ++++
 ....
 printf '%s\n' "$kitty"
 ....
 ++++
 </details></li>
-<li><details><summary>Prostudujte si manuálovou stránku příkazu <code>man</code></summary>
+<li><details><summary>See the manual page of the command <code>man</code>.</summary>
 ++++
 ....
 man man
 ....
 ++++
 </details></li>
-<li><details><summary>Najděte v textu řetězec <code>ENVIRONMENT</code>, jaká proměnná slouží k nastavení použitého stránkovače?</summary>
+<li><details><summary>Find the string <code>ENVIRONMENT</code> in the previous manual page.  What variable is used to set up the man page browser?</summary>
 ++++
 ....
 /ENVIRONMENT
 
-#K nastavení stránkovače slouží proměnná PAGER.
+#The PAGER variable is used to set the man page browser (pager).
 ....
 ++++
 </details></li>
-<li><details><summary>Pokud před název příkazu napíšete přiřazení do proměnné, provede se pro zadaný příkaz, např: <code>COLUMNS=200 ls /</code>. Nastavte stránkovač tak aby místo zobrazení manuálové stránky zobrazil pouze počet slov a řádků v manuálové stránce a vyvolejte manuál příkazu <code>man</code></summary>
+<li><details><summary>If you type an assignment in a variable before the command name, it is performed for the specified command, for example: <code>COLUMNS=200 ls /</code>. Set the pager to display only the number of words and lines in the man page instead of displaying the man page and call up the command manual <code>man</code>.</summary>
 ++++
 ....
 PAGER='wc -wl' man man
 ....
 ++++
 </details></li>
-<li><details><summary>Spusťte příkaz <code>sleep 1000</code> a po chvíli jej ukončete</summary>
+<li><details><summary>Run the command <code>sleep 1000</code> and exit after a while.</summary>
 ++++
 ....
 sleep 1000
@@ -258,21 +258,21 @@ sleep 1000
 ....
 ++++
 </details></li>
-<li><details><summary>Uložte hodnotu proměnné <code>PS1</code> do proměnné <code>oldPS1</code></summary>
+<li><details><summary>Save the value of variable <code>PS1</code> in the variable <code>oldPS1</code></summary>
 ++++
 ....
 oldPS1="$PS1"
 ....
 ++++
 </details></li>
-<li><details><summary>Nastavte proměnnou <code>PS1</code> tak, aby prompt zobrazoval aktuální čas, uživatelské jméno a aktuální adresář a končil znakem <code>></code></summary>
+<li><details><summary>Set the variable <code>PS1</code> to prompt to display the current time, user name and current directory, and end with character <code>></code>.</summary>
 ++++
 ....
 PS1='\t \u \w> '
 ....
 ++++
 </details></li>
-<li><details><summary>Nastavte proměnnou <code>PS1</code> na původní hodnotu pomocí <code>oldPS1</code></summary>
+<li><details><summary>Set the variable <code>PS1</code> to its original value with <code>oldPS1</code>.</summary>
 ++++
 ....
 PS1="$oldPS1"
@@ -289,33 +289,33 @@ PS1="$oldPS1"
 ++++
 <div class='olist arabic'>
 <ol class='arabic'>
-<li><details><summary>Prostudujte si manuálovou stránku příkazu <code>date</code> (a případně souvisejících [SEE ALSO]), především formátovací řetězce (%_)</summary>
+<li><details><summary>See the manual page of the command <code>date</code> (and any related pages [SEE ALSO]), and especially formatting strings (%_)</summary>
 ++++
 ....
 man date
 
-# na pocitaci fray
+# on server fray1/fray3
 man date
 /SEE ALSO
 man -s 3 strftime
 ....
 ++++
 </details></li>
-<li><details><summary>Pomocí jednoho volání příkazu <code>date</code> vypište následující text (2 řádky) s aktuálmi hodnotami (jazyk textu neřešte):
+<li><details><summary>Write the following text (2 lines) with the current values (do not solve the text language) with one <code>date</code> call:
 ++++
 ....
-Dnes je pondělí,  1.10.2018 (40. tyden).
-Prave je 12:34:56 [CEST]
+Today is Monday,  1.10.2018 (40. week).
+Now is 12:34:56 [CEST].
 ....
 ++++
 </summary>
 ++++
 ....
-date '+Dnes je %A, %e.%m.%Y (%W. tyden)%nPrave je %T [%Z]'
+date '+Today is %A, %e.%m.%Y (%W. week)%nNow is %T [%Z].'
 ....
 ++++
 </details></li>
-<li><details><summary>Prostudujte si dokumentaci příkazu <code>printf</code></summary>
+<li><details><summary>Refer to the documentation  of the command <code>printf</code></summary>
 ++++
 ....
 type printf
@@ -325,14 +325,14 @@ man 3 printf
 ....
 ++++
 </details></li>
-<li><details><summary>Pomocí příkazu <code>printf</code> a speciálního znaku <code>*</code> vypište jména všech položek v aktuálním adresáři, každá položka bude oddělena tabelátorem</summary>
+<li><details><summary>Use the command <code>printf</code> and the special character <code>*</code> to list the names of all entries in the current directory, separated by a TAB.</summary>
 ++++
 ....
 printf '%s\t' *
 ....
 ++++
 </details></li>
-<li><details><summary>Vypište položky aktuálního adresáře do 3 sloupečků po 25 znacích</summary>
+<li><details><summary>List the entries of the current directory in 3 columns of 25 characters each.</summary>
 ++++
 ....
 printf '%25s%25s%25s\n' *
@@ -340,7 +340,9 @@ printf '%-25s%-25s%-25s\n' *
 ....
 ++++
 </details></li>
-<li><details><summary>V minutových intervalech se 3x přihlaste na <code>fray1.fit.cvut.cz</code> a spusťte příkaz <code>date</code></summary>
+<li><details><summary>Log in to the server <code>fray1.fit.cvut.cz</code> three times at 1-minute intervals
+
+V minutových intervalech se 3x přihlaste na <code>fray1.fit.cvut.cz</code>  and run the command <code>date</code>.</summary>
 ++++
 ....
 ssh fray1.fit.cvut.cz date; sleep 60; ssh fray1.fit.cvut.cz date; sleep 60; ssh fray1.fit.cvut.cz
@@ -351,14 +353,14 @@ $SSH; $S; $SSH; $S; $SSH
 ....
 ++++
 </details></li>
-<li><details><summary>Přihlaste se na <code>fray1.fit.cvut.cz</code> a 3x v minutových intervalech spusťte příkaz <code>date</code></summary>
+<li><details><summary>Log in to the server <code>fray1.fit.cvut.cz</code> and run the command <code>date</code> three times at 1 minute intervals. </summary>
 ++++
 ....
 ssh fray1.fit.cvut.cz 'date; sleep 60; date; sleep 60; date'
 ....
 ++++
 </details></li>
-<li><details><summary>Vypište podrobnosti o <code>/bin</code> na lokálním počítači a na počítači <code>fray1.fit.cvut.cz</code>, výstupy porovnejte</summary>
+<li><details><summary>List details about directory <code>/bin</code> on the local computer and the server <code>fray1.fit.cvut.cz</code>, compare the outputs.</summary>
 ++++
 ....
 ls -l /bin
@@ -366,14 +368,14 @@ ssh fray1.fit.cvut.cz 'ls -l /bin'
 ....
 ++++
 </details></li>
-<li><details><summary>Prostudujte manuálovou stránku příkazu <code>ls</code>, především přepínače pro výpis a řazení (<code>-a</code>, <code>-l</code>, <code>-d</code>, <code>-S</code>, <code>-t</code>, <code>-r</code>)</summary>
+<li><details><summary>See the manual page of the command <code>ls</code>, , especially the list and sort switches(<code>-a</code>, <code>-l</code>, <code>-d</code>, <code>-S</code>, <code>-t</code>, <code>-r</code>)</summary>
 ++++
 ....
 man ls
 ....
 ++++
 </details></li>
-<li><details><summary>Seřaďte výpis aktuálního adresáře včetně detailů podle abecedy, velikosti a podle času modifikace souboru, případně v opačném pořadí</summary>
+<li><details><summary>Sort the current directory listing, including details by alphabet, size and file modification time, or in reverse order.</summary>
 ++++
 ....
 ls -l
@@ -384,14 +386,14 @@ ls -lSr
 ....
 ++++
 </details></li>
-<li><details><summary>Vypište obsah adresáře <code>/bin</code></summary>
+<li><details><summary>List the contents of the directory <code>/bin</code>.</summary>
 ++++
 ....
 ls /bin
 ....
 ++++
 </details></li>
-<li><details><summary>Na počítači <code>fray1.fit.cvut.cz</code> vypište pomocí příkazu <code>fgrep text</code>, řádky ze souboru <code>/etc/profile</code>, kde <code>text</code> nahradíte za hledaný řetězec, obsahující a) <code>=</code>, b) <code>-</code>, c) <code>.</code>, d) <code>"</code>, e) <code>'</code>, f) <code>#</code></summary>
+<li><details><summary>On server <code>fray1.fit.cvut.cz</code> use the command <code>fgrep text</code>, to print the lines from the file <code>/etc/profile</code>, where <code>text</code> replace with the search string containing a) <code>=</code>, b) <code>-</code>, c) <code>.</code>, d) <code>"</code>, e) <code>'</code>, f) <code>#</code>.</summary>
 ++++
 ....
 ssh fray1.fit.cvut.cz 'fgrep = /etc/profile'
