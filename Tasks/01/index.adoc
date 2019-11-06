@@ -1,5 +1,7 @@
-  == Task 1
+= Task 1
+
 Create the following directory structure in your home directory on server fray1.fit.cvut.cz or fray3.fit.cvut.cz:
+
 ----
 ~/ulohy
 ~/ulohy/tyden1
