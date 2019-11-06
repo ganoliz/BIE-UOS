@@ -1,39 +1,29 @@
-= 2. úloha 
-:imagesdir: ../../media/tasks/02
+= Task 2
 
+The submission limit is Monday *11/11/2019 23:00 pm*. After that the solutions will be archived.
 
-Správné řešení této úlohy může být vzato v úvahu cvičícím v rámci přidělování 3 bodů „navíc“.
-Hlavně ale přispěje k pochopení problematiky, což vám umožní získat daleko více bodů v testech.
+==== Assignment
 
-Limit na odevzdání je pondělí *11.11.2019 23:00 hod.* Poté budou řešení zaarchivována.
+Write a script that on the server *`fray1`*, or. *`fray3`*, in the directory *`tyden7`* ( directory createdin task 1), 
+creates a file whose name will be given by the content of variable *`UID`*.
 
-
-==== Zadání
-
-
-Napište skript, který na serveru *`fray1`*, příp. *`fray3`*, v adresáři *`tyden7`* vytvořeném
-v rámci 1. úlohy, vytvoří soubor, jehož jméno bude dáno obsahem proměnné *`UID`*. +
-
-První řádka tohoto souboru musí obsahovat číslo, vzniklé součtem dne, hodiny a minuty času poslední modifikace tohoto souboru. Druhá řádka bude obsahovat váš „Copyright“, tedy text:
-
+The first line of this file must contain a number that is the sum of the day, hour, and minute of the last modification of this file. The second line will contain your "Copyright", that is:
 
 ----
-(c) <vaše username>
+(c) <your username>
 ----
 
-Viz příklad níže.
+See example below.
+
+Conditions for correct solution:
+
+* No characters other than the calculated number may be on the first line.
+* Both the script and the file must be stored in the directory *`~/ulohy/tyden7`*
+
+==== Example
 
 
-Podmínky správného řešení:
-
-* Zádné další znaky, kromě vypočítaného čísla, na 1. řádce nesmí být.
-* Skript i soubor musí být uloženy v adresáři *`~/ulohy/tyden7`*
-
-
-==== Příklad
-
-
-Skript se jmenuje `uloha2` a je zobrazen výstup příkazů *`ls`* a *`cat`* +
+The script name is `uloha2` and the output of commands *`ls`* a *`cat`*  is following:
 
 
 ----
