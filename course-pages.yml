@@ -13,6 +13,8 @@ navigation:
     - tutorials/0*
     - tutorials/1*
     - tutorials/*.pdf
+    - tutorials/*.txt
+    - tutorials/*.gz
     - homeworks/0*/*
     - homeworks/1*/*
 repository:
