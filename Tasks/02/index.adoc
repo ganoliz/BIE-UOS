@@ -1,10 +1,10 @@
 = Task 2
 
-The submission limit is Monday *11/11/2019 23:00 pm*. After that the solutions will be archived.
+The submission limit is *Monday 11.11.2019 23:00 pm*. After that the solutions will be archived.
 
 ==== Assignment
 
-Write a script that on the server *`fray1`*, or. *`fray3`*, in the directory *`tyden7`* ( directory createdin task 1), 
+On the server *`fray1`*, or. *`fray3`*, in the directory *`tyden7`* ( directory createdin task 1), Crite a script that
 creates a file whose name will be given by the content of variable *`UID`*.
 
 The first line of this file must contain a number that is the sum of the day, hour, and minute of the last modification of this file. The second line will contain your "Copyright", that is:
