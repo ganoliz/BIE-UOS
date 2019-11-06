@@ -1,7 +1,13 @@
 = 1. News
 :imagesdir: media
 
-* Attention, *the first big test* will take place on Wednesday 13.11.2019 during the practice. 
+* Attention, *the first big test* will take place on *Wednesday 13.11.2019* during the practice. Repeat the following topics
+** CLI parsing order (metacharacters and their meaning),
+** Shell variables and aliasing.
+** Filesytem and file/directory commands.
+** Filters.
+** Command grep.
+
 * 6.6.2019: The assignment of *the second task* was published.
 
 * *Timetable*:  https://timetable.fit.cvut.cz/old/public/en/predmety/31/61/p3161206.html
