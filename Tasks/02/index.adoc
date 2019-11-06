@@ -27,7 +27,7 @@ The script name is `uloha2` and the output of commands *`ls`* a *`cat`*  is foll
 
 
 ----
-cd ~/ulohy/tyden7
+~> cd ~/ulohy/tyden7
 ~> ls -l
 -rw-------   1 muzikar  zam           15 Nov 24 22:29 10032
 -rwx------   1 muzikar  zam          328 Nov 24 22:20 uloha2
