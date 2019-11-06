@@ -1,0 +1,784 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Způsob jak získat seznam příkazů
+% sed -n '/\\begin{lstlisting}/,/\\end{lstlisting}/p' BI-PS1-Overview-20150106.tex  | gsed 's/\\$/\\n/'
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beamer Presentation
+% LaTeX Template
+% Version 1.0 (10/11/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
+
+%\documentclass{beamer}
+
+ \documentclass[xcolor=table]{beamer}
+
+
+\mode<presentation> {
+
+% The Beamer class comes with a number of default slide themes
+% which change the colors and layouts of slides. Below this is a list
+% of all the themes, uncomment each in turn to see what they look like.
+
+%\usetheme{default}
+%\usetheme{AnnArbor}
+%\usetheme{Antibes}
+%\usetheme{Bergen}
+%\usetheme{Berkeley}
+%\usetheme{Berlin}
+%\usetheme{Boadilla}
+%\usetheme{CambridgeUS}
+%\usetheme{Copenhagen}
+%\usetheme{Darmstadt}
+%\usetheme{Dresden}
+%\usetheme{Frankfurt}
+%\usetheme{Goettingen}
+%\usetheme{Hannover}
+%\usetheme{Ilmenau}
+%\usetheme{JuanLesPins}
+%\usetheme{Luebeck}
+\usetheme{Madrid}
+%\usetheme{Malmoe}
+%\usetheme{Marburg}
+%\usetheme{Montpellier}
+%\usetheme{PaloAlto}
+%\usetheme{Pittsburgh}
+%\usetheme{Rochester}
+%\usetheme{Singapore}
+%\usetheme{Szeged}
+%\usetheme{Warsaw}
+
+% As well as themes, the Beamer class has a number of color themes
+% for any slide theme. Uncomment each of these in turn to see how it
+% changes the colors of your current slide theme.
+
+%\usecolortheme{albatross}
+%\usecolortheme{beaver}
+%\usecolortheme{beetle}
+%\usecolortheme{crane}
+%\usecolortheme{dolphin}
+%\usecolortheme{dove}
+%\usecolortheme{fly}
+%\usecolortheme{lily}
+%\usecolortheme{orchid}
+%\usecolortheme{rose}
+%\usecolortheme{seagull}
+%\usecolortheme{seahorse}
+%\usecolortheme{whale}
+%\usecolortheme{wolverine}
+
+%\setbeamertemplate{footline} % To remove the footer line in all slides uncomment this line
+%\setbeamertemplate{footline}[page number] % To replace the footer line in all slides with a simple slide count uncomment this line
+
+%\setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
+}
+
+\usepackage{hyperref}
+
+
+\usepackage{textcomp}
+\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+
+% Packages
+\usepackage[czech, english]{babel}
+
+\usepackage[utf8]{inputenc} % pro unicode UTF-8
+
+\usepackage{verbatim}
+
+\usepackage{xcolor}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\usepackage{listings}
+\lstset{basicstyle=\ttfamily,
+%	showspaces=false;
+	showstringspaces=false,
+	backgroundcolor=\color{backcolour},
+%	commentstyle=\color{red},
+%	keywordstyle=\color{blue}
+}
+
+
+% Macros
+\newcommand\ti{\char`\~}                 % tilde char
+\newcommand\s{\char`\/}                  % slah char	
+%\newcommand\bs{\char`\\}             % backslah char
+\newcommand\bs{\textbackslash}     % backslah char
+
+\definecolor{links}{HTML}{2A1B81}
+\hypersetup{colorlinks,linkcolor=,urlcolor=links}
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title[BIE-PS1 - Tutorial 6]{Standard Input/Output, UNIX filters.} % The short title appears at the bottom of every slide, the full title is only on the title page
+
+\author{Jan Trdlička} % Your name
+\institute[FIT CTU] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
+{
+Department of Computer Systems\\
+Faculty of Information Technology \\
+Czech Technical University in Prague\\ % Your institution for the title page
+\medskip
+\textit{trdlicka@fit.cvut.cz} % Your email address
+}
+\date{\today} % Date, can be changed to a custom date
+
+\begin{document}
+
+\begin{frame}
+\titlepage % Print the title page as the first slide
+\end{frame}
+
+\begin{frame}
+\frametitle{Contents} % Table of contents slide, comment this block out to remove it
+\tableofcontents % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+%	PRESENTATION SLIDES
+%----------------------------------------------------------------------------------------
+
+%------------------------------------------------
+\section{Standard Input/Output} 
+\begin{frame}[fragile]
+\frametitle{Standard Input/Output}
+	\begin{itemize}
+
+		\item  Where are the standard I/O of process  connected by default?
+%BS		
+		%\pause
+		\begin{itemize}
+			\item Standard input from keyboard.
+			\item Standard output and standard error output to terminal.
+		\end{itemize}
+%ES
+
+		%\pause
+		\item How to redirect the standard I/O?
+		
+%BS		
+		%\pause
+		\begin{itemize}
+			\item By symbols: \texttt{<}, \texttt{<<}, \texttt{>}, \texttt{>>},   \texttt{2>}, \texttt{2>>}, \texttt{n>\&m}, and \texttt{|}.
+		\end{itemize}
+%ES
+		%\pause
+		\item What is the meaning of file descriptors: 0, 1, and 2?		
+%BS		
+		%\pause
+		\begin{itemize}
+			\item 0 = stdin (standard input).
+			\item 1 = stdout (standard output).
+			\item 2 = sterr (standard error output).
+		\end{itemize}
+%ES
+
+		%\pause
+		\item Is the order of redirection important?
+\begin{lstlisting}[language=bash]		
+ls ~ foo 2>&1 >f1
+ls ~ foo >f1 2>&1
+\end{lstlisting}		
+		
+%BS		
+		%\pause
+		\begin{itemize}
+			\item Yes.
+		\end{itemize}
+%ES
+
+		%\pause
+		\item How to discard the command error output?	
+%BS		
+		%\pause
+		\begin{itemize}
+		
+			\item
+\begin{lstlisting}[language=bash]		
+ls . foo 2>/dev/null
+\end{lstlisting}
+
+		\end{itemize}
+%ES
+
+	\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}[fragile]
+\frametitle{Standard Input/Output}
+	\begin{itemize}
+
+		\item Is the following redirection valid for more lines?
+\begin{lstlisting}[language=bash]		
+ls ~ foo >std.out 2>std.err
+ls ~ foo
+\end{lstlisting}		
+		
+%BS		
+		%\pause
+		\begin{itemize}
+			\item No.
+			%\pause
+			\item Permanent redirection can be made by command \texttt{exec}
+\begin{lstlisting}[language=bash]		
+exec >std.out 2>std.err
+\end{lstlisting}				
+		\end{itemize}
+%ES
+
+		%\pause
+		\item What is the pipe?
+	\end{itemize}
+		
+%BS	
+	%\pause	
+	\begin{figure}[h]
+	 	\centering
+        		\includegraphics[width=0.8\textwidth]{fig/pipe.png}
+	\end{figure}
+%ES
+
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}[fragile]
+\frametitle{Standard Input/Output}
+	\begin{itemize}
+
+		\item How to redirect the standard output to the file \texttt{out.txt} and 
+			the standard error output to the file \texttt{err.txt} for the following command?
+			
+		\begin{small}	
+\begin{lstlisting}[language=bash]		
+ls -la / foo
+\end{lstlisting}
+		\end{small}		
+		
+%BS		
+		%\pause
+		\begin{itemize}
+			\item
+\begin{lstlisting}[language=bash]		
+ls -la / foo >out.txt 2>err.txt
+\end{lstlisting}
+		\end{itemize}
+%ES
+
+		%\pause
+		\item How to append the standard output and the standard error output to the file \texttt{out.txt}  for the following command?
+	
+		\begin{small}		
+\begin{lstlisting}[language=bash]		
+ls -la / foo
+\end{lstlisting}
+		\end{small}	
+		
+%BS		
+		%\pause
+		\begin{itemize}
+			\item
+\begin{lstlisting}[language=bash]		
+ls -la / foo >>out.txt 2>&1
+\end{lstlisting}
+		\end{itemize}
+%ES
+
+		%\pause
+		\item How to count the number of lines  written on the standard output by the command \texttt{find /ect}?	
+
+%BS		
+		%\pause
+		\begin{itemize}
+			\item
+\begin{lstlisting}[language=bash]		
+find /etc | wc -l
+\end{lstlisting}
+		\end{itemize}
+%ES		
+
+		%\pause
+		\item How to discard the error mesages from the previous solution?
+				
+%BS		
+		%\pause
+		\begin{itemize}
+			\item
+\begin{lstlisting}[language=bash]		
+find /etc 2>/dev/null | wc -l
+\end{lstlisting}
+		\end{itemize}
+%ES
+
+	\end{itemize}
+\end{frame}
+
+
+%------------------------------------------------
+\section{UNIX filters – overview} 
+\begin{frame}[fragile]
+\frametitle{UNIX filters – overview}
+	\begin{itemize}
+
+		\item  What is the meaning of the following filters?
+				
+		\begin{itemize}
+			\item \texttt{tee},
+			%\pause
+			\item \texttt{split}, \texttt{cat},
+			%\pause
+			\item \texttt{head}, \texttt{tail},
+			%\pause
+			\item \texttt{cut}, \texttt{paste},
+			%\pause
+			\item \texttt{sort}, \texttt{uniq},
+			%\pause
+			\item \texttt{diff}, \texttt{patch},
+			%\pause
+			\item \texttt{cmp}, \texttt{comm}.
+		\end{itemize}
+		
+	\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}[fragile]
+\frametitle{UNIX filters – overview}
+
+%BS		
+	\begin{figure}[h]
+	 	\centering
+        		\includegraphics[width=0.75\textwidth]{fig/filters.png}
+	\end{figure}
+%ES
+
+\end{frame}
+
+%------------------------------------------------
+\section{UNIX filters} 
+\begin{frame}[fragile]
+\frametitle{UNIX filters}
+	\begin{itemize}
+	
+		\item How to number all lines of manual page of the command \texttt{bash}?
+		
+%BS
+		%\pause
+		\begin{footnotesize}
+\begin{lstlisting}[language=bash]		
+man bash | cat -n
+\end{lstlisting}
+\begin{lstlisting}[language=bash]		
+man bash | nl -ba
+\end{lstlisting}
+		\end{footnotesize}
+%ES
+ 	
+		%\pause
+		\item How to number all lines of output of the command \texttt{/usr/sbin/useradd}?
+		
+%BS
+		%\pause
+		\begin{footnotesize}
+\begin{lstlisting}[language=bash]		
+/usr/sbin/useradd 2>&1 | cat -n
+\end{lstlisting}
+		\end{footnotesize}
+%ES
+
+		%\pause
+		\item  How to number all lines of manual page of the command \texttt{bash} and 
+			print only lines from 100 to 105 to the standard output?
+
+%BS
+		%\pause
+		\begin{footnotesize}
+\begin{lstlisting}[language=bash]		
+man bash | cat -n | tail -n+100 | head -6   # Linux
+man bash | cat -n | tail +100   | head -6   # Solaris
+\end{lstlisting}
+
+		%\pause
+\begin{lstlisting}[language=bash]
+man bash | cat -n | head -105 | tail -6
+\end{lstlisting}
+
+		\end{footnotesize}
+%ES
+
+		%\pause
+		\item How to print only the number of lines of the file \texttt{/etc/passwd}?
+			
+%BS
+		%\pause
+		\begin{footnotesize}
+\begin{lstlisting}[language=bash]		
+wc -l </etc/passwd
+\end{lstlisting}
+		%\pause
+\begin{lstlisting}[language=bash]		
+wc -l /etc/passwd | cut -d' ' -f1
+\end{lstlisting}
+		\end{footnotesize}
+%ES	
+		
+	\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}[fragile]
+\frametitle{UNIX filters}
+	\begin{itemize}
+	
+		\item How to print the number of users currently logged in to the current host?
+			
+			\vspace{5mm} 
+			Hints: 
+			\begin{enumerate}
+				\item Use command \texttt{finger} to get info about users currently logged. 
+				\item Use command \texttt{users} to get info about users currently logged. 	
+			\end{enumerate}		
+
+%BS
+			\vspace{5mm}
+			Solutions:
+			\begin{enumerate}
+				%\pause
+				\item
+\begin{lstlisting}[language=bash]
+finger | tail -n+2 | wc -l    # Linux	
+finger -f | wc -l             # Solaris
+\end{lstlisting}
+
+				%\pause
+				\item
+\begin{lstlisting}[language=bash]		
+users | wc -w
+\end{lstlisting}
+
+			\end{enumerate}
+%ES
+	\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}[fragile]
+\frametitle{UNIX filters}
+	\begin{itemize}
+	
+		\item How to modify the previous solution so, that every user is counted only one times?
+		
+%BS
+		\begin{enumerate}
+			%\pause
+			\item
+\begin{footnotesize}
+\begin{lstlisting}[language=bash]		
+finger | tail -n+2 | cut -d' ' -f1 | \
+sort -u | wc -l                        # Linux
+\end{lstlisting}
+\end{footnotesize}
+
+			%\pause
+			\item
+\begin{footnotesize}
+\begin{lstlisting}[language=bash]		
+users | tr ' ' '\n' | sort -u | wc -l
+\end{lstlisting}
+\end{footnotesize}
+
+		\end{enumerate}
+%ES
+
+		%\pause
+		\item How to create alias \texttt{load}, which prints the number of users currently logged in to the current host (the previous solutions)
+			 and the output should have the following format:
+
+\begin{lstlisting}[language=bash,showspaces=true]		
+User load:  13
+\end{lstlisting}
+	
+%BS
+		\begin{enumerate}
+			%\pause
+			\item
+\begin{footnotesize}
+\begin{lstlisting}[language=bash]
+alias load='echo "User load:  $(finger | \
+tail -n+2 | cut -d" " -f1 | sort -u | wc -l | \
+tr -d " ")"'
+\end{lstlisting}
+\end{footnotesize}
+
+			%\pause
+			\item
+\begin{footnotesize}
+\begin{lstlisting}[language=bash]		
+alias load='echo "User load:  $(users | \
+tr " " "\n" | sort -u | wc -l | tr -d " ")"'
+\end{lstlisting}
+\end{footnotesize}
+
+		\end{enumerate}
+%ES
+
+	\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}[fragile]
+\frametitle{UNIX filters}
+	\begin{itemize}
+	
+		\item How to print the number of users, that have account on the local host?\\
+		
+		Hint: Use command \texttt{getent passwd} to get info about user accounts.
+
+			
+%BS
+		\begin{itemize}
+			%\pause
+			\item
+\begin{lstlisting}[language=bash]		
+getent passwd | wc -l
+\end{lstlisting}
+		\end{itemize}
+%ES
+
+		%\pause
+		\item How to save the sorted list of login names of users that have account on the local host to the file \texttt{list.txt} 
+			and at the same time to print the number of these names to standard output?
+			
+%BS
+		\begin{itemize}
+			%\pause
+			\item
+\begin{footnotesize}
+\begin{lstlisting}[language=bash]		
+getent passwd | cut -d':' -f1 | sort | \
+tee list.txt | wc -l
+\end{lstlisting}
+\end{footnotesize}
+		\end{itemize}
+%ES
+
+		%\pause
+		\item How to print only a name (the 5th column) of the user, that has the highest user ID (the 3rd column)?
+			
+%BS
+		\begin{itemize}
+			%\pause
+			\item
+\begin{lstlisting}[language=bash]		
+getent passwd | sort -t3 -k3,3n | tail -1 | \
+cut -d':' -f5
+\end{lstlisting}
+		\end{itemize}
+%ES
+			
+	\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}[fragile]
+\frametitle{UNIX filters}
+	\begin{itemize}
+	
+		\item How to print a frequency table "The number of processes per user",
+			where the first column is the number of processes running by the user 
+			and the second column is the user name. The table should be sorted by the number of processes in descending order.
+		
+			\vspace{5mm}
+			Hint: Use command \texttt{ps -eo user} to get info about running processes on the current host. 		
+%BS
+		\begin{itemize}
+			%\pause
+			\item
+\begin{lstlisting}[language=bash]		
+ps -eo user | tail -n+2 | sort | uniq -c | \
+sort -k1,1nr                            # Linux
+\end{lstlisting}
+		\end{itemize}
+%ES
+
+		%\pause
+		\item How to print only names of the 3 largest items in the directory \texttt{/usr/bin}?			
+%BS
+		\begin{itemize}
+			%\pause
+			\item
+\begin{lstlisting}[language=bash]		
+ls -l /usr/bin | tail -n+2 | sort -k5,5n | \
+tail -10 | tr -s ' ' | cut -d' ' -f9-   # Linux
+\end{lstlisting}
+
+			%\pause
+			\item
+\begin{lstlisting}[language=bash]	
+ls -Sr /usr/bin | tail -3
+\end{lstlisting}
+		\end{itemize}
+%ES
+			
+	\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}[fragile]
+\frametitle{UNIX filters}
+	\begin{itemize}
+	
+		\item How to print a frequency table "The number of directories per group" of directory \texttt{/etc} (not recursively),
+			where the first column is the number of directories owned by the group
+			and the second column is the group name. The table should be sorted by the number of directories in ascending order.
+		
+			\vspace{5mm}
+			Hint: Use command \texttt{ls -ld} to get info about the content of directory (the 4th column is the group name). 		
+%BS
+		\begin{itemize}
+			%\pause
+			\item
+\begin{lstlisting}[language=bash]		
+ls -ld /etc/*/ | tr -s ' ' | cut -d' ' -f4 | \
+sort | uniq -c | sort -k1,1n
+\end{lstlisting}
+
+			%\pause
+			\item
+\begin{lstlisting}[language=bash]
+stat --printf="%G\n" /etc/*/ | \
+sort | uniq -c | sort -k1,1n
+\end{lstlisting}
+
+		\end{itemize}
+%ES
+			
+	\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}[fragile]
+\frametitle{UNIX filters}
+	\begin{itemize}
+	
+		\item How to copy files and directories, that are listed in the shell variable \texttt{LIST},
+			to the directory, which name is saved in the file \texttt{Backup.txt} (you must create this directory first).\\
+			The shell variable \texttt{LIST} contains filenames separated by colon (e.g.  \texttt{/tmp/a:/etc:/usr/bin:...})
+			and filenames don't contain spaces and special characters. There are no aliases in the shell.
+					
+%BS
+
+		\begin{itemize}
+			%\pause
+			\item
+\begin{lstlisting}[language=bash]		
+mkdir "$(cat Backup.txt)"
+\end{lstlisting}
+
+			%\pause
+			\item
+\begin{lstlisting}[language=bash]		
+cp -r $(echo $LIST | tr ':' ' ') \
+"$(cat Backup.txt)"
+\end{lstlisting}
+		\end{itemize}
+%ES
+			
+	\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}[fragile]
+\frametitle{UNIX filters}
+	\begin{itemize}
+	
+		\item The file \texttt{List.txt} contains the list of directories and it has the following structure:
+		
+		\begin{footnotesize}
+\begin{lstlisting}[language=bash]		
+Directory
+---------
+/etc/ssh
+/bin
+/usr/bin
+...
+\end{lstlisting}		
+		\end{footnotesize}
+		
+		How to create the file \texttt{Top.txt}, that contains names of the 5 largest directories from \texttt{List.txt}?
+					
+%BS
+		\begin{itemize}
+			%\pause
+			\item
+\begin{lstlisting}[language=bash]		
+du -s $(cat List.txt |tail -n+3) | \
+sort -k1,1nr | head -5 | \ 
+cut -d'TAB' -f2 >Top.txt
+\end{lstlisting}
+
+			%\pause
+			\item To enter character TAB in bash, press CTRL+V and TAB (see \texttt{man bash}).
+		\end{itemize}
+%ES
+			
+	\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+\section{Homework} 
+\begin{frame}[fragile]
+\frametitle{Homework}
+	\begin{itemize}
+		\item Create alias \texttt{lss}, which prints names of files in the working directory sorted by file size.
+%BS	
+		%\pause
+		\begin{itemize}
+			\item
+			\begin{footnotesize}
+\begin{lstlisting}[language=bash]
+alias lss='ls -al . | tail -n +2 | sort -k5,5n | \
+tr -s " " | cut -d" " -f9 '
+\end{lstlisting}
+			\end{footnotesize}
+		\end{itemize}	
+%ES				
+		
+		\begin{comment}
+		\item Create shell script that prints names of the 10 largest files (including their sizes),
+			which are in your home directory and in its direct  subdirectories.		
+		
+		\item Patching of source code
+		\begin{itemize}
+			\item Create directory with at least 5 files. (e.g. C project: files \texttt{*.c}, \texttt{*.h}, \texttt{Makefile}, …)
+			
+			
+			\item Fill the files with some text (e.g. output of command \texttt{ls}, \texttt{date}, \texttt{man}, …).
+			
+			\item Create copy of this directory.
+			\item Modify some files in new directory. Remove/create some old/new one.
+			\item Use command \texttt{diff} to compare both directories.
+			\item Save the output of command \texttt{diff} to the file.
+			\item Use the previous file in program \texttt{patch} to create from old directory structure new directory structure.
+		\end{itemize}
+		\end{comment}
+		
+	\end{itemize}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
