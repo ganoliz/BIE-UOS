@@ -15,6 +15,7 @@ navigation:
     - tutorials/*.pdf
     - tutorials/*.txt
     - tutorials/*.gz
+    - tutorials/*.csv
     - homeworks/0*/*
     - homeworks/1*/*
 repository:
