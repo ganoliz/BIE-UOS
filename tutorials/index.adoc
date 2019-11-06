@@ -28,7 +28,7 @@
   . Regular expressions, command grep.
     * link:https://bips1.fit.cvut.cz[LearnShell]
     * link:bie-ps1-c06-regexp-questions.pdf[]
-//    * link:bie-ps1-c06-regexp-solutions.pdf[]  
+    * link:bie-ps1-c06-regexp-solutions.pdf[]  
     * Data file: link:words.txt[], link:apache.log.gz[] (use command gunzip to decompress the file).  
   . Regular expressions, commands sed and awk.
     * link:https://bips1.fit.cvut.cz[LearnShell]
