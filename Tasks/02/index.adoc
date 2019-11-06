@@ -1,0 +1,47 @@
+= 2. úloha 
+:imagesdir: ../../media/tasks/02
+
+
+Správné řešení této úlohy může být vzato v úvahu cvičícím v rámci přidělování 3 bodů „navíc“.
+Hlavně ale přispěje k pochopení problematiky, což vám umožní získat daleko více bodů v testech.
+
+Limit na odevzdání je pondělí *11.11.2019 23:00 hod.* Poté budou řešení zaarchivována.
+
+
+==== Zadání
+
+
+Napište skript, který na serveru *`fray1`*, příp. *`fray3`*, v adresáři *`tyden7`* vytvořeném
+v rámci 1. úlohy, vytvoří soubor, jehož jméno bude dáno obsahem proměnné *`UID`*. +
+
+První řádka tohoto souboru musí obsahovat číslo, vzniklé součtem dne, hodiny a minuty času poslední modifikace tohoto souboru. Druhá řádka bude obsahovat váš „Copyright“, tedy text:
+
+
+----
+(c) <vaše username>
+----
+
+Viz příklad níže.
+
+
+Podmínky správného řešení:
+
+* Zádné další znaky, kromě vypočítaného čísla, na 1. řádce nesmí být.
+* Skript i soubor musí být uloženy v adresáři *`~/ulohy/tyden7`*
+
+
+==== Příklad
+
+
+Skript se jmenuje `uloha2` a je zobrazen výstup příkazů *`ls`* a *`cat`* +
+
+
+----
+cd ~/ulohy/tyden7
+ls -l
+-rw-------   1 muzikar  zam           15 Nov 24 22:29 10032
+-rwx------   1 muzikar  zam          328 Nov 24 22:20 uloha2
+cat 10032
+75
+(c) muzikar
+----
