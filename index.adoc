@@ -1,6 +1,8 @@
 = 1. News
 :imagesdir: media
 
+* Attention, *the first big test* will take place on Wednesday 13.11.2019 during the practice. 
+* 6.6.2019: The assignment of *the second task* was published.
 
 * *Timetable*:  https://timetable.fit.cvut.cz/old/public/en/predmety/31/61/p3161206.html
 
