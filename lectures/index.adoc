@@ -10,7 +10,7 @@
   * link:bie-ps1-p04-filters-01.pdf[]
   . Regular expressions, grep. 
   * link:bie-ps1-p05-regexpr-01.pdf[]
-  . Regular expressions, awk, sed.
+  . Regular expressions, sed and awk.
   * link:bie-ps1-p07-sedawk-01.pdf[]
   . Exit code. Command test. Flow Control. Loops.
   * link:bie-ps1-p03-flow_control-01.pdf[]
