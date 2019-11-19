@@ -41,7 +41,7 @@
   . Exit status, command test, flow control.
     * link:https://bips1.fit.cvut.cz[LearnShell]
     * link:bie-ps1-c08-flow_control-questions.pdf[]
-    * link:bie-ps1-c08-flow_control-solutions.pdf[]
+//    * link:bie-ps1-c08-flow_control-solutions.pdf[]
     
   . Access permissions and command find.
     * link:https://bips1.fit.cvut.cz[LearnShell]
