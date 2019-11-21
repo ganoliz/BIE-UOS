@@ -1,0 +1,123 @@
+= Homework for the 9th practice
+
+== Topics of the current practice
+
+++++
+<style>li details { margin-bottom: 0.5em; }</style>
+<div class='olist arabic'>
+<ol class='arabic'>
+<li><details><summary>Log on to the computer <code>fray1.fit.cvut.cz</code>.</summary>
+++++
+....
+ssh username@fray1.fit.cvut.cz
+....
+++++
+</details></li>
+<li><details><summary> Save the standard output of the following pipe  <code>ls -l /usr/bin | nl</code> to the file <code>data1</code>.</summary>
+++++
+....
+ls -l /usr/bin | nl > data1
+....
+++++
+</details></li>
+<li><details><summary> Use the  command <code>sed</code> to write the first and the last lines of the  file <code>data1</code> to standard output.</summary>
+++++
+....
+sed -n '1p;$p' data1
+....
+++++
+</details></li>
+<li><details><summary> Use the command <code>sed</code> to write all lines from the file <code>data1</code> to the standard output except the first and last lines.  </summary>
+++++
+....
+sed  '1d;$d' data1
+....
+++++
+</details></li>
+<li><details><summary>Create a file <code>data2</code> that will be a copy of the file <code>data1</code>, but the lines representing the symbolic links will be replaced with the line containing string "here was a link".</summary>
+++++
+....
+sed -E 's/^ *[[:digit:]]+\tl.*$/here was a link/' data1 > data2
+....
+++++
+</details></li>
+<li><details><summary>Save the standard output of the following command <code>find /etc</code> to the file <code>data3</code>.
+The file <code>data3</code>  will contain file names (including path), one name per line. </summary>
+++++
+....
+find /etc/ > data3 2>/dev/null
+....
+++++
+</details></li>
+<li><details><summary> How many file names in the file <code>data3</code> contain an extension (extension = string after the last dot)? </summary>
+++++
+....
+grep -Ec '/[^/]+\.[^\./]+$' data3 
+....
+++++
+</details></li>
+
+<li><details><summary> How many different extensions have file names in the file <code>data3</code>? </summary>
+++++
+....
+grep -E '/[^/]+\.[^\./]+$' data3 | sed -E 's/.*\.([^\./]+)$/\1/' | sort -u | wc -l
+....
+++++
+</details></li>
+
+<li><details><summary> Create a frequency table of the file name extensions from the file <code>data3</code>.  </summary>
+++++
+....
+grep -E '/[^/]+\.[^\./]+$' data3 | sed -E 's/.*\.([^\./]+)$/\1/' | sort | uniq -c | sort -k1,1n -k2,2
+....
+++++
+</details></li>
+
+<li><details><summary> Create a frequency table of the file name extensions of length 1 to 3 from the file <code>data3</code>.   </summary>
+++++
+....
+grep -E '/[^/]+\.[^\./]{1,3}$' data3 | sed -E 's/.*\.([^\./]{1,3})$/\1/' | sort | uniq -c | sort -k1,1n -k2,2 
+....
+++++
+</details></li>
+
+<li><details><summary>Save the standard output of the following command <code>man sed | tr -c '[:alpha:] \n' ' ' | tr -s ' '</code> to the file <code>data4</code>.</summary>
+++++
+....
+man sed | tr -c '[:alpha:] \n' ' ' | tr -s ' ' > data4
+....
+++++
+</details></li>
+<li><details><summary>In the file <code>data4</code>, replace all words "sed" and "sed" with string "SED". </summary>
+++++
+....
+sed -E 's/\<[Ss]ed\>/SED/g' data4 > tmp ; mv tmp data4
+....
+++++
+</details></li>
+<li><details><summary>Verify that you have actually replaced all occurrences of words "sed" and "sed".  </summary>
+++++
+....
+tr ' ' '\n' < data4 | grep -i '\<sed\>'  | sort -u
+....
+++++
+</details></li>
+<li><details><summary>At the beginning of the lines in the file <code>data4</code> that do not begin with a space, insert string <code>Section: </code>. </summary>
+++++
+....
+sed -E 's/^([^ ].*)$/Section: \1/' data4 > tmp ; mv tmp data4
+....
+++++
+</details></li>
+<li><details><summary>Replace all words in the file <code>data4</code> that begin with a capital letter with string <code>HIDDEN</code>.  </summary>
+++++
+....
+sed -E 's/\<[[:upper:]][^ ]+\>/HIDDEN/g' data4
+....
+++++
+</details></li>
+++++
+++++
+</ol>
+</div>
+++++ 
