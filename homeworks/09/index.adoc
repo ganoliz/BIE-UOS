@@ -68,7 +68,8 @@ grep -E '/[^/]+\.[^\./]+$' data3 | sed -E 's/.*\.([^\./]+)$/\1/' | sort -u | wc 
 <li><details><summary> Create a frequency table of the file name extensions from the file <code>data3</code>.  </summary>
 ++++
 ....
-grep -E '/[^/]+\.[^\./]+$' data3 | sed -E 's/.*\.([^\./]+)$/\1/' | sort | uniq -c | sort -k1,1n -k2,2
+grep -E '/[^/]+\.[^\./]+$' data3 | sed -E 's/.*\.([^\./]+)$/\1/' | \
+   sort | uniq -c | sort -k1,1n -k2,2
 ....
 ++++
 </details></li>
@@ -76,7 +77,8 @@ grep -E '/[^/]+\.[^\./]+$' data3 | sed -E 's/.*\.([^\./]+)$/\1/' | sort | uniq -
 <li><details><summary> Create a frequency table of the file name extensions of length 1 to 3 from the file <code>data3</code>.   </summary>
 ++++
 ....
-grep -E '/[^/]+\.[^\./]{1,3}$' data3 | sed -E 's/.*\.([^\./]{1,3})$/\1/' | sort | uniq -c | sort -k1,1n -k2,2 
+grep -E '/[^/]+\.[^\./]{1,3}$' data3 | sed -E 's/.*\.([^\./]{1,3})$/\1/' | \
+   sort | uniq -c | sort -k1,1n -k2,2 
 ....
 ++++
 </details></li>
