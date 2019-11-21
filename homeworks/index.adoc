@@ -13,5 +13,5 @@
   1. link:./06/[Filters II and command "grep"]
   1. link:./07/[Regular expressions]
 //  1. link:./09/[Textové transformace příkazem sed a složené příkazy]
-//  1. link:./10/[Textové transformace příkazem awk]
+  1. link:./10/[Text transformations with awk]
 //  1. link:./11/[Přístupová práva a příkaz find]
