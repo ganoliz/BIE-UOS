@@ -52,7 +52,7 @@
     * link:https://bips1.fit.cvut.cz[LearnShell]
     * link:bie-ps1-c11-archiving-questions.pdf[]
 //    * link:bie-ps1-c11-archiving-solutions.pdf[]  
-    * link:https://bips1.fit.cvut.cz[LearnShell]
+
     * link:bie-ps1-c12-calculations-questions.pdf[]
 //    * link:bie-ps1-c12-calculations-solutions.pdf[]  
 
