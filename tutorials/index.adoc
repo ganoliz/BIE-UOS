@@ -48,11 +48,6 @@
     * link:bie-ps1-c09-perm_find-questions.pdf[]
 //    * link:bie-ps1-c09-perm_find-solutions.pdf[]  
 
-  . Processes and jobs.
-    * link:https://bips1.fit.cvut.cz[LearnShell]
-    * link:bie-ps1-c10-proc-questions.pdf[]
-//    * link:bie-ps1-c10-proc-solutions.pdf[]  
-
   . Archiving and compression tools and arithmetic calculations.
     * link:https://bips1.fit.cvut.cz[LearnShell]
     * link:bie-ps1-c11-archiving-questions.pdf[]
@@ -60,6 +55,11 @@
     * link:https://bips1.fit.cvut.cz[LearnShell]
     * link:bie-ps1-c12-calculations-questions.pdf[]
 //    * link:bie-ps1-c12-calculations-solutions.pdf[]  
+
+  . Processes and jobs.
+    * link:https://bips1.fit.cvut.cz[LearnShell]
+    * link:bie-ps1-c10-proc-questions.pdf[]
+//    * link:bie-ps1-c10-proc-solutions.pdf[] 
 
   . Big test   
   		
