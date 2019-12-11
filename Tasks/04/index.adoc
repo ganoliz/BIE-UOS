@@ -1,30 +1,24 @@
-= 3. úloha 
-:imagesdir: ../../media/tasks/04
+= Task 3 
 
-*Hodnocená úloha*
+The submission deadline is *Monday 16.12.2019 22 pm*. After that the solutions will be archived.
 
-Jak již bylo řečeno, správné řešení může být vzato v úvahu cvičícím a přidat body, hlavně ale přispěje k pochopení problematiky, v tomto případě linků.
-
-Limit na odevzdání je pondělí *16.12.2019 22:00 hod.* Poté budou řešení zarchivována.
+==== Assignment
 
 
-==== Zadání
+On the server *`fray1`* or *`fray3`*, in the directory *`tyden12`* ( directory createdin task 1), create the following
 
+. In any way ("manually" or by script) make sure that:
+** there will be a file with the name *HD* in the directory *`tyden12`*,
+** this file will contain a single line with your username,
+** the output from command *`ls -l HD`* will contain the number *5* in the second column,
+** there will be a maximum of 3 *regular* files, including an HD file, in the directory *`week12`* 
 
-Na serveru *`fray1`*, příp. *`fray3`*, v adresáři *`tyden12`*, vytvořeném
-v rámci 1. úlohy, vytvořte následující:
-
-. Jakýmkoli způsobem („ručně“ nebo skriptem) zařiďte, aby zároveň platilo, že:
-** v adresáři *`tyden12`* bude soubor jménem *HD*,
-** jeho obsahem bude jediná řádka s vaším uživatelským jménem,
-** ve druhém sloupci po výpisu „*`ls -l HD`*“ bude číslo *5*,
-** v adresáři *`tyden12`* budou maximálně 3 *obyčejné* soubory, včetně souboru HD.
-. Napište skript, který v tomto adresáři vytvoří řetězec symbolických linků tak, že:
-** první link (např. jménem *sln1*) odkazuje na soubor `/etc/hosts`,
-** druhý link (např. jménem *sln2*) na předchozí link *`sln1`* atd.
-** Délka tohoto řetězce je zadána číslem, které je parametrem skriptu.
-** Příklad vytvořeného řetězce délky 3 je v příkladu níže.
-
+. Write a shell script that creates a symbolic link string in this directory such that:
+** the first link (e.g. named *sln1*) refers to the file `/etc/hosts`,
+** the second link (e.g. named *sln2*) refers to the previous link *`sln1`*,
+** the thirds link (e.g. named *sln3*) refers to the previous link *`sln2`*, and so on.
+** The length of this string is specified by a number that is a parameter of the script..
+** An example of a created string of length 3 is in the example below.
 
 ==== Podmínky správného řešení
 
