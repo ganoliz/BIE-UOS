@@ -20,18 +20,16 @@ On the server *`fray1`* or *`fray3`*, in the directory *`tyden12`* ( directory c
 ** The length of this string is specified by a number that is a parameter of the script..
 ** An example of a created string of length 3 is in the example below.
 
-==== Podmínky správného řešení
+==== Conditions of correct solution
 
 
-* Pokud budete vytvářet nějaké pracovní adresáře, musí být všechny v rámci adresáře *`~/ulohy/tyden12`*.
-* Skript, soubor HD a všechny symbolické linky musí být uloženy v adresáři *`~/ulohy/tyden12`*
+* If you create any working directories, they must all be within the directory *`~/ulohy/tyden12`*.
+* The script, the HD file, and all symbolic links must be stored in the directory *`~/ulohy/tyden12`*
 
 
-==== Příklad
+==== Example
 
-
-Pokud se skript na vytvoření řetězce linků jmenuje `uloha-linky` mohl by výstup příkazu *`ls -la`* vypadat například takto:
-
+For example, if the link string script is named `uloha-linky`, the output of *`ls -la`* might look like this:
 
 ----
 cd ~/ulohy/tyden12
@@ -47,8 +45,7 @@ lrwxrwxrwx   1 muzikar  zam            4 Nov 15 10:12 sln3 -> sln2
 ----
 
 
-==== Bonusová otázka
+==== Bonus question
 
-
-Zamyslete se nad tím, proč je z tohoto výpisu zcela evidentní, že uživatel muzikar nesplnil zadání 1. úlohy :-)  +
-Tedy splnil pouze částečně - klíč k odpovědi je v druhé řádce výpisu.
+Consider why it is quite obvious from this statement that the user muzikar did not fulfill the assignment of the 1st task :-) +
+Thus, it only partially fulfilled - the key to the answer is in the second line of the statement.
