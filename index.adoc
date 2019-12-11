@@ -1,6 +1,14 @@
 = 1. News
 :imagesdir: media
 
+* Attention, *the second big test* will take place on *Wednesday 18.12.2019* during the practice. Repeat the following topics
+** Regular expressions (metacharacters).
+** Commands grep, sed, awk and.
+** Scripts (script parameters, command test, if/then/else, loops for/while/until).
+** Access permissions.
+** Command find.
+** And all previous topics.
+
 * Attention, *the first big test* will take place on *Wednesday 13.11.2019* during the practice. Repeat the following topics
 ** CLI parsing order (metacharacters and their meaning),
 ** Shell variables and aliasing.
