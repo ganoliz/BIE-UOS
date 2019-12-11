@@ -5,19 +5,19 @@ The submission deadline is *Monday 16.12.2019 22 pm*. After that the solutions w
 ==== Assignment
 
 
-On the server *`fray1`* or *`fray3`*, in the directory *`tyden12`* ( directory createdin task 1), create the following
+On the server *`fray1`* or *`fray3`*, in the directory *`tyden12`* ( directory created in task 1), create the following
 
 . In any way ("manually" or by script) make sure that:
 ** there will be a file with the name *HD* in the directory *`tyden12`*,
 ** this file will contain a single line with your username,
 ** the output from command *`ls -l HD`* will contain the number *5* in the second column,
-** there will be a maximum of 3 *regular* files, including an HD file, in the directory *`week12`* 
+** there will be a maximum of 3 *regular* files, including an HD file, in the directory *`week12`*.
 
-. Write a shell script that creates a symbolic link string in this directory such that:
+. Create a shell script that creates a symbolic link string in this directory such that:
 ** the first link (e.g. named *sln1*) refers to the file `/etc/hosts`,
 ** the second link (e.g. named *sln2*) refers to the previous link *`sln1`*,
 ** the thirds link (e.g. named *sln3*) refers to the previous link *`sln2`*, and so on.
-** The length of this string is specified by a number that is a parameter of the script..
+** The length of this string is specified by a number that is a parameter of the script.
 ** An example of a created string of length 3 is in the example below.
 
 ==== Conditions of correct solution
