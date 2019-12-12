@@ -1,0 +1,442 @@
+= Homework -- shell scripts
+
+++++
+<style>li details { margin-bottom: 0.5em; }</style>
+<div class='olist arabic'>
+<ol class='arabic'>
+
+<li><details><summary>Create a shell script <code>s1.sh</code> that writes the number of its positional parameters (arguments) to standard output.</summary>
+++++
+....
+#! /bin/bash
+
+# Number of parameters
+echo "$#"
+....
+++++
+</details></li>
+
+<li><details><summary>Create a shell script <code>s2.sh</code> that writes the number of its positional parameters to standard error output.</summary>
+++++
+....
+#! /bin/bash
+
+# Number of parameters
+echo "$#" >&2
+....
+++++
+</details></li>
+
+<li><details><summary>How do you verify that the script <code>s2.sh</code> has written the number of its positional parameters to the correct output?</summary>
+++++
+....
+./s2.sh xyz > out 2> err ; echo "out: $(cat out)" ; echo "err: $(cat err)"
+....
+++++
+</details></li>
+
+<li><details><summary>Create a shell script <code>s3.sh</code> that will have the following behaviors  
+<ul>
+  <li>If the number of its positional parameters is even (ie 0, 2, 4,...), then the script writes the number to the standard output.</li>
+  <li>If the number of its position parameters is odd (ie 1, 3, 5,...), then the script writes the number to the standard error output.</li>
+</ul>
+</summary>
+++++
+....
+#! /bin/bash
+
+# Even number of parameters
+if (( $# % 2 == 0 )) ; then
+
+  echo "$#" 
+
+# Odd number of parameters
+else 
+
+  echo "$#" >&2
+
+fi
+....
+++++
+</details></li>
+
+<li><details><summary>Create a shell script <code>s4.sh</code> that have the following behaviors 
+<ul>
+  <li>If the script is run with one parameter, then the script writes the value of that parameter to the standard output and ends with the exit status 0.</li>
+  <li>Otherwise the script writes the message "Usage: XY parameter" (XY is the current name of the script) to the standard error output and ends with exit status 1.</li>
+  </ul>
+</summary>
+++++
+....
+#! /bin/bash
+
+# One parameter
+if (( $#  == 1 )) ; then
+
+  echo "$1" 
+
+# Wrong number of parameters
+else 
+
+  echo "Usage: $0 parameter" >&2
+  exit 1
+
+  fi
+....
+++++
+</details></li>
+
+<li><details><summary>How do you verify that the script <code>s4.sh</code> behaves correctly?</summary>
+++++
+....
+./s4.sh > out 2> err ; echo "exit status: $?" ; echo "out: $(cat out)" ; echo "err: $(cat err)"
+./s4.sh "a b" > out 2> err ; echo "exit status: $?" ; echo "out: $(cat out)" ; echo "err: $(cat err)"
+./s4.sh "a b" xyz > out 2> err ; echo "exit status: $?" ; echo "out: $(cat out)" ; echo "err: $(cat err)"
+....
+++++
+</details></li>
+
+<li><details><summary>Create a shell script <code>s5.sh</code> that have the following behaviors 
+<ul>
+  <li>If the script is run with one parameter and this parameter is the name of a regular file, then the script writes the value of this parameter to standard output and ends with the exit status 0.</li>
+  <li>If the script is run with one parameter and this parameter is not a name of a regular file name, then the script writes the message "Usage: XY file_name" (XY is the current name of the script) to the standard error output and ends with exit status 1.</li>
+  <li>Otherwise, the script writes the message "Usage: XY file_name" (XY is the current name of the script) to the standard error output and ends with exit status 2.</li>
+  </ul>
+</summary>
+++++
+....
+#! /bin/bash
+
+# One parameter
+if (( $#  == 1 )) ; then
+
+  # Parameter is file
+  if [ -f "$1" ] ; then
+   
+    echo "$1" 
+
+  # Parameter is not file
+  else
+ 
+    echo "Usage: $0 file_name" >&2
+    exit 1
+ 
+  fi
+
+# Wrong number of parameters   
+else 
+
+  echo "Usage: $0 file_name" >&2
+  exit 2
+
+fi
+....
+++++
+</details></li>
+
+<li><details><summary>Create a shell script <code>s6.sh</code> that have the following behaviors 
+<ul>
+  <li>If the script is run with one parameter and this parameter is a regular file name or a directory name and the file and directory can be modified, then the script wrotes the value of this parameter to the standard output and ends with the exit status 0.</li>
+  <li>If the script is run with one parameter and this parameter does not meet the previous conditions, then the script writes the message "Usage: XY name" (XY is the current name of the script) to the standard error output and ends with exit status 1.</li>
+  <li>Otherwise, the script writes the message "Usage: XY name" (XY is the current name of the script) to the standard error output and ends with exit status 2.</li>
+  </ul>
+</summary>
+++++
+....
+#! /bin/bash
+
+# One parameter
+if (( $#  == 1 )) ; then
+
+  # Parameter is writable file or writable directory
+   if [ -w "$1" -a \( -f "$1" -o -d "$1" \) ] ; then
+   
+    echo "$1" 
+
+  # Parameter is not file
+  else
+ 
+    echo "Usage: $0 name" >&2
+    exit 1
+ 
+  fi
+
+# Wrong number of parameters   
+else 
+
+  echo "Usage: $0 name" >&2
+  exit 2
+
+fi
+....
+++++
+</details></li>
+
+<li><details><summary>Create a shell script <code>s7.sh</code> that have the following behaviors 
+<ul>
+  <li>If the script is run with one parameter and this parameter is an integer, then the script writes the value of this parameter to the standard output and ends with the exit status 0.</li>
+  <li>If the script is run with one parameter and this parameter does not meet the previous condition, then the script writes the message "Usage: XY integer" (XY is the current name of the script) to the standard error output and ends with exit status 1.</li>
+  <li>Otherwise, the script writes the message "Usage: XY integer" (XY is the current name of the script) to the standard error output and ends with exit status 2.</li>
+  </ul>
+</summary>
+++++
+....
+##################
+#   Solution 1   #
+##################
+#! /bin/bash
+
+# One parameter
+if (( $#  == 1 )) ; then
+
+  # Parameter is integer
+   echo "$1" | grep -E '^-{0,1}[[:digit:]]+$' > /dev/null 2>&1
+   if (( $? == 0 )) ; then
+   
+    echo "$1" 
+
+  # Parameter is not integer
+  else
+ 
+    echo "Usage: $0 integer" >&2
+    exit 1
+ 
+  fi
+
+# Wrong number of parameters   
+else 
+
+  echo "Usage: $0 integer" >&2
+  exit 2
+
+fi
+....
+....
+##################
+#   Solution 2   #
+##################
+#! /bin/bash
+
+# One parameter
+if (( $#  == 1 )) ; then
+
+  # Parameter is integer
+   
+   if grep -E '^-{0,1}[[:digit:]]+$' <<< "$1" > /dev/null 2>&1 ; then
+   
+    echo "$1" 
+
+  # Parameter is not integer
+  else
+ 
+    echo "Usage: $0 integer" >&2
+    exit 1
+ 
+  fi
+
+# Wrong number of parameters   
+else 
+
+  echo "Usage: $0 integer" >&2
+  exit 2
+
+fi
+....
+++++
+</details></li>
+
+<li><details><summary>Create a shell script <code>s8.sh</code> that have the following behaviors 
+<ul>
+  <li>If positional parameters <code>p_1</code>, <code>p_2</code>, ..., <code>p_N</code> were specified, then the script writes one line with the following format <code>p_1:p_2:...:p_N</code>.</li>
+  <li>If no parameter was specified, nothing is printed.</li>
+</ul>
+</summary>
+++++
+....
+#! /bin/bash
+
+# No parameter
+if (( $# == 0 )) ; then
+
+  exit
+
+fi
+
+# One or more parameters
+echo "$@" | tr ' ' '\n'
+....
+++++
+</details></li>
+
+<li><details><summary>Create a shell script <code>s9.sh</code> that have the following behaviors 
+<ul>
+  <li>If positional parameters <code>p_1</code>, <code>p_2</code>, ..., <code>p_N</code> were specified, then the script writes one line per one parameter to the standard output with the following format 
+<pre>
+1:p_1
+2:p_2
+...
+N:p_N
+</pre></li>
+  <li>If no parameter was specified, nothing is printed.</li>
+</ul>
+</summary>
+++++
+....
+#! /bin/bash
+
+# No parameter
+if (( $# == 0 )) ; then
+
+  exit
+
+fi
+
+# One or more parameters
+C=1
+for I
+
+  do
+
+    echo "$C:$I"
+
+    ((C++))
+
+  done
+....
+++++
+</details></li>
+
+<li><details><summary>Create a shell script <code>s10.sh</code> that have the following behaviors 
+<ul>
+<li>If all positional parameters of the script are integers, then the script calculates their sum and writes it to the standard output and ends with the exit status 0.</li>
+  <li>If no parameter was specified, scripts writes 0 to the standard output and ends with the exit status 1.</li>
+  <li>Otherwise, the script does not write anything and ends with the exit status 2.</li>
+</ul>
+</summary>
+++++
+....
+#! /bin/bash
+
+# No parameter
+if (( $# == 0 )) ; then
+
+  echo "0"
+  exit 1
+
+fi
+
+# One or more parameters
+S=0
+for I
+
+  do
+
+    # Parameter is integer
+    if grep -E '^-{0,1}[[:digit:]]+$' <<< "$I" > /dev/null 2>&1 ; then
+    
+      ((S=S+$I))
+
+    # Parameter is not integer
+    else
+
+      exit 2
+
+    fi
+
+  done
+
+  echo "$S"
+....
+++++
+</details></li>
+
+<li><details><summary>Create a shell script <code>s11.sh</code> that have the following behaviors 
+<ul>
+<li>If all positional parameters of the script are integers, then the script calculates their sum and writes it to the standard output and ends with the exit status 0.</li>
+  <li>If no parameter was specified, scripts writes 0 to the standard output and ends with the exit status 1.</li>
+  <li>Otherwise, the script does not write anything and ends with the exit status 2.</li>
+</ul>
+</summary>
+++++
+....
+#! /bin/bash
+
+# Pokud je prvni parametr jmeno adresare, pak skipt vypise pocet obycejnych souboru v tomto adresari na stdout a soucet jejich velikosti v bajtech na stderr.
+# Jinak nevypise nic.
+
+# One parameter which is a directory
+if [ $# -eq 1 -a -d "$1" ] ; then
+
+  # Check all item in the directory
+  C=0
+  S=0
+
+  for I in * .*
+  
+    do
+   
+      echo "$I"
+
+      if [ -f "$I" ] ; then
+      
+        (( C++ ))
+        (( S = S + $(stat -c "%s" "$I") ))
+
+      fi
+      
+    done
+
+  echo "$C" 
+  echo "$S" >&2 
+
+fi
+....
+++++
+</details></li>
+
+<li><details><summary>Create a shell script <code>s12.sh</code> that have the following behaviors 
+<ul>
+<li>If all positional parameters of the script are integers, then the script calculates their sum and writes it to the standard output and ends with the exit status 0.</li>
+  <li>If no parameter was specified, scripts writes 0 to the standard output and ends with the exit status 1.</li>
+  <li>Otherwise, the script does not write anything and ends with the exit status 2.</li>
+</ul>
+</summary>
+++++
+....
+#! /bin/bash
+
+ Pokud je prvni parametr kladne cele liche cislo vetsi nez 0, pak skript vypise hodnotu nasledujici rady na stdout 
+# 1*3*5*7*...*(n-2)*n  pokud je n liche
+# Jinak nevypise nic.
+
+# One parameter which is a positive odd interer 
+if (( $# == 1 )) && (( $1 > 0 )) && (( $1 % 2 != 0 )); then 
+
+  # Calculate the value of series
+  I=1
+  S=1
+
+  while (( I <= $1 )) 
+
+    do
+
+      ((S=S*I))
+
+       echo "$I $S" 
+      ((I=I+2))
+
+    done
+
+  echo "$S"
+
+  fi
+....
+++++
+</details></li>
+
+</ol>
+</div>
+++++ 
+
+
+
