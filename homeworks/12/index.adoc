@@ -8,7 +8,7 @@
 <li><details><summary>Create the following file and directory in the directory <code>/tmp</code> 
 <pre>
 d1
-d1/hello.sh       # script that writes “Hello world” to standard output
+d1/hello.sh       # script that writes "Hello world" to standard output
 d1/date           # copy of /usr/bin/date
 </pre>
 Create a variable <code>DIR</code>, <code>FILE1</code> and <code>FILE2</code> that will contain the absolute path to <code>d1</code>, <code>d1/hello.sh</code>, and <code>d1/date</code>, respectively.
