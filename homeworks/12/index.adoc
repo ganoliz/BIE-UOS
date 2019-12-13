@@ -27,7 +27,22 @@ export FILE2="/tmp/d1/date"
 ++++
 </details></li>
 
-
+<li><details><summary>For a file defined by variable <code>FILE1</code>, set the following access rights <code>rwxr-----</code>.</summary>
+++++
+....
+##################
+#   Solution 1   #
+##################
+chmod u=rwx,g=r,o= "$FILE1"
+....
+....
+##################
+#   Solution 2   #
+##################
+chmod 740 "$FILE1"
+....
+++++
+</details></li>
 
 
 </ol>
