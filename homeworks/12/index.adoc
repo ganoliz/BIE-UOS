@@ -1,0 +1,218 @@
+= Homework -- permissions (access rights)
+
+++++
+<style>li details { margin-bottom: 0.5em; }</style>
+<div class='olist arabic'>
+<ol class='arabic'>
+
+<li><details><summary>Create the following file and directory in the directory <code>/tmp</code> 
+<pre>
+d1
+d1/hello.sh       # script that writes “Hello world” to standard output
+d1/date           # copy of /usr/bin/date
+</pre>
+Create a variable <code>DIR</code>, <code>FILE1</code> and <code>FILE2</code> that will contain the absolute path to <code>d1</code>, <code>d1/hello.sh</code>, and <code>d1/date</code>, respectively.
+</summary>
+++++
+....
+cd /
+mkdir -p d1
+echo "#! /bin/bash" > d1/hello.sh
+echo "echo 'Hello word'" >> d1/hello.sh
+cp /usr/bin/date d1
+export DIR="/tmp/d1"
+export FILE1="/tmp/d1/hello.sh"
+export FILE2="/tmp/d1/date"
+....
+++++
+</details></li>
+
+<li><details><summary>For a file defined by variable <code>FILE1</code>, set the following access rights <code>rwxr-----</code>.</summary>
+++++
+....
+##################
+#   Solution 1   #
+##################
+chmod u=rwx,g=r,o= "$FILE1"
+....
+....
+##################
+#   Solution 2   #
+##################
+chmod 740 "$FILE1"
+....
+++++
+</details></li>
+
+<li><details><summary>For a file defined by variable <code>FILE1</code>, remove the read right for the group and add the execute right for other.</summary>
+++++
+....
+chmod g-r,o+x "$FILE1"
+....
+++++
+</details></li>
+
+<li><details><summary>For the directory and files defined by variables <code>DIR</code>, <code>FILE1</code>, and <code>FILE2</code>, respectively, remove all rights.</summary>
+++++
+....
+chmod  000 "$FILE1"
+chmod  000 "$FILE2"
+chmod 000 "$DIR"
+....
+++++
+</details></li>
+
+<li><details><summary>Set the minimum rights to list only names of items that are in the directory defined by variable <code>"$DIR"</code> (the minimum rights are those with the smallest sum of weights) and verify.  Suppose you have no knowledge of the contents of the directory.</summary>
+++++
+....
+##################
+#   Solution 1   #
+##################
+chmod u+r "$DIR"
+ls "$DIR" 2>/dev/null
+....
+....
+##################
+#   Solution 2   #
+##################
+chmod 400 "$DIR"
+ls "$DIR" 2>/dev/null
+....
+++++
+</details></li>
+
+<li><details><summary>Set the minimum rights to list attributes (permissions, size,...) of items that are in the directory defined by variable <code>"$DIR"</code> and verify. Suppose you have no knowledge of the contents of the directory.</summary>
+++++
+....
+##################
+#   Solution 1   #
+##################
+chmod u+x "$DIR"
+ls -l "$DIR"
+....
+....
+##################
+#   Solution 2   #
+##################
+chmod 500 "$DIR"
+ls -l "$DIR" 
+....
+++++
+</details></li>
+
+<li><details><summary>Set the minimum rights to list attributes (permissions, size,...) of the file defined by variable <code>"$FILE2"</code> (you know the name of directory item) and verify. </summary>
+++++
+....
+##################
+#   Solution 1   #
+##################
+chmod u-r "$DIR"
+ls -l "$FILE2"
+....
+....
+##################
+#   Solution 2   #
+##################
+chmod 100 "$DIR"
+ls -l "$FILE2"
+....
+++++
+</details></li>
+
+<li><details><summary>Set the minimum rights to remove the file defined by variable <code>"$FILE2"</code> (you know the name of directory item) and verify. </summary>
+++++
+....
+##################
+#   Solution 1   #
+##################
+chmod u-r "$DIR"
+rm "$FILE2"
+....
+....
+##################
+#   Solution 2   #
+##################
+chmod 300 "$DIR"
+rm "$FILE2"
+....
+++++
+</details></li>
+
+<li><details><summary>Set the minimum rights to copy file <code>/usr/bin/ls</code> in the directory defined by variable <code>"$DIR"</code> and verify. </summary>
+++++
+....
+# the minimum rights to delete and add directory entries are the same
+cp /usr/bin/ls "$DIR"
+....
+++++
+</details></li>
+
+<li><details><summary>Set the minimum rights to view the contents of the file defined by variable<code>FILE1</code> and verify. </summary>
+++++
+....
+##################
+#   Solution 1   #
+##################
+chmod u+r "$FILE1"
+cat "$FILE1"
+....
+....
+##################
+#   Solution 2   #
+##################
+chmod 400 "$FILE1"
+cat "$FILE1"
+....
+++++
+</details></li>
+
+<li><details><summary>Set the minimum rights to run the script defined by variable <code>FILE1</code> and verify. </summary>
+++++
+....
+##################
+#   Solution 1   #
+##################
+bash < "$FILE1"
+....
+....
+##################
+#   Solution 2  #
+##################
+chmod u+x "$FILE1"
+./"$FILE1"
+....
+....
+##################
+#   Solution 3   #
+##################
+chmod 500 "$FILE1"
+./"$FILE1"
+....
+++++
+</details></li>
+
+<li><details><summary>Set the system so that newly created files automatically have access rights such that the owner can only read and write, the group members could not do anything, and the others could only read and verify. </summary>
+++++
+....
+##################
+#   Solution 1   #
+##################
+umask -S u=rw,g=,o=r
+umask -S
+touch f ; ls -l f
+....
+....
+##################
+#   Solution 2  #
+##################
+umask 173
+umask -S
+touch f ; ls -l f
+....
+++++
+</details></li>
+
+
+</ol>
+</div>
+++++ 
