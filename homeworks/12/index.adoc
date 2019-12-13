@@ -16,7 +16,7 @@ Create a variable <code>DIR</code>, <code>FILE1</code> and <code>FILE2</code> th
 ++++
 ....
 cd /
-mkdir -p d1
+mkdir d1
 echo "#! /bin/bash" > d1/hello.sh
 echo "echo 'Hello word'" >> d1/hello.sh
 cp /usr/bin/date d1
@@ -27,16 +27,6 @@ export FILE2="/tmp/d1/date"
 ++++
 </details></li>
 
-<li><details><summary>Create a shell script <code>s1.sh</code> that writes the number of its positional parameters (arguments) to standard output.</summary>
-++++
-....
-#! /bin/bash
-
-# Number of parameters
-echo "$#"
-....
-++++
-</details></li>
 
 
 
