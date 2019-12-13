@@ -1,4 +1,4 @@
-= Homework - shell scripts
+= Homework - permissions (access rights)
 
 ++++
 <style>li details { margin-bottom: 0.5em; }</style>
@@ -21,3 +21,6 @@ echo "$#"
 </ol>
 </div>
 ++++ 
+
+
+
