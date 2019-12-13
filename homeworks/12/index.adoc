@@ -153,7 +153,7 @@ cp /usr/bin/ls "$DIR"
 ##################
 #   Solution 1   #
 ##################
-chmod u+r "$FILE1"
+chmod u+r "$FILE1"
 cat "$FILE1"
 ....
 ....
@@ -166,30 +166,6 @@ cat "$FILE1"
 ++++
 </details></li>
 
-<li><details><summary>Set the minimum rights to run the script defined by variable <code>FILE1</code> and verify. </summary>
-++++
-....
-##################
-#   Solution 1   #
-##################
-bash < "$FILE1"
-....
-....
-##################
-#   Solution 2  #
-##################
-chmod u+x "$FILE1"
-./"$FILE1"
-....
-....
-##################
-#   Solution 3   #
-##################
-chmod 500 "$FILE1"
-./"$FILE1"
-....
-++++
-</details></li>
 
 
 </ol>
