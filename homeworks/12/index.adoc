@@ -81,6 +81,63 @@ ls "$DIR" 2>/dev/null
 ++++
 </details></li>
 
+<li><details><summary>Set the minimum rights to list attributes (permissions, size,...) of items that are in the directory defined by variable <code>"$DIR"</code> and verify. Suppose you have no knowledge of the contents of the directory.</summary>
+++++
+....
+##################
+#   Solution 1   #
+##################
+chmod u+x "$DIR"
+ls -l "$DIR"
+....
+....
+##################
+#   Solution 2   #
+##################
+chmod 500 "$DIR"
+ls -l "$DIR" 
+....
+++++
+</details></li>
+
+<li><details><summary>Set the minimum rights to list attributes (permissions, size,...) of the file defined by variable <code>"$FILE2"</code> (you know the name of directory item) and verify. </summary>
+++++
+....
+##################
+#   Solution 1   #
+##################
+chmod u-r "$DIR"
+ls -l "$FILE2"
+....
+....
+##################
+#   Solution 2   #
+##################
+chmod 100 "$DIR"
+ls -l "$FILE2"
+....
+++++
+</details></li>
+
+<li><details><summary>Set the minimum rights to remove the file defined by variable <code>"$FILE2"</code> (you know the name of directory item) and verify. </summary>
+++++
+....
+##################
+#   Solution 1   #
+##################
+chmod u-r "$DIR"
+rm "$FILE2"
+....
+....
+##################
+#   Solution 2   #
+##################
+chmod 300 "$DIR"
+rm "$FILE2"
+....
+++++
+</details></li>
+
 
 </ol>
 </div>
