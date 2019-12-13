@@ -44,6 +44,43 @@ chmod 740 "$FILE1"
 ++++
 </details></li>
 
+<li><details><summary>For a file defined by variable <code>FILE1</code>, remove the read right for the group and add the execute right for other.</summary>
+++++
+....
+chmod g-r,o+x "$FILE1"
+....
+++++
+</details></li>
+
+<li><details><summary>For the directory and files defined by variables <code>DIR</code>, <code>FILE1</code>, and <code>FILE2</code>, respectively, remove all rights.</summary>
+++++
+....
+chmod  000 "$FILE1"
+chmod  000 "$FILE2"
+chmod 000 "$DIR"
+....
+++++
+</details></li>
+
+<li><details><summary>Set the minimum rights to list only names of items that are in the directory defined by variable <code>"$DIR"</code> (the minimum rights are those with the smallest sum of weights) and verify.  Suppose you have no knowledge of the contents of the directory.</summary>
+++++
+....
+##################
+#   Solution 1   #
+##################
+chmod u+r "$DIR"
+ls "$DIR" 2>/dev/null
+....
+....
+##################
+#   Solution 2   #
+##################
+chmod 400 "$DIR"
+ls "$DIR" 2>/dev/null
+....
+++++
+</details></li>
+
 
 </ol>
 </div>
