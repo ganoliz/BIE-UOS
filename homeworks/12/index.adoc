@@ -166,7 +166,51 @@ cat "$FILE1"
 ++++
 </details></li>
 
+<li><details><summary>Set the minimum rights to run the script defined by variable <code>FILE1</code> and verify. </summary>
+++++
+....
+##################
+#   Solution 1   #
+##################
+bash < "$FILE1"
+....
+....
+##################
+#   Solution 2  #
+##################
+chmod u+x "$FILE1"
+./"$FILE1"
+....
+....
+##################
+#   Solution 3   #
+##################
+chmod 500 "$FILE1"
+./"$FILE1"
+....
+++++
+</details></li>
 
+<li><details><summary>Set the system so that newly created files automatically have access rights such that the owner can only read and write, the group members could not do anything, and the others could only read and verify. </summary>
+++++
+....
+##################
+#   Solution 1   #
+##################
+umask -S u=rw,g=,o=r
+umask -S
+touch f ; ls -l f
+....
+....
+##################
+#   Solution 2  #
+##################
+umask 173
+umask -S
+touch f ; ls -l f
+....
+++++
+</details></li>
 
 </ol>
 </div>
