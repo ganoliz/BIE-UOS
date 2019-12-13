@@ -1,4 +1,4 @@
-= Homework -- permissions (access rights)
+= Homework - permissions (access rights)
 
 ++++
 <style>li details { margin-bottom: 0.5em; }</style>
