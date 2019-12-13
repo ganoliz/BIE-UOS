@@ -292,7 +292,9 @@ if (( $# == 0 )) ; then
 fi
 
 # One or more parameters
-C=1
+
+C=1   # Counter of parameters
+
 for I
 
   do
@@ -326,7 +328,9 @@ if (( $# == 0 )) ; then
 fi
 
 # One or more parameters
-S=0
+
+S=0   # Sum
+
 for I
 
   do
@@ -352,31 +356,28 @@ for I
 
 <li><details><summary>Create a shell script <code>s11.sh</code> that have the following behaviors 
 <ul>
-<li>If all positional parameters of the script are integers, then the script calculates their sum and writes it to the standard output and ends with the exit status 0.</li>
-  <li>If no parameter was specified, scripts writes 0 to the standard output and ends with the exit status 1.</li>
-  <li>Otherwise, the script does not write anything and ends with the exit status 2.</li>
+  <li>If the first parameter is the name of a readable directory, then the script writes the number of regular files in that directory to the standard output and the sum of their sizes in bytes to the standard error output.</li>
+  <li>Otherwise, the script does not write anything.</li>
 </ul>
 </summary>
 ++++
 ....
 #! /bin/bash
 
-# Pokud je prvni parametr jmeno adresare, pak skipt vypise pocet obycejnych souboru v tomto adresari na stdout a soucet jejich velikosti v bajtech na stderr.
-# Jinak nevypise nic.
-
 # One parameter which is a directory
-if [ $# -eq 1 -a -d "$1" ] ; then
+if [ -d "$1" -a -r "$1" ] ; then
 
-  # Check all item in the directory
-  C=0
-  S=0
+  # Check all items in the directory
+
+  C=0         # counter of files
+  S=0         # counter of file sizes
+
+  cd "$1"     # change working directory
 
   for I in * .*
   
     do
    
-      echo "$I"
-
       if [ -f "$I" ] ; then
       
         (( C++ ))
@@ -396,40 +397,33 @@ fi
 
 <li><details><summary>Create a shell script <code>s12.sh</code> that have the following behaviors 
 <ul>
-<li>If all positional parameters of the script are integers, then the script calculates their sum and writes it to the standard output and ends with the exit status 0.</li>
-  <li>If no parameter was specified, scripts writes 0 to the standard output and ends with the exit status 1.</li>
-  <li>Otherwise, the script does not write anything and ends with the exit status 2.</li>
+  <li>If the first parameter is a positive odd integer greater than 0, then the script writes the value of product <code>1*3*5*7*...*(n-2)*n</code> to the standard output.</li>
+  <li>Otherwise, the script does not write anything.</li>
 </ul>
 </summary>
 ++++
 ....
 #! /bin/bash
 
- Pokud je prvni parametr kladne cele liche cislo vetsi nez 0, pak skript vypise hodnotu nasledujici rady na stdout 
-# 1*3*5*7*...*(n-2)*n  pokud je n liche
-# Jinak nevypise nic.
+if (( $# == 1 )) && grep -E '^-{0,1}[[:digit:]]+$' <<< "$1" > /dev/null 2>&1 && (( $1 > 0 )) && (( $1 % 2 != 0 )); then 
 
-# One parameter which is a positive odd interer 
-if (( $# == 1 )) && (( $1 > 0 )) && (( $1 % 2 != 0 )); then 
+  # Calculate the value of product 1*3*5*7*...*(n-2)*n 
 
-  # Calculate the value of series
-  I=1
-  S=1
+  I=1     # Value we multiply in a given step
+  P=1     # Value of product
 
   while (( I <= $1 )) 
 
     do
 
-      ((S=S*I))
-
-       echo "$I $S" 
+      ((P=P*I)) 
       ((I=I+2))
 
     done
 
-  echo "$S"
+  echo "$P"
 
-  fi
+fi
 ....
 ++++
 </details></li>
