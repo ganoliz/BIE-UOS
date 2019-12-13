@@ -1,4 +1,4 @@
-= Homework -- shell scripts
+= Homework - shell scripts
 
 ++++
 <style>li details { margin-bottom: 0.5em; }</style>
