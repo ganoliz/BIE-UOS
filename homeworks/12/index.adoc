@@ -138,6 +138,59 @@ rm "$FILE2"
 ++++
 </details></li>
 
+<li><details><summary>Set the minimum rights to copy file <code>/usr/bin/ls</code> in the directory defined by variable <code>"$DIR"</code> and verify. </summary>
+++++
+....
+# the minimum rights to delete and add directory entries are the same
+cp /usr/bin/ls "$DIR"
+....
+++++
+</details></li>
+
+<li><details><summary>Set the minimum rights to view the contents of the file defined by variable<code>FILE1</code> and verify. </summary>
+++++
+....
+##################
+#   Solution 1   #
+##################
+chmod u+r "$FILE1"
+cat "$FILE1"
+....
+....
+##################
+#   Solution 2   #
+##################
+chmod 400 "$FILE1"
+cat "$FILE1"
+....
+++++
+</details></li>
+
+<li><details><summary>Set the minimum rights to run the script defined by variable <code>FILE1</code> and verify. </summary>
+++++
+....
+##################
+#   Solution 1   #
+##################
+bash < "$FILE1"
+....
+....
+##################
+#   Solution 2  #
+##################
+chmod u+x "$FILE1"
+./"$FILE1"
+....
+....
+##################
+#   Solution 3   #
+##################
+chmod 500 "$FILE1"
+./"$FILE1"
+....
+++++
+</details></li>
+
 
 </ol>
 </div>
