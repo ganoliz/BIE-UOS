@@ -15,4 +15,4 @@
   1. link:./09/[Text transformations with sed]
   1. link:./10/[Text transformations with awk]
   1. link:./11/[Shell scripts]
-  1. link:./12/[Přístupová práva ]
+  1. link:./12/[Permissions (access rights) ]
