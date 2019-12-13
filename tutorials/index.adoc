@@ -46,12 +46,12 @@
   . Access permissions and command find.
     * link:https://bips1.fit.cvut.cz[LearnShell]
     * link:bie-ps1-c09-perm_find-questions.pdf[]
-//    * link:bie-ps1-c09-perm_find-solutions.pdf[]  
+    * link:bie-ps1-c09-perm_find-solutions.pdf[]  
 
   . Archiving and compression tools and arithmetic calculations.
     * link:https://bips1.fit.cvut.cz[LearnShell]
     * link:bie-ps1-c11-archiving-questions.pdf[]
-//    * link:bie-ps1-c11-archiving-solutions.pdf[]  
+    * link:bie-ps1-c11-archiving-solutions.pdf[]  
 
     * link:bie-ps1-c12-calculations-questions.pdf[]
 //    * link:bie-ps1-c12-calculations-solutions.pdf[]  
