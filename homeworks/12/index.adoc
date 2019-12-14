@@ -191,7 +191,7 @@ chmod 500 "$FILE1"
 ++++
 </details></li>
 
-<li><details><summary>Set the system so that newly created files automatically have access rights such that the owner can only read and write, the group members could not do anything, and the others could only read and verify. </summary>
+<li><details><summary>Set the file mode creation mask so that newly created files automatically have access rights such that the owner can only read and write, the group members could not do anything, and the others could only read and verify. </summary>
 ++++
 ....
 ##################
