@@ -18,5 +18,6 @@ navigation:
     - tutorials/*.csv
     - homeworks/0*/*
     - homeworks/1*/*
+    - Tasks/0[1-3]/*
 repository:
   gitlabPath: /BI-PS1/bie-ps1
