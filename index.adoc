@@ -1,6 +1,35 @@
 = 1. News
 :imagesdir: media
 
+*20.9.2020 - Organisation of the course BIE-PS1 in winter semester 2020/21 (email sent via kos.cvut.cz)*
+
+Dear students, regulations from the state, from the CTU rector and from the FIT dean do not allow contact classes and the both lectures and seminars must be implemented online. In BIE-PS1 I have made the following decisions:
+
+The lectures and seminars will be realized as *live streams via Youtube in the scheduled time* (see the https://timetable.fit.cvut.cz/old/public/en/predmety/31/61/p3161206.html[timetable.fit.cvut.cz]). The streams will be *recorded* and you can watch them any time. I will send you the stream links in advance by email via kos.cvut.cz and they also will be published on the page https://courses.fit.cvut.cz/BIE-PS1/lectures/index.html[courses.fit.cvut.cz/BIE-PS1/lectures].
+
+.Links for the first week
+|===
+|Stream type | Link
+
+|Lecture 1 (Wed 23, 7:30)
+|https://youtu.be/K4XHFKXFwI8
+
+|Seminar 1 (Wed 23, 9:15)
+|https://youtu.be/XUnKUZ5R3FE
+
+|Seminar 1 (Wed 23, 11:00)
+|https://youtu.be/jI0OV0yt6CI
+
+|Seminar 1 (Wed 23, 12:45)
+|https://youtu.be/kw7EkOx6mxI
+|===
+
+My primary goal is to keep high-quality lectures and seminars, therefore let me know about any problems you might encounter with this online teaching. *Use email trdlicka@fit.cvut.cz to communicate with me.*  Use of other communication channels could overwhelm me, so prefer this email which should enable me to respond fast. Do not forward your university mail outside, the primary information channel from us to you is email from kos.cvut.cz. Also, follow pages https://old.fit.cvut.cz/en/coronavirus[FIT-coronavirus] and https://courses.fit.cvut.cz/BIE-APS, which is the primary source of materials for the course.
+
+
+I wish you good health, pleasant study, and optimistic mood.
+
+Ing. Jan Trdlička, Ph.D.
 ////
 * Attention, *the second big test* will take place on *Wednesday 18.12.2019* during the practice. Repeat the following topics
 ** Regular expressions (metacharacters).
