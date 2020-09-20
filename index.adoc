@@ -24,12 +24,14 @@ The lectures and seminars will be realized as *live streams via Youtube in the s
 |https://youtu.be/kw7EkOx6mxI
 |===
 
-My primary goal is to keep high-quality lectures and seminars, therefore let me know about any problems you might encounter with this online teaching. *Use email trdlicka@fit.cvut.cz to communicate with me.*  Use of other communication channels could overwhelm me, so prefer this email which should enable me to respond fast. Do not forward your university mail outside, the primary information channel from us to you is email from kos.cvut.cz. Also, follow pages https://old.fit.cvut.cz/en/coronavirus[FIT-coronavirus] and https://courses.fit.cvut.cz/BIE-APS, which is the primary source of materials for the course.
+My primary goal is to keep high-quality lectures and seminars, therefore let me know about any problems you might encounter with this online teaching. *Use email trdlicka@fit.cvut.cz to communicate with me.*  Use of other communication channels could overwhelm me, so prefer this email which should enable me to respond fast. Do not forward your university mail outside, the primary information channel from us to you is email from kos.cvut.cz. Also, follow pages https://old.fit.cvut.cz/en/coronavirus[FIT-coronavirus] and https://courses.fit.cvut.cz/BIE-PS1, which is the primary source of materials for the course.
 
 
 I wish you good health, pleasant study, and optimistic mood.
 
 Ing. Jan Trdlička, Ph.D.
+
+
 ////
 * Attention, *the second big test* will take place on *Wednesday 18.12.2019* during the practice. Repeat the following topics
 ** Regular expressions (metacharacters).
