@@ -14,15 +14,15 @@
 *** They will take place *at the beginning of each practice* (from the 3rd week of semester).
 *** The test duration will be around *5-10 minutes*.
 *** They will usually verify knowledge of topics discussed in the previous week.
-*** Student can obtain up to *40 points* from all these tests.
+*** Student can obtain up to *20 points* from all these tests.
 
 ** *Big tests*
-*** They will take place *in the middle (week 8, 11.11.2020)* and *at the end (week 13, 15.12.2020)* of the semester.
+*** They will take place *in the middle (week 8, 11.11.2020)* and *at the end (week 13, 15.12.2020)* of the semester (depending on COVID-19 restrictions).
 *** The test duration will be around *60 minutes*.
 *** They will verify knowledge of all discussed topics.
-*** Student can obtain up to *60 points* from all these tests.
+*** Student can obtain up to *80 points* from all these tests.
 
-* *Absence from the test means 0 points from the test (exception is only serious reason).*
+//* *Absence from the test means 0 points from the test (exception is only serious reason).*
 
 == Home tasks
 
