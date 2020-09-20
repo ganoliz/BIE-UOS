@@ -5,7 +5,7 @@
 
 Module https://courses.fit.cvut.cz/BI-ULI[BI-ULI] (Introduction to Linux, 2 credits)  - auxiliary module especially for beginners. Students are enrolled in this course automatically and it will only depend on them whether they want to complete it (this is a bonus of gaining additional knowledge and additional credits).
 
-*20.9.2020 - Organisation of the course BIE-PS1 in winter semester 2020/21 (email sent via kos.cvut.cz)*
+*20.9.2020 - The course BIE-PS1 in winter semester 2020/21 (email sent via kos.cvut.cz)*
 
 Dear students, regulations from the state, from the CTU rector and from the FIT dean do not allow contact classes and the both lectures and seminars must be implemented online. In BIE-PS1 I have made the following decisions:
 
