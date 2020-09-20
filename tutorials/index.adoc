@@ -1,4 +1,4 @@
-= 6. Tutorials 
+= 6. Seminars
 
   . Introduction.
     * link:bie-ps1-c01-introduction-solutions.pdf[]
