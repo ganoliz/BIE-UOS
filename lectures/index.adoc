@@ -1,7 +1,9 @@
 = 5. Lectures
 
   . Introduction in UNIX operating system.
+  * link:bie-ps1-p00-module_info_01.pdf[]
   * link:bie-ps1-p01-introduction-01.pdf[]
+  * link:https://youtu.be/K4XHFKXFwI8[YouTube]
   . Command-line parsing order, special characters, command execution, shell variables.
   * link:bie-ps1-p02-cli-01.pdf[]
   . Filesystem. Basic file/directory commands.
