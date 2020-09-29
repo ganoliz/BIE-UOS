@@ -1,6 +1,27 @@
 = 1. News
 :imagesdir: media
 
+*29.9.2020 - Week 2*
+
+.Links for the second week
+|===
+|Stream type | Link
+
+|Lecture 2 (Wed 30, 7:30)
+|https://youtu.be/JigA31MAMr0
+
+|Seminar 2 (Wed 30, 9:15)
+|https://youtu.be/Z7clsjyTbZw
+
+|Seminar 2 (Wed 30, 11:00)
+|https://youtu.be/b2olcwsROz8
+
+|Seminar 2 (Wed 30, 12:45)
+|https://youtu.be/tg8jdscUU8U
+|===
+
+
+
 *20.9.2020 - BI-ULI*
 
 Module https://courses.fit.cvut.cz/BI-ULI[BI-ULI] (Introduction to Linux, 2 credits)  - auxiliary module especially for beginners. Students are enrolled in this course automatically and it will only depend on them whether they want to complete it (this is a bonus of gaining additional knowledge and additional credits).
