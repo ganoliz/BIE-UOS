@@ -1,6 +1,6 @@
 = Task 1
 
-Create the following directory structure in your home directory on server fray1.fit.cvut.cz or fray3.fit.cvut.cz:
+Create the following directory structure in your home directory on server fray1.fit.cvut.cz or fray2.fit.cvut.cz:
 
 ----
 ~/ulohy
@@ -12,4 +12,4 @@ Create the following directory structure in your home directory on server fray1.
 
 Create a file *Hotovo.txt* in the directory **  ~/ulohy/tyden1 **. The content of this file should be your login name.
 
-The task deadline is *Sunday 6.10.2019* at *23:59*.
+The task deadline is *Sunday 4.10.2020 at 23:59*.
