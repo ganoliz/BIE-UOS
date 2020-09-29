@@ -6,6 +6,7 @@
   * link:https://youtu.be/K4XHFKXFwI8[YouTube]
   . Command-line parsing order, special characters, command execution, shell variables.
   * link:bie-ps1-p02-cli-01.pdf[]
+  * link:https://youtu.be/JigA31MAMr0[YouTube]
   . Filesystem. Basic file/directory commands.
   * link:bie-ps1-p03-fs-01.pdf[]
   . Filters and useful commands.
