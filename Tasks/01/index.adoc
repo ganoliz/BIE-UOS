@@ -1,6 +1,6 @@
 = Task 1
 
-Create the following directory structure in your home directory on server fray1.fit.cvut.cz or fray2.fit.cvut.cz:
+Create the following directory structure in your home directory on server *fray1.fit.cvut.cz* or *fray2.fit.cvut.cz*:
 
 ----
 ~/ulohy
