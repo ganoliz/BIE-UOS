@@ -1,22 +1,42 @@
 = 1. News
 :imagesdir: media
 
+*5.10.2020 - Week 3*
+
+.Links for the third week
+|===
+|Stream type | Link
+
+|Lecture 3 (Wed 7.10. 7:30)
+|https://youtu.be/K6E1PGsEV0k
+
+|Seminar 3 (Wed 7.10. 9:15)
+|https://youtu.be/seXtQqTT3N4
+
+|Seminar 3 (Wed 7.10. 11:00)
+|https://youtu.be/gTuT98qlyFs
+
+|Seminar 3 (Wed 7.10. 12:45)
+|https://youtu.be/hyhEMi2_eJI
+|===
+
+
 *29.9.2020 - Week 2*
 
 .Links for the second week
 |===
 |Stream type | Link
 
-|Lecture 2 (Wed 30, 7:30)
+|Lecture 2 (Wed 30.9. 7:30)
 |https://youtu.be/JigA31MAMr0
 
-|Seminar 2 (Wed 30, 9:15)
+|Seminar 2 (Wed 30.9. 9:15)
 |https://youtu.be/Z7clsjyTbZw
 
-|Seminar 2 (Wed 30, 11:00)
+|Seminar 2 (Wed 30.9. 11:00)
 |https://youtu.be/b2olcwsROz8
 
-|Seminar 2 (Wed 30, 12:45)
+|Seminar 2 (Wed 30.9. 12:45)
 |https://youtu.be/tg8jdscUU8U
 |===
 
@@ -36,16 +56,16 @@ The lectures and seminars will be realized as *live streams via Youtube in the s
 |===
 |Stream type | Link
 
-|Lecture 1 (Wed 23, 7:30)
+|Lecture 1 (Wed 23.9. 7:30)
 |https://youtu.be/K4XHFKXFwI8
 
-|Seminar 1 (Wed 23, 9:15)
+|Seminar 1 (Wed 23.9. 9:15)
 |https://youtu.be/XUnKUZ5R3FE
 
-|Seminar 1 (Wed 23, 11:00)
+|Seminar 1 (Wed 23.9. 11:00)
 |https://youtu.be/jI0OV0yt6CI
 
-|Seminar 1 (Wed 23, 12:45)
+|Seminar 1 (Wed 23.9. 12:45)
 |https://youtu.be/kw7EkOx6mxI
 |===
 
