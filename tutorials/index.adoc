@@ -5,16 +5,14 @@
     * link:https://youtu.be/jI0OV0yt6CI[Youtube]
     
   . Command line interface.
-    * link:https://learnshell.fit.cvut.cz[LearnShell]
     * link:bie-ps1-c02-cli-questions.pdf[]
 //    * link:bie-ps1-c02-cli-solutions.pdf[]
-//    * link:https://youtu.be/b2olcwsROz8[Youtube]
+    * link:https://youtu.be/tg8jdscUU8U[Youtube]
 
   . Shell variables, text editors.
     * link:https://learnshell.fit.cvut.cz[LearnShell]
     * link:bie-ps1-c03-variables-questions.pdf[]
 //    * link:bie-ps1-c03-variables-solutions.pdf[]
-//    * link:bie-ps1-c04-flowcontrol-solutions.pdf[]
 
   . File system.
     * link:https://learnshell.fit.cvut.cz[LearnShell]
