@@ -4,25 +4,38 @@
   * link:bie-ps1-p00-module_info_01.pdf[]
   * link:bie-ps1-p01-introduction-01.pdf[]
   * link:https://youtu.be/K4XHFKXFwI8[YouTube]
+  
   . Command-line parsing order, special characters, command execution, shell variables.
   * link:bie-ps1-p02-cli-01.pdf[]
-  * link:https://youtu.be/JigA31MAMr0[YouTube]
+  * link:https://youtu.be/JigA31MAMr0[YouTube (Part 1)]
+  * link:https://youtu.be/K6E1PGsEV0k[YouTube (Part 2)]
+  
   . Filesystem. Basic file/directory commands.
   * link:bie-ps1-p03-fs-01.pdf[]
+  * link:https://youtu.be/bDsl0rhDURQ[YouTube]
+  
   . Filters and useful commands.
   * link:bie-ps1-p04-filters-01.pdf[]
+  
   . Regular expressions, grep. 
   * link:bie-ps1-p05-regexpr-01.pdf[]
+  
   . Regular expressions, sed and awk.
   * link:bie-ps1-p06-sedawk-01.pdf[]
+  
   . Exit code. Command test. Flow Control. Loops.
   * link:bie-ps1-p07-flow_control-01.pdf[]
+  
   . User identity and access permissions.
   * link:bie-ps1-p08-perm.pdf[]
+  
   . Command find.
   * link:bie-ps1-p09-find.pdf[]
+  
   . Archiving and compression utilities. Arithmetics. 
   * link:bie-ps1-p10-archivation.pdf[]
+  
   . Processes and threads. Signals.
   * link:bie-ps1-p11-processes.pdf[]
+  
   . Summary.
