@@ -4,10 +4,13 @@
     * link:bie-ps1-c01-introduction-solutions.pdf[]
     * link:https://youtu.be/jI0OV0yt6CI[Youtube]
     
-  . Command line interface.
+  . Command line interface I
     * link:bie-ps1-c02-cli-questions.pdf[]
-//    * link:bie-ps1-c02-cli-solutions.pdf[]
-    * link:https://youtu.be/tg8jdscUU8U[Youtube]
+    * link:bie-ps1-c02-cli-solutions.pdf[]
+    * link:https://youtu.be/tg8jdscUU8U[Youtube(part1)]
+	
+  . Command line interfacen II
+	* link:https://youtu.be/Z7clsjyTbZw[Youtube(part2)]
 
   . Shell variables, text editors.
     * link:https://learnshell.fit.cvut.cz[LearnShell]
