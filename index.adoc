@@ -1,6 +1,26 @@
 = 1. News
 :imagesdir: media
 
+*13.10.2020 - Week 4*
+
+.Links for the fourth week
+|===
+|Stream type | Link
+
+|Lecture 4 (Wed 14.10. 7:30)
+|https://youtu.be/bDsl0rhDURQ
+
+|Seminar 4 (Wed 14.10. 9:15)
+|https://youtu.be/kmTrveziplE
+
+|Seminar 4 (Wed 14.10. 11:00)
+|https://youtu.be/kDDzZctDsVc
+
+|Seminar 4 (Wed 14.10. 12:45)
+|https://youtu.be/bDsl0rhDURQ
+|===
+
+
 *5.10.2020 - Week 3*
 
 .Links for the third week
