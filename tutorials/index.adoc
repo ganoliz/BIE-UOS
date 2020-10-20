@@ -13,9 +13,10 @@
 	* link:https://youtu.be/Z7clsjyTbZw[Youtube(part2)]
 
   . Shell variables, text editors.
-    * link:https://learnshell.fit.cvut.cz[LearnShell]
+
     * link:bie-ps1-c03-variables-questions.pdf[]
-//    * link:bie-ps1-c03-variables-solutions.pdf[]
+    * link:bie-ps1-c03-variables-solutions.pdf[]
+    * link:https://youtu.be/kDDzZctDsVc[Youtube(part1)]
 
   . File system.
     * link:https://learnshell.fit.cvut.cz[LearnShell]
