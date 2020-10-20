@@ -16,7 +16,7 @@
 
     * link:bie-ps1-c03-variables-questions.pdf[]
     * link:bie-ps1-c03-variables-solutions.pdf[]
-    * link:https://youtu.be/kDDzZctDsVc[Youtube(part1)]
+    * link:https://youtu.be/kDDzZctDsVc[Youtube]
 
   . File system.
     * link:https://learnshell.fit.cvut.cz[LearnShell]
