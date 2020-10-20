@@ -1,6 +1,28 @@
 = 1. News
 :imagesdir: media
 
+*20.10.2020 - Week 5*
+
+.Links for the fourth week
+|===
+|Stream type | Link
+
+|Lecture 5 (Wed 14.10. 7:30)
+|https://youtu.be/mZ8FrDhdhWU
+
+|Seminar 5 (Wed 14.10. 9:15)
+|https://youtu.be/eeAa9dnJQuc
+
+|Seminar 5 (Wed 14.10. 11:00)
+|https://youtu.be/Jpf72x7hpT0
+
+|Seminar 5(Wed 14.10. 12:45)
+|https://youtu.be/VozkZzhCDdk
+|===
+
+A small test will take place at the beginning of the seminar. *Students can participate in the test only at the time when they have a seminar scheduled according to link:https://timetable.fit.cvut.cz/old/public/en/predmety/31/61/p3161206.html[KOS]*
+
+
 *13.10.2020 - Week 4*
 
 .Links for the fourth week
