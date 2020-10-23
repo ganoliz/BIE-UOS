@@ -21,8 +21,9 @@
   . File system.
     * link:https://learnshell.fit.cvut.cz[LearnShell]
     * link:bie-ps1-c04-fs-questions.pdf[]
-//    * link:bie-ps1-c04-fs-solutions.pdf[]
-    
+    * link:bie-ps1-c04-fs-solutions.pdf[]
+    * link:https://youtu.be/eeAa9dnJQuc[Youtube]
+     
   . Standard Input/Output, UNIX filters and useful commands.
     * link:https://learnshell.fit.cvut.cz[LearnShell]
     * link:bie-ps1-c05-filters-questions.pdf[]
