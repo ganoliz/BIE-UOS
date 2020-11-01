@@ -1,6 +1,12 @@
 = 1. News
 :imagesdir: media
 
+*1.11.2020 - Week 7*
+
+[square]
+* The lecture 6 will be available at the following link link:https://youtu.be/VvPhIw2fGpM[YouTube]
+* Seminars will be available at link:https://go.microsoft.com/fwlink/p/?LinkID=873020&lm=deeplink&lmsrc=homePageWeb&cmpid=WebSignIn[MS Teams]
+
 *23.10.2020 - Week 6*
 
 Classes (lecture and seminars) will be canceled the next Wednesday, October 28, 2020, because it will be a public holiday.
