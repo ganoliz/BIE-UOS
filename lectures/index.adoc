@@ -18,7 +18,9 @@
   * link:bie-ps1-p04-filters-01.pdf[]
   * link:https://youtu.be/mZ8FrDhdhWU[YouTube (Part 1)]
   * link:https://youtu.be/VvPhIw2fGpM[YouTube (Part 2)]
-  * Files: link:data/words.txt[words.txt], link:data/dji.txt[dji.txt], link:data/dji.csv[dji.csv]
+  * Files: 
+  ** link:data/words.txt[words.txt], link:data/djx.txt[djx.txt], link:data/djx.csv[djx.csv], link:data/ndx.txt[ndx.txt], link:data/ndx.csv[ndx.csv], link:data/spx.txt[spx.txt], link:data/spx.csv[spx.csv], link:data/rux.txt[rux.txt], link:data/rux.csv[rux.csv]
+  ** on the servers fray1/fray2, these files are stored in directory /home/courses/BIPS1/public/data
   
   . Regular expressions, grep. 
   * link:bie-ps1-p05-regexpr-01.pdf[]
