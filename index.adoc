@@ -1,6 +1,12 @@
 = 1. News
 :imagesdir: media
 
+*1.11.2020 - Week 8*
+
+[square]
+* The lecture 7 will be available at the following link link:https://youtu.be/yD4qkQ7pVFg[YouTube]
+* Seminars will be available at link:https://go.microsoft.com/fwlink/p/?LinkID=873020&lm=deeplink&lmsrc=homePageWeb&cmpid=WebSignIn[MS Teams]
+
 *1.11.2020 - Week 7*
 
 [square]
