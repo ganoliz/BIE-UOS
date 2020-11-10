@@ -1,6 +1,26 @@
 = 1. News
 :imagesdir: media
 
+*10.11.2020 - Week 9*
+
+[square]
+* The lecture 8 will be available at the following link link:https://youtu.be/yD4qkQ7pVFg[YouTube]
+* Seminars will be available at link:https://go.microsoft.com/fwlink/p/?LinkID=873020&lm=deeplink&lmsrc=homePageWeb&cmpid=WebSignIn[MS Teams]. Please check that you see tomorrow's seminar in the MS Teams Calendar. If not, send me an email as soon as possible and I will include you in the appropriate group so that you can follow the seminar and write a small test in Learnshell.
+
+* *Information for evaluation and obtaining assessment*
+  ** For the following reasons, I decided to change the conditions for obtaining assessment
+    *** With a high probability the restrictions regarding COVID-19 will last until the end of the semester and therefore it will not be possible to carry out large tests in the faculty classroom.
+	*** It is almost impossible to prevent copying during tests and the use of unauthorized materials, ...
+	 
+  ** Therefore, I decided to replace the large tests with *an oral interview with each student through MS Teams, which will take place at the end of the semester (in the week of 14-18 December)*. I assume that the interview will last about 20 minutes and during which I would ask the student one theoretical question (eg explain what a symbolic link is, ...), one practical question (similar to a question in small tests) and possibly another supplementary question. The results of small tests will also be taken into account in determining the final grade.
+  
+  ** *Small tests will continue to take place at the beginning of each seminar* and are primarily intended to serve
+    *** to motivate students for regular weekly and weekly preparation,
+    *** as feedback on their current knowledge,
+    *** to get an idea of ​​what types of problems they should be able to solve.
+
+  ** If it was not possible to carry out a small test either due to eg a student's illness or due to technical problems (eg problems with network connection, problems with Learnshell), so for simplicity, I decided that *the small tests will not be replaced* and everything will be resolved during the oral interview.
+  
 *1.11.2020 - Week 8*
 
 [square]
