@@ -4,6 +4,22 @@
 
 * *This module is finished by the graded assessment*, therefore the continuous work in the semester is evaluated.
 
+== Change in the method of evaluation
+
+* *Information for evaluation and obtaining assessment*
+  ** For the following reasons, I decided to change the conditions for obtaining assessment
+    *** With a high probability the restrictions regarding COVID-19 will last until the end of the semester and therefore it will not be possible to carry out large tests in the faculty classroom.
+	*** It is almost impossible to prevent copying during tests and the use of unauthorized materials, ...
+	 
+  ** Therefore, I decided to replace the large tests with *an oral interview with each student through MS Teams, which will take place at the end of the semester (in the week of 14-18 December)*. I assume that the interview will last about 20 minutes and during which I would ask the student one theoretical question (eg explain what a symbolic link is, ...), one practical question (similar to a question in small tests) and possibly another supplementary question. The results of small tests will also be taken into account in determining the final grade.
+  
+  ** *Small tests will continue to take place at the beginning of each seminar* and are primarily intended to serve
+    *** to motivate students for regular weekly and weekly preparation,
+    *** as feedback on their current knowledge,
+    *** to get an idea of ​​what types of problems they should be able to solve.
+
+	** If it was not possible to carry out a small test either due to eg a student's illness or due to technical problems (eg problems with network connection, problems with Learnshell), so for simplicity, I decided that *the small tests will not be replaced* and everything will be resolved during the oral interview.
+
 == Tests
 
 * During the semester, *the student will write several tests to earn points*.
