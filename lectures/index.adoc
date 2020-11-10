@@ -29,6 +29,8 @@
   . Regular expressions, grep.
     * link:https://youtu.be/yD4qkQ7pVFg[YouTube]
     * link:bie-ps1-p05-regexpr-01.pdf[]
+	* Files: 
+	** link:../data/text.txt[text.txt], link:../data/moreLine.xml[moreLine.xml], link:../data/oneLine.xml[oneLine.xml]
   
   . Regular expressions, sed and awk.
     * link:bie-ps1-p06-sedawk-01.pdf[]
