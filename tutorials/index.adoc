@@ -32,12 +32,12 @@
     * Files: 
     ** link:../data/words.txt[words.txt], link:../data/djx.txt[djx.txt], link:../data/djx.csv[djx.csv], link:../data/ndx.txt[ndx.txt], link:../data/ndx.csv[ndx.csv], link:../data/spx.txt[spx.txt], link:../data/spx.csv[spx.csv], link:../data/rux.txt[rux.txt], link:../data/rux.csv[rux.csv]
     ** on the servers fray1/fray2, these files are stored in directory /home/courses/BIPS1/public/data
-//    * link:./bie-ps1-filtry.pdf[Examples of questions]
+    * link:./bie-ps1-filtry.pdf[Examples of questions]
 
   . Regular expressions, command grep.
     * link:https://learnshell.fit.cvut.cz[LearnShell]
     * link:bie-ps1-c06-regexp-questions.pdf[]
-//    * link:bie-ps1-c06-regexp-solutions.pdf[]  
+    * link:bie-ps1-c06-regexp-solutions.pdf[]  
     * Data file: link:words.txt[], link:apache.log.gz[] (use command gunzip to decompress the file).  
     
   . Regular expressions, commands sed and awk.
