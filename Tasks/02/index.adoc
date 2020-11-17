@@ -1,6 +1,6 @@
 = Task 2
 
-The submission limit is *Su 22.11.2020 at 23:00*. After that the solutions will be archived.
+The submission limit is *22.11.2020 at 23:00*. After that the solutions will be archived.
 
 ==== Assignment
 
