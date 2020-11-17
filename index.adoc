@@ -1,17 +1,20 @@
 = 1. News
 :imagesdir: media
 
-*17.11.2020 - Week 10*
+*17.11.2020 - Week 9*
 
 [square]
-* The lecture 9 will be available at the following link link:https://youtu.be/VbqoK6uv7J0[YouTube]
+* The lecture 8 will be available at the following link link:https://youtu.be/VbqoK6uv7J0[YouTube]
 * Seminars will be available at link:https://go.microsoft.com/fwlink/p/?LinkID=873020&lm=deeplink&lmsrc=homePageWeb&cmpid=WebSignIn[MS Teams]
+* Here are some more information for tomorrow's class:
+ ** There will be no small test tomorrow.
+ ** Instead of a small test, another homework on Learnshell is prepared for you (deadline is 22.11.2020 at 23:00).
+ ** The second task is published at https://courses.fit.cvut.cz/BI-PS1/tasks/02/index.html (deadline is 22.11.2020 at 23:00).
 
-
-*10.11.2020 - Week 9*
+*10.11.2020 - Week 8*
 
 [square]
-* The lecture 8 will be available at the following link link:https://youtu.be/yD4qkQ7pVFg[YouTube]
+* The lecture 7 will be available at the following link link:https://youtu.be/yD4qkQ7pVFg[YouTube]
 * Seminars will be available at link:https://go.microsoft.com/fwlink/p/?LinkID=873020&lm=deeplink&lmsrc=homePageWeb&cmpid=WebSignIn[MS Teams]. Please check that you see tomorrow's seminar in the MS Teams Calendar. If not, send me an email as soon as possible and I will include you in the appropriate group so that you can follow the seminar and write a small test in Learnshell.
 
 * *Information for evaluation and obtaining assessment*
@@ -28,57 +31,57 @@
 
   ** If it was not possible to carry out a small test either due to eg a student's illness or due to technical problems (eg problems with network connection, problems with Learnshell), so for simplicity, I decided that *the small tests will not be replaced* and everything will be resolved during the oral interview.
   
-*1.11.2020 - Week 8*
-
-[square]
-* The lecture 7 will be available at the following link link:https://youtu.be/yD4qkQ7pVFg[YouTube]
-* Seminars will be available at link:https://go.microsoft.com/fwlink/p/?LinkID=873020&lm=deeplink&lmsrc=homePageWeb&cmpid=WebSignIn[MS Teams]
-
 *1.11.2020 - Week 7*
 
 [square]
-* The lecture 6 will be available at the following link link:https://youtu.be/VvPhIw2fGpM[YouTube]
+* The lecture 6 will be available at the following link link:https://youtu.be/yD4qkQ7pVFg[YouTube]
 * Seminars will be available at link:https://go.microsoft.com/fwlink/p/?LinkID=873020&lm=deeplink&lmsrc=homePageWeb&cmpid=WebSignIn[MS Teams]
 
-*23.10.2020 - Week 6*
+*1.11.2020 - Week 6*
+
+[square]
+* The lecture 5 will be available at the following link link:https://youtu.be/VvPhIw2fGpM[YouTube]
+* Seminars will be available at link:https://go.microsoft.com/fwlink/p/?LinkID=873020&lm=deeplink&lmsrc=homePageWeb&cmpid=WebSignIn[MS Teams]
+
+*23.10.2020 - Week 5*
 
 Classes (lecture and seminars) will be canceled the next Wednesday, October 28, 2020, because it will be a public holiday.
 
-*20.10.2020 - Week 5*
-
-.Links for the fourth week
-|===
-|Stream type | Link
-
-|Lecture 5 (Wed 14.10. 7:30)
-|https://youtu.be/mZ8FrDhdhWU
-
-|Seminar 5 (Wed 14.10. 9:15)
-|https://youtu.be/eeAa9dnJQuc
-
-|Seminar 5 (Wed 14.10. 11:00)
-|https://youtu.be/Jpf72x7hpT0
-
-|Seminar 5 (Wed 14.10. 12:45)
-|https://youtu.be/VozkZzhCDdk
-|===
-
-A small test will take place at the beginning of the seminar. *Students can participate in the test only at the time when they have a seminar scheduled according to link:https://timetable.fit.cvut.cz/old/public/en/predmety/31/61/p3161206.html[KOS]*
-
-
-*13.10.2020 - Week 4*
+*20.10.2020 - Week 4*
 
 .Links for the fourth week
 |===
 |Stream type | Link
 
 |Lecture 4 (Wed 14.10. 7:30)
-|https://youtu.be/bDsl0rhDURQ
+|https://youtu.be/mZ8FrDhdhWU
 
 |Seminar 4 (Wed 14.10. 9:15)
-|https://youtu.be/kmTrveziplE
+|https://youtu.be/eeAa9dnJQuc
 
 |Seminar 4 (Wed 14.10. 11:00)
+|https://youtu.be/Jpf72x7hpT0
+
+|Seminar 4 (Wed 14.10. 12:45)
+|https://youtu.be/VozkZzhCDdk
+|===
+
+A small test will take place at the beginning of the seminar. *Students can participate in the test only at the time when they have a seminar scheduled according to link:https://timetable.fit.cvut.cz/old/public/en/predmety/31/61/p3161206.html[KOS]*
+
+
+*13.10.2020 - Week 3*
+
+.Links for the fourth week
+|===
+|Stream type | Link
+
+|Lecture 3 (Wed 14.10. 7:30)
+|https://youtu.be/bDsl0rhDURQ
+
+|Seminar 3 (Wed 14.10. 9:15)
+|https://youtu.be/kmTrveziplE
+
+|Seminar 3 (Wed 14.10. 11:00)
 |https://youtu.be/kDDzZctDsVc
 
 |Seminar 4 (Wed 14.10. 12:45)
@@ -86,19 +89,19 @@ A small test will take place at the beginning of the seminar. *Students can part
 |===
 
 
-*5.10.2020 - Week 3*
+*5.10.2020 - Week 2*
 
 .Links for the third week
 |===
 |Stream type | Link
 
-|Lecture 3 (Wed 7.10. 7:30)
+|Lecture 2 (Wed 7.10. 7:30)
 |https://youtu.be/K6E1PGsEV0k
 
-|Seminar 3 (Wed 7.10. 9:15)
+|Seminar 2 (Wed 7.10. 9:15)
 |https://youtu.be/seXtQqTT3N4
 
-|Seminar 3 (Wed 7.10. 11:00)
+|Seminar 2 (Wed 7.10. 11:00)
 |https://youtu.be/gTuT98qlyFs
 
 |Seminar 3 (Wed 7.10. 12:45)
