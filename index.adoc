@@ -8,8 +8,8 @@
 * Seminars will be available at link:https://go.microsoft.com/fwlink/p/?LinkID=873020&lm=deeplink&lmsrc=homePageWeb&cmpid=WebSignIn[MS Teams]
 * Here are some more information for tomorrow's class:
  ** There will be no small test tomorrow.
- ** Instead of a small test, another homework on Learnshell is prepared for you (deadline is 22.11.2020 at 23:00).
- ** The second task is published at https://courses.fit.cvut.cz/BI-PS1/tasks/02/index.html (deadline is 22.11.2020 at 23:00).
+ ** Instead of a small test, another homework on link:https://learnshell.fit.cvut.cz[Learnshell] is prepared for you (deadline is 22.11.2020 at 23:00).
+ ** The second task is published at link:https://courses.fit.cvut.cz/BI-PS1/tasks/02/index.html[courses.fit.cvut.cz] (deadline is 22.11.2020 at 23:00).
 
 *10.11.2020 - Week 8*
 
