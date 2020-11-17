@@ -33,6 +33,7 @@
 	** link:../data/text.txt[text.txt], link:../data/moreLine.xml[moreLine.xml], link:../data/oneLine.xml[oneLine.xml]
   
   . Regular expressions, sed and awk.
+    * link:https://youtu.be/VbqoK6uv7J0[YouTube]
     * link:bie-ps1-p06-sedawk-01.pdf[]
   
   . Exit code. Command test. Flow Control. Loops.
