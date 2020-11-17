@@ -1,6 +1,13 @@
 = 1. News
 :imagesdir: media
 
+*17.11.2020 - Week 10*
+
+[square]
+* The lecture 9 will be available at the following link link:https://youtu.be/VbqoK6uv7J0[YouTube]
+* Seminars will be available at link:https://go.microsoft.com/fwlink/p/?LinkID=873020&lm=deeplink&lmsrc=homePageWeb&cmpid=WebSignIn[MS Teams]
+
+
 *10.11.2020 - Week 9*
 
 [square]
@@ -52,7 +59,7 @@ Classes (lecture and seminars) will be canceled the next Wednesday, October 28, 
 |Seminar 5 (Wed 14.10. 11:00)
 |https://youtu.be/Jpf72x7hpT0
 
-|Seminar 5(Wed 14.10. 12:45)
+|Seminar 5 (Wed 14.10. 12:45)
 |https://youtu.be/VozkZzhCDdk
 |===
 
