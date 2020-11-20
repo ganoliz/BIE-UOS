@@ -42,11 +42,13 @@
     
   . Regular expressions, commands sed and awk.
 //    * link:https://learnshell.fit.cvut.cz[LearnShell]
+    * link:https://youtu.be/u6OtlWtTf08[Youtube]
     * link:bie-ps1-c07-sed_awk-questions.pdf[]
-    * link:bie-ps1-c07-sed_awk-solutions.pdf[]  
+    * link:bie-ps1-c07-sed_awk-solutions.pdf[]
+    * link:./bie-ps1-regexpr.pdf[Examples of questions]	
 
   . Exit status, command test, flow control.
-    * link:https://learnshell.fit.cvut.cz[LearnShell]
+//    * link:https://learnshell.fit.cvut.cz[LearnShell]
     * link:bie-ps1-c08-flow_control-questions.pdf[]
 //    * link:bie-ps1-c08-flow_control-solutions.pdf[]
     
@@ -68,6 +70,6 @@
     * link:bie-ps1-c10-proc-questions.pdf[]
 //    * link:bie-ps1-c10-proc-solutions.pdf[] 
 
-  . Big test   
+//  . Big test   
   		
   
