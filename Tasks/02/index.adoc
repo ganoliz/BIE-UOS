@@ -18,7 +18,7 @@ See example below.
 Conditions for correct solution:
 
 * No characters other than the calculated number may be on the first line.
-* Both the script and the file must be stored in the directory *`~/ulohy/tyden7`*
+* Both the script and the file must be stored in the directory *`~/ulohy/tyden9`
 
 ==== Example
 
@@ -27,7 +27,7 @@ The script name is `uloha2` and the output of commands *`ls`* a *`cat`*  is foll
 
 
 ----
-~> cd ~/ulohy/tyden7
+~> cd ~/ulohy/tyden9
 ~> ls -l
 -rw-------   1 muzikar  zam           15 Nov 24 22:29 10032
 -rwx------   1 muzikar  zam          328 Nov 24 22:20 uloha2
