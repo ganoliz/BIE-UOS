@@ -1,6 +1,18 @@
 = 1. News
 :imagesdir: media
 
+*24.11.2020 - Week 10*
+
+[square]
+* The lecture 9 will be available at the following link link:https://youtu.be/uEuIDdkG0mI[YouTube]
+* Seminars will be available at following links:
+  ** 9:15-10:45 link:https://youtu.be/lipFRJD7ia8[YouTube]
+  ** 11:00-12:30 link:https://youtu.be/Ch-wqgP_NUY[YouTube]
+  ** 12:45-14:15 link:https://youtu.be/Z9dAjE_k80o[YouTube]
+* Here are some more information for tomorrow's class:
+ ** There will be no small test tomorrow.
+ ** Instead of a small test, another homework on link:https://learnshell.fit.cvut.cz[Learnshell] is prepared for you (deadline is 30.11.2020 at 23:00).
+
 *17.11.2020 - Week 9*
 
 [square]
