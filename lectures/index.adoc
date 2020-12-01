@@ -37,11 +37,13 @@
     * link:bie-ps1-p06-sedawk-01.pdf[]
   
   . Exit code. Command test. Flow Control. Loops.
+    * link:https://youtu.be/uEuIDdkG0mI[YouTube]
     * link:bie-ps1-p07-flow_control-01.pdf[]
     * Files: 
     ** link:../data/scripts.tgz[scripts.tgz]
 	
   . User identity and access permissions.
+    * link:https://youtu.be/6oOHob051Vs[YouTube]
     * link:bie-ps1-p08-perm.pdf[]
   
   . Command find.
