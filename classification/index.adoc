@@ -4,9 +4,9 @@
 
 * *This module is finished by the graded assessment*, therefore the continuous work in the semester is evaluated.
 
-== Change in the method of evaluation
+== Change in the method of evaluation in 2020
 
-* *Information for evaluation and obtaining assessment*
+* *Information for evaluation and obtaining assessment in the winter semester 2020*
   ** For the following reasons, I decided to change the conditions for obtaining assessment
     *** With a high probability the restrictions regarding COVID-19 will last until the end of the semester and therefore it will not be possible to carry out large tests in the faculty classroom.
 	*** It is almost impossible to prevent copying during tests and the use of unauthorized materials, ...
@@ -20,6 +20,18 @@
 
 	** If it was not possible to carry out a small test either due to eg a student's illness or due to technical problems (eg problems with network connection, problems with Learnshell), so for simplicity, I decided that *the small tests will not be replaced* and everything will be resolved during the oral interview.
 
+* *The oral interview organization*
+  ** Interviews will take place from Tue 15.- Thu 17.12.2020.
+  ** The teacher will send by email a link to the shared table, where *each student will book a free time slot* that suits him best.
+  ** At the given time, the *teacher calls the student via MS Teams*.
+  ** *The student-side camera must be turned on* throughout the interview and must record the student himself to ensure that the student works independently and does not use unauthorized sources of information.
+  ** During the interview, *the student must answer/work independently and can only use his/her knowledge and commands man/help/info, which are available in the Unix terminal. Other sources of information (such as notes, slides, information on the Internet, ...) are prohibited*.
+  ** At the beginning of the interview, the teacher will show the student the assignment of one practical question and one theoretical question (from the topics covered during the semester). *The student writes the solution of the practical question to the shared terminal on the computer fray2.fit.cvut.cz within 10 minutes and answers the theoretical question orally within 5 minutes.*
+  ** The final assessment of the student will depend on the answer/solution of these two questions, but will also take into account the solutions of homework and small tests during the semester.
+  
+  
+= The information below is not valid fo the winter semestre 2020
+  
 == Tests
 
 * During the semester, *the student will write several tests to earn points*.
