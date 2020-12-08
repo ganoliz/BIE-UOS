@@ -1,6 +1,19 @@
 = 1. News
 :imagesdir: media
 
+*8.12.2020 - Week 12*
+
+[square]
+* The lecture 11 will be available at the following link link:https://youtu.be/niyJfBsnUt0[YouTube]
+* Seminars will be available at following links:
+  ** 9:15-10:45 link:https://youtu.be/FOPCwjKOcL0[YouTube]
+  ** 11:00-12:30 https://youtu.be/7B9_QQTxtSI[YouTube]
+  ** 12:45-14:15 link:https://youtu.be/4Spm7-tbyM[YouTube]
+* Here are some more information for tomorrow's class:
+ ** There will be no small test tomorrow.
+ ** Instead of a small test, another homework on link:https://learnshell.fit.cvut.cz[Learnshell] is prepared for you (deadline is 13.12.2020 at 23:00).
+ 
+
 *1.12.2020 - Week 11*
 
 [square]
