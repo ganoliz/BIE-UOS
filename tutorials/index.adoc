@@ -57,21 +57,21 @@
 //    * link:https://learnshell.fit.cvut.cz[LearnShell]
     * link:https://youtu.be/Ch-wqgP_NUY[Youtube]
     * link:bie-ps1-c09-perm_find-questions.pdf[]
-//    * link:bie-ps1-c09-perm_find-solutions.pdf[]  
+    * link:bie-ps1-c09-perm_find-solutions.pdf[]  
 
   . Archiving and compression tools and arithmetic calculations.
 //    * link:https://learnshell.fit.cvut.cz[LearnShell]
     * link:https://youtu.be/wKluu8PVnR8[Youtube]
     * link:bie-ps1-c11-archiving-questions.pdf[]
-//    * link:bie-ps1-c11-archiving-solutions.pdf[]  
+    * link:bie-ps1-c11-archiving-solutions.pdf[]  
 
     * link:bie-ps1-c12-calculations-questions.pdf[]
-//    * link:bie-ps1-c12-calculations-solutions.pdf[]  
+    * link:bie-ps1-c12-calculations-solutions.pdf[]  
 
   . Processes and jobs.
     * link:https://learnshell.fit.cvut.cz[LearnShell]
     * link:bie-ps1-c10-proc-questions.pdf[]
-//    * link:bie-ps1-c10-proc-solutions.pdf[] 
+    * link:bie-ps1-c10-proc-solutions.pdf[] 
 
 //  . Big test   
   		
