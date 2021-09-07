@@ -1,7 +1,7 @@
 course:
-  code: BIE-PS1
-  name: Programming in Shell 1
-semester: B181
+  code: BIE-UOS
+  altCodes: [BIE-UOS.21, BIE-PS1]
+  name: Unix-like Operating Systems
 language: en
 navigation:
   hiddenFiles:
@@ -21,4 +21,4 @@ navigation:
     - Tasks/0[3-4]/*
     - data/*
 repository:
-  gitlabPath: /BI-PS1/bie-ps1
+  gitlabPath: /BI-UOS/bie-uos
