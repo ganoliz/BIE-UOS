@@ -4,6 +4,7 @@
 
 * *This module is finished by the graded assessment*, therefore the continuous work in the semester is evaluated.
 
+////
 == Change in the method of evaluation in 2020
 
 * *Information for evaluation and obtaining assessment in the winter semester 2020*
@@ -31,7 +32,7 @@
   
   
 = The information below is not valid fo the winter semestre 2020
-  
+////
 == Tests
 
 * During the semester, *the student will write several tests to earn points*.
@@ -50,13 +51,15 @@
 *** They will verify knowledge of all discussed topics.
 *** Student can obtain up to *80 points* from all these tests.
 
-//* *Absence from the test means 0 points from the test (exception is only serious reason).*
+* *Absence from the test means 0 points from the test (exception is only serious reason).*
 
-== Home tasks
+
+
+== Tasks
 
 * In addition, it is possible to earn an extra *3 points*, which are assigned at the end of the semester. 
-* They are awarded for the successful solution of home tasks. 
-* These tasks will be continuously assigned at seminars or lectures.
+* They are awarded for the successful solution of tasks. 
+* These tasks will be continuously assigned at seminars or lectures (see link:Tasks/index.html[Tasks]).
 
 == Evaluation scale
 
