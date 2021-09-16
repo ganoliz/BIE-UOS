@@ -1,59 +1,59 @@
 = 5. Lectures
 
   . Introduction in UNIX operating system.
-    * link:https://youtu.be/K4XHFKXFwI8[YouTube]
-    * link:bie-ps1-p00-module_info_01.pdf[]
-    * link:bie-ps1-p01-introduction-01.pdf[]
+//    * link:https://youtu.be/K4XHFKXFwI8[YouTube]
+//    * link:bie-ps1-p00-module_info_01.pdf[]
+//    * link:bie-ps1-p01-introduction-01.pdf[]
   
   
   . Command-line parsing order, special characters, command execution, shell variables.
-    * link:https://youtu.be/JigA31MAMr0[YouTube (Part 1)]
-    * link:https://youtu.be/K6E1PGsEV0k[YouTube (Part 2)]
-    * link:bie-ps1-p02-cli-01.pdf[]
+//    * link:https://youtu.be/JigA31MAMr0[YouTube (Part 1)]
+//    * link:https://youtu.be/K6E1PGsEV0k[YouTube (Part 2)]
+//    * link:bie-ps1-p02-cli-01.pdf[]
   
   
   . Filesystem. Basic file/directory commands.
-  	* link:https://youtu.be/bDsl0rhDURQ[YouTube]
-  	* link:bie-ps1-p03-fs-01.pdf[]
+//    * link:https://youtu.be/bDsl0rhDURQ[YouTube]
+//    * link:bie-ps1-p03-fs-01.pdf[]
   
   
   . Filters and useful commands.
-    * link:https://youtu.be/mZ8FrDhdhWU[YouTube (Part 1)]
-	* link:https://youtu.be/VvPhIw2fGpM[YouTube (Part 2)]
-  	* link:bie-ps1-p04-filters-01.pdf[]
+//    * link:https://youtu.be/mZ8FrDhdhWU[YouTube (Part 1)]
+//    * link:https://youtu.be/VvPhIw2fGpM[YouTube (Part 2)]
+//    * link:bie-ps1-p04-filters-01.pdf[]
 	
  	* Files: 
  	  ** link:../data/words.txt[words.txt], link:../data/djx.txt[djx.txt], link:../data/djx.csv[djx.csv], link:../data/ndx.txt[ndx.txt], link:../data/ndx.csv[ndx.csv], link:../data/spx.txt[spx.txt], link:../data/spx.csv[spx.csv], link:../data/rux.txt[rux.txt], link:../data/rux.csv[rux.csv]
  	  ** on the servers fray1/fray2, these files are stored in directory /home/courses/BIPS1/public/data
   
   . Regular expressions, grep.
-    * link:https://youtu.be/yD4qkQ7pVFg[YouTube]
-    * link:bie-ps1-p05-regexpr-01.pdf[]
-	* Files: 
-	** link:../data/text.txt[text.txt], link:../data/moreLine.xml[moreLine.xml], link:../data/oneLine.xml[oneLine.xml]
+//    * link:https://youtu.be/yD4qkQ7pVFg[YouTube]
+//    * link:bie-ps1-p05-regexpr-01.pdf[]
+    * Files: 
+      ** link:../data/text.txt[text.txt], link:../data/moreLine.xml[moreLine.xml], link:../data/oneLine.xml[oneLine.xml]
   
   . Regular expressions, sed and awk.
-    * link:https://youtu.be/VbqoK6uv7J0[YouTube]
-    * link:bie-ps1-p06-sedawk-01.pdf[]
+//    * link:https://youtu.be/VbqoK6uv7J0[YouTube]
+//    * link:bie-ps1-p06-sedawk-01.pdf[]
   
   . Exit code. Command test. Flow Control. Loops.
-    * link:https://youtu.be/uEuIDdkG0mI[YouTube]
-    * link:bie-ps1-p07-flow_control-01.pdf[]
+//    * link:https://youtu.be/uEuIDdkG0mI[YouTube]
+//    * link:bie-ps1-p07-flow_control-01.pdf[]
     * Files: 
     ** link:../data/scripts.tgz[scripts.tgz]
 	
   . User identity and access permissions.
-    * link:https://youtu.be/6oOHob051Vs[YouTube]
-    * link:bie-ps1-p08-perm.pdf[]
+//    * link:https://youtu.be/6oOHob051Vs[YouTube]
+//    * link:bie-ps1-p08-perm.pdf[]
   
   . Command find.
-    * link:bie-ps1-p09-find.pdf[]
+//    * link:bie-ps1-p09-find.pdf[]
   
   . Archiving and compression utilities. Arithmetics. 
-    * link:bie-ps1-p10-archivation.pdf[]
+//    * link:bie-ps1-p10-archivation.pdf[]
   
   . Processes and threads. Signals.
-    * link:bie-ps1-p11-processes.pdf[]
+//    * link:bie-ps1-p11-processes.pdf[]
   
   . Summary.
   
