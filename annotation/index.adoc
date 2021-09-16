@@ -1,7 +1,7 @@
 = 2. Annotation 
 :imagesdir: ../media/annotation
 
-This module is introduction to the UNIX operating systems on the user level.
+This module is introduction to the UNIX-like operating systems on the user level.
 
 The lectures describe the basic information about command line interface (shell and basic commands), processes/threads management, memory management, file system management.
 
