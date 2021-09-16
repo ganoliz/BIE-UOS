@@ -18,7 +18,7 @@ navigation:
     - tutorials/*.csv
     - homeworks/0*/*
     - homeworks/1*/*
-    - Tasks/0[3-4]/*
+    - Tasks/0[1-4]/*
     - data/*
 repository:
   gitlabPath: /BI-UOS/bie-uos
