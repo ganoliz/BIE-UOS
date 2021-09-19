@@ -1,8 +1,12 @@
 = 6. Tutorials
 
-  . Introduction.
+The materials are being modified this year, so we will gradually add them here.
+
+
+
+  . *Introduction*
 //    * link:https://youtu.be/jI0OV0yt6CI[Youtube]
-//    * link:bie-ps1-c01-introduction-solutions.pdf[]
+    * link:bie-uos-c01-introduction-solutions.pdf[]
     
   . Command line interface I
 //    * link:https://youtu.be/tg8jdscUU8U[Youtube(part1)]
