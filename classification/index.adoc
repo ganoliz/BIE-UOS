@@ -14,7 +14,7 @@
 	 
   ** Therefore, I decided to replace the large tests with *an oral interview with each student through MS Teams, which will take place at the end of the semester (in the week of 14-18 December)*. I assume that the interview will last about 20 minutes and during which I would ask the student one theoretical question (eg explain what a symbolic link is, ...), one practical question (similar to a question in small tests) and possibly another supplementary question. The results of small tests will also be taken into account in determining the final grade.
   
-  ** *Small tests will continue to take place at the beginning of each seminar* and are primarily intended to serve
+  ** *Small tests will continue to take place at the beginning of each tutorial* and are primarily intended to serve
     *** to motivate students for regular weekly and weekly preparation,
     *** as feedback on their current knowledge,
     *** to get an idea of ​​what types of problems they should be able to solve.
@@ -46,7 +46,7 @@
 *** Student can obtain up to *20 points* from all these tests.
 
 ** *Big tests*
-*** They will take place *in the middle (week 8, 11.11.2020)* and *at the end (week 13, 15.12.2020)* of the semester (depending on COVID-19 restrictions).
+*** They will take place *in the middle (week 8, 10.11.2021)* and *at the end (week 12, 8.12.2021)* of the semester (depending on COVID-19 restrictions).
 *** The test duration will be around *60 minutes*.
 *** They will verify knowledge of all discussed topics.
 *** Student can obtain up to *80 points* from all these tests.
@@ -59,7 +59,7 @@
 
 * In addition, it is possible to earn an extra *3 points*, which are assigned at the end of the semester. 
 * They are awarded for the successful solution of tasks. 
-* These tasks will be continuously assigned at seminars or lectures (see link:Tasks/index.html[Tasks]).
+* These tasks will be continuously assigned at tutorials or lectures (see link:Tasks/index.html[Tasks]).
 
 == Evaluation scale
 
