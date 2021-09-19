@@ -4,7 +4,7 @@
 *22.9.2021 - Week 1*
 
 * *Teaching will take place in full-time form* (ie in FIT CTU classrooms according to the link:https://timetable.fit.cvut.cz/old/public/en/predmety/66/84/p6684706.html[schedule]).
-* If the student is unable to attend classes for important reasons (eg visa problem, covid quarantine, ...), then *the student must learn the topic in the form of self-study* from prepared materials (slides of lectures and exercises).
+* If the student is unable to attend classes for important reasons (eg visa problem, covid quarantine, ...), then *the student must learn the topic in the form of self-study* from prepared materials (slides of lectures and tutorials).
 * As a bonus to facilitate self-study, *we will try to stream/record lectures and exercises from the classroom* (it will not be distance learning).
 * Links to streams/records will be listed on this site.
 
