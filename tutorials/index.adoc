@@ -1,4 +1,4 @@
-= 6. Seminars
+= 6. Tutorials
 
   . Introduction.
 //    * link:https://youtu.be/jI0OV0yt6CI[Youtube]
