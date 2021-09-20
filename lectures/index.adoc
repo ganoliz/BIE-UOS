@@ -3,9 +3,9 @@
 The materials are being modified this year, so we will gradually add them here.
 
   . *Introduction in UNIX operating system*
-//    * link:https://youtu.be/K4XHFKXFwI8[YouTube]
     * link:bie-uos-p00-module_info_01.pdf[]
     * link:bie-uos-p01-introduction-01.pdf[]
+    * link:https://youtu.be/-9Y8Konusko[YouTube]
   
   
   . Command-line parsing order, special characters, command execution, shell variables
