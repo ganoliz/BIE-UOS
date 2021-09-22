@@ -4,7 +4,7 @@ The materials are being modified this year, so we will gradually add them here.
 
   . *Introduction*
     * link:bie-uos-c01-introduction-solutions.pdf[]
-    * link:https://youtu.be/accvlYz0zCo[Youtube]
+//    * link:https://youtu.be/accvlYz0zCo[Youtube]
     
   . Command line interface I
 //    * link:https://youtu.be/tg8jdscUU8U[Youtube(part1)]
