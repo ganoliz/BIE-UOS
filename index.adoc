@@ -1,6 +1,12 @@
 = 1. News
 :imagesdir: media
 
+*27.9.2021 - Week 2*
+
+* The Task 1 is available at link:https://courses.fit.cvut.cz/BIE-UOS/Tasks/01/index.html[]
+* The LearnShell homework is available at link:https://learnshell.fit.cvut.cz[]
+
+
 *22.9.2021 - Week 1*
 
 * *Teaching will take place in full-time form* (ie in FIT CTU classrooms according to the link:https://timetable.fit.cvut.cz/old/public/en/predmety/66/84/p6684706.html[schedule]).
