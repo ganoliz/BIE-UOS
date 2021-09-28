@@ -11,7 +11,7 @@ The materials are being modified this year, so we will gradually add them here.
   . Command-line parsing order, special characters, command execution, shell variables
     * link:bie-uos-p02-cli-01.pdf[]
     * link:https://youtu.be/mCmVbMqaLa4[YouTube (Part 1)]
-//    * link:https://youtu.be/K6E1PGsEV0k[YouTube (Part 2)]
+//    * link:https://youtu.be/uzl3jM_Ilho[YouTube (Part 2)]
     
   
   
