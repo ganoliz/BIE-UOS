@@ -7,9 +7,10 @@ The materials are being modified this year, so we will gradually add them here.
     * link:https://youtu.be/accvlYz0zCo[Youtube]
     
   . Command line interface I
+    * link:bie-uos-c02-cli-questions.pdf[]
+//    * link:bie-uos-c02-cli-solutions.pdf[]
 //    * link:https://youtu.be/tg8jdscUU8U[Youtube(part1)]
-//    * link:bie-ps1-c02-cli-questions.pdf[]
-//    * link:bie-ps1-c02-cli-solutions.pdf[]
+
     
 	
   . Command line interfacen II
