@@ -1,7 +1,7 @@
 = 1. News
 :imagesdir: media
 
-*27.9.2021 - Week 2*
+*29.9.2021 - Week 2*
 
 * The Task 1 is available at link:https://courses.fit.cvut.cz/BIE-UOS/Tasks/01/index.html[]
 * The LearnShell homework is available at link:https://learnshell.fit.cvut.cz[]
