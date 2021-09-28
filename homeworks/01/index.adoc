@@ -87,12 +87,13 @@ getent passwd "$USER" | tr "$DELIMITER" '\n' | wc -l
 <li><details><summary>Use the command <code>less</code>  to read the contents of the created file (then end the command), use a tab to complete the file name.</summary>
 ++++
 ....
-less bar<TAB>
-less barinkl-info
+less xy<TAB>
+less xyz-info
 <q>
 
 # <TAB> means pressing key TAB
 # <q> means pressing key q
+# xy represents the first few characters of your username
 ....
 ++++
 </details></li>
