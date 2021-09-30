@@ -1,4 +1,4 @@
-= 7. Homeworks
+= 7. Solved examples
 //:imagesdir: ../media/homeworks
 
 
