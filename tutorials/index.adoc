@@ -8,13 +8,11 @@ The materials are being modified this year, so we will gradually add them here.
     
   . Command line interface I
     * link:bie-uos-c02-cli-questions.pdf[]
-//    * link:bie-uos-c02-cli-solutions.pdf[]
+    * link:bie-uos-c02-cli-solutions.pdf[]
     * link:https://youtu.be/0DkWvM9tdgg[Youtube(part1)]
 
-    
-	
   . Command line interfacen II
-//    * link:https://youtu.be/Z7clsjyTbZw[Youtube(part2)]
+    * link:https://youtu.be/rJ9Dk_2n6Ck[Youtube(part2)]
 
   . Shell variables, text editors.
 //    * link:https://youtu.be/kDDzZctDsVc[Youtube]
