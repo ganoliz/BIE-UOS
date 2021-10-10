@@ -16,8 +16,8 @@ The materials are being modified this year, so we will gradually add them here.
   
   
   . Filesystem. Basic file/directory commands.
-//    * link:https://youtu.be/bDsl0rhDURQ[YouTube]
-//    * link:bie-ps1-p03-fs-01.pdf[]
+    * link:bie-uos-p03-fs-01.pdf[]
+    * link:https://youtu.be/vpHCyPG1Gu4[YouTube]
   
   
   . Filters and useful commands.
