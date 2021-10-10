@@ -15,9 +15,10 @@ The materials are being modified this year, so we will gradually add them here.
     * link:https://youtu.be/rJ9Dk_2n6Ck[Youtube(part2)]
 
   . Shell variables, text editors.
-//    * link:https://youtu.be/kDDzZctDsVc[Youtube]
-//    * link:bie-ps1-c03-variables-questions.pdf[]
+
+    * link:bie-uos-c03-variables-questions.pdf[]
 //    * link:bie-ps1-c03-variables-solutions.pdf[]
+//    * link:https://youtu.be/kDDzZctDsVc[Youtube]
 
   . File system.
 //    * link:https://youtu.be/eeAa9dnJQuc[Youtube]
