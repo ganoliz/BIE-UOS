@@ -17,8 +17,8 @@ The materials are being modified this year, so we will gradually add them here.
   . Shell variables, text editors.
 
     * link:bie-uos-c03-variables-questions.pdf[]
-//    * link:bie-ps1-c03-variables-solutions.pdf[]
-//    * link:https://youtu.be/kDDzZctDsVc[Youtube]
+    * link:bie-uos-c03-variables-solutions.pdf[]
+    * link:https://youtu.be/17lBMTzumeA[Youtube]
 
   . File system.
 //    * link:https://youtu.be/eeAa9dnJQuc[Youtube]
