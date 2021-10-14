@@ -13,8 +13,6 @@ The materials are being modified this year, so we will gradually add them here.
     * link:https://youtu.be/uzl3jM_Ilho[YouTube (Part 1)]
     * link:https://youtu.be/K6E1PGsEV0k[YouTube (Part 2) - record from 2020]
     
-  
-  
   . *Filesystem. Basic file/directory commands*
     * link:bie-uos-p03-fs-01.pdf[]
     * link:https://youtu.be/vpHCyPG1Gu4[YouTube]
@@ -22,7 +20,7 @@ The materials are being modified this year, so we will gradually add them here.
   
   . *Filters and useful commands*
     * link:bie-uos-p04-filters-01.pdf[]
-//    * link:https://youtu.be/mZ8FrDhdhWU[YouTube (Part 1)]
+    * link:https://youtu.be/0hr_mKedUQE[YouTube (Part 1)]
 //    * link:https://youtu.be/VvPhIw2fGpM[YouTube (Part 2)]
 	
  	* Files: 
