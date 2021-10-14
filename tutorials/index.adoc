@@ -6,25 +6,25 @@ The materials are being modified this year, so we will gradually add them here.
     * link:bie-uos-c01-introduction-solutions.pdf[]
     * link:https://youtu.be/accvlYz0zCo[Youtube]
     
-  . Command line interface I
+  . *Command line interface I*
     * link:bie-uos-c02-cli-questions.pdf[]
     * link:bie-uos-c02-cli-solutions.pdf[]
     * link:https://youtu.be/0DkWvM9tdgg[Youtube(part1)]
 
-  . Command line interfacen II
+  . *Command line interfacen II*
     * link:https://youtu.be/rJ9Dk_2n6Ck[Youtube(part2)]
 
-  . Shell variables, text editors.
+  . *Shell variables, text editors*
 
     * link:bie-uos-c03-variables-questions.pdf[]
     * link:bie-uos-c03-variables-solutions.pdf[]
     * link:https://youtu.be/17lBMTzumeA[Youtube]
 
-  . File system.
-//    * link:https://youtu.be/eeAa9dnJQuc[Youtube]
-//    * link:https://learnshell.fit.cvut.cz[LearnShell]
-//    * link:bie-ps1-c04-fs-questions.pdf[]
+  . *File system*
+
+    * link:bie-uos-c04-fs-questions.pdf[]
 //    * link:bie-ps1-c04-fs-solutions.pdf[]
+//    * link:https://youtu.be/eeAa9dnJQuc[Youtube]
     
   . Standard Input/Output, UNIX filters and useful commands.
 //    * link:https://go.microsoft.com/fwlink/p/?LinkID=873020&lm=deeplink&lmsrc=homePageWeb&cmpid=WebSignIn[MS Teams]
