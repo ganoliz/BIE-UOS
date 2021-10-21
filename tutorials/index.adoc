@@ -23,8 +23,8 @@ The materials are being modified this year, so we will gradually add them here.
   . *File system*
 
     * link:bie-uos-c04-fs-questions.pdf[]
-//    * link:bie-ps1-c04-fs-solutions.pdf[]
-//    * link:https://youtu.be/eeAa9dnJQuc[Youtube]
+    * link:bie-uos-c04-fs-solutions.pdf[]
+    * link:https://youtu.be/o02D6Z6HqdE[Youtube]
     
   . Standard Input/Output, UNIX filters and useful commands.
 //    * link:https://go.microsoft.com/fwlink/p/?LinkID=873020&lm=deeplink&lmsrc=homePageWeb&cmpid=WebSignIn[MS Teams]
