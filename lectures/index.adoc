@@ -21,7 +21,7 @@ The materials are being modified this year, so we will gradually add them here.
   . *Filters and useful commands*
     * link:bie-uos-p04-filters-01.pdf[]
     * link:https://youtu.be/0hr_mKedUQE[YouTube (Part 1)]
-//    * link:https://youtu.be/VvPhIw2fGpM[YouTube (Part 2)]
+    * link:https://youtu.be/uZoHtN7gm2c[YouTube (Part 2)]
 	
  	* Files: 
  	  ** link:../data/words.txt[words.txt], link:../data/djx.txt[djx.txt], link:../data/djx.csv[djx.csv], link:../data/ndx.txt[ndx.txt], link:../data/ndx.csv[ndx.csv], link:../data/spx.txt[spx.txt], link:../data/spx.csv[spx.csv], link:../data/rux.txt[rux.txt], link:../data/rux.csv[rux.csv]
