@@ -1,6 +1,14 @@
 = 1. News
 :imagesdir: media
 
+*26.10.2021*
+
+* Attention, *the first big test* will take place on *Wednesday 10.11.2021* during the tutorial. Repeat the following topics
+** CLI parsing order (metacharacters and their meaning),
+** Shell variables and aliasing.
+** Filesytem and file/directory commands.
+** Filters.
+
 *29.9.2021 - Week 2*
 
 * The Task 1 is available at link:https://courses.fit.cvut.cz/BIE-UOS/Tasks/01/index.html[]
