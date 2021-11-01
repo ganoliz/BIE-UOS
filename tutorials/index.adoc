@@ -35,9 +35,8 @@ The materials are being modified this year, so we will gradually add them here.
     ** on the servers fray1/fray2, these files are stored in the directory /home/courses/BIPS1/public/data
 //    * link:./bie-ps1-filtry.pdf[Examples of questions]
 
-  . Regular expressions, command grep.
-//    * link:https://learnshell.fit.cvut.cz[LearnShell]
-//    * link:bie-ps1-c06-regexp-questions.pdf[]
+  . *Regular expressions, command grep.*
+    * link:bie-uos-c06-regexp-questions.pdf[]
 //    * link:bie-ps1-c06-regexp-solutions.pdf[]  
     * Files: link:words.txt[], link:apache.log.gz[] (use command gunzip to decompress the file).  
     
