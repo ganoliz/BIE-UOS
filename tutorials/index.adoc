@@ -38,7 +38,9 @@ The materials are being modified this year, so we will gradually add them here.
 
   . *Regular expressions, command grep.*
     * link:bie-uos-c06-regexp-questions.pdf[]
-//    * link:bie-ps1-c06-regexp-solutions.pdf[]  
+    * link:bie-uos-c06-regexp-solutions.pdf[]  
+    * link:https://youtu.be/3qadURAUXCs[Youtube]
+
     * Files: link:words.txt[], link:apache.log.gz[] (use command gunzip to decompress the file).  
     
   . Regular expressions, commands sed and awk.
