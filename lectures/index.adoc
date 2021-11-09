@@ -34,10 +34,11 @@ The materials are being modified this year, so we will gradually add them here.
     * Files: 
       ** link:../data/text.txt[text.txt], link:../data/moreLine.xml[moreLine.xml], link:../data/oneLine.xml[oneLine.xml]
   
-  . Regular expressions, sed and awk.
-//    * link:https://youtu.be/VbqoK6uv7J0[YouTube]
-//    * link:bie-ps1-p06-sedawk-01.pdf[]
-  
+  . *Regular expressions, sed and awk*
+
+    * link:bie-uos-p06-sedawk-01.pdf[]
+    * link:https://youtu.be/1rtiiQZS0t4[YouTube]
+
   . Exit code. Command test. Flow Control. Loops.
 //    * link:https://youtu.be/uEuIDdkG0mI[YouTube]
 //    * link:bie-ps1-p07-flow_control-01.pdf[]
