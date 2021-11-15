@@ -8,15 +8,13 @@ Dear BIE-UOS students,
 last week a big test was to take place in Learnshell during the tutorials (Wednesday, November 10, 2021). 
 Only the test at the first tutorial was successful, and during the other tutorials Learnshell was overloaded and the tests had to be canceled.
 
-Because
+For the following reasons
 
 . it is not possible to ensure that the Learnshell is not overloaded during the following scheduled tests,
 . the evaluation of this course should be completed by 17.12.2021 (because the course is completed only by a graded assessment),
 . many students did not take the Learnshell tests because, for example, they had a problem with a visa, ...
 
-*I decided to adjust the method of evaluation in this course*.
-
-*We will replace large and small tests in Leranshell with an oral nterview, 
+*I decided to replace Learnshell tests with an oral interview with each student, 
 which will take place at the end of the semester at the time of the lectures and tutorials (8.12. and 15.12.2021).*
 During the interview, the student should demonstrate that he/she has sufficient knowledge to obtain the assessment
 (the results of previous tests in Learnshell will be taken into account when deciding on the grade).
