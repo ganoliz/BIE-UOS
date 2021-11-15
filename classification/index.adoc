@@ -4,10 +4,37 @@
 
 * *This module is finished by the graded assessment*, therefore the continuous work in the semester is evaluated.
 
-////
-== Change in the method of evaluation in 2020
 
-* *Information for evaluation and obtaining assessment in the winter semester 2020*
+== Change in the method of evaluation in 2021
+
+* *Information for evaluation and obtaining assessment in the winter semester 2021*
+  ** For the following reasons
+  
+     . it is not possible to ensure that the Learnshell is not overloaded during the following scheduled tests,
+     . the evaluation of this course should be completed by 17.12.2021 (because the course is completed only by a graded assessment),
+     . many students did not take the Learnshell tests because, for example, they had a problem with a visa, ...
+	 
+  ** *I decided to replace Learnshell tests with an oral interview with each student, 
+which will take place at the end of the semester at the time of the lectures and tutorials (8.12. and 15.12.2021).*
+During the interview, the student should demonstrate that he/she has sufficient knowledge to obtain the assessment
+(the results of previous tests in Learnshell will be taken into account when deciding on the grade).
+
+  ** *When will the oral interviews take place?*
+
+    *** Interviews will take place during the last two weeks of the semester at times reserved for BIE-UOS lectures and tutorials (currently all students should be in the Czech Republic and should have time during these dates).
+    *** Please book the date of the interview in time in the following table: https://docs.google.com/spreadsheets/d/1Nx2adgpd_SU784wA_si9R2eWc6y68nLhE3Y17BOEpY8/edit?usp=sharing
+
+  ** *How will the interview take place?*
+
+    *** The student will come to the classroom on the given date, which he/she has reserved in the table (interviews will not take place in a distance form).
+    *** The student will receive a question similar to the questions that were in the tests on Learnshell or that are in the solved examples, and will try to solve it on a computer. If in doubt about the student's knowledge, he/she may be given a supplementary question(s).
+
+  ** *What topics will be discussed during the interview?*
+
+    *** All that will be discussed by the end of the semester.
+
+////
+* *Information for evaluation and obtaining assessment in the winter semester 2021*
   ** For the following reasons, I decided to change the conditions for obtaining assessment
     *** With a high probability the restrictions regarding COVID-19 will last until the end of the semester and therefore it will not be possible to carry out large tests in the faculty classroom.
 	*** It is almost impossible to prevent copying during tests and the use of unauthorized materials, ...
@@ -33,6 +60,9 @@
   
 = The information below is not valid fo the winter semestre 2020
 ////
+
+= The information below is not valid fo the winter semestre 2021
+
 == Tests
 
 * During the semester, *the student will write several tests to earn points*.
