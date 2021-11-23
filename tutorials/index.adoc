@@ -43,11 +43,10 @@ The materials are being modified this year, so we will gradually add them here.
 
     * Files: link:words.txt[], link:apache.log.gz[] (use command gunzip to decompress the file).  
     
-  . Regular expressions, commands sed and awk.
-//    * link:https://learnshell.fit.cvut.cz[LearnShell]
-//    * link:https://youtu.be/u6OtlWtTf08[Youtube]
-//    * link:bie-ps1-c07-sed_awk-questions.pdf[]
-//    * link:bie-ps1-c07-sed_awk-solutions.pdf[]
+  . *Regular expressions, commands sed and awk.*
+    * link:bie-uos-c07-sed_awk-questions.pdf[]
+//    * link:bie-uos-c07-sed_awk-solutions.pdf[]
+//    * link:https://youtu.be/kB4CxKiUUW0[Youtube]
 //    * link:./bie-ps1-regexpr.pdf[Examples of questions]	
 
   . Exit status, command test, flow control.
