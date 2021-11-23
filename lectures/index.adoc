@@ -39,7 +39,7 @@ The materials are being modified this year, so we will gradually add them here.
     * link:bie-uos-p06-sedawk-01.pdf[]
     * link:https://youtu.be/1rtiiQZS0t4[YouTube]
 
-  . Exit code. Command test. Flow Control. Loops.
+  . *Exit code. Command test. Flow Control. Loops.*
     * link:bie-uos-p07-flow_control-01.pdf[]
     * link:https://youtu.be/gMfzbqJfhTk[YouTube]
     * Files: 
