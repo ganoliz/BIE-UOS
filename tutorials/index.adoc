@@ -49,11 +49,10 @@ The materials are being modified this year, so we will gradually add them here.
     * link:https://youtu.be/kB4CxKiUUW0[Youtube]
 //    * link:./bie-ps1-regexpr.pdf[Examples of questions]	
 
-  . Exit status, command test, flow control.
-//    * link:https://learnshell.fit.cvut.cz[LearnShell]
+  . *Exit status, command test, flow control.*
+    * link:bie-uos-c08-flow_control-questions.pdf[]
+//    * link:bie-uos-c08-flow_control-solutions.pdf[]
 //    * link:https://youtu.be/lipFRJD7ia8[Youtube]
-//    * link:bie-ps1-c08-flow_control-questions.pdf[]
-//    * link:bie-ps1-c08-flow_control-solutions.pdf[]
     
   . Access permissions and command find.
 //    * link:https://learnshell.fit.cvut.cz[LearnShell]
