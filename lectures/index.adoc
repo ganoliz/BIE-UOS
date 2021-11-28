@@ -45,10 +45,10 @@ The materials are being modified this year, so we will gradually add them here.
     * Files: 
     ** link:../data/scripts.tgz[scripts.tgz]
 	
-  . User identity and access permissions.
-//    * link:https://youtu.be/6oOHob051Vs[YouTube]
-//    * link:bie-ps1-p08-perm.pdf[]
-  
+  . *User identity and access permissions.*
+    * link:bie-uos-p08-perm.pdf[]
+    * link:https://youtu.be/mYDyaDYBCUg[YouTube]
+    
   . Command find.
 //    * link:bie-ps1-p09-find.pdf[]
   
