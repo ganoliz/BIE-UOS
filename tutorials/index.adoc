@@ -54,12 +54,10 @@ The materials are being modified this year, so we will gradually add them here.
 //    * link:bie-uos-c08-flow_control-solutions.pdf[]
 //    * link:https://youtu.be/lipFRJD7ia8[Youtube]
     
-  . Access permissions and command find.
-//    * link:https://learnshell.fit.cvut.cz[LearnShell]
-//    * link:https://youtu.be/Ch-wqgP_NUY[Youtube]
-//    * link:bie-ps1-c09-perm_find-questions.pdf[]
+  . *Access permissions and command find.*
+    * link:bie-uos-c09-perm_find-questions.pdf[]
 //    * link:bie-ps1-c09-perm_find-solutions.pdf[]  
-
+//    * link:https://youtu.be/Ch-wqgP_NUY[Youtube]
   . Archiving and compression tools and arithmetic calculations.
 //    * link:https://learnshell.fit.cvut.cz[LearnShell]
 //    * link:https://youtu.be/4Spm7-tbyMY[Youtube]
