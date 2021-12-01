@@ -46,17 +46,17 @@ The materials are being modified this year, so we will gradually add them here.
   . *Regular expressions, commands sed and awk.*
     * link:bie-uos-c07-sed_awk-questions.pdf[]
     * link:bie-uos-c07-sed_awk-solutions.pdf[]
-    * link:https://youtu.be/kB4CxKiUUW0[Youtube]
+    * link:https://youtu.be/DKHSNX5zdcY[Youtube]
 //    * link:./bie-ps1-regexpr.pdf[Examples of questions]	
 
   . *Exit status, command test, flow control.*
     * link:bie-uos-c08-flow_control-questions.pdf[]
-//    * link:bie-uos-c08-flow_control-solutions.pdf[]
+    * link:bie-uos-c08-flow_control-solutions.pdf[]
 //    * link:https://youtu.be/lipFRJD7ia8[Youtube]
     
   . *Access permissions and command find.*
     * link:bie-uos-c09-perm_find-questions.pdf[]
-//    * link:bie-ps1-c09-perm_find-solutions.pdf[]  
+    * link:bie-uos-c09-perm_find-solutions.pdf[]  
 //    * link:https://youtu.be/Ch-wqgP_NUY[Youtube]
   . Archiving and compression tools and arithmetic calculations.
 //    * link:https://learnshell.fit.cvut.cz[LearnShell]
