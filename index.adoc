@@ -1,6 +1,15 @@
 = 1. News
 :imagesdir: media
 
+*4.12.2021 - examples of big test questions*
+
+  * link:news/q1.png[question 1]
+  * link:news/q2.png[question 2]
+  * link:news/q3.png[question 3]
+  * link:news/q4.png[question 4]
+  * link:news/q5.png[question 5]
+  * link:news/q6.png[question 6]
+
 *15.11.2021 - Letter to students*
 
 Dear BIE-UOS students,
