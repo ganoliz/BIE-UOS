@@ -57,20 +57,16 @@ The materials are being modified this year, so we will gradually add them here.
   . *Access permissions and command find.*
     * link:bie-uos-c09-perm_find-questions.pdf[]
     * link:bie-uos-c09-perm_find-solutions.pdf[]  
-//    * link:https://youtu.be/Ch-wqgP_NUY[Youtube]
+    * link:https://youtu.be/DKHSNX5zdcY[Youtube]
 
-  . Archiving and compression tools and arithmetic calculations.
-//    * link:https://learnshell.fit.cvut.cz[LearnShell]
-//    * link:https://youtu.be/4Spm7-tbyMY[Youtube]
-//    * link:bie-ps1-c11-archiving-questions.pdf[]
-//    * link:bie-ps1-c11-archiving-solutions.pdf[]  
-//    * link:bie-ps1-c12-calculations-questions.pdf[]
-//    * link:bie-ps1-c12-calculations-solutions.pdf[]  
+  . *Archiving and compression tools and arithmetic calculations.*
+    * link:bie-uos-c11-archiving-questions.pdf[]
+    * link:bie-uos-c11-archiving-solutions.pdf[]  
+    * link:bie-uos-c12-calculations-questions.pdf[]
+    * link:bie-uos-c12-calculations-solutions.pdf[]  
 
-  . Processes and jobs.
-//    * link:https://learnshell.fit.cvut.cz[LearnShell]
-//    * link:bie-ps1-c10-proc-questions.pdf[]
-//    * link:bie-ps1-c10-proc-solutions.pdf[] 
+  . *Processes and jobs.*
+    * link:bie-uos-c10-proc-questions.pdf[]
+    * link:bie-uos-c10-proc-solutions.pdf[] 
 
-//  . Big test   
   		
