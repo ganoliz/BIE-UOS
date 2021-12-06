@@ -49,14 +49,14 @@ The materials are being modified this year, so we will gradually add them here.
     * link:bie-uos-p08-perm.pdf[]
     * link:https://youtu.be/mYDyaDYBCUg[YouTube]
     
-  . Command find.
-//    * link:bie-ps1-p09-find.pdf[]
+  . *Command find.*
+    * link:bie-uos-p09-find.pdf[]
   
-  . Archiving and compression utilities. Arithmetics. 
-//    * link:bie-ps1-p10-archivation.pdf[]
+  . *Archiving and compression utilities. Arithmetics.*
+    * link:bie-uos-p10-archivation.pdf[]
   
-  . Processes and threads. Signals.
-//    * link:bie-ps1-p11-processes.pdf[]
+  . *Processes and threads. Signals.*
+    * link:bie-uos-p11-processes.pdf[]
   
-  . Summary.
+//  . Summary.
   
