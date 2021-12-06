@@ -20,6 +20,7 @@ navigation:
     - homeworks/1*/*
     - Tasks/0[2-4]/*
     - data/*
+    - backup/*
     - news/*
 repository:
   gitlabPath: /BI-UOS/bie-uos
