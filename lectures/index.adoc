@@ -5,23 +5,15 @@ The materials are being modified this year, so we will gradually add them here.
   . *Introduction in UNIX operating system*
     * link:bie-uos-p00-module_info_01.pdf[]
     * link:bie-uos-p01-introduction-01.pdf[]
-    * link:https://youtu.be/-9Y8Konusko[YouTube]
-  
   
   . *Command-line parsing order, special characters, command execution, shell variables*
     * link:bie-uos-p02-cli-01.pdf[]
-    * link:https://youtu.be/uzl3jM_Ilho[YouTube (Part 1)]
-    * link:https://youtu.be/K6E1PGsEV0k[YouTube (Part 2) - record from 2020]
     
   . *Filesystem. Basic file/directory commands*
     * link:bie-uos-p03-fs-01.pdf[]
-    * link:https://youtu.be/vpHCyPG1Gu4[YouTube]
-  
   
   . *Filters and useful commands*
     * link:bie-uos-p04-filters-01.pdf[]
-    * link:https://youtu.be/0hr_mKedUQE[YouTube (Part 1)]
-    * link:https://youtu.be/5pMHv3Eey9k[YouTube (Part 2)]
 	
  	* Files: 
  	  ** link:bie-uos-filters-questions.pdf[]
@@ -37,17 +29,15 @@ The materials are being modified this year, so we will gradually add them here.
   . *Regular expressions, sed and awk*
 
     * link:bie-uos-p06-sedawk-01.pdf[]
-    * link:https://youtu.be/1rtiiQZS0t4[YouTube]
 
   . *Exit code. Command test. Flow Control. Loops.*
     * link:bie-uos-p07-flow_control-01.pdf[]
-    * link:https://youtu.be/gMfzbqJfhTk[YouTube]
+
     * Files: 
     ** link:../data/scripts.tgz[scripts.tgz]
 	
   . *User identity and access permissions.*
     * link:bie-uos-p08-perm.pdf[]
-    * link:https://youtu.be/mYDyaDYBCUg[YouTube]
     
   . *Command find.*
     * link:bie-uos-p09-find.pdf[]
