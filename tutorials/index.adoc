@@ -4,33 +4,22 @@ The materials are being modified this year, so we will gradually add them here.
 
   . *Introduction*
     * link:bie-uos-c01-introduction-solutions.pdf[]
-    * link:https://youtu.be/accvlYz0zCo[Youtube]
     
   . *Command line interface I*
     * link:bie-uos-c02-cli-questions.pdf[]
-    * link:bie-uos-c02-cli-solutions.pdf[]
-    * link:https://youtu.be/0DkWvM9tdgg[Youtube(part1)]
-
-  . *Command line interfacen II*
-    * link:https://youtu.be/rJ9Dk_2n6Ck[Youtube(part2)]
-
+  
   . *Shell variables, text editors*
 
     * link:bie-uos-c03-variables-questions.pdf[]
-    * link:bie-uos-c03-variables-solutions.pdf[]
-    * link:https://youtu.be/17lBMTzumeA[Youtube]
 
   . *File system*
 
     * link:bie-uos-c04-fs-questions.pdf[]
-    * link:bie-uos-c04-fs-solutions.pdf[]
-    * link:https://youtu.be/o02D6Z6HqdE[Youtube]
     
   . *Standard Input/Output, UNIX filters and useful commands*
 
     * link:bie-uos-c05-filters-questions.pdf[]
-    * link:bie-uos-c05-filters-solutions.pdf[]
-    * link:https://youtu.be/uZoHtN7gm2c[Youtube]
+   
     * Files: 
     ** link:../data/words.txt[words.txt], link:../data/djx.txt[djx.txt], link:../data/djx.csv[djx.csv], link:../data/ndx.txt[ndx.txt], link:../data/ndx.csv[ndx.csv], link:../data/spx.txt[spx.txt], link:../data/spx.csv[spx.csv], link:../data/rux.txt[rux.txt], link:../data/rux.csv[rux.csv]
     ** on the servers fray1/fray2, these files are stored in the directory /home/courses/BIPS1/public/data
@@ -38,34 +27,26 @@ The materials are being modified this year, so we will gradually add them here.
 
   . *Regular expressions, command grep.*
     * link:bie-uos-c06-regexp-questions.pdf[]
-    * link:bie-uos-c06-regexp-solutions.pdf[]  
-    * link:https://youtu.be/3qadURAUXCs[Youtube]
 
     * Files: link:words.txt[], link:apache.log.gz[] (use command gunzip to decompress the file).  
     
   . *Regular expressions, commands sed and awk.*
     * link:bie-uos-c07-sed_awk-questions.pdf[]
-    * link:bie-uos-c07-sed_awk-solutions.pdf[]
-    * link:https://youtu.be/DKHSNX5zdcY[Youtube]
+   
+   
 //    * link:./bie-ps1-regexpr.pdf[Examples of questions]	
 
   . *Exit status, command test, flow control.*
     * link:bie-uos-c08-flow_control-questions.pdf[]
-    * link:bie-uos-c08-flow_control-solutions.pdf[]
-    * link:https://youtu.be/DKHSNX5zdcY[Youtube]
     
   . *Access permissions and command find.*
     * link:bie-uos-c09-perm_find-questions.pdf[]
-    * link:bie-uos-c09-perm_find-solutions.pdf[]  
 
   . *Archiving and compression tools and arithmetic calculations.*
     * link:bie-uos-c11-archiving-questions.pdf[]
-    * link:bie-uos-c11-archiving-solutions.pdf[]  
     * link:bie-uos-c12-calculations-questions.pdf[]
-    * link:bie-uos-c12-calculations-solutions.pdf[]  
 
   . *Processes and jobs.*
     * link:bie-uos-c10-proc-questions.pdf[]
-    * link:bie-uos-c10-proc-solutions.pdf[] 
 
   		
