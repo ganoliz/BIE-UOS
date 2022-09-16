@@ -4,86 +4,25 @@
 
 * *This module is finished by the graded assessment*, therefore the continuous work in the semester is evaluated.
 
-
-== Change in the method of evaluation in 2021
-
-* *Information for evaluation and obtaining assessment in the winter semester 2021*
-  ** For the following reasons
-  
-     . it is not possible to ensure that the Learnshell is not overloaded during the following scheduled tests,
-     . the evaluation of this course should be completed by 17.12.2021 (because the course is completed only by a graded assessment),
-     . many students did not take the Learnshell tests because, for example, they had a problem with a visa, ...
-	 
-  ** *I decided to replace Learnshell tests with an oral interview with each student, 
-which will take place at the end of the semester at the time of the lectures and tutorials (8.12. and 15.12.2021).*
-During the interview, the student should demonstrate that he/she has sufficient knowledge to obtain the assessment
-(the results of previous tests in Learnshell will be taken into account when deciding on the grade).
-
-  ** *When will the oral interviews take place?*
-
-    *** Interviews will take place during the last two weeks of the semester at times reserved for BIE-UOS lectures and tutorials (currently all students should be in the Czech Republic and should have time during these dates).
-    *** Please book the date of the interview in time in the following table: https://docs.google.com/spreadsheets/d/1Nx2adgpd_SU784wA_si9R2eWc6y68nLhE3Y17BOEpY8/edit?usp=sharing
-
-  ** *How will the interview take place?*
-
-    *** The student will come to the classroom on the given date, which he/she has reserved in the table (interviews will not take place in a distance form).
-    *** The student will receive a question similar to the questions that were in the tests on Learnshell or that are in the solved examples, and will try to solve it on a computer. If in doubt about the student's knowledge, he/she may be given a supplementary question(s).
-
-  ** *What topics will be discussed during the interview?*
-
-    *** All that will be discussed by the end of the semester.
-
-////
-* *Information for evaluation and obtaining assessment in the winter semester 2021*
-  ** For the following reasons, I decided to change the conditions for obtaining assessment
-    *** With a high probability the restrictions regarding COVID-19 will last until the end of the semester and therefore it will not be possible to carry out large tests in the faculty classroom.
-	*** It is almost impossible to prevent copying during tests and the use of unauthorized materials, ...
-	 
-  ** Therefore, I decided to replace the large tests with *an oral interview with each student through MS Teams, which will take place at the end of the semester (in the week of 14-18 December)*. I assume that the interview will last about 20 minutes and during which I would ask the student one theoretical question (eg explain what a symbolic link is, ...), one practical question (similar to a question in small tests) and possibly another supplementary question. The results of small tests will also be taken into account in determining the final grade.
-  
-  ** *Small tests will continue to take place at the beginning of each tutorial* and are primarily intended to serve
-    *** to motivate students for regular weekly and weekly preparation,
-    *** as feedback on their current knowledge,
-    *** to get an idea of ​​what types of problems they should be able to solve.
-
-	** If it was not possible to carry out a small test either due to eg a student's illness or due to technical problems (eg problems with network connection, problems with Learnshell), so for simplicity, I decided that *the small tests will not be replaced* and everything will be resolved during the oral interview.
-
-* *The oral interview organization*
-  ** Interviews will take place from Tue 15.- Thu 17.12.2020.
-  ** The teacher will send by email a link to the shared table, where *each student will book a free time slot* that suits him best.
-  ** At the given time, the *teacher calls the student via MS Teams*.
-  ** *The student-side camera must be turned on* throughout the interview and must record the student himself to ensure that the student works independently and does not use unauthorized sources of information.
-  ** During the interview, *the student must answer/work independently and can only use his/her knowledge and commands man/help/info, which are available in the Unix terminal. Other sources of information (such as notes, slides, information on the Internet, ...) are prohibited*.
-  ** At the beginning of the interview, the teacher will show the student the assignment of one practical question and one theoretical question (from the topics covered during the semester). *The student writes the solution of the practical question to the shared terminal on the computer fray2.fit.cvut.cz within 10 minutes and answers the theoretical question orally within 5 minutes.*
-  ** The final assessment of the student will depend on the answer/solution of these two questions, but will also take into account the solutions of homework and small tests during the semester.
-  
-  
-= The information below is not valid fo the winter semestre 2020
-////
-
-= The information below is not valid fo the winter semestre 2021
-
 == Tests
 
 * During the semester, *the student will write several tests to earn points*.
 * The tests will be held continuously during the semester so that *the student is motivated to prepare continuously*.
 * *Therefore, there will be no repair tests!*
-* There will be two types of tests during the semester:
-** *Small tests*
-*** They will take place *at the beginning of each practice* (from the 3rd week of semester).
-*** The test duration will be around *5-10 minutes*.
-*** They will usually verify knowledge of topics discussed in the previous week.
-*** Student can obtain up to *20 points* from all these tests.
 
-** *Big tests*
-*** They will take place *in the middle (week 8, 10.11.2021)* and *at the end (week 12, 8.12.2021)* of the semester (depending on COVID-19 restrictions).
-*** The test duration will be around *60 minutes*.
-*** They will verify knowledge of all discussed topics.
-*** Student can obtain up to *80 points* from all these tests.
+* They will take place *at the beginning of each practice* (from the 5rd week of semester).
+* The test duration will be around *5-10 minutes*.
+* They will usually verify knowledge of topics discussed in the previous week.
+* Student can obtain up to *20 points* from all these tests.
 
 * *Absence from the test means 0 points from the test (exception is only serious reason).*
 
+== Oral interview
 
+* Interviews will take place *during the last two weeks of the semester* at times reserved for BIE-UOS lectures and tutorials. 
+* The student will come to the classroom on the given date, which he/she has reserved (interviews will not take place in a distance form).
+* The student will receive a *question similar to the questions that were in the tests on Learnshell or that are in the solved examples*, and will try to solve it on a computer. 
+* If in doubt about the student's knowledge, he/she may be given a supplementary question(s).
 
 == Tasks
 
