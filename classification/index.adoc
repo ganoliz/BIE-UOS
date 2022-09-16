@@ -23,6 +23,7 @@
 * The student will come to the classroom on the given date, which he/she has reserved (interviews will not take place in a distance form).
 * The student will receive a *question similar to the questions that were in the tests on Learnshell or that are in the solved examples*, and will try to solve it on a computer. 
 * If in doubt about the student's knowledge, he/she may be given a supplementary question(s).
+* Student can obtain up to *80 points* from the interview.
 
 == Tasks
 
