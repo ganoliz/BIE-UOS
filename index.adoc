@@ -3,7 +3,7 @@
 
 *19.9.2022 - Week 1*
 
-* link:https://timetable.fit.cvut.cz/old/public/en/predmety/66/84/p6684706.html[Timetable]
+* link:https://timetable.fit.cvut.cz/new/courses/BIE-UOS.21[Timetable]
 
 ////
 *4.12.2021 - examples of big test questions*
