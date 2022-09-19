@@ -7,7 +7,9 @@ The materials are being modified this year, so we will gradually add them here.
     
   . *Command line interface I*
     * link:bie-uos-c02-cli-questions.pdf[]
-  
+    * Files:
+    ** link:../data/config[$HOME/.ssh/config]
+
   . *Shell variables, text editors*
 
     * link:bie-uos-c03-variables-questions.pdf[]
