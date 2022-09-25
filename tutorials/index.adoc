@@ -4,22 +4,23 @@ The materials are being modified this year, so we will gradually add them here.
 
   . *Introduction*
     * link:bie-uos-c01-introduction-solutions.pdf[]
+    
+////
     * Files:
     ** link:../data/config[$HOME/.ssh/config]
-    
-  . *Command line interface I*
-    * link:bie-uos-c02-cli-questions.pdf[]
-    
-  . *Shell variables, text editors*
+////
 
+  . *Command line interface I*
+
+    * link:bie-uos-c02-cli-questions.pdf[]
+
+  . *Shell variables, text editors*
     * link:bie-uos-c03-variables-questions.pdf[]
 
   . *File system*
-
     * link:bie-uos-c04-fs-questions.pdf[]
     
   . *Standard Input/Output, UNIX filters and useful commands*
-
     * link:bie-uos-c05-filters-questions.pdf[]
    
     * Files: 
