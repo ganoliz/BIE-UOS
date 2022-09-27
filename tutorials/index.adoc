@@ -4,11 +4,9 @@ The materials are being modified this year, so we will gradually add them here.
 
   . *Introduction*
     * link:bie-uos-c01-introduction-solutions.pdf[]
-    
-////
+
     * Files:
     ** link:../data/config[$HOME/.ssh/config]
-////
 
   . *Command line interface I*
 
