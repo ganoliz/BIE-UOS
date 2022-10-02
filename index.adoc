@@ -3,7 +3,7 @@
 
 *2.10.2022*
 
-  * Task 1 was published. Deadline is 9.10.2022.
+  * link:./Tasks/01/index.html[Task 1] was published. Deadline is 9.10.2022.
 
 ////
 *4.12.2021 - examples of big test questions*
