@@ -10,7 +10,7 @@
 * The tests will be held continuously during the semester so that *the student is motivated to prepare continuously*.
 * *Therefore, there will be no repair tests!*
 
-* They will take place *at the beginning of each practice* (from the 5rd week of semester).
+* They will take place *at the beginning of each practice* (from the 5th week of semester).
 * The test duration will be around *5-10 minutes*.
 * They will usually verify knowledge of topics discussed in the previous week.
 * Student can obtain up to *30 points* from all these tests.
