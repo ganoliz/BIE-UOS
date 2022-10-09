@@ -1,6 +1,21 @@
 = 1. News
 :imagesdir: media
 
+*9.10.2022*
+
+LearnShell tests
+
+  * *Starting in the fourth week of the semester (October 16, 2022), there will be a small LearnShell test at the beginning of each tutorial.* 
+  * The test will contain one or more questions per topics covered in previous weeks and will last 10 to 15 minutes.
+  * LearnShell TasHomework 1 is used to verify your LearnShell account and to familiarize you with the LearnShell environment and the type of questions you can expect in the tests.  
+
+LearnShell Homework 1
+
+  * On Monday, October 10, 2022 at 7:30 a.m., the first homework assignment should be posted on https://learnshell.fit.cvut.cz.
+  * Please use your CTU username and password to log in.
+  * The assignment deadline is Sunday, October 16, 2022 at 23:59.
+  * If you have trouble logging in or do not see the assignment email the administrator at zitnyjak@fit.cvut.cz
+
 *2.10.2022*
 
   * link:./Tasks/01/index.html[Task 1] was published. Deadline is 9.10.2022.
