@@ -11,7 +11,7 @@ LearnShell tests
 
 LearnShell Homework 1
 
-  * On Monday, October 10, 2022 at 7:30 a.m., the first homework assignment should be posted on https://learnshell.fit.cvut.cz.
+  * On Monday, October 10, 2022 at 7:30 a.m., the first homework assignment should be posted on https://learnshell.fit.cvut.cz
   * Please use your CTU username and password to log in.
   * The assignment deadline is Sunday, October 16, 2022 at 23:59.
   * If you have trouble logging in or do not see the assignment email the administrator at zitnyjak@fit.cvut.cz
