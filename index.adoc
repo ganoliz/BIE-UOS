@@ -5,7 +5,7 @@
 
 LearnShell tests
 
-  * *Starting in the fourth week of the semester (October 16, 2022), there will be a small LearnShell test at the beginning of each tutorial.* 
+  * *Starting in the fifth week of the semester (October 16, 2022), there will be a small LearnShell test at the beginning of each tutorial.* 
   * The test will contain one or more questions per topics covered in previous weeks and will last 10 to 15 minutes.
   * LearnShell TasHomework 1 is used to verify your LearnShell account and to familiarize you with the LearnShell environment and the type of questions you can expect in the tests.  
 
