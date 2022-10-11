@@ -1,6 +1,14 @@
 = 1. News
 :imagesdir: media
 
+*11.10.2022*
+
+  * At this point, LearnShell is having some technical problems:
+   ** not all BIE-UOS student accounts are created,
+   ** the first homework assignment is not published.
+
+  *  *I will notify you by email when the problems have been resolved.*
+
 *9.10.2022*
 
 LearnShell tests
