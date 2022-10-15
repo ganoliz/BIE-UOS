@@ -1,6 +1,10 @@
 = 1. News
 :imagesdir: media
 
+*15.10.2022*
+
+  ** Because the LearnShell server is still having technical problems, I have decided to postpone both the homework and the test by one week, i.e. *the homework will be published during the next week and the first test would take place in the 6th week* of the semester. I apologize for the complications.
+
 *11.10.2022*
 
   * At this point, LearnShell is having some technical problems:
