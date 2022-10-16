@@ -11,6 +11,7 @@ The materials are being modified this year, so we will gradually add them here.
   . *Command line interface I*
 
     * link:bie-uos-c02-cli-questions.pdf[]
+    * link:bie-uos-c02-cli-solutions.pdf[]
 
   . *Shell variables, text editors*
     * link:bie-uos-c03-variables-questions.pdf[]
