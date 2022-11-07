@@ -1,10 +1,10 @@
 = Task 2
 
-The submission limit is *22.11.2020 at 23:00*. After that the solutions will be archived.
+The submission limit is *13.11.2022 at 23:00*. After that the solutions will be archived.
 
 ==== Assignment
 
-On the server *`fray1`*, or. *`fray2`*, in the directory *`tyden9`* ( directory createdin task 1), create a script that
+On the server *`fray1`* in the directory *`tyden7`* ( directory createdin task 1), create a script that
 creates a file whose name will be given by the content of variable *`UID`*.
 
 The first line of this file must contain a number that is the sum of the day, hour, and minute of the last modification of this file. The second line will contain your "Copyright", that is:
@@ -27,7 +27,7 @@ The script name is `uloha2` and the output of commands *`ls`* a *`cat`*  is foll
 
 
 ----
-~> cd ~/ulohy/tyden9
+~> cd ~/ulohy/tyden7
 ~> ls -l
 -rw-------   1 muzikar  zam           15 Nov 24 22:29 10032
 -rwx------   1 muzikar  zam          328 Nov 24 22:20 uloha2
