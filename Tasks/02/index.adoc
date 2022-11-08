@@ -18,7 +18,7 @@ See example below.
 Conditions for correct solution:
 
 * No characters other than the calculated number may be on the first line.
-* Both the script and the file must be stored in the directory *`~/ulohy/tyden9`
+* Both the script and the file must be stored in the directory *`~/ulohy/tyden7`
 
 ==== Example
 
