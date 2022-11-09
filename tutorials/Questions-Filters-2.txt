@@ -1,0 +1,26 @@
+Filters 2
+
+1) List the names of the 5 largest files in the /usr/bin directory (one name per line and the largest file on the first line).
+
+1a) Write the names in one line with separator ':' and at the end of the line will be separator and '\n'
+
+1b) Write the names in one line with separator ':' and at the end of the line there will be no separator but only '\n'
+
+1c) Save the previous row solution to the file top5.
+
+1d) Save the previous row solution to the shell variable top5.
+
+2) How many directory names the PATH variable contains?
+
+3) How many regular files are in the directories defined by the PATH variable?
+
+4) List the name of the largest regular file from the directories defined by the PATH variable.
+
+5) List the name of the directory from the PATH variable whose data takes up the most space in FS.
+
+6) The shell variables F1 and F2 contain file names. If these files have the same content, print the message "F1 and F2 are the same". Otherwise, nothing else is output.
+
+7) Make a copy of /etc/passwd and change the separator ':' to '_' at line 3. All other lines will remain unchanged.
+
+
+
