@@ -1,0 +1,38 @@
+Příklady na grep a regulární výrazy.
+
+1) Zkopírujte si soubor /usr/dict/words ze serveru fray1.
+
+2) Ze souboru words vypište řádky obsahující řetězec “wood”.
+
+3) Ze souboru words vypište počet řádek obsahující řetězec “wood”.
+
+4) Ze souboru words vypište čísla řádek, na kterých se nachází řetězec “wood” (čísla řádek na jedné řádce a oddělená znakem ‘:’.
+
+5) Ze souboru words vypište řádky neobsahující řetězec “wood”.
+
+6) Ze souboru words vypište počet řádek neobsahující řetězec “wood”.
+
+7) Ze souboru words vypište řádky začínající řetězcem “wood”.
+
+8) Ze souboru words vypište řádky končící řetězcem “wood”.
+
+9) Ze souboru words vypište řádky obsahující řetězec “wood” s délkou 5 znaků.
+
+10) Ze souboru words vypište řádky obsahující řetězec “wood” s délkou 6 znaků.
+
+11) Ze souboru words vypište řádky obsahující řetězec “wood” s délkou 5 nebo 6 znaků.
+
+12) Terminál roztáhněte přes celou obrazovku, z výstup příkazu ‘info ls’ smažte všechny znaky kromě 
+      - alfanumerických znaků
+      - znaků interpunkce
+      - bílých znaků
+      - nového řádku
+    a výstup uložte do souboru ls.txt.
+
+13) Vypište ze souboru ls.txt všechny řádky obsahující slovo “name”.
+
+14) Vypište ze souboru ls.txt všechny řádky obsahující slovo s délkou 4.
+
+15) Vypište ze souboru ls.txt všechny řádky obsahující 2 stejná slova.
+
+16) Vypište ze souboru ls.txt všechny řádky, které mají na začátku i na konci stejné slovo.
