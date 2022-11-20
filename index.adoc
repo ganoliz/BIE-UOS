@@ -1,6 +1,29 @@
 = 1. News
 :imagesdir: media
 
+*20.11.2022*
+
+* *Final interview*
+
+** the end of the semester is approaching and you need to schedule your final interview for assessment. Here is the necessary information:
+
+** *When and where the interview will take place* 
+*** Interviews will take place in the computer lab at the times we have reserved for lecture and tutorials (i.e., all of you should have time and there should be no conflicts with other courses). 
+*** *Please book the relevant date via the link that has been sent to your email.*
+
+** *How the interview will be conducted*
+*** At the chosen time, the student will attend the relevant classroom and draw 2-3 questions. 
+*** The questions will be from topics covered during this semester and will be of a similar type to the questions in the Learnshell tests. 
+*** The student will attempt to find a solution and demonstrate its functionality in the terminal. 
+*** If there are any ambiguities in the solution, then the student will be given additional questions.
+
+** *Assessment*
+*** Based on the scores from the Learnshell tests and the final interview, the student will receive an assessment and an appropriate grade.
+*** If the student has insufficient knowledge (low scores in the tests and interview), then he/she will have to register for this course in the following year (no further interview will be possible).
+
+** *Alternative interview date*
+*** If the student cannot attend the interview due to serious reasons (e.g. illness,...) then an alternative date will be arranged (probably sometime in February 2023).
+
 *7.11.2022* 
 
 * The Task 2 is available at link:https://courses.fit.cvut.cz/BIE-UOS/Tasks/02/index.html[]
