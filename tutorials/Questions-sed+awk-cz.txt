@@ -1,0 +1,49 @@
+Questions - sed + awk
+
+1) Vytvořte si soubor s daty
+
+    ls -l / | nl > f1
+    ls -l /etc > f2
+	
+2) Ze souboru f1 vypište pouze řádky 3, 5-10, 15 až do poslední řádky.
+
+3) Ze souboru f1 vypište vše kromě řádek 3, 5-10, 15 až do poslední řádky.
+
+4) Ze souboru f2 vypište pouze řádky reprezentující symbolické linky.
+
+5) Vytvořte soubor f3 z manuálové stránky pro bash tím, že 
+
+    a) nahradíte mezerou všechny znaky kromě
+       - znaků a-zA-Z
+       - mezer
+       - znaku \n
+   
+    b) sousední mezery nahradíte jednou mezerou
+
+    c) odstraníte mezeru na začátku řádu
+
+6) V souboru f3 nahraďte slova "the" a "The" řetězcem "XXX". Ověřte si výsledek pomocí příkazu grep.
+
+7) V souboru f3 nahraďte první slovo na řádce řetězcem XXXXX.
+
+8) V souboru f3 nahraďte druhé slovo na řádce řetězcem XXXXX.
+
+9) V souboru f3 nahraďte poslední slovo na řádce řetězcem XXXXX.
+
+10) V souboru f3 nahraďte předposlední slovo na řádce řetězcem XXXXX.
+
+11) Vypište ze souboru f3 první slovo na řádce.
+
+12) Vypište ze souboru f3 poslední slovo na řádce.
+
+13) Vypište ze souboru f3 řádku, které má nejvíce slov.
+
+14) V souboru f3 nahraďte první slovo na řádce řetězcem XXXXX pomocí awk.
+
+15) V souboru f3 nahraďte předposlední slovo na řádce řetězcem XXXXX pomocí awk.
+
+16) Jaké je nejdelší slovo v souboru f3?
+
+17) Jaká je četnost různě dlouhých slov v souboru f3?
+
+18) Kolik místa zabírají obyčejné soubory v adresáři /etc (ne rekurzivně)?
