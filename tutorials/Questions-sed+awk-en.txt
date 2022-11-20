@@ -1,0 +1,50 @@
+Questions - sed + awk
+
+1) Create a data file
+
+    ls -l / | nl > f1
+    ls -l /etc > f2 
+	
+2) From file f1, print only lines 3, 5-10, 15 up to the last line.
+
+3) From the file f1 write out everything except lines 3, 5-10, 15 up to the last line.
+
+4) Write out only the lines representing the symbolic lines from the f2 file.
+
+5) Create the f3 file from the bash man page by 
+
+    a) replacing all characters except
+       - the characters a-zA-Z
+       - spaces
+       - the \n character
+   
+    b) replacing adjacent spaces with a single space,
+
+    c) remove the space at the beginning of the line.
+
+6) In the f3 file, replace the words "the" and "The" with the string "XXX". Verify the result with grep.
+
+7) In the f3 file, replace the first word on the line with the string XXXXX.
+
+8) In the f3 file, replace the second word on the line with the string XXXXX.
+
+9) In the f3 file, replace the last word on the line with the string XXXXX.
+
+10) In the f3 file, replace the second to last word on the line with the string XXXXX.
+
+11) Print the first word on the line from the file f3.
+
+12) Print the last word on the line from the file f3.
+
+13) Print the line that has the most words from the file f3.
+
+14) In file f3, replace the first word on the line with the string XXXXX using awk.
+
+15) In file f3, replace the second to last word on the line with the string XXXXX using awk.
+
+16) What is the longest word in the f3 file?
+
+17) What is the frequency of different length words in the f3 file?
+
+18) How much space do ordinary files take up in the /etc directory (not recursively)?
+
