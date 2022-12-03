@@ -43,7 +43,6 @@ The materials are being modified this year, so we will gradually add them here.
   . *Regular expressions, commands sed and awk.*
     * link:bie-uos-c07-sed_awk-questions.pdf[]
     * link:bie-uos-c07-sed_awk-solutions.pdf[]
-    
 //    * link:./bie-ps1-regexpr.pdf[Examples of questions]	
     * link:Questions-sed+awk-en.txt[]
 
