@@ -1,6 +1,12 @@
 = 1. News
 :imagesdir: media
 
+*25.9.2023 - Week 1*
+
+* *Teaching will take place in full-time form* (ie in FIT CTU classrooms according to the link:https://timetable.fit.cvut.cz/old/public/en/predmety/66/84/p6684706.html[schedule]).
+* If the student is unable to attend classes for important reasons (eg visa problem, covid quarantine, ...), then *the student must learn the topic in the form of self-study* from prepared materials (slides of lectures and tutorials).
+
+////
 *20.11.2022*
 
 * *Final interview*
@@ -59,7 +65,6 @@ LearnShell Homework 1
 
   * link:./Tasks/01/index.html[Task 1] was published. Deadline is 9.10.2022.
 
-////
 *4.12.2021 - examples of big test questions*
 
   * link:news/q1.png[question 1]
