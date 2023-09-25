@@ -6,6 +6,32 @@
 * *Teaching will take place in full-time form* (ie in FIT CTU classrooms according to the link:https://timetable.fit.cvut.cz/old/public/en/predmety/66/84/p6684706.html[schedule]).
 * If the student is unable to attend classes for important reasons (eg visa problem, covid quarantine, ...), then *the student must learn the topic in the form of self-study* from prepared materials (slides of lectures and tutorials).
 
+* *Email to BIE-UOS student*
+
+[source]
+--
+Dear BIE-UOS students,
+I would like to welcome you to the new semester and send you some information about the BIE-UOS course.
+
+Course website
+All information/materials for the course are available at https://courses.fit.cvut.cz/BIE-UOS/
+
+Lectures
+The lectures will be held every Tuesday morning 7:30-9:00am in the T9:107 lecture hall and should also be streamed at https://online.fit.cvut.cz/
+
+Tutorials
+Tutorials will be held every Wednesday (T9:303)/Friday(TH:A-1142). Unfortunately, they will not be streamed though. Example solutions will always be made available at the end of the week on the course page. 
+
+Small tests
+At the beginning of each tutorial, there will be a short quiz to test the knowledge covered in the previous weeks and should serve as feedback to the students on their knowledge or where they need to improve. The tests will start on the 5th tutorial.
+
+Student absence
+If a student is unable to attend lectures/tutorials e.g. due to a visa problem, then it is necessary to study the topics/examples discussed independently from the prepared materials. I assume that all students should arrive no later than 4 weeks after the start of the semester, because then it is usually a problem to successfully participate in the studies (experience from previous years).
+
+Friday holiday
+This week is a holiday on Thursday and Friday (28 and 29 September). Please study the prepared materials and next week we will explain anything that was not completely clear to you.
+--
+
 ////
 *20.11.2022*
 
