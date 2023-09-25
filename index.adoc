@@ -6,7 +6,7 @@
 * *Teaching will take place in full-time form* (ie in FIT CTU classrooms according to the link:https://timetable.fit.cvut.cz/old/public/en/predmety/66/84/p6684706.html[schedule]).
 * If the student is unable to attend classes for important reasons (eg visa problem, covid quarantine, ...), then *the student must learn the topic in the form of self-study* from prepared materials (slides of lectures and tutorials).
 
-* *Email to BIE-UOS student*
+* *Email to BIE-UOS students*
 
 [source]
 --
