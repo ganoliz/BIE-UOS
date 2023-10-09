@@ -1,6 +1,11 @@
 = 1. News
 :imagesdir: media
 
+*9.10.2023 - Week 3*
+
+* The first task was published. See link:https://courses.fit.cvut.cz/BIE-UOS/Tasks/index.html[Tasks]
+* The deadline for submission is *Sunday of the third teaching week at 23:59*.
+
 *25.9.2023 - Week 1*
 
 * *Teaching will take place in full-time form* (ie in FIT CTU classrooms according to the link:https://timetable.fit.cvut.cz/old/public/en/predmety/66/84/p6684706.html[schedule]).
