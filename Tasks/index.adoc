@@ -2,9 +2,18 @@
 //:imagesdir: ../media/annotation
 
 == Notes
-  
 * Several tasks will be assigned during the semester.
 * Tasks serve as preparation for the tests.
 * Tasks will be published continuously on this page.
 * Students will always be notified of a new task during the lecture/practice.
   
+== Where and how to complete the task
+1. *Open* web page at address link:https://iga.ksi.fit.cvut.cz/bie-uos[https://iga.ksi.fit.cvut.cz/bie-uos]
+2. *Sign in/Register* (see top right corner)
+3. *Click on the "Gitlab FIT" button* (see bottom "Sign in with")
+4. This will redirect the user to gitlab.fit.cvut.cz where they will *log in with their CTU username and CTU password*
+5. *Confirm* that their username can be used to access our system (this is just the first time)
+6. This redirects the user back to the task, where a new "Enter" button appears to *enter the task*
+7. *Click the "+ Acquire" button* which will create a git repository for them to work in
+8. *Fill out* your code in the editor, and *hit the "Evaluate" button*
+9. This will run the tests, and under the editor you will see the output of the tests
