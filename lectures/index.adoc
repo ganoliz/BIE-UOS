@@ -9,7 +9,7 @@ The materials are being modified this year, so we will gradually add them here.
     
   . *Command-line parsing order, special characters, command execution, shell variables*
     * link:bie-uos-p02-cli-01.pdf[]
-    * OnlineFit: link:https://online.fit.cvut.cz/zaznam/B231/bie-uos.21_pre_2023-10-03.html[record1]
+    * OnlineFit: link:https://online.fit.cvut.cz/zaznam/B231/bie-uos.21_pre_2023-10-03.html[part1], link:https://online.fit.cvut.cz/zaznam/B231/bie-uos.21_pre_2023-10-10.html[part2]
 
   . *Filesystem. Basic file/directory commands*
     * link:bie-uos-p03-fs-01.pdf[]
