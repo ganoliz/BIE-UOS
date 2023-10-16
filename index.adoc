@@ -1,6 +1,11 @@
 = 1. News
 :imagesdir: media
 
+*16.10.2023 - Week 4*
+
+* The first Learnshell homework is ready, look at https://learnshell.fit.cvut.cz. 
+* The deadline for this homework is Sunday 22.10.2023 at 23:59.
+
 *9.10.2023 - Week 3*
 
 * The first task was published. See link:https://courses.fit.cvut.cz/BIE-UOS/Tasks/index.html[Tasks]
