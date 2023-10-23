@@ -1,6 +1,26 @@
 = 1. News
 :imagesdir: media
 
+*23.10.2023 - Week 5*
+
+* *Email to BIE-UOS students*
+
+--
+Dear BIE-UOS students,
+
+starting this week, at the beginning of each tutorial, there will be a little Learnshell test.  The test will go as follows:
+
+1) in the classroom, you will boot into a LearnShell image
+
+2) log into LearnShell (https://learnshell.fit.cvut.cz)
+
+3) Upload the solution for the question(s)
+
+You will see the number of points earned and the time remaining on the test directly in LearnShell.
+
+This week there will be one question, the time limit will be 8 minutes and the point limit will be 4 points.  The question will be about one of the topics discussed in the tutorials (Command line parsing, Variables). The type of question will be similar to the question in Learnshell homework 1. 
+--
+
 *16.10.2023 - Week 4*
 
 * The first Learnshell homework is ready, look at https://learnshell.fit.cvut.cz. 
