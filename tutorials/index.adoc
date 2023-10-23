@@ -15,7 +15,7 @@ The materials are being modified this year, so we will gradually add them here.
 
   . *Shell variables, text editors*
     * link:bie-uos-c03-variables-questions.pdf[]
-//  * link:bie-uos-c03-variables-solutions.pdf[]
+    * link:bie-uos-c03-variables-solutions.pdf[]
 
   . *File system*
     * link:bie-uos-c04-fs-questions.pdf[]
