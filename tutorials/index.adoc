@@ -19,7 +19,7 @@ The materials are being modified this year, so we will gradually add them here.
 
   . *File system*
     * link:bie-uos-c04-fs-questions.pdf[]
-//  * link:bie-uos-c04-fs-solutions.pdf[]
+    * link:bie-uos-c04-fs-solutions.pdf[]
 
   . *Standard Input/Output, UNIX filters and useful commands*
     * link:bie-uos-c05-filters-questions.pdf[]
