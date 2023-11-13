@@ -34,7 +34,7 @@ The materials are being modified this year, so we will gradually add them here.
 
   . *Regular expressions, command grep.*
     * link:bie-uos-c06-regexp-questions.pdf[]
-//    * link:bie-uos-c06-regexp-solutions.pdf[]
+    * link:bie-uos-c06-regexp-solutions.pdf[]
 
     * link:Questions-grep.txt[]
 
