@@ -1,6 +1,11 @@
 = 1. News
 :imagesdir: media
 
+*14.11.2023 - Week 8*
+
+* The second task was published. See link:https://courses.fit.cvut.cz/BIE-UOS/Tasks/index.html[Tasks]
+* The deadline for submission is *this Sunday at 23:59*.
+
 *23.10.2023 - Week 5*
 
 * *Email to BIE-UOS students*
