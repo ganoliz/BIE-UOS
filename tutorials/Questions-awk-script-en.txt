@@ -1,0 +1,10 @@
+1) For the output of the getent passwd command, for each user, increase the UID (3rd item) by 100.
+
+2) For the output of the getent passwd command, for each user that has a GID (4th item) equal to 1002, increase the UID by 100.
+
+3) Write a script that will be run with 2 integer parameters and output the sum of these parameters to the std. output.
+    Treat a) the correct number of parameter,
+          b) treat the correct value of the first and second parameter.
+
+4) Write a script that will be run with several parameters and 
+   for each parameter, determine whether the value is a readable plain file.
