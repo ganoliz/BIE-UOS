@@ -5,7 +5,7 @@
 
 * *Oral interview information*
 
-** This module is concluded with a graded assesment, which you will receive during an oral interview.
+** This module is concluded with a graded assessment, which you will receive during an oral interview.
 ** Here is information about the interview itself:
 
 *** *When will the oral interview take place?*
