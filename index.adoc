@@ -1,6 +1,36 @@
 = 1. News
 :imagesdir: media
 
+*27.11.2023 - Week 10*
+
+* *Oral interview information*
+
+** This module is concluded with a graded assesment, which you will receive during an oral interview.
+** Here is information about the interview itself:
+
+*** *When will the oral interview take place?*
+
+**** The interview will take place in the last two weeks of the semester (11.12.-22.12.2023) instead of lectures and tutorials.
+**** Each student should book their date in the following table https://docs.google.com/spreadsheets/d/1SkM3yt_AhF7O08ldQFMip_nQt7jbEBlNm1w36jV4CmQ/edit?usp=sharing
+**** Ideally, book your date to coincide with your tutorial schedule or lecture (so that the interview does not conflict with other courses).
+
+*** *What will be the organisation of the oral interview?*
+**** The interview will take place in the computer lab. 
+**** The student will come in on the given date, boot into a Learnshell image and will be given some practice questions to which they will try to find a solution directly in the terminal in about 30 minutes.  
+**** If the solution is not completely correct, then he will be given additional questions to explain how he meant it.
+
+*** *What type of questions can you expect in the oral interview?*
+**** The questions will be from topics covered during this semester (command-line parsing, filesystem, ..., archiving and compression utilities). 
+**** The type of questions will be similar to the Learnshell quizzes given during the semester.
+
+*** *What happens if I do not have sufficient knowledge to get credit?*
+**** If the student does not have at least a basic understanding of the topics covered,
+then he/she will not receive credit and will have to take the course again in the next school year.
+
+*** *What happens if I cannot attend the interview for a serious reason?* 
+**** At the end of the examination period (February 2024) there will be one alternative interview date for which the student will be able to register. 
+**** The date will be announced at the beginning of the exam period (early March 2024).
+
 *14.11.2023 - Week 8*
 
 * The second task was published. See link:https://courses.fit.cvut.cz/BIE-UOS/Tasks/index.html[Tasks]
