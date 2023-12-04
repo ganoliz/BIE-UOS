@@ -48,7 +48,7 @@ The materials are being modified this year, so we will gradually add them here.
 
   . *Exit status, command test, flow control.*
     * link:bie-uos-c08-flow_control-questions.pdf[]
-//    * link:bie-uos-c08-flow_control-solutions.pdf[]
+    * link:bie-uos-c08-flow_control-solutions.pdf[]
 
     * link:Questions-awk-script-en.txt[]
     
