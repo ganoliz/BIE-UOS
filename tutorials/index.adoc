@@ -64,5 +64,6 @@ The materials are being modified this year, so we will gradually add them here.
 
   . *Processes and jobs.*
     * link:bie-uos-c10-proc-questions.pdf[]
+    * link:bie-uos-c10-proc-solutions.pdf[]
 
   		
