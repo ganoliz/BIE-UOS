@@ -60,7 +60,7 @@ The materials are being modified this year, so we will gradually add them here.
     * link:bie-uos-c11-archiving-questions.pdf[]
     * link:bie-uos-c11-archiving-solutions.pdf[]
     * link:bie-uos-c12-calculations-questions.pdf[]
-    * link:bie-uos-c12-calculations-solution.pdf[]
+    * link:bie-uos-c12-calculations-solutions.pdf[]
 
   . *Processes and jobs.*
     * link:bie-uos-c10-proc-questions.pdf[]
