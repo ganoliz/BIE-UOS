@@ -1,1 +1,449 @@
-include::index.adoc[]
+= 1. News
+:imagesdir: media
+
+*27.11.2023 - Week 10*
+
+* *Oral interview information*
+
+** This module is concluded with a graded assessment, which you will receive during an oral interview.
+** Here is information about the interview itself:
+
+*** *When will the oral interview take place?*
+
+**** The interview will take place in the last two weeks of the semester (11.12.-22.12.2023) instead of lectures and tutorials.
+**** Each student should book their date in the following table https://docs.google.com/spreadsheets/d/1SkM3yt_AhF7O08ldQFMip_nQt7jbEBlNm1w36jV4CmQ/edit?usp=sharing
+**** Ideally, book your date to coincide with your tutorial schedule or lecture (so that the interview does not conflict with other courses).
+
+*** *What will be the organisation of the oral interview?*
+**** The interview will take place in the computer lab. 
+**** The student will come in on the given date, boot into a Learnshell image and will be given some practice questions to which they will try to find a solution directly in the terminal in about 30 minutes.  
+**** If the solution is not completely correct, then he will be given additional questions to explain how he meant it.
+
+*** *What type of questions can you expect in the oral interview?*
+**** The questions will be from topics covered during this semester (command-line parsing, filesystem, ..., archiving and compression utilities). 
+**** The type of questions will be similar to the Learnshell quizzes given during the semester.
+
+*** *What happens if I do not have sufficient knowledge to get credit?*
+**** If the student does not have at least a basic understanding of the topics covered,
+then he/she will not receive credit and will have to take the course again in the next school year.
+
+*** *What happens if I cannot attend the interview for a serious reason?* 
+**** At the end of the examination period (February 2024) there will be one alternative interview date for which the student will be able to register. 
+**** The date will be announced at the beginning of the exam period (early January 2024).
+
+*14.11.2023 - Week 8*
+
+* The second task was published. See link:https://courses.fit.cvut.cz/BIE-UOS/Tasks/index.html[Tasks]
+* The deadline for submission is *this Sunday at 23:59*.
+
+*23.10.2023 - Week 5*
+
+* *Email to BIE-UOS students*
+
+[source]
+--
+Dear BIE-UOS students,
+
+starting this week, at the beginning of each tutorial, there will be a little Learnshell test.  The test will go as follows:
+
+1) in the classroom, you will boot into a LearnShell image
+
+2) log into LearnShell (https://learnshell.fit.cvut.cz)
+
+3) Upload the solution for the question(s)
+
+You will see the number of points earned and the time remaining on the test directly in LearnShell.
+
+This week there will be one question, the time limit will be 8 minutes and the point limit will be 4 points.  The question will be about one of the topics discussed in the tutorials (Command line parsing, Variables). The type of question will be similar to the question in Learnshell homework 1. 
+--
+
+*16.10.2023 - Week 4*
+
+* The first Learnshell homework is ready, look at https://learnshell.fit.cvut.cz. 
+* The deadline for this homework is *Sunday 22.10.2023 at 23:59*.
+
+*9.10.2023 - Week 3*
+
+* The first task was published. See link:https://courses.fit.cvut.cz/BIE-UOS/Tasks/index.html[Tasks]
+* The deadline for submission is *Sunday of the third teaching week at 23:59*.
+
+*25.9.2023 - Week 1*
+
+* *Teaching will take place in full-time form* (ie in FIT CTU classrooms according to the link:https://timetable.fit.cvut.cz/old/public/en/predmety/66/84/p6684706.html[schedule]).
+* If the student is unable to attend classes for important reasons (eg visa problem, covid quarantine, ...), then *the student must learn the topic in the form of self-study* from prepared materials (slides of lectures and tutorials).
+
+* *Email to BIE-UOS students*
+
+[source]
+--
+Dear BIE-UOS students,
+I would like to welcome you to the new semester and send you some information about the BIE-UOS course.
+
+Course website
+All information/materials for the course are available at https://courses.fit.cvut.cz/BIE-UOS/
+
+Lectures
+The lectures will be held every Tuesday morning 7:30-9:00am in the T9:107 lecture hall and should also be streamed at https://online.fit.cvut.cz/
+
+Tutorials
+Tutorials will be held every Wednesday (T9:303)/Friday(TH:A-1142). Unfortunately, they will not be streamed though. Example solutions will always be made available at the end of the week on the course page. 
+
+Small tests
+At the beginning of each tutorial, there will be a short quiz to test the knowledge covered in the previous weeks and should serve as feedback to the students on their knowledge or where they need to improve. The tests will start on the 5th tutorial.
+
+Student absence
+If a student is unable to attend lectures/tutorials e.g. due to a visa problem, then it is necessary to study the topics/examples discussed independently from the prepared materials. I assume that all students should arrive no later than 4 weeks after the start of the semester, because then it is usually a problem to successfully participate in the studies (experience from previous years).
+
+Friday holiday
+This week is a holiday on Thursday and Friday (28 and 29 September). Please study the prepared materials and next week we will explain anything that was not completely clear to you.
+--
+
+////
+*20.11.2022*
+
+* *Final interview*
+
+** the end of the semester is approaching and you need to schedule your final interview for assessment. Here is the necessary information:
+
+** *When and where the interview will take place* 
+*** Interviews will take place in the computer lab at the times we have reserved for lecture and tutorials (i.e., all of you should have time and there should be no conflicts with other courses). 
+*** *Please book the relevant date via the link that has been sent to your email.*
+
+** *How the interview will be conducted*
+*** At the chosen time, the student will attend the relevant classroom and draw 2-3 questions. 
+*** The questions will be from topics covered during this semester and will be of a similar type to the questions in the Learnshell tests. 
+*** The student will attempt to find a solution and demonstrate its functionality in the terminal. 
+*** If there are any ambiguities in the solution, then the student will be given additional questions.
+
+** *Assessment*
+*** Based on the scores from the Learnshell tests and the final interview, the student will receive an assessment and an appropriate grade.
+*** If the student has insufficient knowledge (low scores in the tests and interview), then he/she will have to register for this course in the following year (no further interview will be possible).
+
+** *Alternative interview date*
+*** If the student cannot attend the interview due to serious reasons (e.g. illness,...) then an alternative date will be arranged (probably sometime in February 2023).
+
+*7.11.2022* 
+
+* The Task 2 is available at link:https://courses.fit.cvut.cz/BIE-UOS/Tasks/02/index.html[]
+
+*15.10.2022*
+
+  ** Because the LearnShell server is still having technical problems, I have decided to postpone both the homework and the test by one week, i.e. *the homework will be published during the next week and the first test would take place in the 6th week* of the semester. I apologize for the complications.
+
+*11.10.2022*
+
+  * At this point, LearnShell is having some technical problems:
+   ** not all BIE-UOS student accounts are created,
+   ** the first homework assignment is not published.
+
+  *  *I will notify you by email when the problems have been resolved.*
+
+*9.10.2022*
+
+LearnShell tests
+
+  * *Starting in the fifth week of the semester (October 16, 2022), there will be a small LearnShell test at the beginning of each tutorial.* 
+  * The test will contain one or more questions per topics covered in previous weeks and will last 10 to 15 minutes.
+  * LearnShell TasHomework 1 is used to verify your LearnShell account and to familiarize you with the LearnShell environment and the type of questions you can expect in the tests.  
+
+LearnShell Homework 1
+
+  * On Monday, October 10, 2022 at 7:30 a.m., the first homework assignment should be posted on https://learnshell.fit.cvut.cz
+  * Please use your CTU username and password to log in.
+  * The assignment deadline is Sunday, October 16, 2022 at 23:59.
+  * If you have trouble logging in or do not see the assignment email the administrator at zitnyjak@fit.cvut.cz
+
+*2.10.2022*
+
+  * link:./Tasks/01/index.html[Task 1] was published. Deadline is 9.10.2022.
+
+*4.12.2021 - examples of big test questions*
+
+  * link:news/q1.png[question 1]
+  * link:news/q2.png[question 2]
+  * link:news/q3.png[question 3]
+  * link:news/q4.png[question 4]
+  * link:news/q5.png[question 5]
+  * link:news/q6.png[question 6]
+
+*15.11.2021 - Letter to students*
+
+Dear BIE-UOS students,
+
+last week a big test was to take place in Learnshell during the tutorials (Wednesday, November 10, 2021). 
+Only the test at the first tutorial was successful, and during the other tutorials Learnshell was overloaded and the tests had to be canceled.
+
+For the following reasons
+
+. it is not possible to ensure that the Learnshell is not overloaded during the following scheduled tests,
+. the evaluation of this course should be completed by 17.12.2021 (because the course is completed only by a graded assessment),
+. many students did not take the Learnshell tests because, for example, they had a problem with a visa, ...
+
+*I decided to replace Learnshell tests with an oral interview with each student, 
+which will take place at the end of the semester at the time of the lectures and tutorials (8.12. and 15.12.2021).*
+During the interview, the student should demonstrate that he/she has sufficient knowledge to obtain the assessment
+(the results of previous tests in Learnshell will be taken into account when deciding on the grade).
+
+*When will the oral interviews take place?*
+
+* Interviews will take place during the last two weeks of the semester at times reserved for BIE-UOS lectures and tutorials (currently all students should be in the Czech Republic and should have time during these dates).
+* Please book the date of the interview in time in the following table: https://docs.google.com/spreadsheets/d/1Nx2adgpd_SU784wA_si9R2eWc6y68nLhE3Y17BOEpY8/edit?usp=sharing
+
+*How will the interview take place?*
+
+* The student will come to the classroom on the given date, which he/she has reserved in the table (interviews will not take place in a distance form).
+* The student will receive a question similar to the questions that were in the tests on Learnshell or that are in the solved examples, and will try to solve it on a computer. If in doubt about the student's knowledge, he/she may be given a supplementary question(s).
+
+*What topics will be discussed during the interview?*
+
+* All that will be discussed by the end of the semester.
+
+Best regards,
+
+Jan Trdlička
+
+*26.10.2021*
+
+* Attention, *the first big test* will take place on *Wednesday 10.11.2021* during the tutorial. Repeat the following topics
+** CLI parsing order (metacharacters and their meaning),
+** Shell variables and aliasing.
+** Filesytem and file/directory commands.
+** Filters.
+
+*29.9.2021 - Week 2*
+
+* The Task 1 is available at link:https://courses.fit.cvut.cz/BIE-UOS/Tasks/01/index.html[]
+* The LearnShell homework is available at link:https://learnshell.fit.cvut.cz[]
+
+
+*22.9.2021 - Week 1*
+
+* *Teaching will take place in full-time form* (ie in FIT CTU classrooms according to the link:https://timetable.fit.cvut.cz/old/public/en/predmety/66/84/p6684706.html[schedule]).
+* If the student is unable to attend classes for important reasons (eg visa problem, covid quarantine, ...), then *the student must learn the topic in the form of self-study* from prepared materials (slides of lectures and tutorials).
+* As a bonus to facilitate self-study, *we will try to stream/record lectures and exercises from the classroom* (it will not be distance learning).
+* Links to streams/records will be listed on this site.
+////
+
+////
+*8.12.2020 - Week 12*
+
+[square]
+* The lecture 11 will be available at the following link link:https://youtu.be/niyJfBsnUt0[YouTube]
+* Seminars will be available at following links:
+  ** 9:15-10:45  link:https://youtu.be/FOPCwjKOcL0[YouTube]
+  ** 11:00-12:30 link:https://youtu.be/7B9_QQTxtSI[YouTube]
+  ** 12:45-14:15 link:https://youtu.be/4Spm7-tbyMY[YouTube]
+* Here are some more information for tomorrow's class:
+ ** There will be no small test tomorrow.
+ ** Instead of a small test, another homework on link:https://learnshell.fit.cvut.cz[Learnshell] is prepared for you (deadline is 13.12.2020 at 23:00).
+ 
+
+*1.12.2020 - Week 11*
+
+[square]
+* The lecture 10 will be available at the following link link:https://youtu.be/6oOHob051Vs[YouTube]
+* Seminars will be available at following links:
+  ** 9:15-10:45 link:https://youtu.be/ji4cEN7Zdvc[YouTube]
+  ** 11:00-12:30 link:https://youtu.be/wKluu8PVnR8[YouTube]
+  ** 12:45-14:15 link:https://youtu.be/O_DW9W29Csw[YouTube]
+* Here are some more information for tomorrow's class:
+ ** There will be no small test tomorrow.
+ ** Instead of a small test, another homework on link:https://learnshell.fit.cvut.cz[Learnshell] is prepared for you (deadline is 6.12.2020 at 23:00).
+
+*24.11.2020 - Week 10*
+
+[square]
+* The lecture 9 will be available at the following link link:https://youtu.be/uEuIDdkG0mI[YouTube]
+* Seminars will be available at following links:
+  ** 9:15-10:45 link:https://youtu.be/lipFRJD7ia8[YouTube]
+  ** 11:00-12:30 link:https://youtu.be/Ch-wqgP_NUY[YouTube]
+  ** 12:45-14:15 link:https://youtu.be/Z9dAjE_k80o[YouTube]
+* Here are some more information for tomorrow's class:
+ ** There will be no small test tomorrow.
+ ** Instead of a small test, another homework on link:https://learnshell.fit.cvut.cz[Learnshell] is prepared for you (deadline is 30.11.2020 at 23:00).
+
+*17.11.2020 - Week 9*
+
+[square]
+* The lecture 8 will be available at the following link link:https://youtu.be/VbqoK6uv7J0[YouTube]
+* Seminars will be available at link:https://go.microsoft.com/fwlink/p/?LinkID=873020&lm=deeplink&lmsrc=homePageWeb&cmpid=WebSignIn[MS Teams]
+* Here are some more information for tomorrow's class:
+ ** There will be no small test tomorrow.
+ ** Instead of a small test, another homework on link:https://learnshell.fit.cvut.cz[Learnshell] is prepared for you (deadline is 22.11.2020 at 23:00).
+ ** The second task is published at link:https://courses.fit.cvut.cz/BI-PS1/tasks/02/index.html[courses.fit.cvut.cz] (deadline is 22.11.2020 at 23:00).
+
+*10.11.2020 - Week 8*
+
+[square]
+* The lecture 7 will be available at the following link link:https://youtu.be/yD4qkQ7pVFg[YouTube]
+* Seminars will be available at link:https://go.microsoft.com/fwlink/p/?LinkID=873020&lm=deeplink&lmsrc=homePageWeb&cmpid=WebSignIn[MS Teams]. Please check that you see tomorrow's seminar in the MS Teams Calendar. If not, send me an email as soon as possible and I will include you in the appropriate group so that you can follow the seminar and write a small test in Learnshell.
+
+* *Information for evaluation and obtaining assessment*
+  ** For the following reasons, I decided to change the conditions for obtaining assessment
+    *** With a high probability the restrictions regarding COVID-19 will last until the end of the semester and therefore it will not be possible to carry out large tests in the faculty classroom.
+	*** It is almost impossible to prevent copying during tests and the use of unauthorized materials, ...
+	 
+  ** Therefore, I decided to replace the large tests with *an oral interview with each student through MS Teams, which will take place at the end of the semester (in the week of 14-18 December)*. I assume that the interview will last about 20 minutes and during which I would ask the student one theoretical question (eg explain what a symbolic link is, ...), one practical question (similar to a question in small tests) and possibly another supplementary question. The results of small tests will also be taken into account in determining the final grade.
+  
+  ** *Small tests will continue to take place at the beginning of each seminar* and are primarily intended to serve
+    *** to motivate students for regular weekly and weekly preparation,
+    *** as feedback on their current knowledge,
+    *** to get an idea of ​​what types of problems they should be able to solve.
+
+  ** If it was not possible to carry out a small test either due to eg a student's illness or due to technical problems (eg problems with network connection, problems with Learnshell), so for simplicity, I decided that *the small tests will not be replaced* and everything will be resolved during the oral interview.
+  
+*1.11.2020 - Week 7*
+
+[square]
+* The lecture 6 will be available at the following link link:https://youtu.be/yD4qkQ7pVFg[YouTube]
+* Seminars will be available at link:https://go.microsoft.com/fwlink/p/?LinkID=873020&lm=deeplink&lmsrc=homePageWeb&cmpid=WebSignIn[MS Teams]
+
+*1.11.2020 - Week 6*
+
+[square]
+* The lecture 5 will be available at the following link link:https://youtu.be/VvPhIw2fGpM[YouTube]
+* Seminars will be available at link:https://go.microsoft.com/fwlink/p/?LinkID=873020&lm=deeplink&lmsrc=homePageWeb&cmpid=WebSignIn[MS Teams]
+
+*23.10.2020 - Week 5*
+
+Classes (lecture and seminars) will be canceled the next Wednesday, October 28, 2020, because it will be a public holiday.
+
+*20.10.2020 - Week 4*
+
+.Links for the fourth week
+|===
+|Stream type | Link
+
+|Lecture 4 (Wed 14.10. 7:30)
+|https://youtu.be/mZ8FrDhdhWU
+
+|Seminar 4 (Wed 14.10. 9:15)
+|https://youtu.be/eeAa9dnJQuc
+
+|Seminar 4 (Wed 14.10. 11:00)
+|https://youtu.be/Jpf72x7hpT0
+
+|Seminar 4 (Wed 14.10. 12:45)
+|https://youtu.be/VozkZzhCDdk
+|===
+
+A small test will take place at the beginning of the seminar. *Students can participate in the test only at the time when they have a seminar scheduled according to link:https://timetable.fit.cvut.cz/old/public/en/predmety/31/61/p3161206.html[KOS]*
+
+
+*13.10.2020 - Week 3*
+
+.Links for the fourth week
+|===
+|Stream type | Link
+
+|Lecture 3 (Wed 14.10. 7:30)
+|https://youtu.be/bDsl0rhDURQ
+
+|Seminar 3 (Wed 14.10. 9:15)
+|https://youtu.be/kmTrveziplE
+
+|Seminar 3 (Wed 14.10. 11:00)
+|https://youtu.be/kDDzZctDsVc
+
+|Seminar 4 (Wed 14.10. 12:45)
+|https://youtu.be/fg6p-i-Lyi8
+|===
+
+
+*5.10.2020 - Week 2*
+
+.Links for the third week
+|===
+|Stream type | Link
+
+|Lecture 2 (Wed 7.10. 7:30)
+|https://youtu.be/K6E1PGsEV0k
+
+|Seminar 2 (Wed 7.10. 9:15)
+|https://youtu.be/seXtQqTT3N4
+
+|Seminar 2 (Wed 7.10. 11:00)
+|https://youtu.be/gTuT98qlyFs
+
+|Seminar 3 (Wed 7.10. 12:45)
+|https://youtu.be/hyhEMi2_eJI
+|===
+
+
+*29.9.2020 - Week 2*
+
+.Links for the second week
+|===
+|Stream type | Link
+
+|Lecture 2 (Wed 30.9. 7:30)
+|https://youtu.be/JigA31MAMr0
+
+|Seminar 2 (Wed 30.9. 9:15)
+|https://youtu.be/Z7clsjyTbZw
+
+|Seminar 2 (Wed 30.9. 11:00)
+|https://youtu.be/b2olcwsROz8
+
+|Seminar 2 (Wed 30.9. 12:45)
+|https://youtu.be/tg8jdscUU8U
+|===
+
+
+
+*20.9.2020 - BI-ULI*
+
+Module https://courses.fit.cvut.cz/BI-ULI[BI-ULI] (Introduction to Linux, 2 credits)  - auxiliary module especially for beginners. Students are enrolled in this course automatically and it will only depend on them whether they want to complete it (this is a bonus of gaining additional knowledge and additional credits).
+
+*20.9.2020 - The course BIE-PS1 in winter semester 2020/21 (email sent via kos.cvut.cz)*
+
+Dear students, regulations from the state, from the CTU rector and from the FIT dean do not allow contact classes and the both lectures and seminars must be implemented online. In BIE-PS1 I have made the following decisions:
+
+The lectures and seminars will be realized as *live streams via Youtube in the scheduled time* (see the https://timetable.fit.cvut.cz/old/public/en/predmety/31/61/p3161206.html[timetable.fit.cvut.cz]). The streams will be *recorded* and you can watch them any time. I will send you the stream links in advance by email via kos.cvut.cz and they also will be published on the page https://courses.fit.cvut.cz/BIE-PS1/lectures/index.html[courses.fit.cvut.cz/BIE-PS1/lectures].
+
+.Links for the first week
+|===
+|Stream type | Link
+
+|Lecture 1 (Wed 23.9. 7:30)
+|https://youtu.be/K4XHFKXFwI8
+
+|Seminar 1 (Wed 23.9. 9:15)
+|https://youtu.be/XUnKUZ5R3FE
+
+|Seminar 1 (Wed 23.9. 11:00)
+|https://youtu.be/jI0OV0yt6CI
+
+|Seminar 1 (Wed 23.9. 12:45)
+|https://youtu.be/kw7EkOx6mxI
+|===
+
+My primary goal is to keep high-quality lectures and seminars, therefore let me know about any problems you might encounter with this online teaching. *Use email trdlicka@fit.cvut.cz to communicate with me.*  Use of other communication channels could overwhelm me, so prefer this email which should enable me to respond fast. Do not forward your university mail outside, the primary information channel from us to you is email from kos.cvut.cz. Also, follow pages https://old.fit.cvut.cz/en/coronavirus[FIT-coronavirus] and https://courses.fit.cvut.cz/BIE-PS1, which is the primary source of materials for the course.
+
+
+I wish you good health, pleasant study, and optimistic mood.
+
+Ing. Jan Trdlička, Ph.D.
+////
+
+////
+* Attention, *the second big test* will take place on *Wednesday 18.12.2019* during the practice. Repeat the following topics
+** Regular expressions (metacharacters).
+** Commands grep, sed, awk and.
+** Scripts (script parameters, command test, if/then/else, loops for/while/until).
+** Access permissions.
+** And all previous topics.
+
+* Attention, *the first big test* will take place on *Wednesday 13.11.2019* during the practice. Repeat the following topics
+** CLI parsing order (metacharacters and their meaning),
+** Shell variables and aliasing.
+** Filesytem and file/directory commands.
+** Filters.
+** Command grep.
+
+* 6.6.2019: The assignment of *the second task* was published.
+
+* *Timetable*:  https://timetable.fit.cvut.cz/old/public/en/predmety/31/61/p3161206.html
+////
+
+
